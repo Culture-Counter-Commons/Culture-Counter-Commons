@@ -1,0 +1,14 @@
+{% unless settings.catalog_mode %}
+{% if settings.wishlist %}
+<!-- Header WishList -->
+    <!-- Header Wishlist -->
+{%- comment -%}
+    <div class="dropdn dropdn_wishlist {% if onlytext == 1 %}only-text{% endif %}">
+        <a href="/account" class="dropdn-link"><i class="icon icomoon-clipboardclipboard"></i></a>
+        <span>{{ 'general.theme.wishlist' | t }}</span>
+    </div>
+{%- endcomment -%}
+    <!-- /Header Wishlist -->
+<!-- Header WishList -->
+{% endif %}
+{% endunless %}

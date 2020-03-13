@@ -1,0 +1,124 @@
+<div class="holder mt-5">
+  <div class="container">
+    <style>
+      body {
+        height: 100vh;
+        overflow: hidden;
+      }
+    
+      div#shopify-section-header,
+      .page-title.text-center {
+        display: none;
+      }
+    
+      div#shopify-section-footer {
+        display: none;
+      }
+    
+      index-section {
+        padding-bottom: 0;
+      }
+    
+      p>img {
+        max-width: 50%;
+      }
+    
+      .hero {
+        background-size: 150%;
+        height: 90vh;
+    
+      }
+    
+      .page-content p>a,
+      p {
+        color: #e8e0cd;
+        margin-top: 0;
+        text-transform: none;
+        font-family: "Century Gothic", sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 15px;
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+      }
+    
+      .page-content p>a:hover {
+        color: #fff;
+      }
+    
+      html,
+      .page-content {
+        background-color: #268267;
+      }
+    
+      .hero__inner {
+        display: flex;
+        align-items: flex-end;
+        padding: 0;
+      }
+    
+      .hero__btn {
+        margin-top: 0;
+        text-transform: none;
+        font-family: "Century Gothic", sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 15px;
+        background: transparent;
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+      }
+    
+      .hero__btn:hover {
+        background: transparent;
+      }
+    
+      .hero--x-large {
+        height: 100vh;
+        background-size: 50vh;
+        max-height: 100vh;
+        background-position: center 18vh !important;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+    
+    
+    
+      @media only screen and (min-width: 750px) {
+        p>img {
+          max-width: 90%;
+        }
+    
+        .hero__btn {
+          font-size: 20px;
+        }
+    
+        .index-section {
+          padding-bottom: 0;
+          padding-top: 0;
+        }
+    
+        .hero--x-large {
+          height: 100vh;
+          max-height: 100vh;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+    
+        }
+    
+        .hero__inner {
+          display: flex;
+          align-items: flex-end;
+          padding: 55px 0;
+        }
+    
+        .text-center .mega-subtitle {
+          max-width: 100%;
+        }
+      }
+    </style>
+
+    {{ page.content }}
+  </div>
+</div>

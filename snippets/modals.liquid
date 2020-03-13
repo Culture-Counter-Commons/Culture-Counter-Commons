@@ -1,0 +1,43 @@
+<div class="modal--checkout" id="modalCheckOut" style="display: none;">
+    <div class="modal-header">
+        <div class="modal-header-title"><i class="icon icon-check-box"></i><span>{{ 'general.theme.your_order' | t }}</span></div>
+    </div>
+    <div class="modal-content">
+        <div class="modal-body">
+            <div class="modalchk-prd">
+                {% if settings.checkout_popup_undo_remove_yes %}
+                <div class="removed-note hidden"><a href="#" class="product-removed-title"></a> {{ 'general.theme.removed_from_the_cart' | t }} <a href="#" class="js-undo-remove" data-variant-id="">{{ 'general.theme.undo' | t }}?</a></div>
+                {% endif %}
+                {% if settings.checkout_popup_show_cart_yes %}
+                <div class="cart-table off-top-border"></div>
+                {% endif %}
+                {% if settings.free_shipping_checkout_popup_yes %}
+                    {% include 'free-shipping-bar' %}
+                {% endif %}
+                <div class="row h-font">
+                    <div class="modalchk-prd-actions col">
+                        <h3 class="modalchk-title"><span data-text-plural="{{ 'general.theme.there_are' | t}}"  data-text-single="{{ 'general.theme.there_is' | t}}" data-count="js-mdlchk-prd-count"></span> <span class="custom-color"><span class="js-mdlchk-prd-count custom-color-alt"></span></span> <span data-text-plural="{{ 'general.theme.items' | t}}"  data-text-single="{{ 'general.theme.item' | t}}" data-count="js-mdlchk-prd-count"></span> {{ 'general.theme.in_your_cart' | t}}</h3>
+                        <div class="prd-options">
+                            <span class="label-options">{{ 'cart.general.subtotal' | t }}:</span><span class="modalchk-total-price js-mdlchk-prd-total"></span>
+                        </div>
+                        {% if settings.checkout_popup_guaranteed_yes %}<div class="modalchk-custom"><img class="lazyload" data-src="{% if settings.checkout_popup_guaranteed_image != blank %}{{ settings.checkout_popup_guaranteed_image | img_url:'master' }}{% else %}{{ 'guaranteed.png' | asset_url }}{% endif %}"  alt=""></div>{% endif %}
+                        <div class="modalchk-btns-wrap">
+                            <a href="/cart" class="btn">{{ 'cart.general.checkout_procees' | t }}</a>
+                            <button class="btn btn--alt " data-fancybox-close>{{ 'products.product.continue_shopping' | t }}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalSuccess" class="modal-info modal--success" data-animation-duration="700" style="display: none;">
+	<div class="modal-text"><i class='icon icon-check-box modal-icon-info'></i><div>Product added to cart successfully!</div></div>
+</div>
+<div id="modalError" class="modal-info modal--error" data-animation-duration="700" style="display: none;">
+    <div class="modal-text"><i class='icon icon-error modal-icon-info'></i><div class="sms">Oops! Something went wrong!</div></div>
+</div>
+<div id="modalChat" class="modal-info modal--success" data-animation-duration="700" style="display: none;">
+  <div class="modal-text"><i class='icon icon-check-box modal-icon-info'></i><div>Theme is compatible with any <a href="https://www.google.com.ua/search?q=free+live+chat" target="_blank">free chat</a></div></div>
+</div>

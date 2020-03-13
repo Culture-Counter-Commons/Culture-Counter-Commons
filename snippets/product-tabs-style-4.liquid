@@ -1,0 +1,32 @@
+{% for block in section.blocks %}
+{% if block.settings.enable %}
+<div class="topline">
+  {% if  block.type == 'tab_page'%}
+  <h2>{{ pages[block.settings.page].title }}</h2>
+  <div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#productAccordion" href="#collapse{{ block.id }}">{{ pages[block.settings.page].title }}</a></h4></div>
+  {% elsif  block.type == 'tab_metafield' %}
+  {% if product.metafields.c_f[block.settings.title] != blank %}
+  <h2>{{ product.metafields.c_f[block.settings.title] }}</h2>
+  {% endif %}
+  {% else %}
+  <h2>{{ block.settings.title }}</h2>
+  {% endif %}
+  <div>
+    {% if  block.type == 'tab_page'%}
+    {{ pages[block.settings.page].content }}
+    {% elsif block.type == 'tab_tags' %}
+    <ul class="tags-list">
+      {% for tag in product.tags %}
+      <li><a href="/collections/all/{{ tag | handle }}">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
+    {% elsif block.type == 'tab_metafield' %}
+    {% assign x = block.settings.title | replace:'title','content' %}
+    {{ product.metafields.c_f[x] }}
+    {% else %}
+  	{{ block.settings.content }}
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+{% endfor %}

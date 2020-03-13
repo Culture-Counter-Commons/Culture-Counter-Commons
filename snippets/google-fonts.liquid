@@ -1,0 +1,20 @@
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+{% assign temp_font = '' %}
+{% if settings.color_body_font_family != blank %}
+  {% assign temp_font = settings.color_body_font_family %}
+  {{ '//fonts.googleapis.com/css?family=' | append: settings.color_body_font_family | stylesheet_tag }}
+{% endif %}
+{% if settings.color_headings_font_family != blank and temp_font != settings.color_headings_font_family%}
+  {% assign temp_font = settings.color_headings_font_family %}
+  {{ '//fonts.googleapis.com/css?family=' | append: settings.color_headings_font_family | stylesheet_tag }}
+{% endif %}
+{% if settings.color_product_page_name_font_family != blank and temp_font != settings.color_product_page_name_font_family %}
+  {% assign temp_font = settings.color_product_page_name_font_family %}
+  {{ '//fonts.googleapis.com/css?family=' | append: settings.color_product_page_name_font_family | stylesheet_tag }}
+{% endif %}
+{% if settings.color_topnav_level_1_font_family != blank  and temp_font != settings.color_topnav_level_1_font_family %}
+  {% assign temp_font = settings.color_topnav_level_1_font_family %}
+  {{ '//fonts.googleapis.com/css?family=' | append: settings.color_topnav_level_1_font_family | stylesheet_tag }}
+{% endif %}

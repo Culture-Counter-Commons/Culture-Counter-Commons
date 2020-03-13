@@ -1,0 +1,14 @@
+{% if section.settings.logo_yes %}
+    {%- assign logo = section.settings.logo -%}
+    {% if logo != blank %}
+        {% assign logo = logo | img_url: image_size %}
+        {% assign logo_2x = logo | img_url: image_size, scale: 2 %}
+    {% endif %}
+    <a href="{{ shop.url }}" title="{{ shop.name }}">
+        {% if logo != blank %}
+            <img class="lazyload" data-src="{{ section.settings.logo  | img_url:'master' }}" alt='{{ shop.name }}' class="img-responsive"/>
+        {% else %}
+            <img class="lazyload" data-src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}" srcset="{{ 'logo.png' | asset_url }} 1x, {{ logo_2x }} 2x"/>
+        {% endif %}
+    </a>
+{% endif %}

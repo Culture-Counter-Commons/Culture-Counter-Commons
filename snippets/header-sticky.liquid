@@ -1,0 +1,26 @@
+{%- assign logo = section.settings.logo -%}
+{% if logo != blank %}
+    {% assign logo = logo | img_url: image_size %}
+    {% assign logo_2x = logo | img_url: image_size, scale: 2 %}
+{% endif %}
+{% if section.settings.sticky %}
+<div class="sticky-holder compensate-for-scrollbar">
+    <div class="container">
+        <div class="row">
+            <a href="#" class="mobilemenu-toggle show-mobile"><i class="icon icon-menu"></i></a>
+            <div class="col-auto logo-holder-s">
+      		    {% comment %}{% include 'header-logo' %}{% endcomment %}
+                <a href="{{ shop.url }}" title="{{ shop.name }}" class="logo">
+                    <img class="lazyload" data-src="https://cdn.shopify.com/s/files/1/0095/6035/8991/files/culture-counter-sticky-header-logo.svg?1158" alt="">
+                </a>
+          	</div>
+            <!--navigation-->
+            <div class="prev-menu-scroll icon-angle-left prev-menu-js"></div>
+            <div class="nav-holder-s"></div>
+            <div class="next-menu-scroll icon-angle-right next-menu-js"></div>
+
+            <!--//navigation-->
+            <div class="col-auto minicart-holder-s"></div>
+        </div></div>
+</div>
+{% endif %}

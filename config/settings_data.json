@@ -1,0 +1,1229 @@
+{
+  "current": {
+    "color_scheme": "light",
+    "column-left-right": "none-column",
+    "slides_mode": false,
+    "catalog_mode": false,
+    "rtl": false,
+    "back_to_top_desktop": true,
+    "wishlist": true,
+    "zoom_off": false,
+    "prd_uppercase": false,
+    "headings_uppercase": true,
+    "equal_height": true,
+    "product_ratio_w": "1",
+    "product_ratio_h": "1.18",
+    "ajax_cart": true,
+    "favicon": "shopify:\/\/shop_images\/sortofLogo-2.png",
+    "collection_left_sidebar": true,
+    "products_per_page": "1000",
+    "ajax": true,
+    "collection_sort_enable": true,
+    "collection_image_enable": true,
+    "collection_image_width": "fullwidth full-nopad",
+    "collection_image_height_d": "200",
+    "collection_image_height_m": "200",
+    "collection_title_size": "h-lg",
+    "collection_title_color": "#438871",
+    "collection_image_bg_repeat": "no-repeat",
+    "collection_image_bg_posX": "center",
+    "collection_image_bg_posY": "center",
+    "collection_image_bg_size": "cover",
+    "collection_image_bg_att": "scroll",
+    "collection_image_bg_dark": 50,
+    "product_card_hover": "style1",
+    "product_previews_colors": true,
+    "show_out_of_stock": true,
+    "show_label_new": true,
+    "show_label_sale": true,
+    "show_quick_view": true,
+    "show_vendor": true,
+    "stars_mobile_off": true,
+    "show_you_save": false,
+    "advanced_add_to_cart": true,
+    "product_sku": false,
+    "product_availability": false,
+    "product_description": true,
+    "qv_show_label_new": true,
+    "qv_show_label_sale": true,
+    "product_options": "swatches",
+    "checkout_popup_free_shipping_yes": false,
+    "free_shipping_checkout_popup_yes": true,
+    "free_shipping_header_cart_yes": true,
+    "free_shipping_cart_yes": true,
+    "free_shipping_product_yes": true,
+    "checkout_popup_free_shipping_count": "400",
+    "checkout_popup_free_condition_text": "Spend <span class=\"free-shipping-current\"><\/span> more and get free shipping!",
+    "checkout_popup": true,
+    "checkout_popup_show_cart_yes": true,
+    "checkout_popup_undo_remove_yes": true,
+    "checkout_popup_custom_html": "<div class=\"shop-feature-icon\"><i class=\"icon-box3\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">Delivery<\/div> <div class=\"text2\">Lorem ipsum dolor sit amet conset <\/div> <\/div>",
+    "checkout_popup_guaranteed_yes": false,
+    "checkout_popup_guaranteed_image": "",
+    "get_shipping_estimates": false,
+    "newsletter_title": "",
+    "newsletter_desc": "",
+    "newsletter_desc_footer_3": "",
+    "newsletter_footer_2_bg": "",
+    "newsletter_popup_yes": false,
+    "newsletter_popup_onclick_yes": true,
+    "newsletter_popup_home_only_yes": false,
+    "newsletter_popup_logo": "shopify:\/\/shop_images\/ccc-sticky-header-logo.jpg",
+    "newsletter_popup_bg": "shopify:\/\/shop_images\/Artboard_Copy_5_1_grande_00bf1a43-ee17-45a7-a7ef-27c133c5bb01.jpg",
+    "newsletter_popup_title": "Sign up our newsletter",
+    "newsletter_popup_desc": "Enter Your email address to sign up to receive our latest news and offers",
+    "newsletter_popup_expires": "0",
+    "header12_enable_1": true,
+    "header12_image_1": "",
+    "header12_link_1": "",
+    "header12_link_target_1": "_self",
+    "header12_link_text_1": "Shop now",
+    "header12_caption_1_1": "FROM ONLY",
+    "header12_caption_1_2": "$120.00",
+    "header12_caption_1_3": "for kitchen Taps",
+    "header12_caption_tab_1": "$120.00 for bathroom taps",
+    "header12_enable_2": true,
+    "header12_image_2": "",
+    "header12_link_2": "",
+    "header12_link_target_2": "_self",
+    "header12_link_text_2": "Shop now",
+    "header12_caption_2_1": "",
+    "header12_caption_2_2": "SAVE 15%",
+    "header12_caption_2_3": "on Basins",
+    "header12_caption_tab_2": "save 15% on Basins",
+    "header12_enable_3": true,
+    "header12_image_3": "",
+    "header12_link_3": "",
+    "header12_link_target_3": "_self",
+    "header12_link_text_3": "Shop now",
+    "header12_caption_3_1": "FROM ONLY",
+    "header12_caption_3_2": "$100.00",
+    "header12_caption_3_3": "for baths",
+    "header12_caption_tab_3": "$100.00 for baths",
+    "shipping_calculator": "Disabled",
+    "shipping_calculator_heading": "Get shipping estimates",
+    "shipping_calculator_default_country": "United States",
+    "shipping_calculator_submit_button_label": "Calculate shipping",
+    "shipping_calculator_submit_button_label_disabled": "Calculating...",
+    "social_twitter_link": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/CultureCounterCommons",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/culture_countersgf\/",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "shop_info_caption_1_1_text": "Get menus",
+    "shop_info_caption_1_2_text": "Updates every Monday!",
+    "shop_info_caption_1_icon": "icon-gift2",
+    "shop_info_caption_1_link": "",
+    "shop_info_caption_2_1_text": "Suggestions?",
+    "shop_info_caption_2_2_text": "Let us know how we can do more.",
+    "shop_info_caption_2_icon": "icon-chat3",
+    "shop_info_caption_2_link": "#",
+    "shop_info_caption_3_1_text": "Give us a call",
+    "shop_info_caption_3_2_text": "We'd love to talk with you!",
+    "shop_info_caption_3_icon": "icon-call",
+    "shop_info_caption_3_link": "tel:+1-417-720-1381",
+    "shop_info_bg": "",
+    "icon-pay-1_yes": false,
+    "icon-pay-1_alt": "PayPal",
+    "icon-pay-2_yes": false,
+    "icon-pay-2_alt": "Visa",
+    "icon-pay-3_yes": false,
+    "icon-pay-3_alt": "Skrill",
+    "icon-pay-4_yes": false,
+    "icon-pay-4_alt": "MasterCard",
+    "icon-pay-5_yes": false,
+    "icon-pay-5_alt": "Discover",
+    "icon-pay-6_yes": false,
+    "icon-pay-6_alt": "ebay",
+    "icon-pay-7_yes": false,
+    "icon-pay-8_yes": false,
+    "icon-pay-9_yes": false,
+    "icon-pay-10_yes": false,
+    "insta_title": "Instagram",
+    "insta_token": "",
+    "insta_sort": "most-recent",
+    "blog_meta_yes": false,
+    "blog_meta_title": "Meta",
+    "blog_meta_list": "<li><a href=\"#\">Log in<\/a><\/li><li><a href=\"#\">Entries RSS<\/a><\/li><li><a href=\"#\">Comments RSS<\/a><\/li><li><a href=\"#\">WordPress.org<\/a><\/li>",
+    "blog_archives_yes": true,
+    "blog_archives_title": "Archives",
+    "blog_archives_list": "<li><a href=\"#\">February 2015<\/a><\/li><li><a href=\"#\">April 2016<\/a><\/li><li><a href=\"#\">May 2016<\/a><\/li><li><a href=\"#\">Juny 2016<\/a><\/li>",
+    "blog_tags_yes": false,
+    "blog_popular_posts_yes": false,
+    "blog_popular_posts_title": "Popular Menus",
+    "blog_popular_posts_handles": "menus\/february-2-20, menus\/february-9-2020,",
+    "blog_instagram_yes": false,
+    "blog_follow_us_yes": false,
+    "blog_newsletter_yes": false,
+    "password_page_logo": "shopify:\/\/shop_images\/sortofLogo.png",
+    "password_page_bg_yes": false,
+    "password_page_bg": "shopify:\/\/shop_images\/sortofLogo.png",
+    "password_page_date": "2019\/12\/31",
+    "show_multiple_currencies": true,
+    "currency_format": "money_with_currency_format",
+    "supported_currencies": "$:USD:United states dollars|€:EUR:Euro|£:GBP:United kingdom pounds|$:CAD:Canadian dollars",
+    "default_currency": "USD",
+    "color_theme": "#438871",
+    "color_body_text_color": "#2d2c2c",
+    "color_body_link_color": "#438871",
+    "color_body_link_color_hover": "#000000",
+    "color_button_color": "#e8e0cd",
+    "color_button_bg": "#438871",
+    "color_button-hover_color": "#ffffff",
+    "color_button_hover_bg": "#396a5a",
+    "color_label_stock_bg": "",
+    "color_label_stock_color": "",
+    "color_label_new_bg": "",
+    "color_label_new_color": "",
+    "color_label_sale_bg": "",
+    "color_label_sale_color": "",
+    "color_label_wishlist_bg": "",
+    "color_label_wishlist_color": "",
+    "color_menu-label-1_bg": "",
+    "color_menu-label-2_bg": "",
+    "color_menu-label-3_bg": "",
+    "color_menu-label-4_bg": "",
+    "color_menu-label_color": "",
+    "color_shopify-payment-button_color": "",
+    "color_shopify-payment-button_bg": "",
+    "color_shopify-payment-button-hover_color": "",
+    "color_shopify-payment-button-hover_bg": "",
+    "color_topline_dark_additional_color": "",
+    "dark_color_theme": "#a0c55e",
+    "dark_color_body_text_color": "",
+    "dark_color_body_link_color": "",
+    "dark_color_body_link_color_hover": "",
+    "dark_color_button_color": "",
+    "dark_color_button_bg": "",
+    "dark_color_button-hover_color": "",
+    "dark_color_button_hover_bg": "",
+    "dark_color_label_stock_bg": "",
+    "dark_color_label_stock_color": "",
+    "dark_color_label_new_bg": "",
+    "dark_color_label_new_color": "",
+    "dark_color_label_sale_bg": "",
+    "dark_color_label_sale_color": "",
+    "dark_color_label_wishlist_bg": "",
+    "dark_color_label_wishlist_color": "",
+    "dark_color_menu-label-1_bg": "",
+    "dark_color_menu-label-2_bg": "",
+    "dark_color_menu-label-3_bg": "",
+    "dark_color_menu-label-4_bg": "",
+    "dark_color_menu-label_color": "",
+    "dark_color_shopify-payment-button_color": "",
+    "dark_color_shopify-payment-button_bg": "",
+    "dark_color_shopify-payment-button-hover_color": "",
+    "dark_color_shopify-payment-button-hover_bg": "",
+    "dark_color_topline_dark_additional_color": "",
+    "color_body_font_radio": "shopify_library",
+    "color_body_font_family": "",
+    "color_body_font_family_shopify": "century_gothic_n4",
+    "color_headings_font_family": "",
+    "color_headings_font_family_shopify": "montserrat_n4",
+    "color_product_page_name_font_family": "",
+    "color_product_page_name_font_family_shopify": "montserrat_n4",
+    "color_product_page_name_font_size": 24,
+    "color_product_page_name_font_lh": "1.5em",
+    "color_topnav_level_1_font_family": "",
+    "color_topnav_level_1_font_family_shopify": "montserrat_n4",
+    "color_desktop_menu_font_size": 14,
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/culture-counter-logo.jpg",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#438871",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#438871",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#c3a082",
+    "checkout_button_color": "#2d2c2c",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "style": "1",
+          "style_mobile": "1",
+          "logo": "shopify:\/\/shop_images\/ccc-sticky-header-logo-sm.jpg",
+          "languages": false,
+          "currencies": false,
+          "header_search": true,
+          "search_keywords_yes": false,
+          "search_keywords": "produce,",
+          "login_box": true,
+          "delivery": "",
+          "phone_1": "",
+          "phones": "8 800 265 89 56<br> 8 800 265 89 56",
+          "sticky": true,
+          "html_header_5": "",
+          "topline_enable": false,
+          "where_to_show": "all",
+          "bg_topline": "",
+          "topline_caption": "GET 10% OFF YOUR FIRST ORDER WITH CODE <span style=\"color: #000\">GOODWIN<\/span> <span class=\"hidden-xs\"> |   FREE GROUND SHIPPING OVER $250<\/span>",
+          "topline_enable_animation": false,
+          "topline_caption_1": "GET 10% OFF YOUR FIRST ORDER WITH CODE GOODWIN",
+          "topline_caption_2": "FREE GROUND SHIPPING OVER $250",
+          "topline_expires": "1",
+          "default_navigation": "main-menu",
+          "menu_arrows_off": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "outer_margin": "mt-65",
+          "style": "1",
+          "logo_yes": true,
+          "logo": "shopify:\/\/shop_images\/ccc-tan-logo-mark_1.png",
+          "navigation_1": "footer",
+          "navigation_2": "",
+          "navigation_3": "",
+          "navigation_4_yes": false,
+          "navigation_4": "",
+          "navigation_5": "",
+          "navigation_6": "",
+          "shop_info_yes": true,
+          "newsletter": false,
+          "show_methods_of_payment": false,
+          "show_instagram": false,
+          "social_icons": false,
+          "support_time_title": "CONNECT",
+          "support_time": "<ul class=\"contact-list\"> <li>\n<i class=\"icon-phone\"><\/i><span><span class=\"h6-style\">Call Us:<\/span><span>1 (417) 720-1381<\/span><\/span>\n<\/li> <li>\n<i class=\"icon-phone\"><\/i><span><span class=\"h6-style\">Hours:<\/span><span>Tues-Sat: 9am-8pm<br>Sun: 9am-5pm<\/span><\/span>\n<\/li> <li>\n<i class=\"icon-mail-envelope\"><\/i><span><span class=\"h6-style\">E-mail:<\/span><span><a href=\"mailto:info@culturecountercommons.com\">info@culturecounter<br>commons.com<\/a><\/span><\/span>\n<\/li> <li>\n<i class=\"icon-phone\"><\/i><span><span class=\"h6-style\">Address:<\/span><span>607 S Pickwick ave<br>Springfield, MO 65804<\/span><\/span>\n<\/li> <\/ul>",
+          "short_description": "",
+          "google_map": "",
+          "chat_yes": false,
+          "chat_link": "",
+          "copyright": "<p class=\"footer-copyright-text\"><span>© Copyright<\/span> 2019 <a href=\"#\">Culture Counter<\/a>. <span>All rights reserved.<\/span><\/p><p class=\"footer-copyright-links\"><a href=\"\">Terms & conditions<\/a> <a href=\"#\">Privacy policy<\/a><\/p>"
+        }
+      },
+      "1539361894044": {
+        "type": "slideshow",
+        "blocks": {
+          "1539361894044-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/lemon-tree-desktop.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/lemon-tree-mobile.jpg",
+              "enable": true,
+              "bg_v_alignment": "bg-middle",
+              "type": "none",
+              "video_id": "_9VUPq3SxOc",
+              "link": "shopify:\/\/collections\/produce",
+              "link_target": "_self",
+              "link_button_yes": true,
+              "link_all_slide": false,
+              "link_button_text": "Shop now",
+              "btn_hor_aligment": "center",
+              "button_animation": "fadeIn",
+              "button_delay": "2000",
+              "button_text_color": "#438871",
+              "button_bgcolor": "#438871",
+              "button_othercss": "",
+              "captions_half": true,
+              "captions_border": "no-border",
+              "captions_h_alignment": "txt-right",
+              "captions_v_alignment": "txt-middle",
+              "caption_1_yes": true,
+              "caption_1_hidemobile_yes": false,
+              "caption_1": "LEMONS",
+              "caption_1_animation": "zoomIn",
+              "caption_1_delay": "800",
+              "caption_1_color": "#868686",
+              "caption_1_hor_alignment": "center",
+              "caption_1_bgcolor": "",
+              "caption_1_fontweight": "700",
+              "caption_1_fontsize": "lg",
+              "caption_1_lineheight": "1.00",
+              "caption_1_othercss": "",
+              "caption_2_yes": true,
+              "caption_2_hidemobile_yes": false,
+              "caption_2": "<p>Lorem ipsum dolor sit amet consestuer adicpis elitr an \t\t\t\t\t\t\t\t\t\t\tdolor sit amet ipsum dolor it amet adicpising elit anno amet consestuer \t\t\t\t\t\t\t\t\t\t\tadicpis elitr anno dolor sit amet.<\/p>",
+              "caption_2_animation": "fadeIn",
+              "caption_2_delay": "1000",
+              "caption_2_hor_alignment": "center",
+              "caption_2_color": "#868686",
+              "caption_2_bgcolor": "",
+              "caption_2_fontweight": "400",
+              "caption_2_fontsize": "sm",
+              "caption_2_lineheight": "1.00",
+              "caption_2_othercss": "font-family: Open Sans;\nletter-spacing: 0;",
+              "caption_3_yes": true,
+              "caption_3_hidemobile_yes": false,
+              "caption_3": "$3.00\/lb",
+              "caption_3_animation": "spinIn",
+              "caption_3_delay": "1600",
+              "caption_3_hor_alignment": "center",
+              "caption_3_color": "#ffffff",
+              "caption_3_bgcolor": "",
+              "caption_3_fontweight": "500",
+              "caption_3_fontsize": "md",
+              "caption_3_lineheight": "1.00",
+              "caption_3_othercss": "",
+              "caption_num_yes": false,
+              "caption_num_hidemobile_yes": true,
+              "caption_num_hor_alignment": "left",
+              "caption_num1": "01",
+              "caption_num1_animation": "flipInX",
+              "caption_num1_delay": "0",
+              "caption_num1_color": "#ffe85a",
+              "caption_num1_fontweight": "900",
+              "caption_num1_othercss": "",
+              "caption_num2": "NEW AWESOME<br>COLLECTION",
+              "caption_num2_animation": "fadeInRight",
+              "caption_num2_delay": "0",
+              "caption_num2_color": "#ffffff",
+              "caption_num2_fontweight": "400",
+              "caption_num2_fontsize": "xxs",
+              "caption_num2_lineheight": "1.64",
+              "caption_num2_othercss": ""
+            }
+          },
+          "1539361894044-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/meat-cutting-desktop.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/meat-mobile.jpg",
+              "enable": true,
+              "bg_v_alignment": "bg-middle",
+              "type": "none",
+              "video_id": "_9VUPq3SxOc",
+              "link": "shopify:\/\/collections\/meat",
+              "link_target": "_self",
+              "link_button_yes": true,
+              "link_all_slide": false,
+              "link_button_text": "Shop now",
+              "btn_hor_aligment": "center",
+              "button_animation": "fadeIn",
+              "button_delay": "2000",
+              "button_text_color": "#ffffff",
+              "button_bgcolor": "#ffffff",
+              "button_othercss": "",
+              "captions_half": true,
+              "captions_border": "no-border",
+              "captions_h_alignment": "txt-right",
+              "captions_v_alignment": "txt-middle",
+              "caption_1_yes": true,
+              "caption_1_hidemobile_yes": false,
+              "caption_1": "MEATS",
+              "caption_1_animation": "zoomIn",
+              "caption_1_delay": "800",
+              "caption_1_color": "#ffffff",
+              "caption_1_hor_alignment": "center",
+              "caption_1_bgcolor": "",
+              "caption_1_fontweight": "700",
+              "caption_1_fontsize": "lg",
+              "caption_1_lineheight": "1.00",
+              "caption_1_othercss": "",
+              "caption_2_yes": true,
+              "caption_2_hidemobile_yes": false,
+              "caption_2": "<p>Lorem ipsum dolor sit amet consestuer adicpis elitr an \t\t\t\t\t\t\t\t\t\t\tdolor sit amet ipsum dolor it amet adicpising elit anno amet consestuer \t\t\t\t\t\t\t\t\t\t\tadicpis elitr anno dolor sit amet.<\/p>",
+              "caption_2_animation": "fadeIn",
+              "caption_2_delay": "1000",
+              "caption_2_hor_alignment": "center",
+              "caption_2_color": "#ffffff",
+              "caption_2_bgcolor": "",
+              "caption_2_fontweight": "400",
+              "caption_2_fontsize": "sm",
+              "caption_2_lineheight": "1.00",
+              "caption_2_othercss": "font-family: Open Sans;\nletter-spacing: 0;",
+              "caption_3_yes": true,
+              "caption_3_hidemobile_yes": false,
+              "caption_3": "$8.00\/lb",
+              "caption_3_animation": "spinIn",
+              "caption_3_delay": "1600",
+              "caption_3_hor_alignment": "center",
+              "caption_3_color": "#ffe85a",
+              "caption_3_bgcolor": "",
+              "caption_3_fontweight": "500",
+              "caption_3_fontsize": "md",
+              "caption_3_lineheight": "1.00",
+              "caption_3_othercss": "",
+              "caption_num_yes": false,
+              "caption_num_hidemobile_yes": true,
+              "caption_num_hor_alignment": "left",
+              "caption_num1": "01",
+              "caption_num1_animation": "flipInX",
+              "caption_num1_delay": "0",
+              "caption_num1_color": "#e1dde5",
+              "caption_num1_fontweight": "900",
+              "caption_num1_othercss": "",
+              "caption_num2": "NEW AWESOME<br>COLLECTION",
+              "caption_num2_animation": "fadeInRight",
+              "caption_num2_delay": "0",
+              "caption_num2_color": "#868686",
+              "caption_num2_fontweight": "400",
+              "caption_num2_fontsize": "xxs",
+              "caption_num2_lineheight": "1.64",
+              "caption_num2_othercss": ""
+            }
+          },
+          "1546974123934": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/coffee-desktop.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/expresso-drink-mobile_1.jpg",
+              "enable": true,
+              "bg_v_alignment": "bg-middle",
+              "type": "none",
+              "video_id": "_9VUPq3SxOc",
+              "link": "shopify:\/\/collections",
+              "link_target": "_self",
+              "link_button_yes": true,
+              "link_all_slide": false,
+              "link_button_text": "Shop now",
+              "btn_hor_aligment": "center",
+              "button_animation": "fadeIn",
+              "button_delay": "2000",
+              "button_text_color": "#ffffff",
+              "button_bgcolor": "#ffffff",
+              "button_othercss": "",
+              "captions_half": true,
+              "captions_border": "no-border",
+              "captions_h_alignment": "txt-right",
+              "captions_v_alignment": "txt-middle",
+              "caption_1_yes": true,
+              "caption_1_hidemobile_yes": false,
+              "caption_1": "CAFÉ",
+              "caption_1_animation": "zoomIn",
+              "caption_1_delay": "800",
+              "caption_1_color": "#ffffff",
+              "caption_1_hor_alignment": "center",
+              "caption_1_bgcolor": "",
+              "caption_1_fontweight": "700",
+              "caption_1_fontsize": "lg",
+              "caption_1_lineheight": "1.00",
+              "caption_1_othercss": "",
+              "caption_2_yes": true,
+              "caption_2_hidemobile_yes": false,
+              "caption_2": "<p>Lorem ipsum dolor sit amet consestuer adicpis elitr an \t\t\t\t\t\t\t\t\t\t\tdolor sit amet ipsum dolor it amet adicpising elit anno amet consestuer \t\t\t\t\t\t\t\t\t\t\tadicpis elitr anno dolor sit amet.<\/p>",
+              "caption_2_animation": "fadeIn",
+              "caption_2_delay": "1000",
+              "caption_2_hor_alignment": "center",
+              "caption_2_color": "#ffffff",
+              "caption_2_bgcolor": "",
+              "caption_2_fontweight": "400",
+              "caption_2_fontsize": "sm",
+              "caption_2_lineheight": "1.00",
+              "caption_2_othercss": "font-family: Open Sans;\nletter-spacing: 0;",
+              "caption_3_yes": false,
+              "caption_3_hidemobile_yes": false,
+              "caption_3": "",
+              "caption_3_animation": "spinIn",
+              "caption_3_delay": "1600",
+              "caption_3_hor_alignment": "center",
+              "caption_3_color": "#ffffff",
+              "caption_3_bgcolor": "",
+              "caption_3_fontweight": "500",
+              "caption_3_fontsize": "md",
+              "caption_3_lineheight": "1.00",
+              "caption_3_othercss": "",
+              "caption_num_yes": false,
+              "caption_num_hidemobile_yes": true,
+              "caption_num_hor_alignment": "left",
+              "caption_num1": "01",
+              "caption_num1_animation": "flipInX",
+              "caption_num1_delay": "0",
+              "caption_num1_color": "#e1dde5",
+              "caption_num1_fontweight": "900",
+              "caption_num1_othercss": "",
+              "caption_num2": "NEW AWESOME<br>COLLECTION",
+              "caption_num2_animation": "fadeInRight",
+              "caption_num2_delay": "0",
+              "caption_num2_color": "#868686",
+              "caption_num2_fontweight": "400",
+              "caption_num2_fontsize": "xxs",
+              "caption_num2_lineheight": "1.64",
+              "caption_num2_othercss": ""
+            }
+          }
+        },
+        "block_order": [
+          "1539361894044-1",
+          "1539361894044-0",
+          "1546974123934"
+        ],
+        "settings": {
+          "block_width": "fullboxed",
+          "outer_margin": "mt-0",
+          "show_under_header": false,
+          "autoplay": true,
+          "dots": true,
+          "dotspos": false,
+          "dotsposide": "vert-dots--left",
+          "dotsfullwidth": true,
+          "arrows": true,
+          "arowsdark": false,
+          "arowsshift": false,
+          "arowsshiftside": "bnslider-arrows--pullright",
+          "autoplay_speed": "5000",
+          "slideshow_height": "lg",
+          "keep_scale": true,
+          "keep_scale_width": "1920",
+          "keep_scale_height": "792",
+          "keep_scale_mwidth": "480",
+          "keep_scale_mheight": "578",
+          "right_column": false,
+          "html": ""
+        }
+      },
+      "1539361916925": {
+        "type": "banners-carousel",
+        "blocks": {
+          "1539361916925-0": {
+            "type": "banner",
+            "settings": {
+              "enable": true,
+              "title": "Smoothies",
+              "image": "shopify:\/\/shop_images\/produce-category.jpg",
+              "link": "shopify:\/\/collections\/smoothies",
+              "link_target": "_self"
+            }
+          },
+          "1539361916925-1": {
+            "type": "banner",
+            "settings": {
+              "enable": true,
+              "title": "Meat",
+              "image": "shopify:\/\/shop_images\/meat-category-2.jpg",
+              "link": "shopify:\/\/collections\/meat",
+              "link_target": "_self"
+            }
+          },
+          "1539361916925-2": {
+            "type": "banner",
+            "settings": {
+              "enable": true,
+              "title": "Dairy",
+              "image": "shopify:\/\/shop_images\/dairy-category.jpg",
+              "link": "shopify:\/\/collections\/dairy",
+              "link_target": "_self"
+            }
+          },
+          "1539361916925-3": {
+            "type": "banner",
+            "settings": {
+              "enable": true,
+              "title": "Eggs",
+              "image": "shopify:\/\/shop_images\/eggs-category.jpg",
+              "link": "shopify:\/\/collections\/eggs",
+              "link_target": "_self"
+            }
+          },
+          "1539361916925-4": {
+            "type": "banner",
+            "settings": {
+              "enable": true,
+              "title": "Cheese",
+              "image": "shopify:\/\/shop_images\/cheese-category.jpg",
+              "link": "shopify:\/\/collections\/cheese",
+              "link_target": "_self"
+            }
+          },
+          "1539361916925-5": {
+            "type": "banner",
+            "settings": {
+              "enable": true,
+              "title": "Bread",
+              "image": "shopify:\/\/shop_images\/bread-category.jpg",
+              "link": "shopify:\/\/collections\/bread",
+              "link_target": "_self"
+            }
+          },
+          "1560293893626": {
+            "type": "banner",
+            "settings": {
+              "enable": true,
+              "title": "Dry Goods",
+              "image": "shopify:\/\/shop_images\/dry-goods-category.jpg",
+              "link": "shopify:\/\/collections\/dry-goods",
+              "link_target": "_self"
+            }
+          }
+        },
+        "block_order": [
+          "1539361916925-0",
+          "1539361916925-1",
+          "1539361916925-2",
+          "1539361916925-3",
+          "1539361916925-4",
+          "1539361916925-5",
+          "1560293893626"
+        ],
+        "settings": {
+          "outer_margin": "mt-0"
+        }
+      },
+      "1539361933462": {
+        "type": "banner_from_online_editor",
+        "settings": {
+          "enable": true,
+          "title": "Banners From Online Editor",
+          "single": false,
+          "width": "global_width",
+          "outer_margin": "mt-65",
+          "html": "<div class=\"holder fullboxed mt-0 py-2 py-sm-2\">\n\t<div class=\"container\">\n\t\t<div class=\"row bnr-grid data-slick slick-arrows-aside-simple slick-arrows-mobile-lg\" data-slick='{\n\t\t\t\"dots\":false,\n\t\t\t\"arrows\":true,\n\t\t\t\"slidesToShow\": 2,\n\t\t\t\"responsive\": [{\n\t\t\t\t\"breakpoint\": 768,\n\t\t\t\t\"settings\": {\"slidesToShow\": 1}\n\t\t\t}]\n        }'>\n            <div class=\"col-md\">\n                <a href=\"\/collections\/cafe\" target=\"_blank\" class=\"bnr-wrap\">\n                    <div class=\"bnr bnr2 bnr--style-1 bnr--right bnr--middle bnr-hover-scale\" data-fontratio=\"5.55\">\n                        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0095\/6035\/8991\/files\/sandwich-desktop.jpg?2385\" alt=\"\">\n                        <span class=\"bnr-caption\">\n                            <div class=\"collection-bg-darkness\" style=\"opacity: 0.50;\"><\/div>\n                            <span class=\"bnr-text-wrap\">\n                                <span class=\"bnr-text1\">new arrivals<\/span>\n                                <span class=\"bnr-text2\">Café<\/span>\n                                <span class=\"btn-decor bnr-btn\">shop now<span class=\"btn-line\"><\/span><\/span>\n                            <\/span>\n                        <\/span>\n                    <\/div>\n                <\/a>\n            <\/div>\n\t\t\t<div class=\"col-md\">\n\t\t\t\t<a href=\"\/collections\/market\" class=\"bnr-wrap\">\n\t\t\t\t\t<div class=\"bnr bnr1 bnr--style-1 bnr--left bnr--middle bnr-hover-scale\" data-fontratio=\"5.55\">\n\t\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0095\/6035\/8991\/files\/berries-desktop.jpg?2385\" alt=\"\">\n\t\t\t\t\t\t<span class=\"bnr-caption\">\n\t\t\t                    <div class=\"collection-bg-darkness\" style=\"opacity: 0.50;\"><\/div>\n\t\t\t\t<span class=\"bnr-text-wrap\">\n\t\t\t\t\t\t\t\t<span class=\"bnr-text1\">new arrivals<\/span>\n\t\t\t\t\t\t\t\t<span class=\"bnr-text2\">Market<\/span>\n\t\t\t\t\t\t\t\t<span class=\"btn-decor bnr-btn\">shop now<span class=\"btn-line\"><\/span><\/span>\n\t\t\t\t\t\t\t<\/span>\n\t\t\t\t\t\t<\/span>\n\t\t\t\t\t<\/div>\n\t\t\t\t<\/a>\n\t\t\t<\/div>\n\t\t<\/div>\n\t<\/div>\n<\/div>"
+        }
+      },
+      "1539362044226": {
+        "type": "products_slider",
+        "blocks": {
+          "1579829731685": {
+            "type": "product",
+            "settings": {
+              "enable": true,
+              "product": "widners-mix",
+              "image": "shopify:\/\/shop_images\/gettyimages-157472912-612x612.jpg"
+            }
+          },
+          "1539362044226-0": {
+            "type": "product",
+            "settings": {
+              "enable": true,
+              "product": "arugula",
+              "image": "shopify:\/\/shop_images\/arugula.png"
+            }
+          },
+          "1539362044226-1": {
+            "type": "product",
+            "settings": {
+              "enable": true,
+              "product": "gala-apples",
+              "image": "shopify:\/\/shop_images\/gala-apples.png"
+            }
+          },
+          "1579830156504": {
+            "type": "product",
+            "settings": {
+              "enable": true,
+              "product": "2-milk",
+              "image": ""
+            }
+          },
+          "1579830327210": {
+            "type": "product",
+            "settings": {
+              "enable": true,
+              "product": "",
+              "image": ""
+            }
+          }
+        },
+        "block_order": [
+          "1579829731685",
+          "1539362044226-0",
+          "1539362044226-1",
+          "1579830156504",
+          "1579830327210"
+        ],
+        "settings": {
+          "outer_margin": "mt-65"
+        }
+      },
+      "1539362723073": {
+        "type": "carousel-style-8-promo",
+        "settings": {
+          "outer_margin": "mt-1",
+          "title": "",
+          "image": "",
+          "caption_1": "On Sale",
+          "caption_2": "Products",
+          "collection": "discount-products",
+          "limit": "6",
+          "show_view_all": false
+        }
+      },
+      "collection-sidebar": {
+        "type": "collection-sidebar",
+        "blocks": {
+          "1511706668593": {
+            "type": "group",
+            "settings": {
+              "enable": true,
+              "title": "Raw Goods",
+              "tags": "market, raw, produce, meat, dairy, eggs, cheese, bread, dry goods",
+              "style": "category-list"
+            }
+          },
+          "1535208640521": {
+            "type": "group",
+            "settings": {
+              "enable": true,
+              "title": "Café",
+              "tags": "breakfast, lunch, hors devours, healthy drink, green juice, smoothie",
+              "style": "category-list"
+            }
+          },
+          "1511706898471": {
+            "type": "group",
+            "settings": {
+              "enable": true,
+              "title": "Vendor",
+              "tags": "Culture Counter, Artisan Oven,\nMudhouse,\nGrove Salsa Company,\nMcKaskle Family Farm,\nSpring Branch Kombucha,\nTerrell Creek,\nWillow Mountain Mushrooms,\nPrairie Pies,\nOzark Mountain Creamery,\nDown To Earth Foods,\nLiberty Fruit Company INC,\nMillsap Farms,\nProvidence Farms,\nTierra Farms,\nCircle B Ranch,\nFloat Trip Pickles,\nHigh Springs Farm,\nEdgewood Creamery,\nCopper Canyon Coffee,\nPeace Valley Poultry,\nKleoppel Meats LLC,\nBox Turtle Farms,\nBlack Gate Farms,\nJB Kobe Farms,\nFort Bison Ranch,\nUrban Roots,\nHammons Walnuts,\nCafe Cuzco,\nThe Mill at Janie’s Farm,\nBack 40 Bison,\nPequea Valley Farm,\nVital Farms,\nHometown Honey,\nWil Fischer,\nMatt’s Cones,",
+              "style": "category-list"
+            }
+          },
+          "1511706917060": {
+            "type": "group",
+            "settings": {
+              "enable": false,
+              "title": "Price",
+              "tags": "below 100, 100-200, above 200",
+              "style": "category-list"
+            }
+          },
+          "1511706934183": {
+            "type": "group",
+            "settings": {
+              "enable": false,
+              "title": "Size",
+              "tags": "xs, s, m, l, xl, xxl, xxxl, 7,8,9,10,11,12, 1kg, 2kg, 3kg, 4kg",
+              "style": "size-list"
+            }
+          },
+          "1511706955678": {
+            "type": "group",
+            "settings": {
+              "enable": false,
+              "title": "Popular Tags",
+              "tags": "discount,",
+              "style": "tags-list"
+            }
+          },
+          "1563884717058": {
+            "type": "group",
+            "settings": {
+              "enable": false,
+              "title": "",
+              "tags": "",
+              "style": "category-list"
+            }
+          }
+        },
+        "block_order": [
+          "1511706668593",
+          "1535208640521",
+          "1511706898471",
+          "1511706917060",
+          "1511706934183",
+          "1511706955678",
+          "1563884717058"
+        ],
+        "settings": {
+          "categories": "category",
+          "shopping_by": true,
+          "cross_tags": true
+        }
+      },
+      "product-section": {
+        "type": "product-section",
+        "blocks": {
+          "1527845510792": {
+            "type": "tab_description",
+            "settings": {
+              "enable": true,
+              "title": "Description"
+            }
+          },
+          "1527845518340": {
+            "type": "tab_tags",
+            "settings": {
+              "enable": true,
+              "title": "Assigned tags"
+            }
+          },
+          "1527845527390": {
+            "type": "tab_reviews",
+            "settings": {
+              "enable": true,
+              "title": "Reviews",
+              "reviews": false
+            }
+          }
+        },
+        "block_order": [
+          "1527845510792",
+          "1527845518340",
+          "1527845527390"
+        ],
+        "settings": {
+          "style": "product",
+          "always_visible_previews": false,
+          "zoom": true,
+          "product_prev_next": true,
+          "vendor": false,
+          "product_sku": true,
+          "show_label_new": true,
+          "show_label_sale": true,
+          "product_rating": true,
+          "product_availability": true,
+          "product_inventory_count": false,
+          "show_you_save": false,
+          "right_column_yes": true,
+          "description": "<a href=\"#\" class=\"shop-feature\"> <div class=\"shop-feature-icon\"><i class=\"icon-box3\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">Free worlwide delivery<\/div> <div class=\"text2\">Lorem ipsum dolor sit amet conset <\/div> <\/div> <\/a> <a href=\"#\" class=\"shop-feature\"> <div class=\"shop-feature-icon\"><i class=\"icon-arrow-left-circle\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">100% money back guarantee<\/div> <div class=\"text2\">Lorem ipsum dolor sit amet conset <\/div> <\/div> <\/a> <a href=\"#\" class=\"shop-feature\"> <div class=\"shop-feature-icon\"><i class=\"icon-call\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">24\/7 customer support<\/div> <div class=\"text2\">Lorem ipsum dolor sit amet conset <\/div> <\/div> <\/a>",
+          "description_2": "<div class=\"col-sm-4\">\n<a href=\"#\" class=\"shop-feature text-center\"> <div class=\"shop-feature-icon\"><i class=\"icon-gift2\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">Free worlwide delivery<\/div> <\/div> <\/a> <\/div> <div class=\"col-sm-4\"> <a href=\"#\" class=\"shop-feature text-center\"> <div class=\"shop-feature-icon\"><i class=\"icon-circle-dollar\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">100% money back guarantee<\/div> <\/div> <\/a> <\/div> <div class=\"col-sm-4\"> <a href=\"#\" class=\"shop-feature text-center\"> <div class=\"shop-feature-icon\"><i class=\"icon-tag\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">24\/7 customer support<\/div> <\/div> <\/a> <\/div>",
+          "size_guide": "",
+          "dynamic_buy_now": true,
+          "safe_checkout_image_yes": true,
+          "safe_checkout_image": "",
+          "social_sharing_products": true,
+          "social_sharing_products_code": "<script src=\"\/\/s7.addthis.com\/js\/300\/addthis_widget.js#pubid=ra-5b10f4bd90cdf8c3\"><\/script><div class=\"addthis_inline_share_toolbox\"><\/div>",
+          "product_related_enable": true,
+          "title": "More from this collection",
+          "limit": "7",
+          "per_row_desktop": "4"
+        }
+      },
+      "promo-products": {
+        "type": "promo-products",
+        "blocks": {
+          "1560303007940": {
+            "type": "product",
+            "settings": {
+              "enable": true,
+              "product": "avocados"
+            }
+          },
+          "1581022982658": {
+            "type": "product",
+            "settings": {
+              "enable": true,
+              "product": "bananas"
+            }
+          },
+          "1581022991960": {
+            "type": "product",
+            "settings": {
+              "enable": true,
+              "product": "beets"
+            }
+          }
+        },
+        "block_order": [
+          "1560303007940",
+          "1581022982658",
+          "1581022991960"
+        ],
+        "settings": {
+          "enable": false
+        }
+      },
+      "collection-section": {
+        "type": "collection-section",
+        "settings": {
+          "collections_products_per_row": "4",
+          "collections_per_row_mobile": "2",
+          "collections_description": false
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical",
+          "show_vendor": true,
+          "cover": true,
+          "collection_image_height_d": "315",
+          "collection_image_height_m": "200",
+          "per_row_desktop": "4"
+        }
+      },
+      "column-vertical-navigation": {
+        "type": "column-vertical-navigation",
+        "settings": {
+          "heading": "Categories",
+          "enable": true
+        }
+      },
+      "column": {
+        "type": "column",
+        "settings": {}
+      },
+      "1562718973628": {
+        "type": "brands",
+        "blocks": {
+          "1562718973628-0": {
+            "type": "brand",
+            "settings": {
+              "enable": true,
+              "title": "The Artisan's Oven",
+              "image": "shopify:\/\/shop_images\/artisans-oven-logoSIZED.png",
+              "link": "http:\/\/theartisansoven.com\/",
+              "link_target": "_blank"
+            }
+          },
+          "1562718973628-1": {
+            "type": "brand",
+            "settings": {
+              "enable": true,
+              "title": "Black Gate",
+              "image": "shopify:\/\/shop_images\/black-gate-logo-sized.png",
+              "link": "http:\/\/blackgatefarms.com\/?fbclid=IwAR0YpXYvtHFQSsGkpVc4pm_ZUK36gPjG2U4LPyZw3cBRsUXIaoiXX-tbHYE#",
+              "link_target": "_blank"
+            }
+          },
+          "1562718973628-2": {
+            "type": "brand",
+            "settings": {
+              "enable": true,
+              "title": "Circle B Ranch",
+              "image": "shopify:\/\/shop_images\/Circle-B-Ranch-logoSIZED.png",
+              "link": "https:\/\/www.circlebranchpork.com\/",
+              "link_target": "_blank"
+            }
+          },
+          "1562718973628-3": {
+            "type": "brand",
+            "settings": {
+              "enable": true,
+              "title": "Terrel Creek Farm",
+              "image": "shopify:\/\/shop_images\/terrell-creek-farm_2a8a9cd7-42b3-41b2-a77f-6056e12b1470.png",
+              "link": "http:\/\/www.terrellcreekfarm.com\/main.html",
+              "link_target": "_blank"
+            }
+          },
+          "1562718973628-4": {
+            "type": "brand",
+            "settings": {
+              "enable": true,
+              "title": "Copper Canyon Coffee Roasters",
+              "image": "shopify:\/\/shop_images\/Copper-canyon-coffee-web-logo_6211254c-ae42-4eec-8602-a69c7cfd0deb.png",
+              "link": "https:\/\/coppercanyoncoffee.com\/",
+              "link_target": "_blank"
+            }
+          },
+          "1562718973628-5": {
+            "type": "brand",
+            "settings": {
+              "enable": true,
+              "title": "The Grove Salsa Company",
+              "image": "shopify:\/\/shop_images\/grove-salsa-logo_da3f51a5-8b0f-4938-9fe6-cbf12ef169bb.png",
+              "link": "https:\/\/www.grovesalsa.com\/",
+              "link_target": "_blank"
+            }
+          },
+          "1562718973628-6": {
+            "type": "brand",
+            "settings": {
+              "enable": true,
+              "title": "High Springs Farm",
+              "image": "shopify:\/\/shop_images\/high-springs-farm-logo.png",
+              "link": "https:\/\/highspringsfarm.com\/",
+              "link_target": "_blank"
+            }
+          },
+          "1567012293242": {
+            "type": "brand",
+            "settings": {
+              "enable": true,
+              "title": "The Tierra Farm",
+              "image": "shopify:\/\/shop_images\/tierra-farm-logo.png",
+              "link": "https:\/\/tierrafarm.com\/",
+              "link_target": "_blank"
+            }
+          },
+          "1567012465960": {
+            "type": "brand",
+            "settings": {
+              "enable": true,
+              "title": "Peace Valley Poultry",
+              "image": "shopify:\/\/shop_images\/peace-valley-poultry-logo.png",
+              "link": "https:\/\/pvpoultry.com\/",
+              "link_target": "_blank"
+            }
+          },
+          "1567012521108": {
+            "type": "brand",
+            "settings": {
+              "enable": true,
+              "title": "The Date Lady",
+              "image": "shopify:\/\/shop_images\/the-date-lady_04488dd9-7258-4a40-af23-b4f3e0164122.png",
+              "link": "https:\/\/ilovedatelady.com\/",
+              "link_target": "_blank"
+            }
+          },
+          "1567012552686": {
+            "type": "brand",
+            "settings": {
+              "enable": true,
+              "title": "Urban Roots Farm",
+              "image": "shopify:\/\/shop_images\/urban-roots-farm.png",
+              "link": "http:\/\/urbanrootsfarm.com\/",
+              "link_target": "_blank"
+            }
+          },
+          "1567012585290": {
+            "type": "brand",
+            "settings": {
+              "enable": true,
+              "title": "Kleoppel Meats LLC",
+              "image": "shopify:\/\/shop_images\/kleoppel-meats-logo.png",
+              "link": "http:\/\/kleoppelmeats.com\/",
+              "link_target": "_blank"
+            }
+          },
+          "1567012635198": {
+            "type": "brand",
+            "settings": {
+              "enable": true,
+              "title": "Vital Farms",
+              "image": "shopify:\/\/shop_images\/Vital_Farms_sticker-window_cling_image.png",
+              "link": "https:\/\/vitalfarms.com\/",
+              "link_target": "_blank"
+            }
+          },
+          "1567012674874": {
+            "type": "brand",
+            "settings": {
+              "enable": true,
+              "title": "Liberty Fruit Co.",
+              "image": "shopify:\/\/shop_images\/liberty-fruit-company.png",
+              "link": "https:\/\/libertyfruit.com\/",
+              "link_target": "_blank"
+            }
+          },
+          "1567012714689": {
+            "type": "brand",
+            "settings": {
+              "enable": true,
+              "title": "Matt's Cones",
+              "image": "shopify:\/\/shop_images\/matts-cones-logo.png",
+              "link": "https:\/\/mattcones.com\/",
+              "link_target": "_blank"
+            }
+          },
+          "1567012760156": {
+            "type": "brand",
+            "settings": {
+              "enable": true,
+              "title": "Janie's Farm",
+              "image": "shopify:\/\/shop_images\/the-mill-at-janies-farm.png",
+              "link": "https:\/\/www.themillatjaniesfarm.com\/",
+              "link_target": "_blank"
+            }
+          },
+          "1567013054024": {
+            "type": "brand",
+            "settings": {
+              "enable": true,
+              "title": "Providence Farm",
+              "image": "shopify:\/\/shop_images\/providence-farms-logo_5537efa7-e61e-4ea2-8cbb-a2e7b84e33db.png",
+              "link": "https:\/\/providencefarmmo.wordpress.com\/",
+              "link_target": "_blank"
+            }
+          }
+        },
+        "block_order": [
+          "1562718973628-0",
+          "1562718973628-1",
+          "1562718973628-2",
+          "1562718973628-3",
+          "1562718973628-4",
+          "1562718973628-5",
+          "1562718973628-6",
+          "1567012293242",
+          "1567012465960",
+          "1567012521108",
+          "1567012552686",
+          "1567012585290",
+          "1567012635198",
+          "1567012674874",
+          "1567012714689",
+          "1567012760156",
+          "1567013054024"
+        ],
+        "settings": {
+          "enable": true,
+          "outer_margin": "mt-65",
+          "show_above_footer": false,
+          "show_under_header": false,
+          "heading": "",
+          "link_button_yes": false,
+          "link_button_text": "",
+          "link": "",
+          "link_target": "_self"
+        }
+      },
+      "contact-us-section": {
+        "type": "contact-us-section",
+        "settings": {
+          "title_1": "Contact us any time for any questions",
+          "info_1_i": "icon-mobile",
+          "info_1_l": "CALL US",
+          "info_1_r": "1 (800) 233-2742",
+          "info_2_i": "icon-clock",
+          "info_2_l": "HOURS",
+          "info_2_r": "MON-FRI 9AM-8PM SAT 9AM-6PM",
+          "info_3_i": "icon-mail",
+          "info_3_l": "ADDRESS",
+          "info_3_r": "GOODWIN STORE 140 NEW STR., SUITE 21 BROOKLYN, NY",
+          "info_4_i": "icon-location",
+          "info_4_l": "CALL US",
+          "info_4_r": "1 (800) 233-2742",
+          "title_2": "Contact Us",
+          "iframe": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d1798.3693703617603!2d-74.01304569028459!3d40.70734488791827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a17292434ef%3A0x13cceefedbab92d0!2z0KPQvtC70Lsg0YHRgtGA0LjRgg!5e0!3m2!1sru!2sua!4v1531821064393\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen=\"\"><\/iframe>"
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "posts_per_page": "5",
+          "sidebar": true
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "sidebar": true
+        }
+      },
+      "blog-style-2": {
+        "type": "blog-style-2",
+        "settings": {
+          "outer_margin": "mt-65",
+          "heading": "Menus",
+          "from_blog_id": "menus",
+          "from_blog_limit": "4"
+        }
+      },
+      "blog-style-1": {
+        "type": "blog-style-1",
+        "blocks": {
+          "1581021863790": {
+            "type": "promo",
+            "settings": {
+              "enable": true,
+              "html": "<a href=\"link-banner-14\" class=\"bnr-wrap\"><div class=\"bnr bnr14 bnr--style-1-3 bnr--left bnr--dark-text bnr--middle bnr-hover-scale\" data-fontratio=\"8.48\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0026\/0400\/7539\/files\/banner-electronics-category-6.png\" alt=\"\"><span class=\"bnr-caption\" style=\"display: flex;\"><span class=\"bnr-text-wrap\"><span class=\"bnr-text2\">apple<\/span><span class=\"btn-decor bnr-btn\">shop now<span class=\"btn-line\"><\/span><\/span><\/span><\/span>\n<\/div><\/a>"
+            }
+          }
+        },
+        "block_order": [
+          "1581021863790"
+        ],
+        "settings": {
+          "outer_margin": "mt-65",
+          "heading": "Menus",
+          "from_blog_id": "menus",
+          "from_blog_limit": "99",
+          "popular_tags_yes": true,
+          "popular_tags": "sale, new, popular",
+          "promos_yes": true,
+          "promos_title": "Promos"
+        }
+      }
+    },
+    "content_for_index": [
+      "1539361894044",
+      "1539361916925",
+      "1539361933462",
+      "1539362044226",
+      "1539362723073",
+      "1562718973628"
+    ]
+  }
+}

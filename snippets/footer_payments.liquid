@@ -1,0 +1,12 @@
+<div class="payment-icons">
+    {% unless demo %}
+    {% for i in (1..10) %}
+        {% capture enable %}icon-pay-{{ i }}_yes{% endcapture %}
+        {% capture pic %}icon-pay-{{ i }}.png{% endcapture %}
+        {% capture alt %}icon-pay-{{ i }}_alt{% endcapture %}
+        {% if settings[enable] %}
+            <img class="lazyload" data-src="{{ pic | asset_img_url: 'master' }}" alt="{{ alt }}">
+        {% endif %}
+    {% endfor %}
+    {% endunless %}
+</div>

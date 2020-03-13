@@ -1,0 +1,50 @@
+<div class="hdr-wrap bg-bottom bg-cover" style="background-image: url({{ 'header-tshirts-bg.jpg' | asset_url }}); background-color: #232323;">
+    <header class="hdr global_width hdr-style-2 hdr--dark hdr--dark-drop {% if section.settings.sticky %}hdr_sticky{% endif %} minicart-icon-style-2 hdr-mobile-style{{ section.settings.style_mobile }}">
+        {% include 'topline' %}
+        {% include 'mobile-navigation' %}
+        {% include 'header-mobile' %}
+        <div class="hdr-desktop hide-mobile">
+            <div class="hdr-content">
+                <div class="container">
+                    <div class="hdr-content-left">
+                        {% include 'header-languages-currencies' classes:'only-icon' %}
+                    </div>
+                    <div class="logo-holder">
+                        {% include 'header-logo' %}
+                    </div>
+                    <div class="hdr-content-right">
+                        <div class="links-holder">
+                            {% include 'header-search'  classes:"only-icon" %}
+                            {% include 'header-login-form'  classes: "only-icon" %}
+                        </div>
+                        <div class="minicart-holder">
+                            {% include 'header-cart' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-holder">
+                <div class="hdr-nav">
+                    <div class="container">
+                        {% include 'header-navigation' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include 'header-sticky' %}
+    </header>
+    <div class="header-banners">
+        <div class="container">{% if home or template == 'page.home-page-t-shirts-1' %}{{ section.settings.html_header_5 }}{% endif %}
+            </div></div>
+</div>
+
+<div class="side-fixed">
+    <div class="left-fixed">
+        <div><img class="lazyload" data-src="{{ 'left-img-1.png' | asset_url }}" alt=""></div>
+        <div><img class="lazyload" data-src="{{ 'left-img-2.png' | asset_url }}" alt=""></div>
+    </div>
+    <div class="right-fixed">
+        <div><img class="lazyload" data-src="{{ 'right-img-1.png' | asset_url }}" alt=""></div>
+        <div><img class="lazyload" data-src="{{ 'right-img-2.png' | asset_url }}" alt=""></div>
+    </div>
+</div>

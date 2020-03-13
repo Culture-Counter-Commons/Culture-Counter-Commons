@@ -1,0 +1,78 @@
+<div class="col-md">
+    <a {% if settings.shop_info_caption_1_link != blank %}{% endif %} class="shop-feature light-color" data-fancybox data-src="#hidden-content" href="javascript:;">
+        <div class="shop-feature-icon"><i class="{{ settings.shop_info_caption_1_icon }}"></i></div>
+        <div class="shop-feature-text">
+            <div class="text1">{{ settings.shop_info_caption_1_1_text }}</div>
+            <div class="text2">{{ settings.shop_info_caption_1_2_text }}</div>
+        </div>
+      	<span class="shop-feature-bg"></span>
+    </a>
+</div>
+<div class="col-md">
+    <a onclick="openLightbox();" class="preview shop-feature light-color">
+        <div class="shop-feature-icon"><i class="{{ settings.shop_info_caption_2_icon }}"></i></div>
+        <div class="shop-feature-text">
+            <div class="text1">{{ settings.shop_info_caption_2_1_text }}</div>
+            <div class="text2">{{ settings.shop_info_caption_2_2_text }}</div>
+        </div>
+      	<span class="shop-feature-bg"></span>
+    </a>
+
+</div>
+<div class="col-md">
+    <a {% if settings.shop_info_caption_3_link != blank %}href="{{ settings.shop_info_caption_3_link }}"{% endif %} class="shop-feature light-color">
+        <div class="shop-feature-icon"><i class="{{ settings.shop_info_caption_3_icon }}"></i></div>
+        <div class="shop-feature-text">
+            <div class="text1">{{ settings.shop_info_caption_3_1_text }}</div>
+            <div class="text2">{{ settings.shop_info_caption_3_2_text }}</div>
+        </div>
+      	<span class="shop-feature-bg"></span>
+    </a>
+</div>
+
+
+
+
+<script>
+
+    // function myFunction() {
+    //     var newsletterButton = document.getElementById("newsletter-popup-button");
+    //     var newsletterOnclickPopup = document.getElementById("newsletter-onclick-popup");
+    //     newsletterPopupOnclick.style.display = "block";
+    // }
+
+        function toggleNewsletterPopup() {
+            document.getElementById('newsletter-onclick-popup').style.display = 'flex';
+        }
+
+        function closeNewsletterLightbox() {
+            document.getElementById('newsletter-onclick-popup').style.display = 'none';
+        }
+
+    //   function toggleNewsletterPopup() {
+    //         // get the newsletter
+    //         var myNewsletterPopup = document.getElementById('newsletter-onclick-popup');
+
+    //         // get the current value of the newsletter's display property
+    //         var displaySetting = myNewsletterPopup.style.display;
+
+    //         // also get the newsletter button, so we can change what it says
+    //         var newsletterButton = document.getElementById('newsletter-popup-button');
+
+    //         // now toggle the newsletter and the button text, depending on current state
+    //         if (displaySetting == 'block') {
+    //             // newsletter is visible. hide it
+    //             myNewsletterPopup.style.display = 'none';
+    //         }
+    //         else {
+    //             // newsletter is hidden. show it
+    //             myNewsletterPopup.style.display = 'block';
+    //         }
+    //     }
+
+    //     function offToggleNewsletterPopup() {
+    //         // get the close button
+    //         var toggleOffNewsletterBtn = document.getElementById'
+    //     }
+
+</script>

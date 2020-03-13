@@ -1,0 +1,97 @@
+{% unless settings.slides_mode %}
+{% if section.settings.enable %}
+{% if section.settings.single %}
+<div class="holder {{ section.settings.width }} {{ section.settings.outer_margin }}">
+    <div class="container">
+	{{ section.settings.html }}
+  </div>
+</div>
+{% else %}
+{{ section.settings.html }}
+{% endif %}
+{% endif %}
+{% endunless %}
+{% schema %}
+{
+"name": "Banners - Online Editor",
+"class": "index-section",
+"settings": [
+{
+"type": "checkbox",
+"id": "enable",
+"label": "Enable",
+"default": true
+},
+{
+"type": "header",
+"content": "General"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Heading",
+"default": "Banners From Online Editor"
+},
+{
+"type": "checkbox",
+"id": "single",
+"label": "Single Banner",
+"default": false
+},
+{
+"type": "select",
+"id": "width",
+"label": "Banner width",
+"options": [
+{
+"value": "global_width",
+"label": "default"
+},
+{
+"value": "boxed",
+"label": "boxed"
+},
+{
+"value": "fullwidth full-nopad",
+"label": "fullwidth"
+}
+],
+"default": "global_width",
+"info":"If 'Single Banner' checked"
+},
+{
+"type": "select",
+"id": "outer_margin",
+"label": "Outer top margin",
+"options":[
+{"value":"mt-0","label":"None"},
+{"value":"mt-1","label":"10px"},
+{"value":"mt-2","label":"20px"},
+{"value":"mt-3","label":"30px"},
+{"value":"mt-4","label":"40px"},
+{"value":"mt-5","label":"50px"},
+{"value":"mt-6","label":"60px"},
+{"value":"mt-65","label":"65px"},
+{"value":"mt-7","label":"70px"},
+{"value":"mt-8","label":"80px"},
+{"value":"mt-9","label":"90px"},
+{"value":"mt-10","label":"100px"}
+],
+"default": "mt-65",
+"info":"If 'Single Banner' checked"
+},
+{
+"type":"textarea",
+"id":"html",
+"label":"Paste generated html here",
+"info":"Generate banners [on our online service](http://frontend.big-skins.com/goodwin-html/banners-generator). (IF YOU USE T-SHIRTs SKIN then add class 'fullboxed'. For example, instead of <div class=\"holder ..\" write <div class=\"holder fullboxed ..\"  Some generated grids of banners have more then one holder, that is why search this class 'holder' with browser search in the textarea)"
+}
+],
+"presets": [
+{
+"name": "Banners From Online Editor",
+"category": "Banners"
+}
+]
+}
+{% endschema %}
