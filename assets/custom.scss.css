@@ -1216,7 +1216,12 @@ li.slick-slide.slick-active:hover {
 	flex-wrap: wrap;
 }
 .flex-blog-feed .post-prw-big + .post-prw-big {
-	margin-top: 50px;
+	margin-top: 0;
+}
+/* blog feed images */
+.post-prw-big .post-img img {
+    object-fit: cover;
+    height: 25vh;
 }
 
 .menu + .row .post-full .post-text ul ul {
