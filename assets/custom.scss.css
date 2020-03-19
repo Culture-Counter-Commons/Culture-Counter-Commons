@@ -284,7 +284,8 @@ h6,
 }
 
 /* product form */
-.modal--quickview .shopify-product-form {
+.modal--quickview .shopify-product-form,
+.blog-sidebar-container {
 	display: flex;
 	flex-direction: column;
 }
@@ -1223,7 +1224,6 @@ li.slick-slide.slick-active:hover {
     object-fit: cover;
     height: 25vh; 
 }
-
 .menu + .row .post-full .post-text ul ul {
 	background: tan;
 }

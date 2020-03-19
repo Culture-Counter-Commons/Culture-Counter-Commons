@@ -1,5 +1,5 @@
 <div class="aside-block">
-  <div class="two-cols">
+  <div class="blog-sidebar-container">
     {% if settings.blog_meta_yes %}
       <div>
         <h2 class="text-uppercase">{{ settings.blog_meta_title }}</h2>
@@ -9,9 +9,9 @@
       </div>
     {% endif %}
     {% if settings.blog_archives_yes %}
+      <h2 class="text-uppercase">{{ settings.blog_archives_title }}</h2>
       <div>
-        <h2 class="text-uppercase">{{ settings.blog_archives_title }}</h2>
-        <ul class="list list--nomarker">
+        <ul class="two-cols list list--nomarker">
           {{ settings.blog_archives_list }}
         </ul>
       </div>
