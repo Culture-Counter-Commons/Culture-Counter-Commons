@@ -71,7 +71,7 @@
                             {% endif %}
                         {%- endcomment -%}
 
-                        <div class="post-bot">
+                        <div class="post-bot"> 
                             <div class="post-date">{{ article.published_at | date: format: "month_day_year" }}</div>
                             <a href="{{ article.content | strip_html }}" target="_blank" class="post-link">{{ "blogs.article.read_more" | t }}</a>
                             <div class="post-action">

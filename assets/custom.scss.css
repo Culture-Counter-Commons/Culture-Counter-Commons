@@ -1221,7 +1221,7 @@ li.slick-slide.slick-active:hover {
 /* blog feed images */
 .post-prw-big .post-img img {
     object-fit: cover;
-    height: 25vh;
+    height: 25vh; 
 }
 
 .menu + .row .post-full .post-text ul ul {
