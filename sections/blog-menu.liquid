@@ -40,45 +40,39 @@
                 {% for article in blog.articles %}
                 <div class="post-prw-big col-md-4">
                     {% if article.image %}
-                        <a href="{{ article.content | strip_html }}" target="_blank" class="post-img"><img class="lazyload" data-src="{{ article | img_url:image_size }}" alt="{{ article.title }}"></a>
+                        <a href="{{ article.url }}" class="post-img"><img class="lazyload" data-src="{{ article | img_url:image_size }}" alt="{{ article.title }}"></a>
                     {% endif %}
                     <div class="post-inside">
+                        
+                        <h2 class="post-title"><a href="{{ article.url }}">{{ article.title }}</a></h2>
+                        {% if article.excerpt contains '<p>' %}
+                            {% if article.excerpt.size > 0 %}
+                                {{ article.excerpt | replace:'<p>','<p class="post-teaser">' }}
+                            {% else %}
+                                {{ article.content | strip_html | truncatewords: 100 | replace:'<p>','<p class="post-teaser">' }}
+                            {% endif %}
+                        {% else %}
+                             <p class="post-teaser">
+                                {% if article.excerpt.size > 0 %}
+                                    {{ article.excerpt }}
+                                {% else %}
+                                    {{ article.content | strip_html | truncatewords: 100 }}
+                                {% endif %}
+                             </p>
+                        {% endif %}
                         {% if article.tags.size > 0 %}
                             <ul class="tags-list post-tags-list">
                                 {% for tag in article.tags %}
-                                    <li><a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a></li>
+                                <li><a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a></li>
                                 {% endfor %}
                             </ul>
                         {% endif %}
-                        <h2 class="post-title">
-                            <a href="{{ article.content | strip_html }}" target="_blank">{{ article.title }}</a>
-                        </h2>
-                        {%- comment -%}
-                            {% if article.excerpt contains '<p>' %}
-                                {% if article.excerpt.size > 0 %}
-                                    {{ article.excerpt | replace:'<p>','<p class="post-teaser">' }}
-                                {% else %}
-                                    {{ article.content | strip_html | truncatewords: 100 | replace:'<p>','<p class="post-teaser">' }}
-                                {% endif %}
-                            {% else %}
-                                <p class="post-teaser">
-                                    {% if article.excerpt.size > 0 %}
-                                        {{ article.excerpt }}
-                                    {% else %}
-                                        {{ article.content | strip_html | truncatewords: 100 }}
-                                    {% endif %}
-                                </p>
-                            {% endif %}
-                        {%- endcomment -%}
-
-                        <div class="post-bot"> 
+                        <div class="post-bot">
                             <div class="post-date">{{ article.published_at | date: format: "month_day_year" }}</div>
-                            <a href="{{ article.content | strip_html }}" target="_blank" class="post-link">{{ "blogs.article.read_more" | t }}</a>
+                            <a href="{{ article.url }}" class="post-link">{{ "blogs.article.read_more" | t }}</a>
                             <div class="post-action">
                                 {% if blog.comments_enabled? %}
-                                    <span>
-                                        <a href="{{ article.url | append:"#comments" }}">{{ article.comments.size }} {{ "general.theme.comments" | t }}</a>
-                                    </span>
+                                    <span><a href="{{ article.url | append:"#comments" }}">{{ article.comments.size }} {{ "general.theme.comments" | t }}</a></span>
                                 {% endif %}
                             </div>
                         </div>
@@ -94,7 +88,7 @@
             </div>
             {% if section.settings.sidebar %}
             <div class="col-md-3 aside aside--right" id="sideColumn">
-                {% include "blog-sidebar-press" %}
+                {% include "blog-sidebar" %}
             </div>
             {% endif %}
         </div>

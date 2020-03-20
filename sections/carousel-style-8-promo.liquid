@@ -2,7 +2,7 @@
 {% include 'global_vars' %}
 {%- assign image_size = '254x' -%}
 {% if section.settings.limit != blank %}
-    {%- assign product_limit = section.settings.limit -%}
+{%- assign product_limit = section.settings.limit -%}
 {% endif %}
 {%- assign collection = collections[section.settings.collection] -%}
 {% assign per_row_desktop = section.settings.per_row_desktop %}
@@ -11,39 +11,46 @@
 
 <div class="holder fullwidth {{ section.settings.outer_margin }}">
     <div class="container">
+        {% if section.settings.title != blank %}
         <div class="title-wrap text-center">
             <h2 class="h1-style">{{ section.settings.title }}</h2>
         </div>
+        {% endif %}
         <div class="row prd-carousel-banner-row vert-margin">
             <div class="col-sm-4 col-md-4 col-lg-3 title-container">
-                <div class="prd-carousel-banner bnr bnr--style-1-1 bnr--left bnr--top bg-cover" data-fontratio="2.976" style="background-image: url({% if section.settings.image %}{{ section.settings.image }}{% else %}{{ 'carousel-banner-toys.jpg'  | asset_url }}{% endif %});">
-                    <img class="lazyload" data-src="{% if section.settings.image %}{{ section.settings.image }}{% else %}{{ 'carousel-banner-toys.jpg'  | asset_url }}{% endif %}" alt="" class="d-none d-sm-block">
+                <div class="prd-carousel-banner bnr bnr--style-1-1 bnr--left bnr--top bg-cover" data-fontratio="2.976"
+                    style="background-image: url({% if section.settings.image %}{{ section.settings.image }}{% else %}{{ 'carousel-banner-toys.jpg'  | asset_url }}{% endif %});">
+                    <img class="lazyload"
+                        data-src="{% if section.settings.image %}{{ section.settings.image }}{% else %}{{ 'carousel-banner-toys.jpg'  | asset_url }}{% endif %}"
+                        alt="" class="d-none d-sm-block">
                     <span class="bnr-caption">
-						<span class="bnr-text-wrap">
-							<span class="bnr-text1">{{ section.settings.caption_1 }}</span>
-							<span class="bnr-text2">{{ section.settings.caption_2 }}</span>
-						</span>
-					</span>
+                        <span class="bnr-text-wrap">
+                            <span class="bnr-text1">{{ section.settings.caption_1 }}</span>
+                            <span class="bnr-text2">{{ section.settings.caption_2 }}</span>
+                        </span>
+                    </span>
                     <div class="carousel-arrows slick-arrows-squared"></div>
                 </div>
             </div>
             <div class="col-sm-12 col-md-8 col-lg-9">
                 <div class="prd-grid prd-text-center hide-price-comment prd-carousel js-prd-carousel data-to-show-4 data-to-show-md-3 data-to-show-sm-3 data-to-show-xs-3 sm-limit-4"
-                     data-slick='{"slidesToShow": {% if column %}3{% else %}4{% endif %}, "responsive": [{"breakpoint": 1200,"settings": {"slidesToShow": 3}},{"breakpoint": 768,"settings": {"slidesToShow": 2}},{"breakpoint": 480,"settings": {"slidesToShow": 2}}]}'>
+                    data-slick='{"slidesToShow": {% if column %}3{% else %}4{% endif %}, "responsive": [{"breakpoint": 1200,"settings": {"slidesToShow": 3}},{"breakpoint": 768,"settings": {"slidesToShow": 2}},{"breakpoint": 480,"settings": {"slidesToShow": 2}}]}'>
                     {% for product in collection.products limit: product_limit %}
-                        {% include 'product-card', per_row: section.settings.per_row_desktop, grid_image_width: image_size %}
+                    {% include 'product-card', per_row: section.settings.per_row_desktop, grid_image_width: image_size %}
                     {% else %}
-                        <br /><br />
-                        <div class="alert alert-warning">
-                            To Init <b>Product's carousel</b>:<br />
-                            1.<b>Choose Collection</b><br />
-                            2.<b>Save</b>
-                        </div>
+                    <br /><br />
+                    <div class="alert alert-warning">
+                        To Init <b>Product's carousel</b>:<br />
+                        1.<b>Choose Collection</b><br />
+                        2.<b>Save</b>
+                    </div>
                     {% endfor %}
                 </div>
             </div>
         </div>
-        {% if section.settings.show_view_all and section.settings.collection != blank %}<div class="more-link-wrapper text-center mt-3"><a href="{{ collection.url }}" class="btn-decor">{{ 'general.theme.show_all' | t }}</a></div>{% endif %}
+        {% if section.settings.show_view_all and section.settings.collection != blank %}<div
+            class="more-link-wrapper text-center mt-3"><a href="{{ collection.url }}"
+                class="btn-decor">{{ 'general.theme.show_all' | t }}</a></div>{% endif %}
     </div>
 </div>
 {% endunless %}
@@ -67,7 +74,7 @@
 {"value":"mt-2","label":"20px"},
 {"value":"mt-3","label":"30px"},
 {"value":"mt-4","label":"40px"},
-{"value":"mt-5","label":"50px"},
+{"value":"mt-sm-5 mt-15","label":"50px"},
 {"value":"mt-6","label":"60px"},
 {"value":"mt-65","label":"65px"},
 {"value":"mt-7","label":"70px"},

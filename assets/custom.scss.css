@@ -284,9 +284,13 @@ h6,
 }
 
 /* product form */
-.modal--quickview .shopify-product-form {
+.modal--quickview .shopify-product-form,
+.blog-sidebar-container {
 	display: flex;
 	flex-direction: column;
+}
+.shopify-product-form .prd-block_qty {
+
 }
 
 .prd-block_info-row .info-row-col-4 {
@@ -461,7 +465,12 @@ body {
 .mobilemenu ul.nav li a,
 .mobilemenu-search,
 form.suggestion-form,
-.page-footer .contact-list span {
+.page-footer .contact-list span,
+.info-row__vendor,
+.shopify-product-form .prd-block_qty input,
+ul.category-list li a,
+.selected-filters li > a,
+.clear-filters {
 	font-family: "Century Gothic", sans-serif !important;
 }
 
@@ -492,6 +501,7 @@ form.suggestion-form,
 	padding: 11px 11px 0 11px;
 	line-height: 10px;
 }
+
 /* .lazy {
   display: none;
 } */
@@ -766,7 +776,23 @@ footer .footer-copyright * {
 	padding: 5rem 0;
 	margin: 1% 2%;
 }
-
+.prd-carousel-banner-row .prd-grid {
+	margin: 0 -5px 0px;
+}
+.prd-carousel-banner-row .prd-carousel .prd {
+	margin-top: 10px;
+}
+/* quick view image */
+.prd-block:not(.prd-block--prv-left):not(.prd-block--prv-right) .product-previews-wrapper .slick-track {
+	width: 100% !important;
+}
+/* product soring */
+.select-wrapper-sm .form-control {
+	height: 30px;
+}
+.select-wrapper-sm:before {
+	line-height: 28px;
+}
 /* mobile only media query */
 @media (max-width: 768px) {
 	.product-slider-holder .product-slider .slick-arrow {
@@ -825,7 +851,10 @@ footer .footer-copyright * {
 
 	.fullboxed .bnr.bnr--style-1 .bnr-caption .bnr-text2 {
 		margin-top: 0.75em;
-		font-size: 0.6em;
+		font-size: 80%;
+	}
+	.fullboxed .bnr.bnr--style-1 .bnr-caption .bnr-text1 {
+		font-size: 30%;
 	}
 	body:not(.zoom-off) .fullboxed .bnr.bnr-hover-scale > img {
 		width: calc(100% + 150px);
@@ -838,12 +867,12 @@ footer .footer-copyright * {
 		min-height: 100%;
 		background-color: var(--green) !important;
 	}
-	.title-wrap:not(:last-child) + .row:not(.no-gutters) {
-		margin-top: -40px;
-	} /* END Full row - Style 8+promo */
-	.prd-carousel-banner-row .title-container {
-		display: none !important;
+	.prd-carousel-banner img {
+		display: none;
 	}
+
+	/* END Full row - Style 8+promo */
+
 } /* END mobile only media query */
 
 /* desktop to tablet media query */
@@ -915,6 +944,13 @@ footer .footer-copyright * {
 		display: block;
 		min-height: 100%;
 		background-color: var(--green) !important;
+    	transform: translateY(-30px) !important;
+	}
+	.holder {
+		margin-top: 15px;
+	}
+	.prd-carousel-banner.bnr .carousel-arrows {
+		display: none;
 	}
 	.social-list {
 		text-align: right;
@@ -986,7 +1022,6 @@ footer .footer-copyright * {
 	.collection-carousel .slick-arrow {
 		display: none !important;
 	}
-
 	.product-quickview-carousel .slick-list .slick-track {
 		height: inherit;
 		width: 100% !important;
@@ -1216,18 +1251,27 @@ li.slick-slide.slick-active:hover {
 	flex-wrap: wrap;
 }
 .flex-blog-feed .post-prw-big + .post-prw-big {
-	margin-top: 50px;
+	margin-top: 0;
+}
+/* blog feed images */
+.post-prw-big .post-img img {
+    object-fit: cover;
+    height: 25vh; 
+}
+/* blog feed tags */
+.tags-list li a {
+	padding: 10px 14px 0 14px;
 }
 
 .menu + .row .post-full .post-text ul ul {
-	background: tan;
+	background: var(--lightTan);
 }
 
 .menu + .row .post-full .post-text ul {
 	column-count: 2;
 	column-fill: auto;
 	column-gap: 52px;
-	column-rule: 2px solid green;
+	column-rule: 2px solid var(--green);
 }
 
 .menu + .row .post-full .post-text ul:after {
@@ -1235,25 +1279,29 @@ li.slick-slide.slick-active:hover {
 	display: inline-block;
 }
 
-.menu + .row .post-full .post-text ul ul {
-	column-count: 1;
+.menu + .row .post-full .post-text ul > li {
+	background: var(--green);
+	color: var(--lightTan);
 }
 
 .menu + .row .post-full .post-text ul li {
-	background: green;
-	padding: 20px;
+	background: var(--green);
+	padding: 10px 0 0 20px;
 }
 
 .menu + .row .post-full .post-text ul ul > li {
-	background: red;
+	background: var(--lightTan);
+	border-bottom: 1px solid var(--green);
+	color: var(--black);
 }
 
-.menu + .row .post-full .post-text ul > li {
-	background: purple;
-}
+
 
 .menu + .row .post-full .post-text ul ul ul li {
-	background: pink;
+	background: transparent;
 }
-
+.menu + .row .post-full .post-text ul ul {
+	column-count: 1;
+	color: var(--black);
+}
 /* END blog */

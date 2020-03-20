@@ -18,7 +18,7 @@
                                     <span class="arrow"></span>
                                     {% if linklists[link.handle].links.size > 0 %}
                                         <ul class="nav-level-2">
-                                            <li><a href="{{ link.url }}">{{ 'general.theme.view_all' | t }}</a></li>
+                                            {%- comment -%}<li><a href="{{ link.url }}">{{ 'general.theme.view_all' | t }}</a></li>{%- endcomment -%}
                                             {% for link_1 in  linklists[link.handle].links %}
                                                 <li {% if link_1.active %}class="active"{% endif %}>
                                                     {{ link_1.title | append:label | link_to: link_1.url }}
