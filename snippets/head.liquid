@@ -47,7 +47,7 @@
     {% if color_mode contains 'dark' %}{{ 'style-theme-dark.scss.css' | asset_url | stylesheet_tag }}{% else %}{{ 'style-theme-light.scss.css' | asset_url | stylesheet_tag }}{% endif %}
 {% endif %}
 
-{{ 'custom.scss.css' | asset_url | stylesheet_tag }}
+{{ 'custom.scss-min.css' | asset_url | stylesheet_tag }}
 <!--custom font-->
 {% include 'google-fonts' %}
 {{ 'jquery.min.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}

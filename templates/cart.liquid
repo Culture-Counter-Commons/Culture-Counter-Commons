@@ -117,11 +117,17 @@
                 </tr>
               </table>
             </div>
-            <button class="btn btn--full btn--lg" type="submit"
-              name="checkout">{{ 'cart.general.checkout_procees' | t }}</button>
+            {%- comment -%}
+            shopify checkout button
+            <button class="btn btn--full btn--lg" type="submit" name="checkout">{{ 'cart.general.checkout_procees' | t }}</button>
+            {%- endcomment -%}
+              
+
+            {%- comment -%}
             {% if additional_checkout_buttons %}
             <div class="cart__additional_checkout">{{ content_for_additional_checkout_buttons }}</div>
             {% endif %}
+            {%- endcomment -%}
             {%- comment -%}
             pickup time
             {%- endcomment -%}
@@ -159,6 +165,8 @@
                 <option value="8:00 PM" {% if cart.attributes["Pickup Time"] == "8:00 PM" %} selected{% endif %}>8:00 PM</option>
               </select>
             </div>
+            <a href="#" style="display:none;" class="save-purchase-order-w3 btn btn--full btn--lg mt-2"
+              data-customer-id="{{ customer.id }}" data-customer-email="{{ customer.email | escape }}"></a>
           </div>
         </div>
       </div>

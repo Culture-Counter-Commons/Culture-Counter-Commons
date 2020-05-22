@@ -30,8 +30,9 @@
             <a title="{{ product.title }}" class="prd-img  prd-qview-link js-qview-link" data-fancybox data-type="ajax" data-src="{{newproducturl[0]}}?view=quick-view&output=embed">
                
                 {%- comment -%}https://speedboostr.com/shopify-lazy-loading/{%- endcomment -%}
-                <img class="product-image js-prd-img lazyload" data-src="{% if product.featured_image.size > 0 %}{{ product.featured_image.src | img_url: grid_image_width, scale:2 }}{% else %}{{ 'no-image.jpg' | asset_url }}{% endif %}"
-                                    alt="{{ product.featured_image.alt | escape }}">
+                <img data-src="{% if product.featured_image.size > 0 %}{{ product.featured_image.src | img_url: grid_image_width, scale:2 }}{% else %}{{ 'no-image.jpg' | asset_url }}{% endif %}"
+                    class="product-image js-prd-img lazyload"
+                    alt="{{ product.featured_image.alt | escape }}">
 
             </a>
             {% if sold_out %}<div class="label-outstock">{{ 'general.theme.out_of_stock' | t }}</div>{% endif %}

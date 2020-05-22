@@ -48,7 +48,7 @@
                             $.each(data.results, function(index, item) {
 
                                 if(count<9){
-                                    var link = $('<a></a>').attr('href', item.url);
+                                    var link = $('<a></a>').attr('href', 'search?q=' + term);
                                     link.append('<span class="thumbnail"><img class="lazyload" data-src="' + item.thumbnail + '" /></span>');
                                     link.append('<span class="title">' + item.title + '</span>');
                                     link.wrap('<li></li>');

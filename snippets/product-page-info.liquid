@@ -110,7 +110,7 @@
                     {% if safe_checkout_image_yes %}
                         <div class="prd-safecheckout">
                             <h3 class="h2-style">{{ 'general.theme.safe_checkout' | t }}</h3>
-                            <img class="lazyload" data-src="{% if section.settings.safe_checkout_image != blank %}{{ section.settings.safe_checkout_image | img_url:'master' }}{% else %}{{ 'safecheckout01.png' | asset_url }}{% endif %}" alt="" class="img-responsive">
+                            <img class="lazyload" data-src="{% if section.settings.safe_checkout_image != blank %}{{ section.settings.safe_checkout_image | img_url:'master' }}{% else %}{{ 'safecheckout01.png' | asset_url }}{% endif %}" alt="{{ section.settings.safe_checkout_image | | img_tag:'master' }}" class="img-responsive">
                         </div>
                     {% endif %}
                 </div>
