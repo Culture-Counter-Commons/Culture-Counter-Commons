@@ -531,13 +531,13 @@ function cartPopupUpdate(){
             '   <div class="pull-right">' +
             '       <span class="minicart-drop-summa"><span>'+locales.subtotal+':</span> <b>'+Shopify.formatMoney(CartJS.cart.total_price, $price_format)+'</b></span> ' +
             '       <div class="minicart-drop-btns-wrap">' +
-            '            <a href="/checkout" class="btn"><i class="icon-check-box"></i><span>'+locales.go_to_checkout+'</span></a>' +
+            '            <a href="/cart" class="btn"><i class="icon-check-box"></i><span>'+locales.go_to_checkout+'</span></a>' +
             '            <a href="/cart" class="btn btn--alt"><i class="icon-handbag"></i><span>'+locales.view_cart+'</span></a>' +
             '       </div>' +
             '   </div> ' +
-            '   <div class="pull-left">' +
-            '        <a href="/cart" class="btn btn--alt"><i class="icon-handbag"></i><span>'+locales.view_cart+'</span></a>' +
-            '   </div> ' +
+            // '   <div class="pull-left">' +
+            // '        <a href="/cart" class="btn btn--alt"><i class="icon-handbag"></i><span>'+locales.view_cart+'</span></a>' +
+            // '   </div> ' +
             '</div>');
 
         $updated_list='';

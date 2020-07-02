@@ -186,3 +186,33 @@
   </div>
 </div>
 {% endif %}
+
+<script>
+  // https://stackoverflow.com/questions/49820106/add-a-button-using-javascript-to-an-existing-div
+  // function appendButton(elementId, url) {
+  //   var buttonEl = document.createElement("a");
+  //   buttonEl.href = url;
+  //   var buttonTextEl = document.createElement("span");
+  //   buttonTextEl.className = "icon-cross";
+  //   buttonTextEl.innerText = "Sounds Good!";
+  //   buttonEl.appendChild(buttonTextEl);
+  //   document.getElementById(elementId).appendChild(buttonEl);
+  // }
+  // var poModal = document.querySelector(".po-modal-content p");
+  // poModal.appendButton("something", "/cart/clear");
+
+  $(function () {
+    $('.clear-cart').on('click', function (e) {
+      e.preventDefault();
+      $.ajax({
+        type: "POST",
+        url: '/cart/clear.js',
+        success: function () {
+          alert('I cleared the cart!');
+        },
+        dataType: 'json'
+      });
+    })
+  });
+
+</script>
