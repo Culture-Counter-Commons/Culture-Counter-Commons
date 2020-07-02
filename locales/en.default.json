@@ -7,7 +7,7 @@
       "recently_added_items": "Recently added item(s)&#x200E;",
       "edit": "Edit",
       "view_and_edit_cart": "View and edit cart",
-      "go_to_checkout": "Checkout",
+      "go_to_checkout": "View Cart",
       "no_items_in_cart": "Your Cart is empty",
       "apply": "Apply",
       "add_to_cart": "Add to Cart",
@@ -43,7 +43,7 @@
       "have_time_to_buy": "Time is running out!",
       "discount": "DISCOUNT",
       "discount_en": "OFF",
-      "no_products": "There are no products matching the selection",
+      "no_products": "there are no products matching the selection",
       "shopping_by": "Current Selection",
       "add_to_wishlist": "Add to Wishlist",
       "go_to_wishlist": "Go to Wishlist",
@@ -261,13 +261,13 @@
       "savings_html": "You're saving {{ price }}",
       "shipping_at_checkout": "Shipping, taxes, and discounts will be calculated at checkout.",
       "update": "Update Cart",
-      "checkout": "Check Out",
+      "checkout": "Checkout",
       "empty": "Your cart is currently empty.",
       "continue_browsing_html": "Continue browsing <a href=\"\/collections\/all\">here<\/a>.",
       "clear": "Clear Shopping List",
       "continue": "CONTINUE SHOPPING",
       "note_desc": "Enter special delivery instructions here",
-      "checkout_procees": "View Cart"
+      "checkout_procees": "Checkout"
     },
     "label": {
       "price": "Price",
@@ -282,7 +282,7 @@
   "collections": {
     "general": {
       "title": "Collections",
-      "no_matches": "Sorry, there are no products in this collection",
+      "no_matches": "Check back soon for products in this category!",
       "link_title": "Browse our {{ title }} collection"
     },
     "sorting": {
@@ -312,7 +312,7 @@
       "message": "Message",
       "send": "Send",
       "submit": "Send",
-      "post_success": "Thanks for contacting us. We'll get back to you as soon as possible."
+      "post_success": "Thanks for contacting us. We'll get back to you as soon as possible!"
     }
   },
   "customer": {
@@ -454,7 +454,7 @@
       "social_platform": "{{ name }} on {{ platform }}",
       "contact_title": "Contact Us",
       "newsletter_title": "Newsletter",
-      "newsletter_caption": "Sign up for the latest news, offers and styles",
+      "newsletter_caption": "Sign up for news and new menus!",
       "copyright": "Copyright"
     }
   },

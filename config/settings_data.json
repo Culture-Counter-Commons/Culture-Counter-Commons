@@ -14,7 +14,7 @@
     "product_ratio_w": "1",
     "product_ratio_h": "1.18",
     "ajax_cart": true,
-    "favicon": "shopify:\/\/shop_images\/sortofLogo-2.png",
+    "favicon": "shopify:\/\/shop_images\/CC-favicon-tanonblack.png",
     "collection_left_sidebar": true,
     "products_per_page": "1000",
     "ajax": true,
@@ -151,7 +151,7 @@
     "blog_archives_yes": true,
     "blog_archives_title": "Archives",
     "blog_archives_list": "<li><a href=\"#\">February 2015<\/a><\/li><li><a href=\"#\">April 2016<\/a><\/li><li><a href=\"#\">May 2016<\/a><\/li><li><a href=\"#\">Juny 2016<\/a><\/li>",
-    "blog_tags_yes": false,
+    "blog_tags_yes": true,
     "blog_popular_posts_yes": false,
     "blog_popular_posts_title": "Popular Menus",
     "blog_popular_posts_handles": "menus\/february-2-20, menus\/february-9-2020,",
@@ -250,7 +250,7 @@
         "settings": {
           "style": "1",
           "style_mobile": "1",
-          "logo": "shopify:\/\/shop_images\/ccc-sticky-header-logo-sm.jpg",
+          "logo": "https:\/\/cdn.shopify.com\/s\/files\/1\/0095\/6035\/8991\/files\/culture-counter-sticky-header-logo.svg?v=1563888674",
           "languages": false,
           "currencies": false,
           "header_search": true,
@@ -308,13 +308,13 @@
           "1539361894044-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/lemon-tree-desktop.jpg",
-              "image_mobile": "shopify:\/\/shop_images\/lemon-tree-mobile.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_8203_917c98db-442d-44b3-978f-770bd10b3e4c.JPG",
+              "image_mobile": "shopify:\/\/shop_images\/storefront-square.jpg",
               "enable": true,
               "bg_v_alignment": "bg-middle",
               "type": "none",
               "video_id": "_9VUPq3SxOc",
-              "link": "shopify:\/\/collections\/produce",
+              "link": "shopify:\/\/collections\/market-auto-online",
               "link_target": "_self",
               "link_button_yes": true,
               "link_all_slide": false,
@@ -331,29 +331,29 @@
               "captions_v_alignment": "txt-middle",
               "caption_1_yes": true,
               "caption_1_hidemobile_yes": false,
-              "caption_1": "LEMONS",
+              "caption_1": "NOW OPEN!",
               "caption_1_animation": "zoomIn",
               "caption_1_delay": "800",
-              "caption_1_color": "#868686",
+              "caption_1_color": "#ffffff",
               "caption_1_hor_alignment": "center",
               "caption_1_bgcolor": "",
               "caption_1_fontweight": "700",
-              "caption_1_fontsize": "lg",
+              "caption_1_fontsize": "md",
               "caption_1_lineheight": "1.00",
               "caption_1_othercss": "",
               "caption_2_yes": true,
               "caption_2_hidemobile_yes": false,
-              "caption_2": "<p>Lorem ipsum dolor sit amet consestuer adicpis elitr an \t\t\t\t\t\t\t\t\t\t\tdolor sit amet ipsum dolor it amet adicpising elit anno amet consestuer \t\t\t\t\t\t\t\t\t\t\tadicpis elitr anno dolor sit amet.<\/p>",
+              "caption_2": "<p>Order online for pickup at our walk-up window<\/p>",
               "caption_2_animation": "fadeIn",
               "caption_2_delay": "1000",
               "caption_2_hor_alignment": "center",
-              "caption_2_color": "#868686",
+              "caption_2_color": "#ffffff",
               "caption_2_bgcolor": "",
               "caption_2_fontweight": "400",
               "caption_2_fontsize": "sm",
               "caption_2_lineheight": "1.00",
               "caption_2_othercss": "font-family: Open Sans;\nletter-spacing: 0;",
-              "caption_3_yes": true,
+              "caption_3_yes": false,
               "caption_3_hidemobile_yes": false,
               "caption_3": "$3.00\/lb",
               "caption_3_animation": "spinIn",
@@ -387,13 +387,13 @@
           "1539361894044-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/meat-cutting-desktop.jpg",
-              "image_mobile": "shopify:\/\/shop_images\/meat-mobile.jpg",
+              "image": "shopify:\/\/shop_images\/maryspride-dark.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/maryspride-dark.jpg",
               "enable": true,
               "bg_v_alignment": "bg-middle",
               "type": "none",
               "video_id": "_9VUPq3SxOc",
-              "link": "shopify:\/\/collections\/meat",
+              "link": "shopify:\/\/collections\/market-auto-online",
               "link_target": "_self",
               "link_button_yes": true,
               "link_all_slide": false,
@@ -401,8 +401,8 @@
               "btn_hor_aligment": "center",
               "button_animation": "fadeIn",
               "button_delay": "2000",
-              "button_text_color": "#ffffff",
-              "button_bgcolor": "#ffffff",
+              "button_text_color": "#438871",
+              "button_bgcolor": "#438871",
               "button_othercss": "",
               "captions_half": true,
               "captions_border": "no-border",
@@ -410,19 +410,19 @@
               "captions_v_alignment": "txt-middle",
               "caption_1_yes": true,
               "caption_1_hidemobile_yes": false,
-              "caption_1": "MEATS",
+              "caption_1": "RAW GOODS",
               "caption_1_animation": "zoomIn",
               "caption_1_delay": "800",
               "caption_1_color": "#ffffff",
               "caption_1_hor_alignment": "center",
               "caption_1_bgcolor": "",
               "caption_1_fontweight": "700",
-              "caption_1_fontsize": "lg",
+              "caption_1_fontsize": "md",
               "caption_1_lineheight": "1.00",
               "caption_1_othercss": "",
               "caption_2_yes": true,
               "caption_2_hidemobile_yes": false,
-              "caption_2": "<p>Lorem ipsum dolor sit amet consestuer adicpis elitr an \t\t\t\t\t\t\t\t\t\t\tdolor sit amet ipsum dolor it amet adicpising elit anno amet consestuer \t\t\t\t\t\t\t\t\t\t\tadicpis elitr anno dolor sit amet.<\/p>",
+              "caption_2": "<p>Order all your essentials online, select your pickup time, and we'll do our best to have it ready when you get here!<\/p>",
               "caption_2_animation": "fadeIn",
               "caption_2_delay": "1000",
               "caption_2_hor_alignment": "center",
@@ -432,7 +432,7 @@
               "caption_2_fontsize": "sm",
               "caption_2_lineheight": "1.00",
               "caption_2_othercss": "font-family: Open Sans;\nletter-spacing: 0;",
-              "caption_3_yes": true,
+              "caption_3_yes": false,
               "caption_3_hidemobile_yes": false,
               "caption_3": "$8.00\/lb",
               "caption_3_animation": "spinIn",
@@ -466,13 +466,13 @@
           "1546974123934": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/coffee-desktop.jpg",
-              "image_mobile": "shopify:\/\/shop_images\/expresso-drink-mobile_1.jpg",
+              "image": "shopify:\/\/shop_images\/DSC_5089.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/DSC_5089_2.jpg",
               "enable": true,
-              "bg_v_alignment": "bg-middle",
+              "bg_v_alignment": "bg-bottom",
               "type": "none",
               "video_id": "_9VUPq3SxOc",
-              "link": "shopify:\/\/collections",
+              "link": "shopify:\/\/collections\/cafe",
               "link_target": "_self",
               "link_button_yes": true,
               "link_all_slide": false,
@@ -480,8 +480,8 @@
               "btn_hor_aligment": "center",
               "button_animation": "fadeIn",
               "button_delay": "2000",
-              "button_text_color": "#ffffff",
-              "button_bgcolor": "#ffffff",
+              "button_text_color": "#438871",
+              "button_bgcolor": "#438871",
               "button_othercss": "",
               "captions_half": true,
               "captions_border": "no-border",
@@ -489,19 +489,19 @@
               "captions_v_alignment": "txt-middle",
               "caption_1_yes": true,
               "caption_1_hidemobile_yes": false,
-              "caption_1": "CAFÉ",
+              "caption_1": "FRESHIES",
               "caption_1_animation": "zoomIn",
               "caption_1_delay": "800",
               "caption_1_color": "#ffffff",
               "caption_1_hor_alignment": "center",
               "caption_1_bgcolor": "",
               "caption_1_fontweight": "700",
-              "caption_1_fontsize": "lg",
+              "caption_1_fontsize": "md",
               "caption_1_lineheight": "1.00",
               "caption_1_othercss": "",
               "caption_2_yes": true,
               "caption_2_hidemobile_yes": false,
-              "caption_2": "<p>Lorem ipsum dolor sit amet consestuer adicpis elitr an \t\t\t\t\t\t\t\t\t\t\tdolor sit amet ipsum dolor it amet adicpising elit anno amet consestuer \t\t\t\t\t\t\t\t\t\t\tadicpis elitr anno dolor sit amet.<\/p>",
+              "caption_2": "<p>Enjoy delicious and nutritious smoothies & green juices with local and organic produce!<\/p>",
               "caption_2_animation": "fadeIn",
               "caption_2_delay": "1000",
               "caption_2_hor_alignment": "center",
@@ -517,7 +517,7 @@
               "caption_3_animation": "spinIn",
               "caption_3_delay": "1600",
               "caption_3_hor_alignment": "center",
-              "caption_3_color": "#ffffff",
+              "caption_3_color": "#438871",
               "caption_3_bgcolor": "",
               "caption_3_fontweight": "500",
               "caption_3_fontsize": "md",
@@ -560,8 +560,8 @@
           "arrows": true,
           "arowsdark": false,
           "arowsshift": false,
-          "arowsshiftside": "bnslider-arrows--pullright",
-          "autoplay_speed": "5000",
+          "arowsshiftside": "bnslider-arrows--pullleft",
+          "autoplay_speed": "4000",
           "slideshow_height": "lg",
           "keep_scale": true,
           "keep_scale_width": "1920",
@@ -579,9 +579,9 @@
             "type": "banner",
             "settings": {
               "enable": true,
-              "title": "Smoothies",
-              "image": "shopify:\/\/shop_images\/produce-category.jpg",
-              "link": "shopify:\/\/collections\/smoothies",
+              "title": "Raw Goods",
+              "image": "shopify:\/\/shop_images\/ACS_1873_300x320_bb32b4ef-dd19-48ed-b62e-a01048ffd12d.jpg",
+              "link": "shopify:\/\/collections\/market-auto-online",
               "link_target": "_self"
             }
           },
@@ -589,9 +589,9 @@
             "type": "banner",
             "settings": {
               "enable": true,
-              "title": "Meat",
-              "image": "shopify:\/\/shop_images\/meat-category-2.jpg",
-              "link": "shopify:\/\/collections\/meat",
+              "title": "Freshies",
+              "image": "shopify:\/\/shop_images\/ACS_1247_300x320_1513051f-847e-43a9-b3c9-effdcf587197.jpg",
+              "link": "shopify:\/\/collections\/cafe",
               "link_target": "_self"
             }
           },
@@ -599,9 +599,9 @@
             "type": "banner",
             "settings": {
               "enable": true,
-              "title": "Dairy",
-              "image": "shopify:\/\/shop_images\/dairy-category.jpg",
-              "link": "shopify:\/\/collections\/dairy",
+              "title": "Baked Goods",
+              "image": "shopify:\/\/shop_images\/ACS_1865_300x320_0d854f36-5d37-4cd7-87de-0a8cbaa0549b.JPG",
+              "link": "shopify:\/\/collections\/meal-kits",
               "link_target": "_self"
             }
           },
@@ -609,29 +609,9 @@
             "type": "banner",
             "settings": {
               "enable": true,
-              "title": "Eggs",
-              "image": "shopify:\/\/shop_images\/eggs-category.jpg",
-              "link": "shopify:\/\/collections\/eggs",
-              "link_target": "_self"
-            }
-          },
-          "1539361916925-4": {
-            "type": "banner",
-            "settings": {
-              "enable": true,
-              "title": "Cheese",
-              "image": "shopify:\/\/shop_images\/cheese-category.jpg",
-              "link": "shopify:\/\/collections\/cheese",
-              "link_target": "_self"
-            }
-          },
-          "1539361916925-5": {
-            "type": "banner",
-            "settings": {
-              "enable": true,
-              "title": "Bread",
-              "image": "shopify:\/\/shop_images\/bread-category.jpg",
-              "link": "shopify:\/\/collections\/bread",
+              "title": "Ice Cream",
+              "image": "shopify:\/\/shop_images\/ACS_0760_8ec57a57-2fa4-4039-90ac-b1f844d3c0ca.JPG",
+              "link": "shopify:\/\/collections\/ice-cream",
               "link_target": "_self"
             }
           },
@@ -639,9 +619,29 @@
             "type": "banner",
             "settings": {
               "enable": true,
-              "title": "Dry Goods",
-              "image": "shopify:\/\/shop_images\/dry-goods-category.jpg",
-              "link": "shopify:\/\/collections\/dry-goods",
+              "title": "CC Merch",
+              "image": "shopify:\/\/shop_images\/ACS_0001_300x320_b4e63d15-4be7-4a93-9282-2d4aafcf0158.jpg",
+              "link": "shopify:\/\/collections\/merch",
+              "link_target": "_self"
+            }
+          },
+          "1539361916925-4": {
+            "type": "banner",
+            "settings": {
+              "enable": true,
+              "title": "<span>Crafts<\/span><span>Coming Soon!<\/span>",
+              "image": "shopify:\/\/shop_images\/CC_Rectangle1_300x320_961bb288-d778-431c-93b7-ac05e7b223dd.png",
+              "link": "",
+              "link_target": "_self"
+            }
+          },
+          "1539361916925-5": {
+            "type": "banner",
+            "settings": {
+              "enable": true,
+              "title": "<span>Books<\/span><span>Coming Soon!<\/span>",
+              "image": "shopify:\/\/shop_images\/stack_of_books_300x320_7c563e91-c3e0-49e1-b346-2189db4004d0.jpg",
+              "link": "",
               "link_target": "_self"
             }
           }
@@ -651,9 +651,9 @@
           "1539361916925-1",
           "1539361916925-2",
           "1539361916925-3",
+          "1560293893626",
           "1539361916925-4",
-          "1539361916925-5",
-          "1560293893626"
+          "1539361916925-5"
         ],
         "settings": {
           "outer_margin": "mt-0"
@@ -667,59 +667,59 @@
           "single": false,
           "width": "global_width",
           "outer_margin": "mt-65",
-          "html": "<div class=\"holder fullboxed mt-0 py-2 py-sm-2\">\n\t<div class=\"container\">\n\t\t<div class=\"row bnr-grid data-slick slick-arrows-aside-simple slick-arrows-mobile-lg\" data-slick='{\n\t\t\t\"dots\":false,\n\t\t\t\"arrows\":true,\n\t\t\t\"slidesToShow\": 2,\n\t\t\t\"responsive\": [{\n\t\t\t\t\"breakpoint\": 768,\n\t\t\t\t\"settings\": {\"slidesToShow\": 1}\n\t\t\t}]\n        }'>\n            <div class=\"col-md\">\n                <a href=\"\/collections\/cafe\" target=\"_blank\" class=\"bnr-wrap\">\n                    <div class=\"bnr bnr2 bnr--style-1 bnr--right bnr--middle bnr-hover-scale\" data-fontratio=\"5.55\">\n                        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0095\/6035\/8991\/files\/sandwich-desktop.jpg?2385\" alt=\"\">\n                        <span class=\"bnr-caption\">\n                            <div class=\"collection-bg-darkness\" style=\"opacity: 0.50;\"><\/div>\n                            <span class=\"bnr-text-wrap\">\n                                <span class=\"bnr-text1\">new arrivals<\/span>\n                                <span class=\"bnr-text2\">Café<\/span>\n                                <span class=\"btn-decor bnr-btn\">shop now<span class=\"btn-line\"><\/span><\/span>\n                            <\/span>\n                        <\/span>\n                    <\/div>\n                <\/a>\n            <\/div>\n\t\t\t<div class=\"col-md\">\n\t\t\t\t<a href=\"\/collections\/market\" class=\"bnr-wrap\">\n\t\t\t\t\t<div class=\"bnr bnr1 bnr--style-1 bnr--left bnr--middle bnr-hover-scale\" data-fontratio=\"5.55\">\n\t\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0095\/6035\/8991\/files\/berries-desktop.jpg?2385\" alt=\"\">\n\t\t\t\t\t\t<span class=\"bnr-caption\">\n\t\t\t                    <div class=\"collection-bg-darkness\" style=\"opacity: 0.50;\"><\/div>\n\t\t\t\t<span class=\"bnr-text-wrap\">\n\t\t\t\t\t\t\t\t<span class=\"bnr-text1\">new arrivals<\/span>\n\t\t\t\t\t\t\t\t<span class=\"bnr-text2\">Market<\/span>\n\t\t\t\t\t\t\t\t<span class=\"btn-decor bnr-btn\">shop now<span class=\"btn-line\"><\/span><\/span>\n\t\t\t\t\t\t\t<\/span>\n\t\t\t\t\t\t<\/span>\n\t\t\t\t\t<\/div>\n\t\t\t\t<\/a>\n\t\t\t<\/div>\n\t\t<\/div>\n\t<\/div>\n<\/div>"
+          "html": "<div class=\"holder fullboxed mt-0 py-2 py-sm-2\">\n\t<div class=\"container\">\n\t\t<div class=\"row bnr-grid data-slick slick-arrows-aside-simple slick-arrows-mobile-lg\" data-slick='{\n\t\t\t\"dots\":false,\n\t\t\t\"arrows\":true,\n\t\t\t\"slidesToShow\": 2,\n\t\t\t\"responsive\": [{\n\t\t\t\t\"breakpoint\": 768,\n\t\t\t\t\"settings\": {\"slidesToShow\": 1}\n\t\t\t}]\n        }'>\n            <div class=\"col-md\">\n                <a href=\"\/collections\/cafe\" class=\"bnr-wrap\">\n                    <div class=\"bnr bnr2 bnr--style-1 bnr--right bnr--middle bnr-hover-scale\" data-fontratio=\"5.55\">\n                        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0095\/6035\/8991\/files\/sandwich-desktop.jpg?2385\" alt=\"\">\n                        <span class=\"bnr-caption\">\n                            <div class=\"collection-bg-darkness\" style=\"opacity: 0.50;\"><\/div>\n                            <span class=\"bnr-text-wrap\">\n                                <span class=\"bnr-text1\">new arrivals<\/span>\n                                <span class=\"bnr-text2\">Café<\/span>\n                                <span class=\"btn-decor bnr-btn\">shop now<span class=\"btn-line\"><\/span><\/span>\n                            <\/span>\n                        <\/span>\n                    <\/div>\n                <\/a>\n            <\/div>\n\t\t\t<div class=\"col-md\">\n\t\t\t\t<a href=\"\/collections\/market-auto-online\" class=\"bnr-wrap\">\n\t\t\t\t\t<div class=\"bnr bnr1 bnr--style-1 bnr--left bnr--middle bnr-hover-scale\" data-fontratio=\"5.55\">\n\t\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0095\/6035\/8991\/files\/berries-desktop.jpg?2385\" alt=\"\">\n\t\t\t\t\t\t<span class=\"bnr-caption\">\n\t\t\t                    <div class=\"collection-bg-darkness\" style=\"opacity: 0.50;\"><\/div>\n\t\t\t\t<span class=\"bnr-text-wrap\">\n\t\t\t\t\t\t\t\t<span class=\"bnr-text1\">new arrivals<\/span>\n\t\t\t\t\t\t\t\t<span class=\"bnr-text2\">Market<\/span>\n\t\t\t\t\t\t\t\t<span class=\"btn-decor bnr-btn\">shop now<span class=\"btn-line\"><\/span><\/span>\n\t\t\t\t\t\t\t<\/span>\n\t\t\t\t\t\t<\/span>\n\t\t\t\t\t<\/div>\n\t\t\t\t<\/a>\n\t\t\t<\/div>\n\t\t<\/div>\n\t<\/div>\n<\/div>"
         }
       },
       "1539362044226": {
         "type": "products_slider",
         "blocks": {
+          "1579830327210": {
+            "type": "product",
+            "settings": {
+              "enable": true,
+              "product": "elderberry-preserves",
+              "image": ""
+            }
+          },
           "1579829731685": {
             "type": "product",
             "settings": {
               "enable": true,
-              "product": "widners-mix",
-              "image": "shopify:\/\/shop_images\/gettyimages-157472912-612x612.jpg"
+              "product": "eggs-organic-pasture-raised-by-the-dozen",
+              "image": "shopify:\/\/shop_images\/organic12-largeSIZED_37a97b4f-43c3-4f37-977f-607947e2e103.png"
             }
           },
           "1539362044226-0": {
             "type": "product",
             "settings": {
               "enable": true,
-              "product": "arugula",
-              "image": "shopify:\/\/shop_images\/arugula.png"
+              "product": "bacon-nitrite-free-pork-1",
+              "image": ""
             }
           },
           "1539362044226-1": {
             "type": "product",
             "settings": {
               "enable": true,
-              "product": "gala-apples",
-              "image": "shopify:\/\/shop_images\/gala-apples.png"
+              "product": "bananas-1",
+              "image": ""
             }
           },
           "1579830156504": {
             "type": "product",
             "settings": {
               "enable": true,
-              "product": "2-milk",
-              "image": ""
-            }
-          },
-          "1579830327210": {
-            "type": "product",
-            "settings": {
-              "enable": true,
-              "product": "",
+              "product": "avocados",
               "image": ""
             }
           }
         },
         "block_order": [
+          "1579830327210",
           "1579829731685",
           "1539362044226-0",
           "1539362044226-1",
-          "1579830156504",
-          "1579830327210"
+          "1579830156504"
         ],
         "settings": {
           "outer_margin": "mt-65"
@@ -727,15 +727,16 @@
       },
       "1539362723073": {
         "type": "carousel-style-8-promo",
+        "disabled": true,
         "settings": {
-          "outer_margin": "mt-1",
+          "outer_margin": "mt-sm-5 mt-15",
           "title": "",
           "image": "",
           "caption_1": "On Sale",
           "caption_2": "Products",
           "collection": "discount-products",
           "limit": "6",
-          "show_view_all": false
+          "show_view_all": true
         }
       },
       "collection-sidebar": {
@@ -746,7 +747,7 @@
             "settings": {
               "enable": true,
               "title": "Raw Goods",
-              "tags": "market, raw, produce, meat, dairy, eggs, cheese, bread, dry goods",
+              "tags": "greens, fresh fruit, dried fruit, root veggies, mushrooms, vine veggies, meat, cheese, milk, eggs, bread, bulk nuts, bulk, seeds, spices, fresh herbs, spreads",
               "style": "category-list"
             }
           },
@@ -754,8 +755,8 @@
             "type": "group",
             "settings": {
               "enable": true,
-              "title": "Café",
-              "tags": "breakfast, lunch, hors devours, healthy drink, green juice, smoothie",
+              "title": "Freshies",
+              "tags": "green juice, smoothies",
               "style": "category-list"
             }
           },
@@ -764,7 +765,7 @@
             "settings": {
               "enable": true,
               "title": "Vendor",
-              "tags": "Culture Counter, Artisan Oven,\nMudhouse,\nGrove Salsa Company,\nMcKaskle Family Farm,\nSpring Branch Kombucha,\nTerrell Creek,\nWillow Mountain Mushrooms,\nPrairie Pies,\nOzark Mountain Creamery,\nDown To Earth Foods,\nLiberty Fruit Company INC,\nMillsap Farms,\nProvidence Farms,\nTierra Farms,\nCircle B Ranch,\nFloat Trip Pickles,\nHigh Springs Farm,\nEdgewood Creamery,\nCopper Canyon Coffee,\nPeace Valley Poultry,\nKleoppel Meats LLC,\nBox Turtle Farms,\nBlack Gate Farms,\nJB Kobe Farms,\nFort Bison Ranch,\nUrban Roots,\nHammons Walnuts,\nCafe Cuzco,\nThe Mill at Janie’s Farm,\nBack 40 Bison,\nPequea Valley Farm,\nVital Farms,\nHometown Honey,\nWil Fischer,\nMatt’s Cones,",
+              "tags": "Culture Counter, Artisan Oven,\nMudhouse,\nGrove Salsa Company,\nMcKaskle Family Farm,\nSpring Branch Kombucha,\nTerrell Creek Farms,\nWillow Mountain Mushrooms,\nPrairie Pies,\nOzark Mountain Creamery,\nDown To Earth Foods,\nLiberty Fruit Co,\nMillsap Farms,\nProvidence Farms,\nTierra Farms,\nCircle B Ranch,\nFloat Trip Pickles,\nHigh Springs Farms,\nEdgewood Creamery,\nCopper Canyon Coffee,\nPeace Valley Poultry,\nKleoppel Meats LLC,\nBox Turtle Farms,\nBlack Gate Farms,\nJB Kobe Farms,\nFort Bison,\nUrban Roots Farms,\nHammons Walnuts,\nCafe Cuzco,\nJanie's Mill,\nBack 40 Bison,\nPequea Valley Farm,\nVital Farms,\nHometown Honey, \nMatt’s Cones, SBC, The Date Lady, Jake's Burgers, East Wind Nut Butters, Persimmon Hill, Gardener's Orchard",
               "style": "category-list"
             }
           },
@@ -798,9 +799,9 @@
           "1563884717058": {
             "type": "group",
             "settings": {
-              "enable": false,
-              "title": "",
-              "tags": "",
+              "enable": true,
+              "title": "Meal Kits",
+              "tags": "entrées, sides",
               "style": "category-list"
             }
           }
@@ -816,8 +817,8 @@
         ],
         "settings": {
           "categories": "category",
-          "shopping_by": true,
-          "cross_tags": true
+          "shopping_by": false,
+          "cross_tags": false
         }
       },
       "product-section": {
@@ -826,7 +827,7 @@
           "1527845510792": {
             "type": "tab_description",
             "settings": {
-              "enable": true,
+              "enable": false,
               "title": "Description"
             }
           },
@@ -856,15 +857,15 @@
           "always_visible_previews": false,
           "zoom": true,
           "product_prev_next": true,
-          "vendor": false,
+          "vendor": true,
           "product_sku": true,
           "show_label_new": true,
           "show_label_sale": true,
           "product_rating": true,
           "product_availability": true,
-          "product_inventory_count": false,
+          "product_inventory_count": true,
           "show_you_save": false,
-          "right_column_yes": true,
+          "right_column_yes": false,
           "description": "<a href=\"#\" class=\"shop-feature\"> <div class=\"shop-feature-icon\"><i class=\"icon-box3\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">Free worlwide delivery<\/div> <div class=\"text2\">Lorem ipsum dolor sit amet conset <\/div> <\/div> <\/a> <a href=\"#\" class=\"shop-feature\"> <div class=\"shop-feature-icon\"><i class=\"icon-arrow-left-circle\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">100% money back guarantee<\/div> <div class=\"text2\">Lorem ipsum dolor sit amet conset <\/div> <\/div> <\/a> <a href=\"#\" class=\"shop-feature\"> <div class=\"shop-feature-icon\"><i class=\"icon-call\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">24\/7 customer support<\/div> <div class=\"text2\">Lorem ipsum dolor sit amet conset <\/div> <\/div> <\/a>",
           "description_2": "<div class=\"col-sm-4\">\n<a href=\"#\" class=\"shop-feature text-center\"> <div class=\"shop-feature-icon\"><i class=\"icon-gift2\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">Free worlwide delivery<\/div> <\/div> <\/a> <\/div> <div class=\"col-sm-4\"> <a href=\"#\" class=\"shop-feature text-center\"> <div class=\"shop-feature-icon\"><i class=\"icon-circle-dollar\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">100% money back guarantee<\/div> <\/div> <\/a> <\/div> <div class=\"col-sm-4\"> <a href=\"#\" class=\"shop-feature text-center\"> <div class=\"shop-feature-icon\"><i class=\"icon-tag\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">24\/7 customer support<\/div> <\/div> <\/a> <\/div>",
           "size_guide": "",
@@ -873,7 +874,7 @@
           "safe_checkout_image": "",
           "social_sharing_products": true,
           "social_sharing_products_code": "<script src=\"\/\/s7.addthis.com\/js\/300\/addthis_widget.js#pubid=ra-5b10f4bd90cdf8c3\"><\/script><div class=\"addthis_inline_share_toolbox\"><\/div>",
-          "product_related_enable": true,
+          "product_related_enable": false,
           "title": "More from this collection",
           "limit": "7",
           "per_row_desktop": "4"
@@ -900,7 +901,7 @@
             "type": "product",
             "settings": {
               "enable": true,
-              "product": "beets"
+              "product": ""
             }
           }
         },
@@ -942,7 +943,8 @@
       },
       "column": {
         "type": "column",
-        "settings": {}
+        "settings": {
+        }
       },
       "1562718973628": {
         "type": "brands",
@@ -1139,7 +1141,7 @@
         ],
         "settings": {
           "enable": true,
-          "outer_margin": "mt-65",
+          "outer_margin": "mt-8",
           "show_above_footer": false,
           "show_under_header": false,
           "heading": "",
@@ -1214,6 +1216,20 @@
           "popular_tags": "sale, new, popular",
           "promos_yes": true,
           "promos_title": "Promos"
+        }
+      },
+      "blog-press": {
+        "type": "blog-press",
+        "settings": {
+          "posts_per_page": "5",
+          "sidebar": true
+        }
+      },
+      "blog-menu": {
+        "type": "blog-menu",
+        "settings": {
+          "posts_per_page": "5",
+          "sidebar": true
         }
       }
     },
