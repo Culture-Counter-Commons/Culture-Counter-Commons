@@ -93,8 +93,8 @@
                         {% if product.selected_or_first_available_variant.inventory_management == "shopify" and product.selected_or_first_available_variant.inventory_quantity < 1 and product.selected_or_first_available_variant.inventory_policy == "continue" %}
                             {% capture status %}{{ 'general.theme.pre_order' | t }}{% endcapture %}
                         {% endif %}
-                        <button class="btn btn--animate btn--add-to-cart  js-add-to-cart-product-page"  data-variant-id="{{ product.selected_or_first_available_variant.id }}" title="{{ status }}"><span class="text-sent">{% if section.settings.dynamic_buy_now %}<i class="icon-check-box"></i>{% else %}{{ 'general.theme.added_to_cart' | t }}{% endif %}</span><i class="icon-handbag"></i>{% unless section.settings.dynamic_buy_now %}<span>{{ status }}</span>{% endunless %}</button>
-                        {% if section.settings.dynamic_buy_now %}{{ form | payment_button }}{% endif %}
+                        <button class="btn btn--animate btn--add-to-cart  js-add-to-cart-product-page"  data-variant-id="{{ product.selected_or_first_available_variant.id }}" title="{{ status }}"><span class="text-sent">{% if section.settings.dynamic_buy_now %}<i class="icon-check-box"></i>{% else %}{{ 'general.theme.added_to_cart' | t }}{% endif %}</span><i class="icon-handbag"></i>{% unless section.settings.dynamic_buy_now %}<span>{{ status }}</span>{% endunless %}</button>     
+                  {% if section.settings.dynamic_buy_now %}{{ form | payment_button }}{% endif %}
                   	</div>
                     {% endif %}
                     <div class="prd-block_link">

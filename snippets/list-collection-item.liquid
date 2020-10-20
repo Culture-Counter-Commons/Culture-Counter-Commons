@@ -21,7 +21,8 @@
       </span>
     </a>
   </div>
-  <h3 class="collection-item-title"><a href="{{ collection.url }}">{{ collection.title }}</a></h3>
+  <h3 class="collection-item-title"><a href="{{ collection.url }}">{{ collection.title }}</a></h3>  
+  
   {% assign t_item =  'general.theme.item' | t %}
   {% assign t_items = 'general.theme.items_c' | t %}
   <p>{{ collection.all_products_count }} {{ collection.all_products_count | pluralize: t_item, t_items }}</p>

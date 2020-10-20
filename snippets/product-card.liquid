@@ -22,8 +22,13 @@
 {% if show %}
 
 <div class="prd prd-{{ settings.product_card_hover }} prd-has-loader {% if sold_out %}prd-outstock{% endif %} {% if countdown != blank %}prd-has-countdown{% endif %} product-item {% if sold_out %}product-item--not-available{% endif %} product-id-{{ product.selected_or_first_available_variant.id }} tag-all-{{ collection.handle }} {% if section.settings.tabs and section.settings.tags != blank %}{% for tag in product.tags %} tag-{{ tag | handle }} {% endfor %}{% endif %}">
-    <div class="prd-inside">
+  {% capture the_snippet_fave_icon %}{% render 'ssw-widget-faveicon' with product.id %}{% endcapture %}
+          {% unless the_snippet_fave_icon contains 'Liquid error' %}
+          {{ the_snippet_fave_icon }}
+          {% endunless %}    
+  <div class="prd-inside">
         <div class="prd-img-area">
+          
             <!-- correct search results url -->
             <!-- custom url instructions: https://community.shopify.com/c/Technical-Q-A/URL-has-additional-string/m-p/593294/highlight/true#M13356 -->
             {% assign newproducturl = product.url | split: '?' %}

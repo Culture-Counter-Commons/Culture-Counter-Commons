@@ -12,7 +12,11 @@
                     </div>
                     <button type="submit"  class="btn btn--animate js-add-to-cart-select btn-select-desktop" data-variant-id="{{ product.selected_or_first_available_variant.id }}" title="{{ 'general.theme.add_to_cart' | t }}"><span class="text-sent"><i class="icon-check-box"></i></span><i class="icon-handbag"></i></button>
                     <button type="submit"  class="btn btn--animate btn-select-mobile js-qview-link"  data-fancybox data-type="ajax" data-src="{{ product.url }}?view=quick-view&output=embed" title="{{ 'general.theme.add_to_cart' | t }}"><span>{{ 'general.theme.select_options' | t }}</span></button>
-
+                         
+    {% capture the_snippet_fave %}{% render 'socialshopwave-widget-fave' %}{% endcapture %}
+    {% unless the_snippet_fave contains 'Liquid error' %}
+    {{ the_snippet_fave }}
+    {% endunless %}  
                 {% comment %}
                 {% else %}
                     <a class="btn  prd-qview-link js-qview-link" data-fancybox data-type="ajax" data-src="{{ product.url }}?view=quick-view&output=embed"><span>{{ 'general.theme.select_options' | t }}</span></a>

@@ -264,7 +264,6 @@
           "html_header_5": "",
           "topline_enable": false,
           "where_to_show": "all",
-          "bg_topline": "",
           "topline_caption": "GET 10% OFF YOUR FIRST ORDER WITH CODE <span style=\"color: #000\">GOODWIN<\/span> <span class=\"hidden-xs\"> |   FREE GROUND SHIPPING OVER $250<\/span>",
           "topline_enable_animation": false,
           "topline_caption_1": "GET 10% OFF YOUR FIRST ORDER WITH CODE GOODWIN",
@@ -294,7 +293,7 @@
           "show_instagram": false,
           "social_icons": false,
           "support_time_title": "CONNECT",
-          "support_time": "<ul class=\"contact-list\"> <li>\n<i class=\"icon-phone\"><\/i><span><span class=\"h6-style\">Call Us:<\/span><span>1 (417) 720-1381<\/span><\/span>\n<\/li> <li>\n<i class=\"icon-phone\"><\/i><span><span class=\"h6-style\">Hours:<\/span><span>Tues-Sat: 9am-8pm<br>Sun: 9am-5pm<\/span><\/span>\n<\/li> <li>\n<i class=\"icon-mail-envelope\"><\/i><span><span class=\"h6-style\">E-mail:<\/span><span><a href=\"mailto:info@culturecountercommons.com\">info@culturecounter<br>commons.com<\/a><\/span><\/span>\n<\/li> <li>\n<i class=\"icon-phone\"><\/i><span><span class=\"h6-style\">Address:<\/span><span>607 S Pickwick ave<br>Springfield, MO 65804<\/span><\/span>\n<\/li> <\/ul>",
+          "support_time": "<ul class=\"contact-list\"> <li>\n<i class=\"icon-phone\"><\/i><span><span class=\"h6-style\">Call Us:<\/span><span>1 (417) 720-1381<\/span><\/span>\n<\/li> <li>\n<i class=\"icon-phone\"><\/i><span><span class=\"h6-style\">Hours:<\/span><span>Mon-Sat: 8am-8pm<\/span><\/span>\n<\/li> <li>\n<i class=\"icon-mail-envelope\"><\/i><span><span class=\"h6-style\">E-mail:<\/span><span><a href=\"mailto:info@culturecountercommons.com\">info@culturecounter<br>commons.com<\/a><\/span><\/span>\n<\/li> <li>\n<i class=\"icon-phone\"><\/i><span><span class=\"h6-style\">Address:<\/span><span>607 S Pickwick ave<br>Springfield, MO 65804<\/span><\/span>\n<\/li> <\/ul>",
           "short_description": "",
           "google_map": "",
           "chat_yes": false,
@@ -631,7 +630,6 @@
               "enable": true,
               "title": "<span>Crafts<\/span><span>Coming Soon!<\/span>",
               "image": "shopify:\/\/shop_images\/CC_Rectangle1_300x320_961bb288-d778-431c-93b7-ac05e7b223dd.png",
-              "link": "",
               "link_target": "_self"
             }
           },
@@ -641,7 +639,6 @@
               "enable": true,
               "title": "<span>Books<\/span><span>Coming Soon!<\/span>",
               "image": "shopify:\/\/shop_images\/stack_of_books_300x320_7c563e91-c3e0-49e1-b346-2189db4004d0.jpg",
-              "link": "",
               "link_target": "_self"
             }
           }
@@ -677,15 +674,13 @@
             "type": "product",
             "settings": {
               "enable": true,
-              "product": "elderberry-preserves",
-              "image": ""
+              "product": "elderberry-preserves"
             }
           },
           "1579829731685": {
             "type": "product",
             "settings": {
-              "enable": true,
-              "product": "eggs-organic-pasture-raised-by-the-dozen",
+              "enable": false,
               "image": "shopify:\/\/shop_images\/organic12-largeSIZED_37a97b4f-43c3-4f37-977f-607947e2e103.png"
             }
           },
@@ -693,24 +688,21 @@
             "type": "product",
             "settings": {
               "enable": true,
-              "product": "bacon-nitrite-free-pork-1",
-              "image": ""
+              "product": "bacon-nitrite-free-pork-1"
             }
           },
           "1539362044226-1": {
             "type": "product",
             "settings": {
               "enable": true,
-              "product": "bananas-1",
-              "image": ""
+              "product": "bananas-1"
             }
           },
           "1579830156504": {
             "type": "product",
             "settings": {
               "enable": true,
-              "product": "avocados",
-              "image": ""
+              "product": "avocados"
             }
           }
         },
@@ -893,15 +885,13 @@
           "1581022982658": {
             "type": "product",
             "settings": {
-              "enable": true,
-              "product": "bananas"
+              "enable": true
             }
           },
           "1581022991960": {
             "type": "product",
             "settings": {
-              "enable": true,
-              "product": ""
+              "enable": true
             }
           }
         },
@@ -1147,7 +1137,6 @@
           "heading": "",
           "link_button_yes": false,
           "link_button_text": "",
-          "link": "",
           "link_target": "_self"
         }
       },
