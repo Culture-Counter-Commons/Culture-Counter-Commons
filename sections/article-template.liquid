@@ -5,58 +5,100 @@ that includes the new comment id in its URL.
 Example: http://shopname.myshopify.com/blogs/news/2022072-my-post?comment=3721372
 {% endcomment %}
 {% if blog.handle == 'waffle-menu' %}
-<style>
-    /* reset */
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-    }
+    <style>
+        /* reset */
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
 
-    table {
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
+        table {
+            table-layout: fixed;
+            width: 100% !important;
+            border-collapse: collapse;
+            border-spacing: 0;
+            margin: 0 0 0 25%;
+            empty-cells: hide;
+        }
+        .post-text h2, .post-text h3, .post-text h4, .post-text h5, .post-text h6 {
+            border-bottom: 1px solid #298f73;
+            line-height: 2.5;
+        }
+        table h2, table h3, table h4, table h5, table h6 {
+            border-bottom: none;
+            line-height: 2;
+        }
+        /* END reset */
 
-    /* END reset */
+        td {
+            display: table-cell;
+            vertical-align: inherit;
+            text-align: center;
+            padding: 1rem 0;
+            width: 50% !important;
+            line-height: 2;
+        }
 
+        td:empty {
+            border-right: none;
+            visibility: hidden;
+            padding: 0 !important;
+        }
 
-    table {
-        table-layout: fixed;
-        width: 100%;
-        border-collapse: collapse;
-        max-width: 500px;
-        margin: 0 auto;
-    }
+        tr:nth-child(odd) {
+            position: relative;
+            display: block;
+            height: 2.5rem;
+        }
 
-    table td {
-        display: table-cell;
-        vertical-align: inherit;
-        text-align: inherit;
-        padding: 1rem;
-        width: 50%;
-    }
+        tr:nth-child(odd) td {
+            font-family: 'Gotham Bold';
+        }
 
-    tr>td {
-        width: 100% !important;
-    }
+        tr:nth-child(odd) td:first-child {
+            position: absolute;
+            left: 0;
+            right: -100%;
+            width: auto;
+            top: 0;
+            bottom: 0;
+            text-align: center;
+        }
 
-    tr>td:first-child {
-        background-color: yellow;
-        text-align: right;
-    }
+        tr:nth-child(odd) td:last-child {
+            width: 100%;
+            position: absolute;
+            right: 0;
+        }
 
-</style>
+        tr:nth-child(even) td:first-child {
+            border-bottom: 1px dotted #298f73;
+            padding: 2rem 0;
+            line-height: 1;
+        }
+
+        tr:nth-child(even) td:only-child {
+            display: inline-block;
+            font-family: 'Gotham Bold';
+            border-bottom: none;
+        }
+        tr > td:only-child {
+            line-height: 2 !important;
+            padding: 0 !important;
+        }
+
+    </style>
 {% endif %}
 {%- assign new_comment = false -%}
 {% if comment and comment.created_at %}
