@@ -117,10 +117,9 @@
                 </tr>
               </table>
             </div>
-            {%- comment -%}
-            shopify checkout button
+      
             <button class="btn btn--full btn--lg" type="submit" name="checkout">{{ 'cart.general.checkout_procees' | t }}</button>
-            {%- endcomment -%}
+           
               
 
             {%- comment -%}
@@ -201,18 +200,18 @@
   // var poModal = document.querySelector(".po-modal-content p");
   // poModal.appendButton("something", "/cart/clear");
 
-  $(function () {
-    $('.clear-cart').on('click', function (e) {
-      e.preventDefault();
-      $.ajax({
-        type: "POST",
-        url: '/cart/clear.js',
-        success: function () {
-          alert('I cleared the cart!');
-        },
-        dataType: 'json'
-      });
-    })
-  });
+  // $(function () {
+  //   $('.clear-cart').on('click', function (e) {
+  //     e.preventDefault();
+  //     $.ajax({
+  //       type: "POST",
+  //       url: '/cart/clear.js',
+  //       success: function () {
+  //         alert('I cleared the cart!');
+  //       },
+  //       dataType: 'json'
+  //     });
+  //   })
+  // });
 
 </script>

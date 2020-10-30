@@ -25,9 +25,137 @@
 
 <div class="prd-grid data-to-show-{{ section.settings.collections_products_per_row }} data-to-show-md-3 data-to-show-sm-{{ section.settings.collections_per_row_mobile }} js-category-grid product-listing">
     {% if collection.products.size > 0 %}
-        {% for product in collection.products %}
-            {% include 'product-card' image_size:'large' %}
-        {% endfor %}
+        {% if collection.handle == 'burritos' %}
+
+            {% for product in collection.products %}
+                {% if forloop.first == true %}
+                    <h2 class="h-category btn--full">Monday</h2>
+                {% endif %}
+                {% if product.tags contains 'monday' %}
+                    {% include 'product-card' image_size:'large' %}
+                {% endif %}
+            {% endfor %}
+
+            {% for product in collection.products %}
+                {% if forloop.first == true %}
+                    <h2 class="h-category btn--full mt-6">Tuesday</h2>
+                {% endif %}
+                {% if product.tags contains 'tuesday' %}
+                    {% include 'product-card' image_size:'large' %}
+                {% endif %}
+            {% endfor %}
+
+            
+            {% for product in collection.products %}
+                {% if forloop.first == true %}
+                    <h2 class="h-category btn--full mt-6">Wednesday</h2>
+                {% endif %}
+                {% if product.tags contains 'wednesday' %}
+                    {% include 'product-card' image_size:'large' %}
+                {% endif %}
+            {% endfor %}
+
+            
+            {% for product in collection.products %}
+                {% if forloop.first == true %}
+                    <h2 class="h-category btn--full mt-6">Thursday</h2>
+                {% endif %}
+                {% if product.tags contains 'thursday' %}
+                    {% include 'product-card' image_size:'large' %}
+                {% endif %}
+            {% endfor %}
+
+            
+            {% for product in collection.products %}
+                {% if forloop.first == true %}
+                    <h2 class="h-category btn--full mt-6">Friday</h2>
+                {% endif %}
+                {% if product.tags contains 'friday' %}
+                    {% include 'product-card' image_size:'large' %}
+                {% endif %}
+            {% endfor %}
+
+            
+            {% for product in collection.products %}
+                {% if forloop.first == true %}
+                    <h2 class="h-category btn--full mt-6">Saturday</h2>
+                {% endif %}
+                {% if product.tags contains 'saturday' %}
+                    {% include 'product-card' image_size:'large' %}
+                {% endif %}
+            {% endfor %}
+
+        {% endif %}
+
+        {% if collection.handle == 'waffle-bar' %}
+
+            
+            {% for product in collection.products %}
+                {% if forloop.first == true %}
+                    <h2 class="h-category btn--full">Choose your waffle</h2>
+                {% endif %}
+                {% if product.tags contains 'waffle option' %}
+                    {% include 'product-card' image_size:'large' %}
+                {% endif %}
+            {% endfor %}
+
+            
+            {% for product in collection.products %}
+                {% if forloop.first == true %}
+                    <h2 class="h-category btn--full mt-6">Choose your toppings</h2>
+                {% endif %}
+                {% if product.tags contains 'waffle topping' %}
+                    {% include 'product-card' image_size:'large' %}
+                {% endif %}
+            {% endfor %}
+
+            
+            {% for product in collection.products %}
+                {% if forloop.first == true %}
+                    <h2 class="h-category btn--full mt-6">Choose your add-ons</h2>
+                {% endif %}
+                {% if product.tags contains 'waffle add-on' %}
+                    {% include 'product-card' image_size:'large' %}
+                {% endif %}
+            {% endfor %}
+
+            
+            {% for product in collection.products %}
+                {% if forloop.first == true %}
+                    <h2 class="h-category btn--full mt-6">Specials</h2>
+                {% endif %}
+                {% if product.tags contains 'waffle special' %}
+                    {% include 'product-card' image_size:'large' %}
+                {% endif %}
+            {% endfor %}
+
+        {% endif %}
+
+        {% if collection.handle == 'grab-go' %}
+            
+            {% for product in collection.products %}
+                {% if forloop.first == true %}
+                    <h2 class="h-category btn--full">Hot</h2>
+                {% endif %}
+                {% if product.tags contains 'hot' %}
+                    {% include 'product-card' image_size:'large' %}
+                {% endif %}
+            {% endfor %}
+
+
+            {% for product in collection.products %}
+                {% if forloop.first == true %}
+                    <h2 class="h-category btn--full mt-6">Cold</h2>
+                {% endif %}
+                {% if product.tags contains 'cold' %}
+                    {% include 'product-card' image_size:'large' %}
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            {% for product in collection.products %}
+                {% include 'product-card' image_size:'large' %}
+            {% endfor %}
+        {% endif %}
     {% else %}
         <div class="empty-category">
             <div class="empty-category-text"><span>{{ 'general.theme.sorry' | t }}</span>, {{ 'general.theme.no_products' | t }}</div>

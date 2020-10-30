@@ -747,8 +747,8 @@
             "type": "group",
             "settings": {
               "enable": true,
-              "title": "Freshies",
-              "tags": "green juice, smoothies",
+              "title": "drinkables",
+              "tags": "green juice, smoothies, root beer",
               "style": "category-list"
             }
           },
@@ -785,7 +785,7 @@
               "enable": false,
               "title": "Popular Tags",
               "tags": "discount,",
-              "style": "tags-list"
+              "style": "category-list"
             }
           },
           "1563884717058": {
@@ -794,6 +794,15 @@
               "enable": true,
               "title": "Meal Kits",
               "tags": "entrées, sides",
+              "style": "category-list"
+            }
+          },
+          "6f036636-cc2e-458b-b31e-db4d7fee818a": {
+            "type": "group",
+            "settings": {
+              "enable": true,
+              "title": "Waffle Window",
+              "tags": "waffle window",
               "style": "category-list"
             }
           }
@@ -805,7 +814,8 @@
           "1511706917060",
           "1511706934183",
           "1511706955678",
-          "1563884717058"
+          "1563884717058",
+          "6f036636-cc2e-458b-b31e-db4d7fee818a"
         ],
         "settings": {
           "categories": "category",
@@ -885,13 +895,15 @@
           "1581022982658": {
             "type": "product",
             "settings": {
-              "enable": true
+              "enable": true,
+              "product": ""
             }
           },
           "1581022991960": {
             "type": "product",
             "settings": {
-              "enable": true
+              "enable": true,
+              "product": ""
             }
           }
         },
@@ -933,8 +945,7 @@
       },
       "column": {
         "type": "column",
-        "settings": {
-        }
+        "settings": {}
       },
       "1562718973628": {
         "type": "brands",
@@ -1220,6 +1231,10 @@
           "posts_per_page": "5",
           "sidebar": true
         }
+      },
+      "page-landing": {
+        "type": "page-landing",
+        "settings": {}
       }
     },
     "content_for_index": [
