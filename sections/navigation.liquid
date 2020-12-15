@@ -1,0 +1,378 @@
+{% comment %}
+
+© 2018 Atlas Group, Inc. All rights reserved.
+
+No portion of this software code may be reproduced, distributed or modified
+without prior express written authorization of Atlas Group, Inc.
+
+Unauthorized reproduction or copying of this software code, via any medium,
+is strictly prohibited and may subject you to severe legal liability.
+
+{% endcomment %}
+ {% if section.settings.show_announcement %}
+	{% if section.settings.home_page_only == false or request.page_type == 'index' %}
+		<style>
+		.announcement-bar {
+			background-color: {{ section.settings.announcement_color_bg }};
+		}
+
+		.announcement-bar:hover {
+			{% assign brightness = section.settings.announcement_color_bg | color_brightness %}
+
+			{% if brightness <= 192 %}
+			{% assign lightenAmount = 255 | minus: brightness | divided_by: 255 | times: 16 %}
+			background-color: {{ section.settings.announcement_color_bg | color_lighten: lightenAmount }};
+			{% else %}
+			{% assign darkenAmount = 255 | divided_by: brightness | times: 8 %}
+			background-color: {{ section.settings.announcement_color_bg | color_darken: darkenAmount }};
+			{% endif %}
+		}
+
+		.announcement-bar__message *,
+		.announcement-bar__close {
+			color: {{ section.settings.announcement_color_text }};
+		}
+		.main-layer {padding-top: 3rem;}
+		</style>
+
+		{% if section.settings.announcement_link == blank %}
+		{%- comment -%}do nothing{%- endcomment -%}
+		{% else %}
+		<div class="announcement-bar">
+			<a href="{{ section.settings.announcement_link }}" class="announcement-bar--link text-center announcement-bar__message">
+			{% endif %}
+
+				{{ section.settings.announcement_text }}
+			{%- comment -%}
+				<button class="announcement-bar__close btn btn--clear" aria-expanded="true">{% include 'icon-close' %}</button>
+			{%- endcomment -%}
+			{% if section.settings.announcement_link == blank %}
+			{%- comment -%}do nothing{%- endcomment -%}
+			{% else %}
+			</a>
+		</div>
+		{% endif %}
+
+	{% endif %}
+	{% endif %}
+<div class="navigation">
+
+	<style>
+		.navigation .navbar-dark .navbar-nav .nav-link {
+
+			color: white;
+
+		}
+
+	</style>
+
+	<div class="navbar navbar-dark navbar-expand-lg px-lg-5 py-lg-3 p-0">
+
+		<a class="navbar-brand p-lg-3 px-3 py-2 m-0" href="/">
+
+			<svg class="d-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.25 35.08" fill="white" height="40">
+
+				<path d="M0,9.3H7.76V18h.07L14.74,9.3H24.3l-9.13,9.84L25.78,34.48H16.12l-6.21-9.8L7.76,27v7.44H0Z" />
+
+				<path d="M26.52,9.3h7.76V34.48H26.52Z" />
+
+				<path d="M37.56,9.3h7.76V34.48H37.56Z" />
+
+				<path d="M54.49,15.75H47.44V9.3H69.31v6.45H62.25V34.48H54.49Z" />
+
+				<path
+					d="M83.48,8.7c7.66,0,12.77,5.5,12.77,13.19S91.14,35.08,83.48,35.08s-12.77-5.5-12.77-13.19S75.83,8.7,83.48,8.7Zm0,20.1c2,0,5-1.3,5-6.91s-3-6.91-5-6.91-5,1.3-5,6.91S81.51,28.8,83.48,28.8Z" />
+
+				<circle fill="#59c8e2" cx="30.4" cy="3.88" r="3.88" />
+
+				<circle fill="#59c8e2" cx="41.44" cy="3.88" r="3.88" />
+
+			</svg>
+
+		</a>
+
+		<a class="navbar-toggler border-0 p-3" data-easing="none" data-duration="none" data-distance="none"
+			data-target="#stage" data-toggle="stage">
+
+			<svg class="d-block" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" width="20" height="20">
+
+				<polyline points="0,6.5 20,6.5" />
+
+				<polyline points="0,13.5 20,13.5" />
+
+			</svg>
+
+		</a>
+
+		<div class="navbar-collapse collapse">
+
+			<ul class="navbar-nav ml-auto px-1">
+				{% if customer.tags contains 'Wholesale' %}
+
+				<li class="nav-item px-1">
+
+					<a class="nav-link text-uppercase py-4 px-2" href="/collections/wholesale">
+
+						Wholesale
+
+					</a>
+
+				</li>
+				{% endif %} 
+				{% for link in menus['main-menu'].links %}
+
+				<li class="nav-item px-1">
+
+					<a class="nav-link text-uppercase py-4 px-2" href="{{ link.url }}">
+
+						{{ link.title }}
+
+					</a>
+
+				</li>
+
+				{% endfor %}
+
+			</ul>
+
+		</div>
+
+		<div class="header_component header_component--cart la_compt_iem la_com_action--cart p-md-3 p-lg-0">
+			<a rel="nofollow" class="component-target" href="/cart">
+				<img src="{{ 'kiito-cart-icon.svg' | asset_url }}"><span
+					class="component-target-badget la-cart-count">{{ cart.item_count }}</span>
+			</a>
+		</div>
+
+	</div>
+
+</div>
+
+
+{% schema %}
+{
+  "name": {
+    "da": "Overskrift",
+    "de": "Titel",
+    "en": "Header",
+    "es": "Encabezado",
+    "fi": "Ylätunniste",
+    "fr": "En-tête",
+    "hi": "हैडर",
+    "it": "Header",
+    "ja": "ヘッダー",
+    "ko": "머리글",
+    "ms": "Pengepala",
+    "nb": "Header",
+    "nl": "Koptekst",
+    "pt-BR": "Cabeçalho",
+    "pt-PT": "Cabeçalho",
+    "sv": "Rubrik",
+    "th": "ส่วนหัว",
+    "zh-CN": "标头",
+    "zh-TW": "標頭"
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": {
+        "da": "Meddelelse",
+        "de": "Ankündigung",
+        "en": "Announcement",
+        "es": "Anuncio",
+        "fi": "Ilmoitus",
+        "fr": "Annonce",
+        "hi": "घोषणा",
+        "it": "Annuncio",
+        "ja": "告知",
+        "ko": "공지",
+        "ms": "Pengumuman",
+        "nb": "Kunngjøring",
+        "nl": "Aankondiging",
+        "pt-BR": "Anúncio",
+        "pt-PT": "Comunicado",
+        "sv": "Meddelande",
+        "th": "การประกาศ",
+        "zh-CN": "公告",
+        "zh-TW": "公告"
+      }
+    },
+    {
+      "type": "checkbox",
+      "id": "show_announcement",
+      "label": {
+        "da": "Vis meddelelse",
+        "de": "Ankündigung anzeigen",
+        "en": "Show announcement",
+        "es": "Mostrar anuncio",
+        "fi": "Näytä ilmoitus",
+        "fr": "Afficher l'annonce",
+        "hi": "घोषणा डिखाएं",
+        "it": "Mostra annuncio",
+        "ja": "告知を表示する",
+        "ko": "공지 표시",
+        "ms": "Tunjukkan pengumuman",
+        "nb": "Vis kunngjøring",
+        "nl": "Aankondiging weergeven",
+        "pt-BR": "Exibir anúncio",
+        "pt-PT": "Mostrar comunicado",
+        "sv": "Visa meddelande",
+        "th": "แสดงประกาศ",
+        "zh-CN": "显示公告",
+        "zh-TW": "顯示公告"
+      },
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "home_page_only",
+      "label": {
+        "da": "Kun startside",
+        "de": "Nur Startseite",
+        "en": "Home page only",
+        "es": "Solo página de inicio",
+        "fi": "Vain kotisivu",
+        "fr": "Page d'accueil uniquement",
+        "hi": "केवल होमपेज",
+        "it": "Solo home page",
+        "ja": "ホームページのみ",
+        "ko": "홈페이지만",
+        "ms": "Halaman utama sahaja",
+        "nb": "Kun på startsiden",
+        "nl": "Alleen startpagina",
+        "pt-BR": "Apenas na página inicial",
+        "pt-PT": "Apenas página inicial",
+        "sv": "Endast hemsida",
+        "th": "หน้าแรกเท่านั้น",
+        "zh-CN": "仅主页",
+        "zh-TW": "僅限首頁"
+      },
+      "default": true
+    },
+    {
+      "type": "html",
+      "id": "announcement_text",
+      "label": {
+        "da": "Meddelelsestekst",
+        "de": "Ankündigungstext",
+        "en": "Announcement text",
+        "es": "Texto del anuncio",
+        "fi": "Ilmoitusteksti",
+        "fr": "Texte d'annonce",
+        "hi": "घोषणा पाठ",
+        "it": "Testo annuncio",
+        "ja": "告知テキスト",
+        "ko": "공지 텍스트",
+        "ms": "Teks pengumuman",
+        "nb": "Kunngjøringstekst",
+        "nl": "Aankondigingstekst",
+        "pt-BR": "Texto do anúncio",
+        "pt-PT": "Texto do comunicado",
+        "sv": "Meddelandetext",
+        "th": "ข้อความประกาศ",
+        "zh-CN": "公告文本",
+        "zh-TW": "公告文字"
+      },
+      "default": "Announce something here"
+    },
+    {
+      "type": "url",
+      "id": "announcement_link",
+      "label": {
+        "da": "Link til meddelelse",
+        "de": "Ankündigungslink",
+        "en": "Announcement link",
+        "es": "Enlace de anuncio",
+        "fi": "Ilmoituslinkki",
+        "fr": "Lien d'annonce",
+        "hi": "घोषणा लिंक",
+        "it": "Link annuncio",
+        "ja": "告知リンク",
+        "ko": "공지 링크",
+        "ms": "Pautan pengumuman",
+        "nb": "Kunngjøringskobling",
+        "nl": "Aankondigingslink",
+        "pt-BR": "Link de anúncio",
+        "pt-PT": "Ligação do comunicado",
+        "sv": "Meddelandelänk",
+        "th": "ลิงก์ประกาศ",
+        "zh-CN": "公告链接",
+        "zh-TW": "公告連結"
+      },
+      "info": {
+        "da": "Valgfri",
+        "de": "Optional",
+        "en": "Optional",
+        "es": "Opcional",
+        "fi": "Valinnainen",
+        "fr": "Facultatif",
+        "hi": "वैकल्पिक",
+        "it": "Facoltativo",
+        "ja": "オプション",
+        "ko": "선택 사항",
+        "ms": "Opsyenal",
+        "nb": "Valgfritt",
+        "nl": "Optioneel",
+        "pt-BR": "Opcional",
+        "pt-PT": "Opcional",
+        "sv": "Valfritt",
+        "th": "ไม่จำเป็น",
+        "zh-CN": "可选",
+        "zh-TW": "(選填)"
+      }
+    },
+    {
+      "type": "color",
+      "id": "announcement_color_bg",
+      "label": {
+        "da": "Bjælke",
+        "de": "Zeile",
+        "en": "Bar",
+        "es": "Barra",
+        "fi": "Palkki",
+        "fr": "Barre",
+        "hi": "बार",
+        "it": "Barra",
+        "ja": "バー",
+        "ko": "바",
+        "ms": "Bar",
+        "nb": "Felt",
+        "nl": "Balk",
+        "pt-BR": "Barra",
+        "pt-PT": "Barra",
+        "sv": "Fält",
+        "th": "แถบ",
+        "zh-CN": "栏",
+        "zh-TW": "橫條"
+      },
+      "default": "#7796A8"
+    },
+    {
+      "type": "color",
+      "id": "announcement_color_text",
+      "label": {
+        "da": "Tekst",
+        "de": "Text",
+        "en": "Text",
+        "es": "Texto",
+        "fi": "Teksti",
+        "fr": "Texte",
+        "hi": "टेक्स्ट",
+        "it": "Testo",
+        "ja": "テキスト",
+        "ko": "텍스트",
+        "ms": "Teks",
+        "nb": "Tekst",
+        "nl": "Tekst",
+        "pt-BR": "Texto",
+        "pt-PT": "Texto",
+        "sv": "Text",
+        "th": "ข้อความ",
+        "zh-CN": "文本",
+        "zh-TW": "文字"
+      },
+      "default": "#fff"
+    }
+  ]
+}
+{% endschema %}

@@ -34,14 +34,14 @@
                 </select>
             </div>
             {% if product_options == 'swatches' %}
-                <ul class="{% if option_title contains 'color' %}color-list{% else %}size-list{% endif %}" data-index="{{ forloop.index0 }}">
-                    {% if option_title contains 'color' %}
+                <ul class="{% if option_title contains 'choose your base' or option_title contains 'size' %}color-list{% else %}size-list{% endif %}" data-index="{{ forloop.index0 }}">
+                    {% if option_title contains 'choose your base' or option_title contains 'size' %}
                         <!-- Color Swatch -->
                         {% assign has_color = false %}
                         {% assign index_color = 0 %}
                         {% for option in product.options %}
                             {% capture downcased_option %}{{ option | downcase }}{% endcapture %}
-                            {% if downcased_option contains 'color' %}
+                            {% if downcased_option contains 'choose your base' or option_title contains 'size' %}
                                 {% assign has_color = true %}
                                 {% assign index_color = forloop.index0 %}
                             {% endif %}
@@ -68,6 +68,11 @@
                                             <span class="value txt-swatch">{{ title }}</span>
                                         {% endif %}
                                     </a>
+                                    <div class="t-desc-container">
+                                        <div class="t-desc">
+                                            {{ variant.metafields.waffle_base.waffle_base_description }}
+                                        </div>
+                                    </div>
                                 </li>
                                 {% capture colors %}{{ colors }}{{ wrapped_color }}{% endcapture %}
                                 {% endunless %}
@@ -106,18 +111,9 @@
         </div>
     {% endfor %}
     {% endunless %}
-    {% if product.available %}
-        <div class="prd-block_qty">
-            <span class="option-label">{{ 'general.theme.qty' | t }}:</span>
-            <div class="qty qty-changer">
-                <fieldset>
-                    <input type="button" value="&#8210;" class="decrease">
-                    <input type="text" class="qty-input" name="quantity" value="1" data-min="1" {% if product.selected_or_first_available_variant.inventory_management == "shopify" and product.selected_or_first_available_variant.inventory_quantity > 0 and product.selected_or_first_available_variant.inventory_policy == 'deny' %}data-max="{{ product.selected_or_first_available_variant.inventory_quantity }}"{% endif %}>
-                    <input type="button" value="+" class="increase">
-                </fieldset>
-            </div>
-        </div>
-    {% endif %}
+    {%- comment -%}
+    quantity was here
+    {%- endcomment -%}
 
     <script>
         var product_options_{{ product.id }} = [];

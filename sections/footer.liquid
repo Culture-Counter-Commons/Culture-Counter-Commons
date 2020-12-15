@@ -1,223 +1,401 @@
-{% include 'global_vars' %}
-{% assign style = section.settings.style %}
-{% assign style_file = 'footer-style-' | append:style %}
-{% if home and slides_mode %}{% assign style_file = 'footer-style-13' %}{% endif %}
-{% unless template contains '404' %}{% include style_file %}{% endunless %}
+{% comment %}
+
+  © 2018 Atlas Group, Inc. All rights reserved.
+
+  No portion of this software code may be reproduced, distributed or modified
+  without prior express written authorization of Atlas Group, Inc.
+
+  Unauthorized reproduction or copying of this software code, via any medium,
+  is strictly prohibited and may subject you to severe legal liability.
+
+{% endcomment %}
+
+<div class="images">
+
+  <div class="pt-5">
+
+    <div class="container-fluid p-0">
+
+      <div class="row no-gutters">
+
+        <div class="col p-0">
+
+          <div class="title" data-transition="entrance" style="transform : translateY( 50px )">
+
+            <div class="text-center">
+
+              <h1 class="text-uppercase pb-3 mb-3">
+
+                {{ section.settings.title }}
+
+              </h1>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row no-gutters" id="feed">
+
+        <div class="col p-0">
+
+          <div class="feed" data-transition="entrance" style="transform : translateY( 50px )">
+
+          	{% comment %} Instagram HTML Snippet {% endcomment %}
+
+        	{{ section.settings.text_top }}
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="footer">
+
+  <div class="py-5">
+
+    <div class="container-fluid px-2">
+
+      <div class="row no-gutters">
+
+        <div class="col-lg-4 offset-lg-1 px-2">
+
+          <svg class="d-block mb-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.25 35.08" fill="white" height="40">
+
+            <path d="M0,9.3H7.76V18h.07L14.74,9.3H24.3l-9.13,9.84L25.78,34.48H16.12l-6.21-9.8L7.76,27v7.44H0Z"/>
+
+            <path d="M26.52,9.3h7.76V34.48H26.52Z"/>
+
+            <path d="M37.56,9.3h7.76V34.48H37.56Z"/>
+
+            <path d="M54.49,15.75H47.44V9.3H69.31v6.45H62.25V34.48H54.49Z"/>
+
+            <path d="M83.48,8.7c7.66,0,12.77,5.5,12.77,13.19S91.14,35.08,83.48,35.08s-12.77-5.5-12.77-13.19S75.83,8.7,83.48,8.7Zm0,20.1c2,0,5-1.3,5-6.91s-3-6.91-5-6.91-5,1.3-5,6.91S81.51,28.8,83.48,28.8Z"/>
+
+            <circle fill="#59c8e2" cx="30.4" cy="3.88" r="3.88"/>
+
+            <circle fill="#59c8e2" cx="41.44" cy="3.88" r="3.88"/>
+
+          </svg>
+
+          <p class="pb-3 mb-3">
+
+            {% for link in menus['footer'].links %}
+
+              <a class="text-white" href="{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>
+
+                {{ link.title }}
+
+              </a>
+
+              <br>
+
+            {% endfor %}
+
+            {% comment %} wholesale popup contact form {% endcomment %}
+            <a data-fancybox data-src="#wholesale" class=" " href="javascript:;">
+                Wholesale
+            </a>
+            {%- comment -%}{%- endcomment -%}
+            <div id="wholesale" style="display: none;" class="review wholesale-fancybox">
+
+              <h1 class="text-uppercase text-center">Wholesale Request</h1>
+
+              <p>Please submit the form below to request access to our wholesale products.</p>
+              
+              <div class="wholesale-contact-form">
+                
+                {% include 'wholesale-contact-form' %}
+                
+              </div>
+
+            </div>
+            
+            {% comment %}END wholesale popup contact form{% endcomment %}
+          </p>
+
+          <p class="mb-5">
+
+            <u>
+              
+              {% comment %}
+
+              <a href="mailto:{{ shop.email }}">
+
+                {{ shop.email }}
+
+              </a>
+
+              <br>
+              
+              {% endcomment %}
+
+              <a href="mailto:hi@drinkkiito.com">hi@drinkkiito.com</a>
+
+            </u>
+
+          </p>
+
+        </div>
+
+        <div class="col-lg-6">
+
+            <div class="mb-4">
+
+              <div class="row no-gutters">
+
+                <!-- Begin Klaviyo Signup Form -->
+				        <style>
+                .klaviyo-form {
+                  width: 100%;
+                }
+                </style>
+
+                <!-- Begin Klaviyo Signup Form -->
+                <div class="klaviyo-form-Ndaqyn"></div>
+                <!--End Klaviyo-->
+
+              </div>
+
+            </div>
+
+          <svg class="float-right mx-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 418.33 418.33" height="100"><defs><style>.a{fill:none;}.b{fill:#fff;}.c{fill:#808285;}.d{clip-path:url(#a);}.e{fill:#231f20;}</style><clipPath id="a"><path class="a" d="M397.42,209.16c0,104-84.29,188.25-188.26,188.25S20.92,313.13,20.92,209.16h376.5"/></clipPath></defs><title>usda</title><circle class="b" cx="209.16" cy="209.16" r="209.17" transform="translate(-86.64 209.16) rotate(-45)"/><path class="c" d="M397.42,209.16c0,104-84.29,188.25-188.26,188.25S20.92,313.13,20.92,209.16h376.5"/><g class="d"><polyline class="e" points="397.42 209.16 12.16 209.16 27.86 271.1 397.42 209.16"/><polyline class="e" points="397.42 209.16 31.3 280.11 62.92 336.46 397.42 209.16"/><polyline class="e" points="397.42 209.16 72.11 342.93 129.65 385.83 397.42 209.16"/><polyline class="e" points="397.42 209.16 141.56 389.91 221.92 408.91 397.42 209.16"/><polyline class="e" points="397.42 209.16 242.33 401.15 390.47 400.08 397.42 209.16"/></g><path class="e" d="M96.9,104.87H116v61.39c0,3.9,1.19,7.27,6.61,7.27,5,0,6.51-4.34,6.51-7.81V104.87H148.2v58.9c0,13.77-6.18,24.4-25.71,24.4-16.16,0-25.59-7.7-25.59-24.4v-58.9"/><path class="e" d="M172.06,159v5.75c0,4.66,1.52,8.79,7.59,8.79,4.45,0,6.4-4,6.4-8.14,0-6.83-5.64-9.44-10.63-12.47-5.86-3.36-10.85-6.51-14.42-10.63s-5.53-9.11-5.53-16.26c0-15.3,9.22-23.11,24-23.11,16.6,0,25.06,11.06,24.19,26.36H186.05c-.21-4.78,0-11.28-6.29-11.71-3.91-.33-6.18,1.84-6.62,5.42-.54,4.87,2,7.37,5.75,10,7.16,4.56,13.34,7.38,17.79,11.5s7,9.54,7,19.41c0,15.62-8.68,24.3-24.51,24.3-17.47,0-24.84-9.76-24.84-20.5V159h17.68"/><path class="e" d="M237.56,186.22c5.86,0,11.94-.55,16.93-3.8,5.53-3.47,8-9.43,8.13-17.57V128.74c0-7.82-1.2-15.73-8.57-20.07-6.18-3.58-14.53-3.8-21.47-3.8H211.86v81.35h25.7M231,119.52c9.33.21,12.47.75,12.58,10.3v26.57c.33,10.85.22,16.05-12.58,15.18Z"/><path class="e" d="M287.35,186.22l2.28-15.84h15l2.72,15.84h19.3l-17.68-81.35h-23l-17.79,81.35h19.2m15.4-30.15H291.69l5.53-36.45h.21Z"/><path class="b" d="M105,250.42c0-11.71-6.75-18.22-19.28-18.22s-19.52,6.51-19.52,18.22v24.81c0,13.74,5,20.91,19.52,20.91S105,289,105,275.23V250.42m-14.32,26c0,3.5-.32,8.7-5,8.7s-5.21-5.2-5.21-8.7v-25c0-3.74.58-8.22,5.13-8.22,4.72,0,5,4.48,5,8.22Z"/><path class="b" d="M125.88,270.59h4.72c3.34.25,4.47,2.69,4.88,6.43s.08,8.79.33,14.15a12.73,12.73,0,0,0,.81,3.5h15.62v-.82a5.21,5.21,0,0,1-1.38-2.11c-.82-3.9-.9-14.4-1.3-19.28-.25-4.23-3.09-7-7.08-7.88v-.17c6-2.76,7.56-7.4,7.56-13.91,0-12.12-5.85-16.84-17.57-16.84h-20.9v61h14.31V270.59m0-25.95c7-.16,10,.17,10,7.41,0,3.74-1,7.56-5.13,7.56h-4.88Z"/><path class="b" d="M185.26,294.75l-.65-5.45h-.16c-2.93,5.21-6.18,6.84-12.36,6.84-12.12,0-16-8.38-16-19.45V251.64c0-13.26,6.1-19.44,19.2-19.44,12.2,0,19.44,5.2,19.44,17.65v4.56H180.38v-3.34c0-5.2-.65-7.81-4.47-7.89-4.47-.08-5.53,2.36-5.53,6.35V279.7c0,3.42,1.54,5.45,5.28,5.45,4.89,0,5.05-3.9,5.05-7.81v-4.8h-5.12v-11H195v33.18h-9.77"/><path class="b" d="M213.73,294.67l1.71-11.87h11.23l2,11.87h14.48l-13.26-61H212.68l-13.34,61h14.39m11.55-22.61H217l4.15-27.33h.16Z"/><polyline class="b" points="259.77 260.51 259.61 260.67 260.91 294.67 247.33 294.67 247.33 233.66 262.05 233.66 273.11 267.75 273.36 267.75 271.97 233.66 285.56 233.66 285.56 294.67 270.92 294.67 259.77 260.51"/><rect class="b" x="293.2" y="233.66" width="14.32" height="61.01"/><path class="b" d="M339.24,255v-3.9c0-5.2-1.87-7.89-4.55-7.89-4.48-.08-5.53,2.36-5.53,6.35l-.08,30.17c0,3.42,1.38,5.45,5.12,5.45,4.88,0,5.29-5,5.29-8.78v-5.53H353.8v7.48c0,10.5-6,17.82-20.66,17.82-13.18,0-18.3-7-18.3-19.45V251.64c0-13.26,6.1-19.44,19.2-19.44,12.2,0,19.52,5.2,19.52,17.65V255H339.24"/></svg>
+        
+        </div>
+
+        <div class="col-lg-4 offset-lg-1 px-2">
+
+          <p class="pb-3 mb-3">
+
+            {% for link in menus['footer-bottom'].links %}
+
+            <a class="text-white" href="{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>
+
+              {{ link.title }}
+
+            </a>
+
+            <br>
+            
+            {% endfor %}
+            
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+
+//   document
+
+//     .forms
+
+//     .subscribe
+
+//     .addEventListener(
+
+//       'submit',
+
+//       function( event ) {
+
+//         event.preventDefault();
+
+//         var action = this.getAttribute( 'action' ).replace( 'post' , 'post-json' );
+
+//         var email = document.forms.subscribe.elements.EMAIL.value;
+
+//         window.subscribe = function( response ) {
+
+//           if( response.result == 'success' ) {
+
+//             document.forms.subscribe.elements.EMAIL.value = '{{ section.settings.success }}';
+
+//           } else {
+
+//             document.forms.subscribe.elements.EMAIL.value = '{{ section.settings.error }}';
+
+//           }
+
+//         }
+
+//         var script = document.createElement( 'script' );
+
+//         script.src = action + "&c=subscribe&EMAIL=" + email;
+
+//         document.head.appendChild( script );
+
+//       }
+
+//     );
+
+
+
+
+</script>
+
 {% schema %}
-{
-    "name": "Footer",
-    "settings": [
-        {
-            "type": "header",
-            "content": "Layout"
-        },
 
-        {
-            "type": "select",
-            "id": "outer_margin",
-            "label": "Outer top margin",
-            "options":[
-{"value":"mt-0","label":"None"},
-{"value":"mt-1","label":"10px"},
-{"value":"mt-2","label":"20px"},
-{"value":"mt-3","label":"30px"},
-{"value":"mt-4","label":"40px"},
-{"value":"mt-5","label":"50px"},
-{"value":"mt-6","label":"60px"},
-{"value":"mt-65","label":"65px"},
-{"value":"mt-7","label":"70px"},
-{"value":"mt-8","label":"80px"},
-{"value":"mt-9","label":"90px"},
-{"value":"mt-10","label":"100px"}
-            ],
-            "default": "mt-65"
-        },
-{
-"type": "select",
-"id": "style",
-"label": "Style",
-"options": [
-{ "value": "1", "label": "Footer 1 (Default)" },
-{ "value": "2", "label": "Footer 2" },
-{ "value": "3", "label": "Footer 3" },
-{ "value": "4", "label": "Footer 4" },
-{ "value": "5", "label": "Footer 5" },
-{ "value": "6", "label": "Footer 6" },
-{ "value": "7", "label": "Footer 7" },
-{ "value": "8", "label": "Footer 8" },
-{ "value": "9", "label": "Footer 9" },
-{ "value": "10", "label": "Footer 10" },
-{ "value": "11", "label": "Footer 11(dark bg, t-hisrts home page style)" },
-{ "value": "12", "label": "Footer 12" }
-],
-"default": "1"
-},
+  {
 
-        {
-            "type": "header",
-            "content": "Logo"
-        },
-        {
-            "type": "checkbox",
-            "id": "logo_yes",
-            "label": "Enable",
-            "default":true
-        },
-        {
-            "type": "image_picker",
-            "id": "logo",
-            "label": "Logo image"
-        },
-        {
-            "type": "header",
-            "content": "Navigation 1"
-        },
-        {
-            "type": "link_list",
-            "id": "navigation_1",
-            "label": "Choose navigation 1",
-            "default":"main-menu"
-        },
-        {
-            "type": "header",
-            "content": "Navigation 2"
-        },
-        {
-            "type": "link_list",
-            "id": "navigation_2",
-            "label": "Choose navigation 2",
-            "default":"main-menu"
-        },
-{
-"type": "header",
-"content": "Navigation 3"
-},
-{
-"type": "link_list",
-"id": "navigation_3",
-"label": "Choose navigation 3",
-"default":"main-menu"
-},
-{
-"type": "header",
-"content": "Navigation 4"
-},
-{
-"type": "checkbox",
-"id": "navigation_4_yes",
-"label": "Enable",
-"default":true
-},
-{
-"type": "link_list",
-"id": "navigation_4",
-"label": "Choose navigation 4",
-"default":"main-menu"
-},
-{
-"type": "link_list",
-"id": "navigation_5",
-"label": "Choose navigation 5",
-"default":"footer"
-},
-{
-"type": "link_list",
-"id": "navigation_6",
-"label": "Choose navigation 6",
-"default":"footer"
-},
+    "settings" : [
 
+      {
 
-        {
-            "type": "header",
-            "content": "Additional blocks"
-        },
-        {
-            "type": "checkbox",
-            "id": "shop_info_yes",
-            "label": "Shop Info",
-            "default": true,
-            "info":"setup in General Settings / Shop Info (footer)"
-        },
-        {
-            "type": "checkbox",
-            "id": "newsletter",
-            "label": "Newsletter Subscription",
-            "default": true,
-            "info":"setup in General Settings / Newsletter Subscription"
-        },
-        {
-            "type": "checkbox",
-            "id": "show_methods_of_payment",
-            "label": "Methods of Payment",
-            "default": true,
-            "info":"setup in General Settings / Methods of Payment (footer)"
-        },
-        {
-            "type": "checkbox",
-            "id": "show_instagram",
-            "label": "Instagram photos",
-            "default": true,
-            "info":"setup in General Settings / Instagram"
-        },
-        {
-            "type": "checkbox",
-            "id": "social_icons",
-            "label": "Social media",
-            "default": true,
-            "info":"setup in General Settings / Social media"
-        },
-        {
-            "type": "header",
-            "content": "Contacts"
-        },
-        {
-            "type": "text",
-            "id": "support_time_title",
-            "label": "Title",
-            "default":"CONNECT WITH US"
-        },
-        {
-            "type": "textarea",
-            "id": "support_time",
-            "label": "Support time",
-            "default":"<ul class='contact-list'> <li><i class='icon-phone'></i><span><span class='h6-style'>Call Us:</span><span>1 (800) 233-2742</span></span> </li> <li> <i class='icon-clock4'></i><span><span class='h6-style'>Hours:</span><span>Mon-fri 9am-8pm<br>sat 9am-6pm</span></span> </li> <li> <i class='icon-mail-envelope1'></i><span><span class='h6-style'>E-mail:</span><span><a href='mailto:info@goodwin.us'>info@goodwin.us</a></span></span> </li> <li> <i class='icon-location1'></i><span><span class='h6-style'>Address:</span><span>goodwin store 140 new str., suite 21 brooklyn, NY</span></span> </li> </ul>"
-        },
-        {
-        "type": "textarea",
-        "id": "short_description",
-        "label": "About Us",
-        "default":"Lorem ipsum dolor sit amet consestuer adicpising elitr anno dolor sit amet. Lorem ipsum dolor sit amet consestuer adicpising."
-        },
-{
-"type": "textarea",
-"id": "google_map",
-"label": "Google Map",
-"default":"<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1798.3693703617603!2d-74.01304569028459!3d40.70734488791827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a17292434ef%3A0x13cceefedbab92d0!2z0KPQvtC70Lsg0YHRgtGA0LjRgg!5e0!3m2!1sru!2sua!4v1531821064393' width='600' height='450' frameborder='0' style='border:0' allowfullscreen=''></iframe>"
-},
-{
-"type": "checkbox",
-"id": "chat_yes",
-"label": "Chat",
-"default": false
-},
-{
-"type": "text",
-"id": "chat_link",
-"label": "Chat Link or code",
-"info":"<a href='#' data-fancybox data-src='#modalChat'><i class='icon-chat3'></i>Live Chat</a>"
-},
+        "default" : "Title",
 
-        {
-            "type": "header",
-            "content": "Copyright"
-        },
-        {
-            "type": "textarea",
-            "id": "copyright",
-            "label": "Copyright",
-            "default": "<p class='footer-copyright-text'><span>&copy; Copyright</span> 2018 <a href='#'>GoodwinStore</a>. <span>All rights reserved.</span></p><p class='footer-copyright-links'><a href=''>Terms & conditions</a> <a href='#'>Privacy policy</a></p>"
-        }
+        "label" : "Title",
+
+        "type" : "text",
+
+        "id" : "title"
+
+      },
+
+      {
+
+        "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur sapien in quam auctor.",
+
+        "type" : "textarea",
+
+        "label" : "Instagram HTML Snippet",
+
+        "id" : "text_top"
+
+      },
+
+      {
+
+        "info" : "You can find this in MailChimp.",
+
+        "label" : "Action",
+
+        "id" : "action",
+
+        "type" : "text"
+
+      },
+
+      {
+
+        "info" : "Leave blank to show no message",
+
+        "default" : "We value your privacy",
+
+        "label" : "Message",
+
+        "id" : "message",
+
+        "type" : "text"
+
+      },
+
+      {
+
+        "default" : "Thank you",
+
+        "label" : "Success",
+
+        "id" : "success",
+
+        "type" : "text"
+
+      },
+
+      {
+
+        "default" : "Please try again",
+
+        "label" : "Error",
+
+        "type" : "text",
+
+        "id" : "error"
+
+      },
+
+      {
+
+        "default" : "Enter your email address",
+
+        "label" : "Placeholder",
+
+        "id" : "placeholder",
+
+        "type" : "text"
+
+      },
+
+      {
+
+        "default" : "Subscribe",
+
+        "label" : "Button",
+
+        "type" : "text",
+
+        "id" : "button"
+
+      }
+
+    ],
+
+    "blocks" : [
+
+      {
+
+        "name" : "Image",
+
+        "type" : "image",
+
+        "settings" : [
+
+          {
+
+            "type" : "image_picker",
+
+            "label" : "Image",
+
+            "info" : "1×1",
+
+            "id" : "image"
+
+          },
+
+          {
+
+            "default" : "/",
+
+            "label" : "URL",
+
+            "type" : "url",
+
+            "id" : "url"
+
+          }
+
+        ]
+
+      }
+
     ]
-}
+
+  }
+
 {% endschema %}

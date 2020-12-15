@@ -13,4 +13,18 @@
 
               {% endfor %}
 
-              <a href="{{ item.product.url | within: collections.all }}"><img src="{{ item.product.images[image_index].src | product_img_url: 'small' }}" alt="{{ item.product.title | escape }}"/></a></div><div class="ssw-span10"><div><a class="ssw-title" href="{{item.product.url}}" title="View {{item.product.title | escape }}">{{ item.product.title }}</a></div><div><div class="ssw-amounts"><span class="ssw-item-price">{{ item.price | money }}</span><span>x</span><span class="ssw-quantity">{{ item.quantity }}</span></div><div class="ssw-item-price ssw-line-price">{{ item.line_price | money }}</div></div></div></div></div> {% endfor %}</div><div class="ssw-text-center"><a href="/cart">{{ 'socialshopwave.view_cart' | t }}</a><button class="ssw-close ssw-pull-right" aria-hidden="true" type="button" title="{{ 'socialshopwave.close' | t }}">&times;</button></div></div></div>
+              <a href="{{ item.product.url | within: collections.all }}"><img src="{{ item.product.images[image_index].src | product_img_url: 'small' }}" alt="{{ item.product.title | escape }}"/></a></div><div class="ssw-span10"><div><a class="ssw-title" href="{{item.product.url}}" title="View {{item.product.title | escape }}">{{ item.product.title }}</a></div><div><div class="ssw-amounts"><span class="ssw-item-price">{{ item.price | money }}</span><span>x</span><span class="ssw-quantity">{{ item.quantity }}</span></div><div class="ssw-item-price ssw-line-price">
+                {%- comment -%}
+                {{ item.line_price | money }}
+                {%- endcomment -%}
+
+                {%- comment -%}
+                  hulkapps code
+                {%- endcomment -%}
+                <span class="hulkapps-cart-item-line-price" data-key="{{item.key}}">
+                  {{ item.line_price | money }}
+                </span>
+                {%- comment -%}
+                  END hulkapps code
+                {%- endcomment -%}
+              </div></div></div></div></div> {% endfor %}</div><div class="ssw-text-center"><a href="/cart">{{ 'socialshopwave.view_cart' | t }}</a><button class="ssw-close ssw-pull-right" aria-hidden="true" type="button" title="{{ 'socialshopwave.close' | t }}">&times;</button></div></div></div>

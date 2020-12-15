@@ -21,7 +21,7 @@
 {% assign countdown = product.metafields.c_f.countdown %}
 {% if show %}
 
-<div class="prd prd-{{ settings.product_card_hover }} prd-has-loader {% if sold_out %}prd-outstock{% endif %} {% if countdown != blank %}prd-has-countdown{% endif %} product-item {% if sold_out %}product-item--not-available{% endif %} product-id-{{ product.selected_or_first_available_variant.id }} tag-all-{{ collection.handle }} {% if section.settings.tabs and section.settings.tags != blank %}{% for tag in product.tags %} tag-{{ tag | handle }} {% endfor %}{% endif %}">
+<div class="prd prd-horizontal-simple prd-{{ settings.product_card_hover }} prd-has-loader {% if sold_out %}prd-outstock{% endif %} {% if countdown != blank %}prd-has-countdown{% endif %} product-item {% if sold_out %}product-item--not-available{% endif %} product-id-{{ product.selected_or_first_available_variant.id }} tag-all-{{ collection.handle }} {% if section.settings.tabs and section.settings.tags != blank %}{% for tag in product.tags %} tag-{{ tag | handle }} {% endfor %}{% endif %}">
   {% capture the_snippet_fave_icon %}{% render 'ssw-widget-faveicon' with product.id %}{% endcapture %}
           {% unless the_snippet_fave_icon contains 'Liquid error' %}
           {{ the_snippet_fave_icon }}
@@ -59,12 +59,15 @@
         <div class="prd-info">
             {% if settings.show_vendor %}<div class="prd-tag prd-hidemobile">{{ product.vendor  }}</div>{% endif %}
             <h2 class="prd-title">
-                <a title="{{ product.title  }}" class="prd-qview-link js-qview-link" data-fancybox data-type="ajax" data-src="{{ product.url }}?view=quick-view&output=embed">{{ product.title | truncate: 27 }}</a>
+                <a title="{{ product.title }}" class="prd-qview-link js-qview-link" data-fancybox data-type="ajax" data-src="{{ product.url }}?view=quick-view&output=embed">{{ product.title | truncate: 27 }}</a>
             </h2>
+            <div class="prd-des">
+                {{ product.description }}
+            </div>
             {% comment %}
             <div class="prd-rating {% if settings.stars_mobile_off %}prd-hidemobile{% endif %}"><span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span></div>
-            {% endcomment %}
-            {% include 'product-card-price' %}
+            {% endcomment %} 
+            
             {% include 'prd-action' %}
         </div>
     </div>

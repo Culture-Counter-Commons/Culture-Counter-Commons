@@ -1,0 +1,234 @@
+<div class="collection">
+
+  {%- comment -%}{% include 'header' %}{%- endcomment -%}
+
+  <div class="py-5 mt-5" id="single-bottles">
+
+    <div class="text-center pt-3 pb-1 mb-5" style="background:#57c9e4">
+      
+      <h5 style="font-weight: 600;">Limited time 25% off Chocolate Maca</h5>
+      
+    </div>
+
+    <div class="container-fluid px-lg-5 px-2">
+
+      <div class="row justify-content-center">
+
+        {% for block in section.blocks %}
+
+        {% for product in collection.products %}
+
+        {% if product.handle == block.settings.product %}
+
+        {% include 'product' %}
+
+        {% endif %}
+
+        {% endfor %}
+
+        {% endfor %}
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<img src="https://rtd-tm.everesttech.net/upi/?sid=bcN0ir9uIqNLdLkpu6pQ&cs=1" class="tracking-snippet" />
+
+{% schema %}
+
+{
+
+"settings" : [
+
+{
+
+"type" : "image_picker",
+
+"label" : "Portrait",
+
+"id" : "portrait",
+
+"info" : "2×3"
+
+},
+
+{
+
+"type" : "image_picker",
+
+"label" : "Landscape",
+
+"id" : "landscape",
+
+"info" : "16×9"
+
+}
+
+],
+
+"blocks" : [
+
+{
+
+"name" : "Product",
+
+"type" : "product",
+
+"settings" : [
+
+{
+
+"label" : "Product",
+
+"type" : "product",
+
+"id" : "product"
+
+},
+{
+"default" : "Link",
+
+"label" : "Lightbox Title",
+
+"type" : "text",
+
+"id" : "link"
+
+},
+{
+"label" : "One time purchase only",
+
+"type" : "checkbox",
+
+"id" : "one_time_only",
+
+"info": "Allow only one time purchase(hides the option for subscription)"
+
+},
+{
+
+"type" : "image_picker",
+
+"label" : "Lightbox Image",
+
+"id" : "lightbox"
+
+},
+{
+
+"label" : "Lightbox Content",
+
+"type" : "richtext",
+
+"id" : "lightboxContent"
+},
+{
+"label" : "Add pricing info?",
+
+"type" : "checkbox",
+
+"id" : "pricing_info",
+
+"info": "Adds special pricing info."
+
+},
+{
+
+"default" : "Price Cut",
+
+"label" : "Price Cut",
+
+"type" : "text",
+
+"id" : "pricecut"
+
+},
+{
+
+"default" : "Price Info",
+
+"label" : "Price Info",
+
+"type" : "html",
+
+"id" : "priceinfo"
+
+},
+{
+
+"default" : "Price Info Subtext",
+
+"label" : "Price Info Subtext",
+
+"type" : "text",
+
+"id" : "priceinfosubtext"
+
+},
+{
+
+"default" : "chocolate-maca",
+
+"label" : "Product ID",
+
+"type" : "text",
+
+"id" : "productid"
+
+},
+{
+
+"default" : "Customer Reviews",
+
+"label" : "Review Link Title",
+
+"type" : "text",
+
+"id" : "reviews"
+
+},
+{
+
+"default" : "col-lg-4",
+
+"label" : "Columns",
+
+"type" : "select",
+
+"id" : "columns",
+
+"options" : [
+
+{
+
+"value": "col-lg-4",
+
+"label": "4"
+
+},
+
+{
+
+"value": "col-lg-6",
+
+"label": "6"
+
+}
+
+]
+
+}
+
+]
+
+}
+
+]
+
+}
+
+{% endschema %}

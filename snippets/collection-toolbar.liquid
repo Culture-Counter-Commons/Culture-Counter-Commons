@@ -23,6 +23,7 @@
         <b><a href="#" class="fixed-col-toggle">{{ 'collections.toolbar.filter' | t }}</a></b>
     </div>
   </div>
+  {% unless collection.handle == 'burritos' or collection.handle == 'grab-go' %}
   <div class="row row-2">
     <div class="col-left d-flex">
 
@@ -97,5 +98,6 @@
     </div>
    {%- endcomment -%}
   </div>
+    {% endunless %}
 </div>
 <!-- /Filter Row -->

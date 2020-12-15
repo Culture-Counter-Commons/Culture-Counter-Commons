@@ -68,8 +68,12 @@
                           <a href="/cart" class="btn"><i class="icon-handbag"></i><span>{{ 'general.theme.go_to_checkout' | t }}</span></a>
                   		  <a href="/cart" class="btn btn--alt"><i class=""></i><span>{{ 'general.theme.view_cart' | t }}</span></a>
                         </div>
-                  	</div>
-                    {% comment %}<div class="pull-left"><a href="/cart" class="btn btn--alt"><i class="icon-handbag"></i><span>{{ 'general.theme.view_cart' | t }}</span></a></div>{% endcomment %}
+                      </div>
+                      {%- comment -%}
+                                        <div class="pull-left"><a href="/cart" class="btn btn--alt"><i
+                                                    class="icon-handbag"></i><span>{{ 'general.theme.view_cart' | t }}</span></a></div>
+
+                      {%- endcomment -%}
                 </div>
             {% else %}
                 <div class="cart-empty mx-auto">

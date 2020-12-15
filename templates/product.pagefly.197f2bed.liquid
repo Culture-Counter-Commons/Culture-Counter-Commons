@@ -1,0 +1,380 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400|Oswald:400|Roboto:400,700&display=swap"><link rel="stylesheet" href="https://cdn.pagefly.io/pagefly/2.8.9/css/main-style.css?t=2020-03-23-18"><link rel="stylesheet" href="{{ 'pagefly.197f2bed.scss.css' | asset_url }}">
+		  {% if product_1914810957922 == null %}{%- assign product_1914810957922 = all_products['vanilla-ashwagandha'] -%}{% endif %} {% if product_1914817544290 == null %}{%- assign product_1914817544290 = all_products['matcha-moringa'] -%}{% endif %} {% if product_1914813644898 == null %}{%- assign product_1914813644898 = all_products['chocolate-maca'] -%}{% endif %} {% if product_3954544115810 == null %}{%- assign product_3954544115810 = all_products['mixed-6-pack'] -%}{% endif %} {% if product_1916748759138 == null %}{%- assign product_1916748759138 = all_products['mixed-case'] -%}{% endif %}<script>
+	window.__pageflyProducts = window.__pageflyProducts || {};
+	window.__pageflyProducts["{{product.id}}"] = {{product | json }};window.__pageflyProducts["1914810957922"] = {{product_1914810957922 | json }};window.__pageflyProducts["1914817544290"] = {{product_1914817544290 | json }};window.__pageflyProducts["1914813644898"] = {{product_1914813644898 | json }};window.__pageflyProducts["3954544115810"] = {{product_3954544115810 | json }};window.__pageflyProducts["1916748759138"] = {{product_1916748759138 | json }};
+	</script><div class="__pf" id="__pf"><div data-pf-type="Body" class="sc-kxynE QJnSk pf-1264ccad"><div data-pf-type="Layout" class="pf-029192d5"><div data-pf-type="ProductPreview" class="sc-lcpuFF iiMnFG pf-4cda437c">{% capture captured_page %}
+<!-- /templates/product.liquid -->
+{% comment %}
+
+  Rich snippets (itemscope, itemtype, etc.) for products are a theme requirement,
+  and allow search engines to easily understand what the content is.
+
+  For more information on these Scheme.org tags, visit:
+    - http://schema.org/docs/gs.html
+
+{% endcomment %}
+
+<div itemscope itemtype="http://schema.org/Product">
+
+  <meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
+  <meta itemprop="image" content="{{ product.featured_image.src | img_url: 'grande' }}">
+
+  <div class="{{ block.settings.columns }} px-lg-3 px-2 py-5 my-lg-5 shop-products" id="{{ block.settings.productid }}">
+
+      <div class="d-flex flex-column justify-content-between pb-5">
+
+          <!-- header -->
+          <div class="header">
+
+              <!-- product image -->
+              <div class="image" data-transition="entrance" style="transform : translateY( 50px )">
+
+                  <div class="pb-lg-3 mb-2 mb-lg-3">
+
+                      <div class="embed-responsive product-img embed-responsive-17by20">
+
+                          <div class="embed-responsive-item">
+
+                              <img class="lazyload w-100" data-src="{{ product.images.first.src | img_url : 'master' }}" alt="{{ product.images.first.alt }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-expand="-50">
+
+                          </div>
+
+                      </div>
+
+                  </div>
+
+              </div>
+
+              <!-- product title -->
+              {% if product.title != blank %}
+
+                  <div class="title" data-transition="entrance" style="transform : translateY( 50px )">
+
+                      <div class="text-center">
+
+                          <h1 class="text-uppercase mb-1">
+
+                              {{ product.title }}
+
+                          </h1>
+
+                      </div>
+
+                  </div>
+
+              {% endif %}
+
+              {% if product.description != blank %}
+
+              <div class="description" data-transition="entrance" style="transform : translateY( 50px )">
+
+                  <div class="text-center py-2">
+
+                      {{ product.description }}
+
+                  </div>
+
+              </div>
+
+              {% endif %}
+
+          </div> <!-- end header -->
+
+
+          <!-- product info lightbox -->
+        {% if block.settings.link != blank %}
+
+          <div class="link mb-2" data-transition="entrance" style="transform : translateY( 50px )">
+
+              <div class="text-center">
+
+                  <a class="product-link" href="{{ block.settings.lightbox | img_url : 'master' }}" data-fancybox>
+
+                      <h6>
+
+                          {{ block.settings.link }}
+
+                      </h6>
+
+                  </a>
+
+              </div>
+
+          </div>
+
+        {% endif %}
+
+
+          <!-- price info -->
+          <div class="price-info pb-1" data-transition="entrance" style="transform : translateY( 50px )">
+
+              <div class="prices">
+
+                  <p class="pricing">
+
+                    {% if block.settings.pricecut != blank %}
+
+                      <span class="price-cut">
+
+                          {{ block.settings.pricecut }}
+
+                      </span>
+
+                    {% endif %}
+
+                    {% if block.settings.priceinfo != blank %}
+
+                      <span>
+
+                          {{ block.settings.priceinfo }}
+
+                      </span>
+
+                    {% endif %}
+
+                  </p>
+
+                  {% if block.settings.priceinfosubtext != blank %}
+
+                      <p class="price-info-subtext">
+
+                          {{ block.settings.priceinfosubtext }}
+
+                      </p>
+
+                  {% endif %}
+
+              </div>
+
+          </div>
+
+
+          <!-- footer -->
+          <div class="footer">
+
+              <div class="button" data-transition="entrance" style="transform : translateY( 50px )">
+
+                  <div class="mb-2">
+
+                      <form action="/cart/add" data-productid="{{product.id}}" method="post" enctype="multipart/form-data">
+
+                          <div class="form-group">
+
+                              <!-- ReCharge Select -->
+
+                              <style>#quantity { padding:5px; width:35px; border: 1px solid #555; } .hide { display:none; }</style>
+
+                              <select name="id" data-productid="{{ product.id }}" class="hide">
+
+                                  {% for variant in product.variants %}
+
+                                      {% if variant.available == true %}
+
+                                          <option value="{{variant.id}}"> {{ variant.title }} for {{ variant.price | money_with_currency }}</option>
+
+                                      {% else %}
+
+                                          <option disabled="disabled"> {{ variant.title }} - sold out!</option>
+
+                                      {% endif %}
+
+                                  {% endfor %}
+
+                              </select>
+
+                              <!-- ReCharge subscription product -->
+                              {% if product.available %}
+
+                                  {% include 'subscription-product' %}
+
+                              {% endif %}
+
+                              <!-- add to cart button -->
+
+                              <button data-productid="{{product.id}}" class="btn btn--to-secondary btn--full product__add-to-cart-button ajax_form_cart single_add_to_cart_button"
+                                type="submit"
+                                id="add"
+                                value="Add to Cart"
+                                aria-label="{{ 'products.product.add_to_cart' | t }}"
+                              >
+                                <span class="secondary-text" aria-hidden=true data-cart-secondary-submit-text>{{ 'products.product.add_to_cart' | t }}</span>
+                              </button>
+
+
+                      </div> <!-- END form-group -->
+
+                  </form>
+
+                  {% comment %}
+                  ***********************
+                  Want the lightbox back? . . .
+                  ***********************
+                  - to each .review class (for the respective product), replace this attribute 'href="/pages/reviews"' with these attributes :
+                  -- data-fancybox data-src="#nilla"
+                  -- data-fancybox data-src="#chocolate"
+                  -- data-fancybox data-src="#matcha"
+                  -- data-fancybox data-src="#mixed"
+
+                  next . . .
+                  - add these attributes to each product "span":
+                  - class="stamped-product-reviews-badge" data-product-sku="{{ product.handle }}" data-id="{{ product.id }}"
+
+                  lastly. . .
+                  - remove the comments surrounding the "- lightbox -"
+
+                  done!
+                  {% endcomment %}
+
+                  <style>
+                  .stamped-badge-caption {
+                    display: none;
+                  }
+                  </style>
+
+                  <!-- VANILLA -->
+                  {% if product.tags contains "Vanilla" %}
+                      <a href="/pages/reviews" class="text-center review">
+                          <span style="display:block;">{{ product.metafields.stamped.badge }}</span>
+
+                      </a>
+                      {% comment %} - lightbox -
+                      <div style="display: none;" id="nilla" class="review">
+                          <h1 class="text-uppercase text-center">Vanilla Ashwagandha Reviews</h1>
+                          <div id="stamped-main-widget"
+                          data-widget-style="standard"
+                          data-product-id="{{ product.id }}"
+                          data-url="{{ shop.url }}{{ product.url }}"
+                          data-product-sku="{{product.handle}}" >
+                          {{ product.metafields.stamped.reviews }}
+                          </div>
+                      </div>
+                      {% endcomment %}
+                  {% endif %}
+
+                  <!-- chocolate -->
+                  {% if product.tags contains "chocolate" %}
+                      <a href="/pages/reviews" class="text-center review" href="javascript:;">
+                          <span style="display:block;">{{ product.metafields.stamped.badge }}</span>
+                      </a>
+                      {% comment %} - lightbox -
+                      <div style="display: none;" id="chocolate" class="review">
+                          <h1 class="text-uppercase text-center">Chocolate Maca Reviews</h1>
+                          <div id="stamped-main-widget"
+                          data-widget-style="standard"
+                          data-product-id="{{ product.id }}"
+                          data-url="{{ shop.url }}{{ product.url }}"
+                          data-product-sku="{{product.handle}}">
+                          {{ product.metafields.stamped.reviews }}
+                          </div>
+                      </div>
+                      {% endcomment %}
+                  {% endif %}
+
+                  <!-- MATCHA -->
+                  {% if product.tags contains "matcha" %}
+                      <a href="/pages/reviews" class="text-center review" href="javascript:;">
+                          <span style="display:block;">{{ product.metafields.stamped.badge }}</span>
+                      </a>
+                      {% comment %} - lightbox -
+                      <div style="display: none;" id="matcha" class="review">
+                          <h1 class="text-uppercase text-center">Matcha Moringa Reviews</h1>
+                          <div id="stamped-main-widget"
+                          data-widget-style="standard"
+                          data-product-id="{{ product.id }}"
+                          data-url="{{ shop.url }}{{ product.url }}"
+                          data-product-sku="{{product.handle}}">
+                          {{ product.metafields.stamped.reviews }}
+                          </div>
+                      </div>
+                      {% endcomment %}
+                  {% endif %}
+
+                  <!-- mixed -->
+                  {% if product.tags contains "mixed" %}
+                      <a href="/pages/reviews" class="text-center review" href="javascript:;">
+                          <span style="display:block;">{{ product.metafields.stamped.badge }}</span>
+                      </a>
+                      {% comment %} - lightbox -
+                      <div style="display: none;" id="mixed" class="review">
+                          <h1 class="text-uppercase text-center">Mixed Case Reviews</h1>
+                          <div id="stamped-main-widget"
+                          data-widget-style="standard"
+                          data-product-id="{{ product.id }}"
+                          data-url="{{ shop.url }}{{ product.url }}"
+                          data-product-sku="{{product.handle}}">
+                          {{ product.metafields.stamped.reviews }}
+                          </div>
+                      </div>
+                      {% endcomment %}
+                  {% endif %}
+
+
+
+              </div> <!-- end mb-2 -->
+
+          </div> <!-- end button -->
+
+      </div> <!-- end footer -->
+
+    </div>
+
+  </div>
+
+</div>
+
+{% comment %}
+  To take advantage of a callback on the select dropdown, add option_selection.js
+  and customize the JS in timber.productPage as needed.
+
+  Currently, timber.productPage does the following:
+    - Hides your <select> tag from above
+    - Breaks out the product variants into separate product options, if more than one exists
+    - Generates a <select> tag for each product option
+    - Enables/disables elements based on variant availability
+
+  Callback notes:
+    - Keep the callback available to the global scope (window.selectCallback) so that advanced
+      addons can override it.
+      * E.g. multiple currencies http://docs.shopify.com/manual/configuration/store-customization/currencies-and-translations/currencies/how-to-toggle-between-two-currencies
+{% endcomment %}
+{{ 'option_selection.js' | shopify_asset_url | script_tag }}
+<script>
+  var selectCallback = function(variant, selector) {
+    timber.productPage({
+      money_format: "{{ shop.money_format }}",
+      variant: variant,
+      selector: selector
+    });
+  };
+
+  jQuery(function($) {
+    new Shopify.OptionSelectors('productSelect', {
+      product: {{ product | json }},
+      onVariantSelected: selectCallback,
+      enableHistoryState: true
+    });
+
+    // Add label if only one product option and it isn't 'Title'. Could be 'Size'.
+    {% if product.options.size == 1 and product.options.first != 'Title' %}
+      $('.selector-wrapper:eq(0)').prepend('<label for="productSelect-option-0">{{ product.options.first | escape }}</label>');
+    {% endif %}
+
+    // Hide selectors if we only have 1 variant and its title contains 'Default'.
+    {% if product.variants.size == 1 and product.variants.first.title contains 'Default' %}
+      $('.selector-wrapper').hide();
+    {% endif %}
+  });
+</script>
+
+<!-- DRIP_PRODUCT_TRACKING_V1 -->
+<script text="text/javascript">
+  var _dcq = _dcq || [];
+  _dcq.push(['recordProductView', {{ product|json }}, {{ product.collections|map:'id'|json }}, '{{shop.currency}}', '{{ product.url }}']);
+</script>
+<!-- END_DRIP_PRODUCT_TRACKING_V1 -->
+
+{% endcapture %}
+{% include 'password-protect' %}</div><div data-container="true" class="sc-fnwBNb irilUZ pf-71b24467" data-pf-type="Section"><div class="sc-cugefK iKePrP" style="max-width: 1170px;"><div class="sc-sdtwF iIwwEJ pf-85f23e1a pf-r pf-r-eh" data-pf-type="Row" style="--pf-s-lg:15px; --pf-s-md:15px; --pf-s-sm:15px; --pf-s-xs:15px;"><div class="sc-drKuOJ bejofX pf-c pf-c-xs--12 pf-c-sm--12 pf-c-md--12 pf-c-lg--12"><div class="sc-gRnDUn fJTCAC pf-73704908" data-pf-type="Column">{% assign defaultProduct = product %}{% assign product = product_1914810957922 %} {% form 'product', product, data-productid: product.id, class: "pf-product-form pf-form-46771e91" %}<div data-product-id="1914810957922" class="sc-crNyjn jsYGEv"></div>{% endform %}{% assign product = defaultProduct %}</div></div><div class="sc-drKuOJ bejofX pf-c pf-c-xs--12 pf-c-sm--12 pf-c-md--12 pf-c-lg--12"><div class="sc-gRnDUn fJTCAC pf-0a56fe05" data-pf-type="Column"> {% form 'product', product, data-productid: product.id, class: "pf-product-form pf-form-c6b82f00" %}<div data-product-id="{{ product.id }}" class="sc-crNyjn jsYGEv"><div class="sc-sdtwF iIwwEJ pf-4219e1d3 pf-r pf-r-eh" data-pf-type="Row" style="--pf-s-lg:15px; --pf-s-md:15px; --pf-s-sm:15px; --pf-s-xs:15px;"><div class="sc-drKuOJ bejofX pf-c pf-c-xs--12 pf-c-sm--6 pf-c-md--6 pf-c-lg--6"><div class="sc-gRnDUn fJTCAC pf-84633d11" data-pf-type="Column"><div data-product-id="{{ product.id }}" data-default-source="featured" data-pf-type="ProductImage" class="sc-bhlBdH bzjhPd pf-11718557">{% assign img_size = product.images.size %}<div class="sc-eitiEO hLGuQN">{% if img_size > 1 %}<div class="sc-nrwXf iEeNKD pf-navigation-list-image prev-arrow"><i class="fa fa-angle-left"></i></div>{% endif %}<picture height="450px" spacing="10px" data-pf-type="MasterImage" data-magnifier="true" mode="view" class="sc-keFjpB jTqelV" style="height: auto;"><img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.featured_image.alt | escape }}" data-img-id="{{ product.featured_image.id }}" width="{{ product.featured_image.width }}" height="{{ product.featured_image.height }}"></picture>{% if img_size > 1 %}<div spacing="10px" class="sc-nrwXf iEeNKD pf-navigation-list-image next-arrow"><i class="fa fa-angle-right"></i></div>{% endif %}</div><div data-pf-type="ProductGallery" data-product-id="{{ product.id }}" height="450px" spacing="10px" class="sc-AnqlK kovKGo">{% if img_size > 5 %}<div class="sc-nrwXf iEeNKD pf-navigation-list-image prev-arrow"><i class="fa fa-angle-left"></i></div>{% endif %}<div class="pf-p-image-small-container"><div class="pf-small-img-roll" style="padding-top: 5px; margin: -5px;">	{% for image in product.images %} <div class="sc-cpHetk didcdr" style="margin: 0px 5px;"><img src="{{ image.src | img_url: 'master' }}" class="pf-show-small-img" alt="{{ image.alt | escape }}" data-img-id="{{ image.id }}"></div>{% endfor %} </div></div>{% if img_size > 5 %}<div class="sc-nrwXf iEeNKD pf-navigation-list-image next-arrow"><i class="fa fa-angle-right"></i></div>{% endif %}</div></div></div></div><div class="sc-drKuOJ bejofX pf-c pf-c-xs--12 pf-c-sm--6 pf-c-md--6 pf-c-lg--6"><div class="sc-gRnDUn fJTCAC pf-d4d8c7a9" data-pf-type="Column"><h3 data-product-type="title" data-product-id="{{ product.id }}" data-pf-type="ProductText" class="sc-hycgNl dilOGW pf-f1fa893f">{{ product.title }}</h3><div data-product-type="price" data-product-id="{{ product.id }}" data-pf-type="ProductText" class="sc-iBmynh fgPtko pf-7cd26ff7">{{ product.price | money }}</div><div data-show-button="true" data-more="" data-less="" data-product-type="content" data-product-id="{{ product.id }}" data-pf-type="ProductText" class="sc-iBmynh fgPtko pf-7f7d5e46">{{ product.content }}</div><p class="sc-dREXXX gMKZx pf-a45b4fc4" data-pf-type="Paragraph"><span data-pf-type="Text" class="sc-jMMfwr doiSif pf-d2a72608">Known to Support:<br>•&nbsp; Anti-inflammatory<br>•&nbsp; Brain Function<br>•&nbsp; Antioxidants<br>•&nbsp; Strength<br>•&nbsp; Stress Relief<br>•&nbsp; Hormonal Balance</span></p><a href="https://cdn.shopify.com/s/files/1/0063/2333/9362/t/19/assets/pf-7d0b1bc5-aa25-410b-b2da-c80ef0060e32--nutritionvanilla.png" target="_self" data-pf-type="Button" class="sc-cooIXK fABBSI pf-83ab4dcf" data-fancybox=""><i class="sc-kasBVs gpALgc pf-f7e1780d fa fa-list" data-pf-type="Icon"></i><span data-pf-type="Text" class="sc-jMMfwr doiSif pf-0d85640a">Nutrition Facts</span></a><div data-product-id="{{ product.id }}" data-display="dropdown" data-label="true" data-pf-type="ProductVariant" class="sc-cCbXAZ ivBRvn pf-c40ae883" style="--pf-s-lg:16px; --pf-s-md:16px; --pf-s-sm:8px; --pf-s-xs:8px;"><div class="pf-p-variant"></div><input data-productid="{{ product.id }}" name="id" class="pf-input-variant-{{ product.id }}}" type="hidden" value="{{ product.variants.first.id }}"></div><div data-pf-type="Block" class="sc-dyGzUR igZhSP pf-136d22f3"><div data-product-id="{{ product.id }}" size="40" data-pf-type="ProductQuantity" class="sc-jWojfa kDvBhz pf-7eb0651a"><button data-quantity-action="decrease" data-quantity-disabled="true" type="button">-</button><input min="1" type="number" data-hidespinner="true" name="quantity" value="1"><button type="button" data-quantity-action="increase">+</button></div><button data-product-id="{{ product.id }}" data-checkout="same" class="sc-jkCMRl hOFaaf pf-ccbbd039" data-soldout="Sold out" data-adding="Adding..." data-added="Thank you!" type="button" data-pf-type="ProductATC"><span>Add to Cart</span></button></div></div></div></div></div>{% endform %}</div></div></div></div></div><div data-container="true" class="sc-fnwBNb irilUZ pf-a7b695a6" data-pf-type="Section"><div class="sc-cugefK iKePrP" style="max-width: 1170px;"><div class="sc-sdtwF iIwwEJ pf-ac74d8fe pf-r pf-r-eh" data-pf-type="Row" style="--pf-s-lg:15px; --pf-s-md:15px; --pf-s-sm:15px; --pf-s-xs:15px;"><div class="sc-drKuOJ bejofX pf-c pf-c-xs--12 pf-c-sm--12 pf-c-md--12 pf-c-lg--12"><div class="sc-gRnDUn fJTCAC pf-55e380e2" data-pf-type="Column"><div data-pf-type="Custom.HTML" class="sc-iBEsjs lphJbu pf-4f3e9168"><div id="stamped-main-widget" data-widget-style="standard"></div></div></div></div></div></div></div><div data-container="false" class="sc-fnwBNb irilUZ pf-68c0d12e" data-pf-type="Section"><div class="sc-cugefK iKePrP"><div class="sc-sdtwF iIwwEJ pf-b4e36b0d pf-r pf-r-eh" data-pf-type="Row" style="--pf-s-lg:15px; --pf-s-md:15px; --pf-s-sm:15px; --pf-s-xs:15px;"><div class="sc-drKuOJ bejofX pf-c pf-c-xs--12 pf-c-sm--3 pf-c-md--3 pf-c-lg--3"><div class="sc-gRnDUn fJTCAC pf-338a5c77" data-pf-type="Column">{% assign defaultProduct = product %}{% assign product = product_1914813644898 %} {% form 'product', product, data-productid: product.id, class: "pf-product-form pf-form-6fdf8c33" %}<div data-product-id="1914813644898" class="sc-crNyjn jsYGEv"><div data-product-id="{{ product.id }}" data-default-source="featured" data-pf-type="ProductImage" class="sc-bhlBdH bzjhPd pf-0b0f5422">{% assign img_size = product.images.size %}<div class="sc-eitiEO hLGuQN">{% if img_size > 1 %}<div class="sc-nrwXf iEeNKD pf-navigation-list-image prev-arrow"><i class="fa fa-angle-left"></i></div>{% endif %}<picture height="450px" spacing="10px" data-pf-type="MasterImage" data-magnifier="false" mode="view" class="sc-keFjpB iQOqUN"><img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.featured_image.alt | escape }}" data-img-id="{{ product.featured_image.id }}" width="{{ product.featured_image.width }}" height="{{ product.featured_image.height }}"></picture>{% if img_size > 1 %}<div spacing="10px" class="sc-nrwXf iEeNKD pf-navigation-list-image next-arrow"><i class="fa fa-angle-right"></i></div>{% endif %}</div><div data-pf-type="ProductGallery" data-product-id="{{ product.id }}" height="450px" spacing="10px" class="sc-AnqlK dmbQZE">{% if img_size > 5 %}<div class="sc-nrwXf iEeNKD pf-navigation-list-image prev-arrow"><i class="fa fa-angle-left"></i></div>{% endif %}<div class="pf-p-image-small-container"><div class="pf-small-img-roll" style="padding-top: 5px; margin: -5px;">	{% for image in product.images %} <div class="sc-cpHetk didcdr" style="margin: 0px 5px;"><img src="{{ image.src | img_url: 'master' }}" class="pf-show-small-img" alt="{{ image.alt | escape }}" data-img-id="{{ image.id }}"></div>{% endfor %} </div></div>{% if img_size > 5 %}<div class="sc-nrwXf iEeNKD pf-navigation-list-image next-arrow"><i class="fa fa-angle-right"></i></div>{% endif %}</div></div><h3 data-product-type="title" data-product-id="{{ product.id }}" data-pf-type="ProductText" class="sc-hycgNl dilOGW pf-85eb8dbe">{{ product.title }}</h3><h3 data-pf-type="Heading" class="sc-iGPElx eTVcMH pf-6a747b70"><span data-pf-type="Text" class="sc-jMMfwr doiSif pf-54769f4b">12 pack</span></h3><div data-product-type="price" data-product-id="{{ product.id }}" data-pf-type="ProductText" class="sc-iBmynh fgPtko pf-78ab5718">{{ product.price | money }}</div><div data-pf-type="Block" class="sc-dyGzUR igZhSP pf-70283aba"><div data-product-id="{{ product.id }}" size="30" data-pf-type="ProductQuantity" class="sc-jWojfa dBfkGm pf-6a4e6e5f"><button data-quantity-action="decrease" data-quantity-disabled="true" type="button">-</button><input min="1" type="number" data-hidespinner="true" name="quantity" value="1"><button type="button" data-quantity-action="increase">+</button></div><button data-product-id="{{ product.id }}" data-checkout="cart" class="sc-jkCMRl hOFaaf pf-d3eeb4e9" data-soldout="Sold out" data-adding="Adding..." data-added="Thank you!" type="button" data-pf-type="ProductATC"><span>Add to Cart</span></button></div></div>{% endform %}{% assign product = defaultProduct %}</div></div><div class="sc-drKuOJ bejofX pf-c pf-c-xs--12 pf-c-sm--3 pf-c-md--3 pf-c-lg--3"><div class="sc-gRnDUn fJTCAC pf-b23b2fb6" data-pf-type="Column">{% assign defaultProduct = product %}{% assign product = product_1914817544290 %} {% form 'product', product, data-productid: product.id, class: "pf-product-form pf-form-cbbc1c9c" %}<div data-product-id="1914817544290" class="sc-crNyjn jsYGEv"><div data-product-id="{{ product.id }}" data-default-source="featured" data-pf-type="ProductImage" class="sc-bhlBdH bzjhPd pf-71b4920d">{% assign img_size = product.images.size %}<div class="sc-eitiEO hLGuQN">{% if img_size > 1 %}<div class="sc-nrwXf iEeNKD pf-navigation-list-image prev-arrow"><i class="fa fa-angle-left"></i></div>{% endif %}<picture height="450px" spacing="10px" data-pf-type="MasterImage" data-magnifier="false" mode="view" class="sc-keFjpB iQOqUN"><img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.featured_image.alt | escape }}" data-img-id="{{ product.featured_image.id }}" width="{{ product.featured_image.width }}" height="{{ product.featured_image.height }}"></picture>{% if img_size > 1 %}<div spacing="10px" class="sc-nrwXf iEeNKD pf-navigation-list-image next-arrow"><i class="fa fa-angle-right"></i></div>{% endif %}</div><div data-pf-type="ProductGallery" data-product-id="{{ product.id }}" height="450px" spacing="10px" class="sc-AnqlK dmbQZE">{% if img_size > 5 %}<div class="sc-nrwXf iEeNKD pf-navigation-list-image prev-arrow"><i class="fa fa-angle-left"></i></div>{% endif %}<div class="pf-p-image-small-container"><div class="pf-small-img-roll" style="padding-top: 5px; margin: -5px;">	{% for image in product.images %} <div class="sc-cpHetk didcdr" style="margin: 0px 5px;"><img src="{{ image.src | img_url: 'master' }}" class="pf-show-small-img" alt="{{ image.alt | escape }}" data-img-id="{{ image.id }}"></div>{% endfor %} </div></div>{% if img_size > 5 %}<div class="sc-nrwXf iEeNKD pf-navigation-list-image next-arrow"><i class="fa fa-angle-right"></i></div>{% endif %}</div></div><h3 data-product-type="title" data-product-id="{{ product.id }}" data-pf-type="ProductText" class="sc-hycgNl dilOGW pf-f7de4289">{{ product.title }}</h3><h3 data-pf-type="Heading" class="sc-iGPElx eTVcMH pf-1e056fd9"><span data-pf-type="Text" class="sc-jMMfwr doiSif pf-8011170a">12 pack</span></h3><div data-product-type="price" data-product-id="{{ product.id }}" data-pf-type="ProductText" class="sc-iBmynh fgPtko pf-e8b5f082">{{ product.price | money }}</div><div data-pf-type="Block" class="sc-dyGzUR igZhSP pf-5e208eac"><div data-product-id="{{ product.id }}" size="30" data-pf-type="ProductQuantity" class="sc-jWojfa dBfkGm pf-02de4b06"><button data-quantity-action="decrease" data-quantity-disabled="true" type="button">-</button><input min="1" type="number" data-hidespinner="true" name="quantity" value="1"><button type="button" data-quantity-action="increase">+</button></div><button data-product-id="{{ product.id }}" data-checkout="cart" class="sc-jkCMRl hOFaaf pf-145d9923" data-soldout="Sold out" data-adding="Adding..." data-added="Thank you!" type="button" data-pf-type="ProductATC"><span>Add to Cart</span></button></div></div>{% endform %}{% assign product = defaultProduct %}</div></div><div class="sc-drKuOJ bejofX pf-c pf-c-xs--12 pf-c-sm--3 pf-c-md--3 pf-c-lg--3"><div class="sc-gRnDUn fJTCAC pf-2b733f41" data-pf-type="Column">{% assign defaultProduct = product %}{% assign product = product_1916748759138 %} {% form 'product', product, data-productid: product.id, class: "pf-product-form pf-form-cdf4079d" %}<div data-product-id="1916748759138" class="sc-crNyjn jsYGEv"><div data-product-id="{{ product.id }}" data-default-source="featured" data-pf-type="ProductImage" class="sc-bhlBdH bzjhPd pf-31e1dcb0">{% assign img_size = product.images.size %}<div class="sc-eitiEO hLGuQN">{% if img_size > 1 %}<div class="sc-nrwXf iEeNKD pf-navigation-list-image prev-arrow"><i class="fa fa-angle-left"></i></div>{% endif %}<picture height="450px" spacing="10px" data-pf-type="MasterImage" data-magnifier="false" mode="view" class="sc-keFjpB iQOqUN"><img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.featured_image.alt | escape }}" data-img-id="{{ product.featured_image.id }}" width="{{ product.featured_image.width }}" height="{{ product.featured_image.height }}"></picture>{% if img_size > 1 %}<div spacing="10px" class="sc-nrwXf iEeNKD pf-navigation-list-image next-arrow"><i class="fa fa-angle-right"></i></div>{% endif %}</div><div data-pf-type="ProductGallery" data-product-id="{{ product.id }}" height="450px" spacing="10px" class="sc-AnqlK dmbQZE">{% if img_size > 5 %}<div class="sc-nrwXf iEeNKD pf-navigation-list-image prev-arrow"><i class="fa fa-angle-left"></i></div>{% endif %}<div class="pf-p-image-small-container"><div class="pf-small-img-roll" style="padding-top: 5px; margin: -5px;">	{% for image in product.images %} <div class="sc-cpHetk didcdr" style="margin: 0px 5px;"><img src="{{ image.src | img_url: 'master' }}" class="pf-show-small-img" alt="{{ image.alt | escape }}" data-img-id="{{ image.id }}"></div>{% endfor %} </div></div>{% if img_size > 5 %}<div class="sc-nrwXf iEeNKD pf-navigation-list-image next-arrow"><i class="fa fa-angle-right"></i></div>{% endif %}</div></div><h3 data-product-type="title" data-product-id="{{ product.id }}" data-pf-type="ProductText" class="sc-hycgNl dilOGW pf-56463a41">{{ product.title }}</h3><h3 data-pf-type="Heading" class="sc-iGPElx eTVcMH pf-e1a4d620"><span data-pf-type="Text" class="sc-jMMfwr doiSif pf-bb7a78d7">12 pack</span></h3><div data-product-type="price" data-product-id="{{ product.id }}" data-pf-type="ProductText" class="sc-iBmynh fgPtko pf-34a72317">{{ product.price | money }}</div><div data-pf-type="Block" class="sc-dyGzUR igZhSP pf-d0ee3663"><div data-product-id="{{ product.id }}" size="30" data-pf-type="ProductQuantity" class="sc-jWojfa dBfkGm pf-a619845f"><button data-quantity-action="decrease" data-quantity-disabled="true" type="button">-</button><input min="1" type="number" data-hidespinner="true" name="quantity" value="1"><button type="button" data-quantity-action="increase">+</button></div><button data-product-id="{{ product.id }}" data-checkout="cart" class="sc-jkCMRl hOFaaf pf-2f294f2d" data-soldout="Sold out" data-adding="Adding..." data-added="Thank you!" type="button" data-pf-type="ProductATC"><span>Add to Cart</span></button></div></div>{% endform %}{% assign product = defaultProduct %}</div></div><div class="sc-drKuOJ bejofX pf-c pf-c-xs--12 pf-c-sm--3 pf-c-md--3 pf-c-lg--3"><div class="sc-gRnDUn fJTCAC pf-f4300691" data-pf-type="Column">{% assign defaultProduct = product %}{% assign product = product_3954544115810 %} {% form 'product', product, data-productid: product.id, class: "pf-product-form pf-form-c84592c8" %}<div data-product-id="3954544115810" class="sc-crNyjn jsYGEv"><div data-product-id="{{ product.id }}" data-default-source="featured" data-pf-type="ProductImage" class="sc-bhlBdH bzjhPd pf-8667dd81">{% assign img_size = product.images.size %}<div class="sc-eitiEO hLGuQN">{% if img_size > 1 %}<div class="sc-nrwXf iEeNKD pf-navigation-list-image prev-arrow"><i class="fa fa-angle-left"></i></div>{% endif %}<picture height="450px" spacing="10px" data-pf-type="MasterImage" data-magnifier="false" mode="view" class="sc-keFjpB iQOqUN"><img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.featured_image.alt | escape }}" data-img-id="{{ product.featured_image.id }}" width="{{ product.featured_image.width }}" height="{{ product.featured_image.height }}"></picture>{% if img_size > 1 %}<div spacing="10px" class="sc-nrwXf iEeNKD pf-navigation-list-image next-arrow"><i class="fa fa-angle-right"></i></div>{% endif %}</div><div data-pf-type="ProductGallery" data-product-id="{{ product.id }}" height="450px" spacing="10px" class="sc-AnqlK dmbQZE">{% if img_size > 5 %}<div class="sc-nrwXf iEeNKD pf-navigation-list-image prev-arrow"><i class="fa fa-angle-left"></i></div>{% endif %}<div class="pf-p-image-small-container"><div class="pf-small-img-roll" style="padding-top: 5px; margin: -5px;">	{% for image in product.images %} <div class="sc-cpHetk didcdr" style="margin: 0px 5px;"><img src="{{ image.src | img_url: 'master' }}" class="pf-show-small-img" alt="{{ image.alt | escape }}" data-img-id="{{ image.id }}"></div>{% endfor %} </div></div>{% if img_size > 5 %}<div class="sc-nrwXf iEeNKD pf-navigation-list-image next-arrow"><i class="fa fa-angle-right"></i></div>{% endif %}</div></div><h3 data-product-type="title" data-product-id="{{ product.id }}" data-pf-type="ProductText" class="sc-hycgNl dilOGW pf-5eb86f67">{{ product.title }}</h3><div data-product-type="price" data-product-id="{{ product.id }}" data-pf-type="ProductText" class="sc-iBmynh fgPtko pf-8b8a367d">{{ product.price | money }}</div><div data-pf-type="Block" class="sc-dyGzUR igZhSP pf-4199bde4"><div data-product-id="{{ product.id }}" size="30" data-pf-type="ProductQuantity" class="sc-jWojfa dBfkGm pf-e859b475"><button data-quantity-action="decrease" data-quantity-disabled="true" type="button">-</button><input min="1" type="number" data-hidespinner="true" name="quantity" value="1"><button type="button" data-quantity-action="increase">+</button></div><button data-product-id="{{ product.id }}" data-checkout="cart" class="sc-jkCMRl hOFaaf pf-beb219b3" data-soldout="Sold out" data-adding="Adding..." data-added="Thank you!" type="button" data-pf-type="ProductATC"><span>Add to Cart</span></button></div><p class="sc-dREXXX gMKZx pf-134ea0f0" data-pf-type="Paragraph"><span data-pf-type="Text" class="sc-jMMfwr doiSif pf-d8999610">One trial pack per customer</span></p></div>{% endform %}{% assign product = defaultProduct %}</div></div></div></div></div></div></div></div><script>
+					window.__pagefly_setting__={"baseURL":"https://apps.pagefly.io","isBackend":false,"cdnURL":"https://cdn.pagefly.io","pageflyVersion":"2.8.9","elementData":{"pf-11718557":{"listPosition":"bottom","limit":5,"height":"450px","spacing":"10px","listLayout":"slider","_type":"ProductImage"},"pf-0b0f5422":{"listPosition":"bottom","limit":5,"height":"450px","spacing":"10px","listLayout":"slider","_type":"ProductImage"},"pf-71b4920d":{"listPosition":"bottom","limit":5,"height":"450px","spacing":"10px","listLayout":"slider","_type":"ProductImage"},"pf-31e1dcb0":{"listPosition":"bottom","limit":5,"height":"450px","spacing":"10px","listLayout":"slider","_type":"ProductImage"},"pf-8667dd81":{"listPosition":"bottom","limit":5,"height":"450px","spacing":"10px","listLayout":"slider","_type":"ProductImage"}},"pageType":"product","pageId":"197f2bed-cdab-4267-b341-2cb8051ab669","lazyLoad":false,"imageLazyLoad":false,"nativeImageLazyLoad":true};
+					window.__pagefly_setting__.moneyFormat = {{shop.money_format | json}}
+				</script><script src="https://cdn.pagefly.io/pagefly/2.8.9/core/helper.js?t=2020-03-23-18" defer></script>

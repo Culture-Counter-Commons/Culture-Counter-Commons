@@ -33,6 +33,8 @@
                     </div>
                 {% endif %}
             </div>
+                            {% assign product_description = product.description %}
+                            {{ product_description }}
             <div class="prd-block_info-top">
                 {% if product_sku and product.selected_or_first_available_variant.sku.size > 0 %}
                     <div class="product-sku">{{ 'general.theme.sku' | t }}: <span>{{ product.selected_or_first_available_variant.sku }}</span></div>
@@ -78,31 +80,61 @@
         </div>
         {% unless settings.catalog_mode %}
             {% form 'product', product %}
-                {% include 'product-options-form' %}
+                
                 <div class="prd-block_actions topline">
-                    <div class="prd-block_price">
-                        <span class="prd-block_price--actual">{{ price }}</span>
-                        {% if on_sale %}
-                        <span class="prd-block_price--old">{{ product.selected_or_first_available_variant.compare_at_price | money }}</span>
-                        {% if section.settings.show_you_save %}<div class="price-comment">{{ 'general.theme.you_save' | t }} {{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | money }}</div>{% endif %}
-                        {% endif %}
+                    <div class="prd-pricing">
+                        <div class="prd-block_price">
+                            
+                        </div>
+                        {% include 'product-options-form' %}
                     </div>
+                    
+                    <div id="hulkapps_custom_options_{{ product.id }}"> </div>
+                    {% if product.available %}
+                    <div class="prd-block_qty">
+                        <span class="option-label">{{ 'general.theme.qty' | t }}:</span>
+                        <div class="qty qty-changer">
+                            <fieldset>
+                                <input type="button" value="&#8210;" class="decrease">
+                                <input type="text" class="qty-input" name="quantity" value="1" data-min="1"
+                                    {% if product.selected_or_first_available_variant.inventory_management == "shopify" and product.selected_or_first_available_variant.inventory_quantity > 0 and product.selected_or_first_available_variant.inventory_policy == 'deny' %}data-max="{{ product.selected_or_first_available_variant.inventory_quantity }}"
+                                    {% endif %}>
+                                <input type="button" value="+" class="increase">
+                            </fieldset>
+                        </div>
+                    </div>
+                    {% endif %}
                     {% if product.available %}
                     <div class="btn-wrap">
+
                         {% capture status %}{{ 'general.theme.add_to_cart' | t }}{% endcapture %}
                         {% if product.selected_or_first_available_variant.inventory_management == "shopify" and product.selected_or_first_available_variant.inventory_quantity < 1 and product.selected_or_first_available_variant.inventory_policy == "continue" %}
                             {% capture status %}{{ 'general.theme.pre_order' | t }}{% endcapture %}
                         {% endif %}
-                        <button class="btn btn--animate btn--add-to-cart  js-add-to-cart-product-page"  data-variant-id="{{ product.selected_or_first_available_variant.id }}" title="{{ status }}"><span class="text-sent">{% if section.settings.dynamic_buy_now %}<i class="icon-check-box"></i>{% else %}{{ 'general.theme.added_to_cart' | t }}{% endif %}</span><i class="icon-handbag"></i>{% unless section.settings.dynamic_buy_now %}<span>{{ status }}</span>{% endunless %}</button>     
-                  {% if section.settings.dynamic_buy_now %}{{ form | payment_button }}{% endif %}
-                  	</div>
+                        {%- comment -%}
+                        below button had this class: btn--animate
+                        <i class="icon-handbag"></i>
+                        {%- endcomment -%}
+                        <button class="btn btn--add-to-cart  js-add-to-cart-product-page"  data-variant-id="{{ product.selected_or_first_available_variant.id }}" title="{{ status }}"><span class="text-sent">{% if section.settings.dynamic_buy_now %}<i class="icon-check-box"></i>{% else %}{{ 'general.theme.add_to_cart' | t }}{% endif %}</span>{% unless section.settings.dynamic_buy_now %}<span>{{ status }}</span>{% endunless %}</button>     
+                        {% if section.settings.dynamic_buy_now %}{{ form | payment_button }}{% endif %}
+                        <span class="prd-block_price--actual">{{ price }}</span>
+                        {% if on_sale %}
+                        <span class="prd-block_price--old">{{ product.selected_or_first_available_variant.compare_at_price | money }}</span>
+                        {% if section.settings.show_you_save %}<div class="price-comment">{{ 'general.theme.you_save' | t }}
+                            {{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | money }}
+                        </div>{% endif %}
+                        {% endif %}
+    
+                </div>
                     {% endif %}
+{%- comment -%}
                     <div class="prd-block_link">
                         {% if settings.wishlist %}<a href="/account" class="icon-heart-1"></a>{% endif %}
                         {% if section.settings.social_sharing_products %}
-                            {{ section.settings.social_sharing_products_code }}
+                        {{ section.settings.social_sharing_products_code }}
                         {% endif %}
                     </div>
+{%- endcomment -%}
                     {% if settings.free_shipping_product_yes %}
                         {% include 'free-shipping-bar' %}
                     {% endif %}
@@ -110,7 +142,7 @@
                     {% if safe_checkout_image_yes %}
                         <div class="prd-safecheckout">
                             <h3 class="h2-style">{{ 'general.theme.safe_checkout' | t }}</h3>
-                            <img class="lazyload" data-src="{% if section.settings.safe_checkout_image != blank %}{{ section.settings.safe_checkout_image | img_url:'master' }}{% else %}{{ 'safecheckout01.png' | asset_url }}{% endif %}" alt="{{ section.settings.safe_checkout_image | | img_tag:'master' }}" class="img-responsive">
+                            <img class="lazyload" data-src="{% if section.settings.safe_checkout_image != blank %}{{ section.settings.safe_checkout_image | img_url:'master' }}{% else %}{{ 'safecheckout01.png' | asset_url }}{% endif %}" alt="{{ section.settings.safe_checkout_image | img_tag:'master' }}" class="img-responsive">
                         </div>
                     {% endif %}
                 </div>
