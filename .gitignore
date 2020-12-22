@@ -1,1 +1,4 @@
 /config
+._*
+.DS_Store
+Thumbs.db

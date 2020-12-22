@@ -25,7 +25,9 @@
 5. To start ThemeKit and upload theme files on save:
     - `$ theme watch`
 
-# Using Git
+## Using Git
+
+[Shopify Git Instructions](https://www.shopify.com/partners/blog/git-guide)
 
 #### Create a branch
 
@@ -60,3 +62,4 @@
 &#9660; deletes the remote branch
 
 `git push origin :feature-id`
+
