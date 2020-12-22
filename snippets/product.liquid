@@ -1,0 +1,312 @@
+<div class="{{ block.settings.columns }} px-lg-3 px-2 mb-5 shop-products {% if block.settings.one_time_only != blank %}onetimeonly{% endif %} " id="{{ block.settings.productid }}">
+
+    <div class="product-header">
+
+        <!-- product image -->
+        <div class="image mb-4" data-transition="entrance" style="transform : translateY( 50px )">
+
+            <img class="lazyload w-100" data-src="{{ product.images.first.src | img_url : 'master' }}"
+                alt="{{ product.images.first.alt }}"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-expand="-50">
+
+        </div>
+
+        <!-- product title -->
+        {% if product.title != blank %}
+        <div class="title" data-transition="entrance" style="transform : translateY( 50px )">
+
+            <div class="text-center">
+
+                <h1 class="text-uppercase mb-1">
+
+                    {{ product.title }}
+
+                </h1>
+
+            </div>
+
+        </div>
+        {% endif %}
+
+    </div>
+
+    {% if product.description != blank %}
+
+    <div class="description" data-transition="entrance" style="transform : translateY( 50px )">
+
+        <div class="text-center py-2">
+
+            {{ product.description }}
+
+        </div>
+
+    </div>
+
+    {% endif %}
+
+    <div class="price-info-container">
+
+        {% if block.settings.link != blank %}
+
+        <!-- product info lightbox -->
+        <div class="link mb-2" data-transition="entrance" style="transform : translateY( 50px )">
+
+            <div class="text-center">
+
+                <a class="product-link" href="{{ block.settings.lightbox | img_url : 'master' }}" data-fancybox
+                    data-src="#{{ block.settings.productid }}_lightbox">
+
+                    <h6>
+
+                        {{ block.settings.link }}
+
+                    </h6>
+
+                </a>
+
+            </div>
+
+            <div style="display: none;" id="{{ block.settings.productid }}_lightbox" class="bg-dark product-lightbox">
+
+                <div class="row justify-content-center align-items-center">
+
+                    <div class="col-lg-6">
+
+                        <img src="{{ block.settings.lightbox | img_url: '600x' }}" alt="{{ block.settings.image.alt }}"
+                            class="bg-white" />
+
+                    </div>
+
+                    <div class="col-lg-6 text-center lightbox-content">
+
+                        <p>{{ block.settings.lightboxContent }}</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        {% endif %}
+
+        {% if block.settings.pricing_info != blank %}
+        <!-- price info -->
+        <div class="price-info pb-1" data-transition="entrance" style="transform : translateY( 50px )">
+
+            <div class="prices">
+
+                <div class="pricing">
+
+                    <p class="price-cut">
+
+                        {%- assign priceCut = block.settings.pricecut -%}
+
+                        {{ priceCut }}
+
+                    </p>
+
+                    {% if variant.price < variant.compare_at_price %}
+                    {{ variant.compare_at_price | money }}
+                    {% endif %}
+
+
+                    <p class="price-info-text">
+                        <b>{{ block.settings.priceinfo }}</b>
+                    </p>
+
+                </div>
+
+                {% if block.settings.priceinfosubtext != blank %}
+
+                <p class="price-info-subtext">
+
+                    {{ block.settings.priceinfosubtext }}
+
+                </p>
+
+                {% endif %}
+
+            </div>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+
+<!-- footer -->
+<div class="footer">
+
+    <div class="button" data-transition="entrance" style="transform : translateY( 50px )">
+
+
+        <form class="mb-3" action="/cart/add" data-productid="{{product.id}}" method="post"
+            enctype="multipart/form-data">
+
+            <div class="form-group">
+
+                <!-- ReCharge Select -->
+
+                <style>
+                    #quantity {
+                        padding: 5px;
+                        width: 35px;
+                        border: 1px solid #555;
+                    }
+
+                    .hide {
+                        display: none;
+                    }
+
+                </style>
+
+                <select name="id" data-productid="{{ product.id }}" class="variant-selector {% if block.settings.one_time_only != blank %}onetimeonly{% endif %} {% if block.settings.productid contains "wholesale" %}wholesale{% endif %}">
+
+                    {% for variant in product.variants %}
+
+                    {% if variant.available == true %}
+
+                    <option value="{{variant.id}}">{{ variant.price | money_with_currency }} per case ({{ variant.title }})</option>
+
+                    {% else %}
+
+                    <option disabled="disabled"> {{ variant.title }} - sold out!</option>
+
+                    {% endif %}
+
+                    {% endfor %}
+
+                </select>
+
+                <!-- ReCharge subscription product -->
+                {% if product.available %}
+
+                {% include 'subscription-product' %}
+
+                {% endif %}
+
+                <!-- add to cart button -->
+
+                <button data-productid="{{product.id}}"
+                    class="btn btn--to-secondary btn--full product__add-to-cart-button ajax_form_cart single_add_to_cart_button mt-1"
+                    type="submit" id="add" value="Add to Cart"
+                    aria-label="{{ 'products.product.add_to_cart' | t }}">
+                    <span class="secondary-text" aria-hidden=true
+                        data-cart-secondary-submit-text>{{ 'products.product.add_to_cart' | t }}</span>
+                </button>
+
+
+            </div> <!-- END form-group -->
+
+        </form>
+
+            {% comment %}
+            ***********************
+            Want the lightbox back? . . .
+            ***********************
+            - to each .review class (for the respective product), replace this attribute 'href="/pages/reviews"'
+            with these attributes :
+            -- data-fancybox data-src="#nilla"
+            -- data-fancybox data-src="#chocolate"
+            -- data-fancybox data-src="#matcha"
+            -- data-fancybox data-src="#mixed"
+
+            next . . .
+            - add these attributes to each product "span":
+            - class="stamped-product-reviews-badge" data-product-sku="{{ product.handle }}"
+            data-id="{{ product.id }}"
+
+            lastly. . .
+            - remove the comments surrounding the "- lightbox -"
+
+            done!
+            {% endcomment %}
+
+            <style>
+                .stamped-badge-caption {
+                    display: none;
+                }
+
+            </style>
+
+            <!-- VANILLA -->
+            {% if product.tags contains "Vanilla" %}
+            <a href="/pages/reviews" class="text-center review">
+                <span style="display:block;">{{ product.metafields.stamped.badge }}</span>
+
+            </a>
+            {% comment %} - lightbox -
+            <div style="display: none;" id="nilla" class="review">
+                <h1 class="text-uppercase text-center">Vanilla Ashwagandha Reviews</h1>
+                <div id="stamped-main-widget" data-widget-style="standard" data-product-id="{{ product.id }}"
+                    data-url="{{ shop.url }}{{ product.url }}" data-product-sku="{{product.handle}}">
+                    {{ product.metafields.stamped.reviews }}
+                </div>
+            </div>
+            {% endcomment %}
+            {% endif %}
+
+            <!-- chocolate -->
+            {% if product.tags contains "chocolate" %}
+            <a href="/pages/reviews" class="text-center review" href="javascript:;">
+                <span style="display:block;">{{ product.metafields.stamped.badge }}</span>
+            </a>
+            {% comment %} - lightbox -
+            <div style="display: none;" id="chocolate" class="review">
+                <h1 class="text-uppercase text-center">Chocolate Maca Reviews</h1>
+                <div id="stamped-main-widget" data-widget-style="standard" data-product-id="{{ product.id }}"
+                    data-url="{{ shop.url }}{{ product.url }}" data-product-sku="{{product.handle}}">
+                    {{ product.metafields.stamped.reviews }}
+                </div>
+            </div>
+            {% endcomment %}
+            {% endif %}
+
+            <!-- MATCHA -->
+            {% if product.tags contains "matcha" %}
+            <a href="/pages/reviews" class="text-center review" href="javascript:;">
+                <span style="display:block;">{{ product.metafields.stamped.badge }}</span>
+            </a>
+            {% comment %} - lightbox -
+            <div style="display: none;" id="matcha" class="review">
+                <h1 class="text-uppercase text-center">Matcha Moringa Reviews</h1>
+                <div id="stamped-main-widget" data-widget-style="standard" data-product-id="{{ product.id }}"
+                    data-url="{{ shop.url }}{{ product.url }}" data-product-sku="{{product.handle}}">
+                    {{ product.metafields.stamped.reviews }}
+                </div>
+            </div>
+            {% endcomment %}
+            {% endif %}
+
+            <!-- mixed -->
+            {% if product.tags contains "mixed" %}
+            <a href="/pages/reviews" class="text-center review" href="javascript:;">
+                <span style="display:block;">
+                <span class="stamped-badge luke" data-rating="4.9" data-lang=""><span class="stamped-starrating stamped-badge-starrating"><i
+                            class="stamped-fa stamped-fa-star" style="color:#57c9e4 !important;"></i><i
+                            class="stamped-fa stamped-fa-star" style="color:#57c9e4 !important;"></i><i
+                            class="stamped-fa stamped-fa-star" style="color:#57c9e4 !important;"></i><i
+                            class="stamped-fa stamped-fa-star" style="color:#57c9e4 !important;"></i><i
+                            class="stamped-fa stamped-fa-star" style="color:#57c9e4 !important;"></i></span><span
+                        class="stamped-badge-caption" data-reviews="71" data-rating="4.9" aria-label="71 reviews">71</span></span>
+                </span>
+            </a>
+            {% comment %} - lightbox -
+            <div style="display: none;" id="mixed" class="review">
+                <h1 class="text-uppercase text-center">Mixed Case Reviews</h1>
+                <div id="stamped-main-widget" data-widget-style="standard" data-product-id="{{ product.id }}"
+                    data-url="{{ shop.url }}{{ product.url }}" data-product-sku="{{product.handle}}">
+                    {{ product.metafields.stamped.reviews }}
+                </div>
+            </div>
+            {% endcomment %}
+            {% endif %}
+
+    </div> <!-- end button -->
+
+</div> <!-- end footer -->
+
+</div>

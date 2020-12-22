@@ -1,0 +1,411 @@
+{% comment %}
+
+  © 2018 Atlas Group, Inc. All rights reserved.
+
+  No portion of this software code may be reproduced, distributed or modified
+  without prior express written authorization of Atlas Group, Inc.
+
+  Unauthorized reproduction or copying of this software code, via any medium,
+  is strictly prohibited and may subject you to severe legal liability.
+
+{% endcomment %}
+
+<div class="image-with-text-overlay" data-transition="entrance" style="transform : translateY( 50px )">
+
+  <div class="mb-5">
+
+    <a href="{{ section.settings.url }}">
+
+      <div class="card bg-transparent rounded-0 border-0">
+
+        <div class="card-img rounded-0">
+
+          <div class="d-lg-none">
+
+            <div class="embed-responsive embed-responsive-2by3">
+
+              <div class="embed-responsive-item">
+
+                <img class="lazyload w-100" data-src="{{ section.settings.portrait | img_url : 'master' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-expand="-50">
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="d-none d-lg-block">
+
+            <div class="embed-responsive embed-responsive-17by20">
+
+              <div class="embed-responsive-item">
+
+                <img class="lazyload w-100" data-src="{{ section.settings.landscape | img_url : 'master' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-expand="-50">
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="card-img-overlay py-5 px-3">
+
+          <div class="container-fluid h-100 p-0">
+
+            <div class="row no-gutters h-100 {{ section.settings.horizontal }}">
+
+              <div class="col-lg-auto {{ section.settings.vertical }}">
+
+                {% if section.settings.title != blank %}
+
+                  <div class="title" data-transition="entrance" style="transform : translateY( 50px )">
+
+                    <div class="{{ section.settings.align }}">
+
+                      <h1 class="display-1 text-uppercase text-white pb-3 mb-3">
+
+                        {{ section.settings.title }}
+
+                      </h1>
+
+                    </div>
+
+                  </div>
+
+                {% endif %}
+
+                {% if section.settings.text != blank %}
+
+                  <div class="text" data-transition="entrance" style="transform : translateY( 50px )">
+
+                    <div class="{{ section.settings.align }}">
+
+                      <p class="text-{{ section.settings.color }} mb-3">
+
+                        {{ section.settings.text }}
+
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                {% endif %}
+
+                {% if section.settings.button != blank %}
+
+                  <div class="button" data-transition="entrance" style="transform : translateY( 50px )">
+
+                    <div class="{{ section.settings.align }}">
+
+                      <button class="btn btn-secondary text-white h-auto px-4 py-3">
+
+                        {{ section.settings.button }}
+
+                      </button>
+
+                    </div>
+
+                  </div>
+
+                {% endif %}
+
+                {% if section.settings.link != blank %}
+
+                  <div class="link" data-transition="entrance" style="transform : translateY( 50px )">
+
+                    <div class="{{ section.settings.align }}">
+
+                      <p>
+
+                        <u>
+
+                          {{ section.settings.link }}
+
+                        </u>
+
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                {% endif %}
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </a>
+
+  </div>
+
+</div>
+
+{% schema %}
+
+  {
+
+    "presets" : [
+
+      {
+
+        "name" : "Image with text overlay",
+
+        "category" : "Homepage"
+
+      }
+
+    ],
+
+    "settings" : [
+
+      {
+
+        "type" : "image_picker",
+
+        "label" : "Portrait",
+
+        "id" : "portrait",
+
+        "info" : "2×3"
+
+      },
+
+      {
+
+        "type" : "image_picker",
+
+        "label" : "Landscape",
+
+        "id" : "landscape",
+
+        "info" : "16×9"
+
+      },
+
+      {
+
+        "default" : "Title",
+
+        "label" : "Title",
+
+        "type" : "text",
+
+        "id" : "title"
+
+      },
+
+      {
+
+        "type" : "textarea",
+
+        "default" : "Text",
+
+        "label" : "Text",
+
+        "id" : "text"
+
+      },
+
+      {
+
+        "default" : "Button",
+
+        "label" : "Button",
+
+        "type" : "text",
+
+        "id" : "button"
+
+      },
+
+      {
+
+        "default" : "Link",
+
+        "label" : "Link",
+
+        "type" : "text",
+
+        "id" : "link"
+
+      },
+
+      {
+
+        "default" : "/",
+
+        "label" : "URL",
+
+        "type" : "url",
+
+        "id" : "url"
+
+      },
+
+      {
+
+        "default" : "dark",
+
+        "label" : "Color",
+
+        "type" : "select",
+
+        "id" : "color",
+
+        "options" : [
+
+          {
+
+            "value" : "light",
+
+            "label" : "Light"
+
+          },
+
+          {
+
+            "value" : "dark",
+
+            "label" : "Dark"
+
+          }
+
+        ]
+
+      },
+
+      {
+
+        "default" : "text-center",
+
+        "label" : "Align",
+
+        "type" : "select",
+
+        "id" : "align",
+
+        "options" : [
+
+          {
+
+            "value": "text-left",
+
+            "label": "Left"
+
+          },
+
+          {
+
+            "value": "text-center",
+
+            "label": "Center"
+
+          },
+
+          {
+
+            "value": "text-right",
+
+            "label": "Right"
+
+          }
+
+        ]
+
+      },
+
+      {
+
+        "default" : "justify-content-center",
+
+        "label" : "Horizontal",
+
+        "id" : "horizontal",
+
+        "type" : "select",
+
+        "options" : [
+
+          {
+
+            "value": "justify-content-start",
+
+            "label": "Left"
+
+          },
+
+          {
+
+            "value": "justify-content-center",
+
+            "label": "Center"
+
+          },
+
+          {
+
+            "value": "justify-content-end",
+
+            "label": "Right"
+
+          }
+
+        ]
+
+      },
+
+      {
+
+        "default" : "align-self-center",
+
+        "label" : "Vertical",
+
+        "id" : "vertical",
+
+        "type" : "select",
+
+        "options" : [
+
+          {
+
+            "value": "align-self-start",
+
+            "label": "Top"
+
+          },
+
+          {
+
+            "value": "align-self-center",
+
+            "label": "Center"
+
+          },
+
+          {
+
+            "value": "align-self-end",
+
+            "label": "Bottom"
+
+          }
+
+        ]
+
+      }
+
+    ]
+
+  }
+
+{% endschema %}

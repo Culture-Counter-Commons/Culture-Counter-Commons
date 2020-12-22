@@ -1,0 +1,157 @@
+{% comment %}
+
+  © 2018 Atlas Group, Inc. All rights reserved.
+
+  No portion of this software code may be reproduced, distributed or modified
+  without prior express written authorization of Atlas Group, Inc.
+
+  Unauthorized reproduction or copying of this software code, via any medium,
+  is strictly prohibited and may subject you to severe legal liability.
+
+{% endcomment %}
+
+<div class="text">
+
+  <div class="py-5 mb-5">
+
+    <div class="container-fluid px-2">
+
+      <div class="row justify-content-center no-gutters">
+
+        <div class="col-lg-8 px-2">
+
+          {% if section.settings.title != blank %}
+
+            <div class="title" data-transition="entrance" style="transform : translateY( 50px )">
+
+              <div class="text-center">
+
+                <h1 class="text-uppercase text-white pb-3 mb-3">
+
+                  {{ section.settings.title }}
+
+                </h1>
+
+              </div>
+
+            </div>
+
+          {% endif %}
+
+          {% if section.settings.text != blank %}
+
+            <div class="text" data-transition="entrance" style="transform : translateY( 50px )">
+
+              <div class="text-center">
+
+                <p class="text-white pb-3 mb-3">
+
+                  {{ section.settings.text }}
+
+                </p>
+
+              </div>
+
+            </div>
+
+          {% endif %}
+
+          {% if section.settings.link != blank %}
+
+            <div class="link" data-transition="entrance" style="transform : translateY( 50px )">
+
+              <div class="text-center">
+
+                <a class="btn btn-outline-light h-auto px-4 py-3" href="{{ section.settings.learnmorelink }}">
+
+                  {{ section.settings.link }}
+
+                </a>
+
+              </div>
+
+            </div>
+
+          {% endif %}
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+{% schema %}
+
+  {
+
+    "presets" : [
+
+      {
+
+        "category" : "Homepage",
+
+        "name" : "Text"
+
+      }
+
+    ],
+
+    "settings" : [
+
+      {
+
+        "default" : "Title",
+
+        "label" : "Title",
+
+        "type" : "text",
+
+        "id" : "title"
+
+      },
+
+      {
+
+        "type" : "textarea",
+
+        "default" : "Text",
+
+        "label" : "Text",
+
+        "id" : "text"
+
+      },
+
+      {
+
+        "default" : "Link",
+
+        "label" : "Link",
+
+        "type" : "text",
+
+        "id" : "link"
+
+      },
+
+      {
+
+        "default" : "/",
+
+        "label" : "URL",
+
+        "type" : "text",
+
+        "id" : "learnmorelink"
+
+      }
+
+    ]
+
+  }
+
+{% endschema %}

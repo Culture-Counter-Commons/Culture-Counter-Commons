@@ -1,0 +1,199 @@
+
+.fadeInUp { 
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+} 
+// hide left and right overflow
+.pf-product-section {
+    overflow-y: inherit;
+    background-repeat: no-repeat;
+    background-position: -20vw center;
+    background-size: 70%;
+}
+
+.pf-product-quantity {
+	width: 100%;
+	justify-content: space-between;
+	border: 2px solid #fff;
+}
+
+.pf-product {
+	.selectors {
+		.quantity {
+			display: none;
+		}
+		.rc_block {
+			display: flex;
+			padding: 0;
+			text-align: left;
+			width: 100%;
+		}
+		.form-group,
+		.form-inline label {
+			display: -ms-flexbox;
+			display: flex;
+			align-items: center;
+			margin-bottom: 0;
+		}
+
+		.form-group {
+			-ms-flex: 0 0 auto;
+			flex: 0 0 auto;
+			-ms-flex-flow: row wrap;
+			flex-flow: row wrap;
+			-ms-flex-align: center;
+			min-width: 100%;
+			padding: 0;
+		}
+		#rc_radio_options {
+			width: 100%;
+		}
+		.form-inline input:checked + div .rc_select {
+			height: 2.5em;
+		}
+	}
+	// bottle size buttons
+	.pf-variant {
+		margin-bottom: 5px !important;
+	}
+	.pf-p-variant-radio {
+		label {
+			width: 100%;
+		}
+		> div {
+			flex: 1 0 auto;
+			&:last-child {
+				margin-right: 0 !important;
+			}
+			&:not(:last-child) {
+				margin-right: 5px !important;
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+}
+.pf-product-benefit {
+    ul {
+        list-style: none;
+        padding-left: 0;
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.5;
+    }
+    h5 {
+        font-family: Chalet Comprime Cologne Sixty, sans-serif;
+        text-transform: uppercase;
+        color: #42c7e7;
+        font-size: 1.5rem;
+    }
+}
+
+.product-uses {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    li {
+        list-style: none;
+    }
+    .fas {
+        color: #42c7e7;
+        left: 0;
+        position: absolute;
+        font-size: 20px;
+        line-height: 2.3;
+    }
+}
+
+.product-nutrition {
+    .product-link p {
+        text-decoration: underline;
+        @media (max-width: 767px) {
+            font-size: 15px;;
+        }
+    }
+	.product-nutrition-list {
+        display: flex;
+        flex-flow: row wrap;
+        line-height: 2.5;
+        font-family: Roboto, sans-serif;
+    }
+    .nutrition-inner-row > div {
+        flex: 0 0 auto;
+        max-width: none;
+        @media (max-width: 767px) {
+            flex: 1 0 50%;
+            max-width: none;
+        }
+    }
+	dt {
+		flex-basis: 20%;
+		padding: 2px 4px;
+		color: #fff;
+        border-bottom: 1px solid #fff;
+        @media (max-width: 991px) {
+            flex-basis: 50%;
+        }
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+	}
+	dd {
+		flex-basis: 70%;
+		flex-grow: 1;
+		margin: 0;
+		text-align: right;
+        padding: 2px 4px;
+        border-bottom: 1px solid #fff;
+        @media (max-width: 991px) {
+            flex-basis: 50%;
+        }
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+	}
+}
+
+.pf-product-icons { 
+	.product-icons {
+		display: flex;
+        justify-content: center;
+        padding: 0;
+		li {
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			p {
+				width: min-content;
+				text-align: center;
+				line-height: 1;
+				font-family: Chalet Comprime Cologne Sixty, sans-serif;
+				font-size: 25px;
+                text-transform: uppercase;
+                @media (max-width: 767px) {
+                    font-size: 18px;
+                }
+			}
+		}
+		li img {
+            margin: 0.5rem;
+            max-width: 65px;
+            @media (max-width: 767px) {
+                max-width: 40px;
+                margin: .3rem;
+            }
+		}
+	}
+}
+
+
+
+

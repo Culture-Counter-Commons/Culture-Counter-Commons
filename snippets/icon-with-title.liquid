@@ -1,0 +1,77 @@
+<div class="col-lg-4">
+
+  <div class="px-5">
+
+    <div class="icon-with-title">
+
+      <div class="icon" data-transition="entrance" style="transform : translateY( 50px )">
+
+        <div class="text-center">
+
+          <div class="mb-5">
+
+            <img src="{{ block.settings.icon }}" height="160">
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="title" data-transition="entrance" style="transform : translateY( 50px )">
+
+        <div class="text-center">
+
+          <h1 class="pb-5 mb-5">
+
+            {{ block.settings.title }}
+
+          </h1>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {% if block.settings.plus %}
+
+      <style>
+
+        .plus {
+
+          font-family : 'Roboto' , sans-serif;
+
+          -webkit-font-smoothing : antialiased;
+
+          font-weight : normal;
+
+          position : absolute;
+
+          line-height : 2rem;
+
+          font-size : 2rem;
+
+          right : -10px;
+
+          top : 70px;
+
+        }
+
+      </style>
+
+      <div class="plus" data-transition="entrance" style="transform : translateY( 50px )">
+
+        <div class="d-none d-lg-block">
+
+          +
+
+        </div>
+
+      </div>
+
+    {% endif %}
+
+  </div>
+
+</div>

@@ -1,0 +1,124 @@
+<div class="col-lg-4">
+
+  <div class="image-with-text-vertical">
+
+    <div class="pb-5 mb-5">
+
+      <div class="row align-items-center no-gutters">
+
+        <div class="col-md-12 image" data-transition="entrance" style="transform : translateY( 50px )">
+
+          <div class="mb-2">
+
+            <div class="embed-responsive">
+
+              <a href="{{ block.settings.imagelink }}">
+
+                <img class="lazyload w-100" data-src="{{ block.settings.image | img_url : 'master' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-expand="-50">
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-12">
+
+          <!-- product info lightbox -->
+          <div class="link mb-4" data-transition="entrance" style="transform : translateY( 50px )">
+
+              {% if block.settings.link != blank %}
+
+              <div class="text-center">
+
+                  <a class="product-link" href="{{ block.settings.lightbox | img_url : 'master' }}" data-fancybox>
+
+                      <h6>
+
+                          {{ block.settings.link }}
+
+                      </h6>
+
+                  </a>
+
+              </div>
+
+              {% endif %}
+
+          </div>
+
+        </div>
+
+          <div class="col-md-12">
+
+            <div class="title" data-transition="entrance" style="transform : translateY( 50px )">
+
+              <div class="text-center">
+
+                <h1 class="text-uppercase my-3">
+
+                  {{ block.settings.title }}
+
+                </h1>
+
+              </div>
+
+            </div>
+
+            <div class="text" data-transition="entrance" style="transform : translateY( 50px )">
+
+              <div class="text-center">
+
+                <p class="my-3">
+
+                  {{ block.settings.text }}
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        <div class="col-md-12">
+
+            <div class="title" data-transition="entrance" style="transform : translateY( 50px )">
+
+              <div class="text-center">
+
+                <h1 class="text-uppercase my-3">
+
+                  {{ block.settings.title-2 }}
+
+                </h1>
+
+              </div>
+
+            </div>
+
+            <div class="text" data-transition="entrance" style="transform : translateY( 50px )">
+
+              <div class="text-center">
+
+                <p class="my-3">
+
+                  {{ block.settings.text-2 }}
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

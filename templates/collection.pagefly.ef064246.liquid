@@ -1,0 +1,136 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400|Oswald:400|Roboto:400&display=swap"><link rel="stylesheet" href="https://cdn.pagefly.io/pagefly/2.11.0/css/main-style.css?t=20200521090540"><link rel="stylesheet" href="{{ 'pagefly.ef064246.scss.css' | asset_url }}">
+		  <script>
+	window.__pageflyProducts = window.__pageflyProducts || {};
+	window.__pageflyProducts["{{product.id}}"] = {
+					id: {{product.id | json }},
+					handle: {{product.handle | json }},
+					title: {{product.title | json }},
+					type: {{product.type | json }},
+					url: {{product.url | json }},
+					vendor: {{product.vendor | json }},
+					variants: {{product.variants | json }},
+					options: {{product.options | json }},
+					media: {{product.media | json }},
+					first_available_variant: {{product.first_available_variant | json }},
+					has_only_default_variant: {{product.has_only_default_variant | json }},
+					options_with_values: {{product.options_with_values | json }},
+					selected_variant: {{product.selected_variant | json }},
+					selected_or_first_available_variant: {{product.selected_or_first_available_variant | json }},
+					tags: {{product.tags | json }},
+					template_suffix: {{product.template_suffix | json }},
+					featured_image: {{product.featured_image | json }},
+					featured_media: {{product.featured_media | json }},
+					images: {{product.images | json }}
+				};
+	</script>{% if collection_137282027618 == null %}{%- assign collection_137282027618 = collections['shop'] -%}{% endif %}<script>
+	window.__pageflyCollections = window.__pageflyCollections || {};
+	window.__pageflyCollections["137282027618"] = {{collection_137282027618 | json }};
+	</script><div class="__pf" id="__pf"><div data-pf-type="Body" class="sc-pRgDJ fzXWJx pf-828c0838"><div data-pf-type="Layout" class="pf-9d828c08"><div data-container="true" class="sc-pZopv bjKdkd pf-2bcf5d71" data-pf-type="Section"><div class="sc-pQQXS iWCqut" style="max-width: 1170px;"><div class="sc-qPjXN eYzxUD pf-582bcf5d pf-r" data-pf-type="Row" style="--pf-s-lg:15px; --pf-s-md:15px; --pf-s-sm:0px; --pf-s-xs:0px;"><div class="sc-pbYdQ jklmHY pf-c pf-c-xs--12 pf-c-sm--12 pf-c-md--12 pf-c-lg--12"><div class="sc-pkUyL fTyjzF pf-bb582bcf" data-pf-type="Column"><div data-pf-type="Divider" class="sc-qQKeD hpksip pf-4187cd49 pf-xs--hidden"><div></div></div></div></div></div></div></div><div data-container="true" class="sc-pZopv bjKdkd pf-559d828c" data-pf-type="Section"><div class="sc-pQQXS iWCqut" style="max-width: 1170px;"><div class="sc-qPjXN eYzxUD pf-1f559d82 pf-r pf-r-eh" data-pf-type="Row" style="--pf-s-lg:15px; --pf-s-md:15px; --pf-s-sm:15px; --pf-s-xs:15px;"><div class="sc-pbYdQ jklmHY pf-c pf-c-xs--12 pf-c-sm--12 pf-c-md--12 pf-c-lg--12"><div class="sc-pkUyL fTyjzF pf-d11f559d" data-pf-type="Column"><div class="sc-pYbQl bbpodW pf-18c88c99 pf-r-dg pf-r-dg-lg--3 pf-r-dg-md--3 pf-r-dg-sm--2 pf-r-dg-xs--2 product-list" data-pf-type="ProductList" style="--pf-s-lg:100px; --pf-s-md:100px; --pf-s-sm:40px; --pf-s-xs:100px;">{% assign collection_137282027618 = collections['shop'] %}{% assign defaultProduct = product %}{% paginate collection_137282027618.products by 6 %}{% for product in collection_137282027618.products %}<div><div data-product-id="{{ product.id }}" data-pf-type="ProductBox" class="sc-pcjuG uJAsR pf-676118c8"> {% form 'product', product, data-productid: product.id, class: "pf-product-form pf-form-6118c88c" %}<div class="sc-qPjXN eYzxUD pf-c26d6761 pf-r pf-r-eh product-details-row" data-pf-type="Row" style="--pf-s-lg:0px; --pf-s-md:15px; --pf-s-sm:15px; --pf-s-xs:15px;"><div class="sc-pbYdQ jklmHY pf-c pf-c-xs--12 pf-c-sm--undefined pf-c-md--12 pf-c-lg--12"><div class="sc-pkUyL fTyjzF pf-e1b6c26d product-details-column" data-pf-type="Column"><div data-product-id="{{ product.id }}" data-default-source="featured" data-pf-type="ProductImage" class="sc-qZusK fNDgSL pf-221a630e">{% assign img_size = product.images.size %}<div class="sc-qQZrP dRtXDN">{% if img_size > 1 %}<div class="sc-psbuI jTAHHU pf-navigation-list-image prev-arrow"><i class="fa fa-angle-left"></i></div>{% endif %}<picture height="200px" spacing="10px" data-pf-type="MasterImage" data-magnifier="false" mode="view" class="sc-pHHLp bhYosX" style="height: auto;"><img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.featured_image.alt | escape }}" data-img-id="{{ product.featured_image.id }}" width="{{ product.featured_image.width }}" height="{{ product.featured_image.height }}"></picture>{% if img_size > 1 %}<div spacing="10px" class="sc-psbuI jTAHHU pf-navigation-list-image next-arrow"><i class="fa fa-angle-right"></i></div>{% endif %}</div><div data-pf-type="ProductGallery" data-product-id="{{ product.id }}" height="200px" spacing="10px" class="sc-pzLIQ loCNjI">{% if img_size > 5 %}<div class="sc-psbuI jTAHHU pf-navigation-list-image prev-arrow"><i class="fa fa-angle-left"></i></div>{% endif %}<div class="pf-p-image-small-container"><div class="pf-small-img-roll" style="padding-top: 5px; margin: -5px;">	{% for image in product.images %} <div class="sc-pjGtN lgnAIx" style="margin: 0px 5px;"><img src="{{ image.src | img_url: 'master' }}" class="pf-show-small-img" alt="{{ image.alt | escape }}" data-img-id="{{ image.id }}"></div>{% endfor %} </div></div>{% if img_size > 5 %}<div class="sc-psbuI jTAHHU pf-navigation-list-image next-arrow"><i class="fa fa-angle-right"></i></div>{% endif %}</div></div><h3 data-product-type="title" data-product-id="{{ product.id }}" data-pf-type="ProductText" class="sc-ptBBy kpuSv pf-630e1f55">{{ product.title }}</h3><div data-pf-type="Custom.HTML" class="sc-pciXn kKVZfa pf-cf5d71c6">{% unless product.metafields.global.product_lightbox_image_url == blank %}
+{%- assign mColour = product.metafields.global.product_lightbox_image_url -%}
+
+    <!-- product info lightbox -->
+    <div class="link mb-2">
+
+        <a class="product-link lightbox" data-fancybox="" data-src="#{{ product.id }}_lightbox">
+
+            <h6>Nutrition, Ingredients, Benefits</h6>
+
+        </a>
+
+        <div style="display: none;" id="{{ product.id }}_lightbox" class="bg-dark product-lightbox">
+
+            <div class="row justify-content-center align-items-center">
+
+                <div class="col-lg-6">
+
+                    <img src="{{ mColour }}" alt="Nutrition Facts">
+
+                </div>
+
+                <div class="col-lg-6 text-center lightbox-content">
+
+                    <p>{{ product.metafields.global.product_lightbox_text_html }}</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+{% endunless %}</div><div data-product-type="price" data-product-id="{{ product.id }}" data-pf-type="ProductText" class="sc-oUqyN ggSnCK pf-5585a79d">{{ product.variants[0].price | money }}</div><div data-pf-type="ReCharge" class="sc-pkvSM gpmTzN pf-8b6c86d5">{% include 'subscription-product' %}</div><div mode="view" data-pf-type="Tabs2" class="sc-pCOPB haGrAn pf-f967c64f product-form-tabs tabs-{{ product.id }}"><div data-pf-type="TabsMenu" class="sc-pcZmk fLYRsF pf-75ba0a6c"><button type="button" data-pf-tab-active="false" class="sc-pTHXP kidlpw pf-fe6c279d pf-anchor one-time-tab" data-pf-type="TabHeader"><span data-pf-type="Text" class="sc-ptSuy fnmilh pf-9975ba0a">One Time</span></button><button type="button" data-pf-tab-active="true" class="sc-pTHXP kidlpw pf-717797e8 pf-anchor subscribe-tab" data-pf-type="TabHeader"><span data-pf-type="Text" class="sc-ptSuy fnmilh pf-f0ce7177">Subscribe and Save 15%</span></button></div><div data-pf-type="TabContentWrapper" class="sc-pKLCU LdczL pf-4c93f967"><div data-pf-type="TabsContent" class="sc-qbELi bguaQk pf-4a754c93"></div><div data-pf-type="TabsContent" class="sc-qbELi eXHXkH pf-07c5c1e8"><div data-product-id="{{ product.id }}" data-display="radio" data-pf-type="ProductVariant" class="sc-pIgJL kJgvEj pf-97e807c5 sub-variants" checked="checked" style="--pf-s-lg:16px; --pf-s-md:16px; --pf-s-sm:8px; --pf-s-xs:8px;"><input data-productid="{{ product.id }}" name="id" class="pf-input-variant-{{ product.id }}" type="hidden" value="{{ product.variants.first.id }}"></div></div></div></div><div class="sc-qPjXN eYzxUD pf-45cc29e1 pf-r pf-r-align--cm pf-r-ew quantity-btn-row" data-pf-type="Row" style="--pf-s-lg:0px; --pf-s-md:0px; --pf-s-sm:0px; --pf-s-xs:3px;"><div class="sc-pbYdQ jklmHY pf-c pf-c-xs--12 pf-c-sm--4 pf-c-md--4 pf-c-lg--5"><div class="sc-pkUyL fTyjzF pf-74b17c17 product-quantity-column" data-pf-type="Column"><div data-product-id="{{ product.id }}" size="30" data-pf-type="ProductQuantity" class="sc-pIvzE gMldJK pf-15e674b1 product-quantity"><button data-quantity-action="decrease" data-quantity-disabled="false" type="button">-</button><input min="1" type="number" data-hidespinner="true" name="quantity" value="1"><button type="button" data-quantity-action="increase">+</button></div></div></div><div class="sc-pbYdQ jklmHY pf-c pf-c-xs--12 pf-c-sm--8 pf-c-md--8 pf-c-lg--6"><div class="sc-pkUyL fTyjzF pf-570c45cc btn-inner-container" data-pf-type="Column"><button data-product-id="{{ product.id }}" data-checkout="cart" class="sc-oTOtL gYNRye pf-57e2570c add-to-cart-button ajax_form_cart" data-soldout="Sold out" data-adding="Adding..." data-added="Thank you!" type="button" data-pf-type="ProductATC"><span>Add To Cart</span></button></div></div></div></div></div></div>{% endform %}</div><script>
+									window.__pageflyProducts = window.__pageflyProducts || {};
+									window.__pageflyProducts["{{product.id}}"] = {{product | json}};
+								</script></div>{% endfor %}{% endpaginate %}{% assign product = defaultProduct %}</div></div></div></div><div class="sc-qPjXN eYzxUD pf-1e7ecba9 pf-r pf-r-eh" data-pf-type="Row" style="--pf-s-lg:15px; --pf-s-md:15px; --pf-s-sm:15px; --pf-s-xs:15px;"><div class="sc-pbYdQ jklmHY pf-c pf-c-xs--12 pf-c-sm--12 pf-c-md--12 pf-c-lg--12"><div class="sc-pkUyL fTyjzF pf-c25a1e7e" data-pf-type="Column"><div data-pf-type="Custom.HTML" class="sc-pciXn kKVZfa pf-97fbc25a">{% comment %}
+<script>
+ 	var products = $('.product-list > div');
+ 	var oneTimeBtn = $(products).find('.pf-p-variant:first-of-type .pf-p-variant-radio > div:first-child');
+	var sibblings = $(products).find('.product-form-tabs [data-pf-type="TabsContent"]:first-child .pf-p-variant:first-of-type .pf-p-variant-radio > div:not(:first-child)');
+	var subscribeBTN = $(products).find('.subscribe-tab');
+
+  $('.product-list > div').each(function () {
+
+	$(oneTimeBtn).click(function () {
+	  $(sibblings).css("display", 'none');
+	});
+	$(subscribeBTN).click(function () {
+	  $(sibblings).css("display", 'flex');
+	});
+  });
+</script>
+{% endcomment %}</div></div></div></div></div></div></div></div></div><script>
+					window.__pagefly_setting__={"baseURL":"https://apps.pagefly.io","analyticsURL":"https://analytics.pagefly.io","isBackend":false,"cdnURL":"https://cdn.pagefly.io","pageflyVersion":"2.11.0","shopDomain":"drinkkiito.myshopify.com","elementData":{"pf-221a630e":{"listPosition":"bottom","limit":5,"height":"200px","spacing":"10px","listLayout":"slider","_type":"ProductImage"}},"pageTitle":"Limelight Shop Collection Page (tabs)","pageType":"collection","pageId":"ef064246-4187-4d49-9022-1a630e1f5585","lazyLoad":false,"imageLazyLoad":false,"nativeImageLazyLoad":false,"trackingIDs":[]};
+					window.__pagefly_setting__.moneyFormat = {{shop.money_format | json}}
+				</script><script src="https://cdn.pagefly.io/pagefly/2.11.0/core/helper.js?t=20200521090540" defer></script><script>window.onload = () => {
+  var productListItems = $('.product-list > div');
+
+  $(productListItems).each(function(index, element) { 
+	  var subscribeTab = $(element).find('.subscribe-tab');
+	  var tabBtnsParent = $('.subscribe-tab').parent();
+	  var tabContent = $(tabBtnsParent).next();
+	  var oneTimeRadioButton = $(tabContent).find('.pf-p-variant:first-of-type > div:first-of-type input');
+	  var oneTimeTab = $(element).find('.one-time-tab');
+	  var oneTimeTabActive = $(element).find('.one-time-tab[data-pf-tab-active="true"]');
+	  var subscribeTabActive = $(element).find('.subscribe-tab[data-pf-tab-active="true"]');
+	  var oneTimeRadio = $(element).find(
+		  '.product-form-tabs [data-pf-type="TabsContent"]:last-child .pf-p-variant:first-of-type .pf-p-variant-radio > div:first-child'
+	  );
+	  // one time radio button
+	  var oneTimeRadioBTN = $(element).find(
+		  '.pf-p-variant:first-child .pf-p-variant-radio > div:first-child input'
+	  );
+	  // one time radio button container
+	  var oneTimeRadioBTNcontainer = $(element).find(
+		  '.pf-p-variant:first-child .pf-p-variant-radio > div:first-child'
+	  );
+	  // week radio button
+	  var weekRadioBTN = $(element).find(
+		  '.sub-variants .pf-p-variant:first-of-type .pf-p-variant-radio > div:nth-child(2) input'
+	  );
+	  var subscriptionRadios = $(element).find(
+		  '.product-form-tabs .pf-p-variant:first-of-type .pf-p-variant-radio > div:not(:first-of-type)'
+	  );
+	  // on click of subscribe tab
+	  $(subscribeTab).click(function () {
+		  $(subscriptionRadios).removeClass('hide-tabs');
+		  // active one time tab set attr to false
+		  $(oneTimeTabActive).attr("data-pf-tab-active", "false");
+		  // remove one time radio button checked attribute
+		  // $(oneTimeRadioButton).removeAttr("checked");
+		  // check week radio button 
+		  
+		  // $(oneTimeRadioButton).prop('checked');
+		  // $(weekRadioBTN).prop("checked");
+	  });
+	  $(oneTimeRadioBTNcontainer).click(function () {
+		  // if one time tab active check the one time radio button
+		  $(oneTimeRadioBTN).attr('checked');
+		  $(weekRadioBTN).removeAttr('checked');
+		  $(subscribeTab).attr("data-pf-tab-active", "false");
+
+		  $(oneTimeTab).attr("data-pf-tab-active", "true");
+		  $(subscriptionRadios).attr('class', 'hide-tabs');
+	  });
+
+  });
+};</script>

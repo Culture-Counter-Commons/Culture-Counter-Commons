@@ -1,38 +1,59 @@
-<div class="prd-hover">
-<div class="prd-action">
-    {% if product.options.size >= 1 or product.metafields.c_f.line_properties != blank %}
-        {% if product.options[0] contains 'Title' and product.metafields.c_f.line_properties == blank %}
-            {% include 'product-card-add-to-cart-button' %}
-        {% else %}
-            {% unless settings.catalog_mode %}
-            <form method="post" action="/cart/add">
-                {% if settings.advanced_add_to_cart  %}
-                    <div class="form-group select-wrapper">
-                        {% include 'product-select-variant' %}
-                    </div>
-                    <button type="submit"  class="btn btn--animate js-add-to-cart-select btn-select-desktop" data-variant-id="{{ product.selected_or_first_available_variant.id }}" title="{{ 'general.theme.add_to_cart' | t }}"><span class="text-sent"><i class="icon-check-box"></i></span><i class="icon-handbag"></i></button>
-                    <button type="submit"  class="btn btn--animate btn-select-mobile js-qview-link"  data-fancybox data-type="ajax" data-src="{{ product.url }}?view=quick-view&output=embed" title="{{ 'general.theme.add_to_cart' | t }}"><span>{{ 'general.theme.select_options' | t }}</span></button>
 
-                {% comment %}
+<div class="{% unless collection.handle == 'burritos' or collection.handle == 'grab-go' or collection.handle == 'waffle-bar' or collection.handle == 'ice-cream' %}prd-hover{% endunless %}{% if collection.handle == 'burritos' or collection.handle == 'grab-go' or collection.handle == 'waffle-bar' or collection.handle == 'ice-cream' %}prd-form{% endif %}">
+    {% if collection.handle == 'grab-go' %}
+        {% include 'product-card-price' %}
+    {% endif %}
+    <div class="prd-action">
+        {% if product.tags contains 'by weight' %}
+        <span>In store only</span>
+        {% else %}
+            {% if product.options.size >= 1 or product.metafields.c_f.line_properties != blank %}
+                {% if product.options[0] contains 'Title' and product.metafields.c_f.line_properties == blank %}
+
+                    {% include 'product-card-add-to-cart-button' %}
                 {% else %}
-                    <a class="btn  prd-qview-link js-qview-link" data-fancybox data-type="ajax" data-src="{{ product.url }}?view=quick-view&output=embed"><span>{{ 'general.theme.select_options' | t }}</span></a>
-                {% endcomment %}
+                    {% unless settings.catalog_mode %}
+    <a href="{{ product.url | within: collection }}" class="btn btn--animate js-add-to-cart" data-variant-id="{{ product.selected_or_first_available_variant.id }}"
+        data-variant-handle="{{ product.selected_or_first_available_variant.id }}" title="{{ status }}">
+        {% if collection.handle == 'ice-cream' %}Choose this flavor{% elsif collection.handle == 'waffle-bar' %}Choose this topping{% else %}{{ 'general.theme.add_to_cart' | t }}{% endif %}
+    </a>
+
+                    {%- comment -%}
+                    <form method="post" action="/cart/add">
+                        
+                        {% if settings.advanced_add_to_cart  %}
+                            <div class="form-group select-wrapper">
+                                {% include 'product-select-variant' %}
+                            </div>
+                            <button type="submit"  class="btn btn--animate js-add-to-cart-select btn-select-desktop" data-variant-id="{{ product.selected_or_first_available_variant.id }}" title="{{ 'general.theme.add_to_cart' | t }}"><span class="text-sent"><i class="icon-check-box"></i></span><i class="icon-handbag"></i></button>
+                            <button type="submit"  class="btn btn--animate btn-select-mobile js-qview-link"  data-fancybox data-type="ajax" data-src="{{ product.url }}?view=quick-view&output=embed" title="{{ 'general.theme.add_to_cart' | t }}"><span>{{ 'general.theme.select_options' | t }}</span></button>
+                                
+                            {% capture the_snippet_fave %}{% render 'socialshopwave-widget-fave' %}{% endcapture %}
+                            {% unless the_snippet_fave contains 'Liquid error' %}
+                            {{ the_snippet_fave }}
+                            {% endunless %}  
+                            {% else %}
+                                <a class="btn  prd-qview-link js-qview-link" data-fancybox data-type="ajax" data-src="{{ product.url }}?view=quick-view&output=embed"><span>{{ 'general.theme.select_options' | t }}</span></a>
+                        {% endif %}
+                    </form>
+                    {%- endcomment -%}
+                    {% endunless %}
                 {% endif %}
-            </form>
+            {% else %}
+
+                {% include 'product-card-add-to-cart-button' %}
+            {% endif %}
+            {% unless settings.catalog_mode %}
+
+            {% comment %}<div class="prd-links {% unless quick_view_in_mobile == 1 %}prd-hidemobile{% endunless %}">{% endcomment %}
+
+        {% comment %}
+            <div class="prd-links">
+                {% if settings.show_quick_view %}<a title="{{ 'general.theme.quick_view' | t }}" class="icon-eye prd-qview-link js-qview-link " data-fancybox data-type="ajax" data-src="{{ product.url }}?view=quick-view&output=embed"></a>{% endif %}
+            </div>
+        {% endcomment %}
             {% endunless %}
         {% endif %}
-    {% else %}
-        {% include 'product-card-add-to-cart-button' %}
-    {% endif %}
-    {% unless settings.catalog_mode %}
-
-    {% comment %}<div class="prd-links {% unless quick_view_in_mobile == 1 %}prd-hidemobile{% endunless %}">{% endcomment %}
-
-{% comment %}
-    <div class="prd-links">
-        {% if settings.show_quick_view %}<a title="{{ 'general.theme.quick_view' | t }}" class="icon-eye prd-qview-link js-qview-link " data-fancybox data-type="ajax" data-src="{{ product.url }}?view=quick-view&output=embed"></a>{% endif %}
     </div>
-{% endcomment %}
-    {% endunless %}
 </div>
-    </div>
+

@@ -13,18 +13,18 @@
     "equal_height": true,
     "product_ratio_w": "1",
     "product_ratio_h": "1.18",
-    "ajax_cart": true,
+    "ajax_cart": false,
     "favicon": "shopify:\/\/shop_images\/CC-favicon-tanonblack.png",
     "collection_left_sidebar": true,
     "products_per_page": "1000",
-    "ajax": true,
+    "ajax": false,
     "collection_sort_enable": true,
     "collection_image_enable": true,
     "collection_image_width": "fullwidth full-nopad",
     "collection_image_height_d": "200",
     "collection_image_height_m": "200",
     "collection_title_size": "h-lg",
-    "collection_title_color": "#438871",
+    "collection_title_color": "#e8e0cd",
     "collection_image_bg_repeat": "no-repeat",
     "collection_image_bg_posX": "center",
     "collection_image_bg_posY": "center",
@@ -40,7 +40,7 @@
     "show_vendor": true,
     "stars_mobile_off": true,
     "show_you_save": false,
-    "advanced_add_to_cart": true,
+    "advanced_add_to_cart": false,
     "product_sku": false,
     "product_availability": false,
     "product_description": true,
@@ -54,7 +54,7 @@
     "free_shipping_product_yes": true,
     "checkout_popup_free_shipping_count": "400",
     "checkout_popup_free_condition_text": "Spend <span class=\"free-shipping-current\"><\/span> more and get free shipping!",
-    "checkout_popup": true,
+    "checkout_popup": false,
     "checkout_popup_show_cart_yes": true,
     "checkout_popup_undo_remove_yes": true,
     "checkout_popup_custom_html": "<div class=\"shop-feature-icon\"><i class=\"icon-box3\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">Delivery<\/div> <div class=\"text2\">Lorem ipsum dolor sit amet conset <\/div> <\/div>",
@@ -114,7 +114,7 @@
     "social_youtube_link": "",
     "social_vimeo_link": "",
     "shop_info_caption_1_1_text": "Get menus",
-    "shop_info_caption_1_2_text": "Updates every Monday!",
+    "shop_info_caption_1_2_text": "Get Updates & Offers",
     "shop_info_caption_1_icon": "icon-gift2",
     "shop_info_caption_1_link": "",
     "shop_info_caption_2_1_text": "Suggestions?",
@@ -264,7 +264,6 @@
           "html_header_5": "",
           "topline_enable": false,
           "where_to_show": "all",
-          "bg_topline": "",
           "topline_caption": "GET 10% OFF YOUR FIRST ORDER WITH CODE <span style=\"color: #000\">GOODWIN<\/span> <span class=\"hidden-xs\"> |   FREE GROUND SHIPPING OVER $250<\/span>",
           "topline_enable_animation": false,
           "topline_caption_1": "GET 10% OFF YOUR FIRST ORDER WITH CODE GOODWIN",
@@ -294,7 +293,7 @@
           "show_instagram": false,
           "social_icons": false,
           "support_time_title": "CONNECT",
-          "support_time": "<ul class=\"contact-list\"> <li>\n<i class=\"icon-phone\"><\/i><span><span class=\"h6-style\">Call Us:<\/span><span>1 (417) 720-1381<\/span><\/span>\n<\/li> <li>\n<i class=\"icon-phone\"><\/i><span><span class=\"h6-style\">Hours:<\/span><span>Tues-Sat: 9am-8pm<br>Sun: 9am-5pm<\/span><\/span>\n<\/li> <li>\n<i class=\"icon-mail-envelope\"><\/i><span><span class=\"h6-style\">E-mail:<\/span><span><a href=\"mailto:info@culturecountercommons.com\">info@culturecounter<br>commons.com<\/a><\/span><\/span>\n<\/li> <li>\n<i class=\"icon-phone\"><\/i><span><span class=\"h6-style\">Address:<\/span><span>607 S Pickwick ave<br>Springfield, MO 65804<\/span><\/span>\n<\/li> <\/ul>",
+          "support_time": "<ul class=\"contact-list\"> <li>\n<i class=\"icon-phone\"><\/i><span><span class=\"h6-style\">Call Us:<\/span><span>1 (417) 720-1381<\/span><\/span>\n<\/li> <li>\n<i class=\"icon-phone\"><\/i><span><span class=\"h6-style\">Hours:<\/span><span>Mon-Sat: 8am-8pm<\/span><\/span>\n<\/li> <li>\n<i class=\"icon-mail-envelope\"><\/i><span><span class=\"h6-style\">E-mail:<\/span><span><a href=\"mailto:info@culturecountercommons.com\">info@culturecounter<br>commons.com<\/a><\/span><\/span>\n<\/li> <li>\n<i class=\"icon-phone\"><\/i><span><span class=\"h6-style\">Address:<\/span><span>607 S Pickwick ave<br>Springfield, MO 65804<\/span><\/span>\n<\/li> <\/ul>",
           "short_description": "",
           "google_map": "",
           "chat_yes": false,
@@ -308,8 +307,8 @@
           "1539361894044-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_8203_917c98db-442d-44b3-978f-770bd10b3e4c.JPG",
-              "image_mobile": "shopify:\/\/shop_images\/storefront-square.jpg",
+              "image": "shopify:\/\/shop_images\/culture-counter-exterior-1.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/culture-counter-exterior-1.jpg",
               "enable": true,
               "bg_v_alignment": "bg-middle",
               "type": "none",
@@ -343,7 +342,7 @@
               "caption_1_othercss": "",
               "caption_2_yes": true,
               "caption_2_hidemobile_yes": false,
-              "caption_2": "<p>Order online for pickup at our walk-up window<\/p>",
+              "caption_2": "<p>Online ordering now available for pickup at our walk-up window!<\/p>",
               "caption_2_animation": "fadeIn",
               "caption_2_delay": "1000",
               "caption_2_hor_alignment": "center",
@@ -561,7 +560,7 @@
           "arowsdark": false,
           "arowsshift": false,
           "arowsshiftside": "bnslider-arrows--pullleft",
-          "autoplay_speed": "4000",
+          "autoplay_speed": "5000",
           "slideshow_height": "lg",
           "keep_scale": true,
           "keep_scale_width": "1920",
@@ -629,9 +628,8 @@
             "type": "banner",
             "settings": {
               "enable": true,
-              "title": "<span>Crafts<\/span><span>Coming Soon!<\/span>",
+              "title": "<span>Crafts<\/span><br>Coming Soon!",
               "image": "shopify:\/\/shop_images\/CC_Rectangle1_300x320_961bb288-d778-431c-93b7-ac05e7b223dd.png",
-              "link": "",
               "link_target": "_self"
             }
           },
@@ -641,7 +639,6 @@
               "enable": true,
               "title": "<span>Books<\/span><span>Coming Soon!<\/span>",
               "image": "shopify:\/\/shop_images\/stack_of_books_300x320_7c563e91-c3e0-49e1-b346-2189db4004d0.jpg",
-              "link": "",
               "link_target": "_self"
             }
           }
@@ -677,15 +674,14 @@
             "type": "product",
             "settings": {
               "enable": true,
-              "product": "elderberry-preserves",
-              "image": ""
+              "product": "elderberry-preserves"
             }
           },
           "1579829731685": {
             "type": "product",
             "settings": {
-              "enable": true,
-              "product": "eggs-organic-pasture-raised-by-the-dozen",
+              "enable": false,
+              "product": "",
               "image": "shopify:\/\/shop_images\/organic12-largeSIZED_37a97b4f-43c3-4f37-977f-607947e2e103.png"
             }
           },
@@ -693,24 +689,21 @@
             "type": "product",
             "settings": {
               "enable": true,
-              "product": "bacon-nitrite-free-pork-1",
-              "image": ""
+              "product": "bacon-nitrite-free-pork-1"
             }
           },
           "1539362044226-1": {
             "type": "product",
             "settings": {
               "enable": true,
-              "product": "bananas-1",
-              "image": ""
+              "product": "bananas-1"
             }
           },
           "1579830156504": {
             "type": "product",
             "settings": {
               "enable": true,
-              "product": "avocados",
-              "image": ""
+              "product": "avocados"
             }
           }
         },
@@ -755,8 +748,8 @@
             "type": "group",
             "settings": {
               "enable": true,
-              "title": "Freshies",
-              "tags": "green juice, smoothies",
+              "title": "drinkables",
+              "tags": "green juice, smoothies, root beer, kombucha",
               "style": "category-list"
             }
           },
@@ -793,7 +786,7 @@
               "enable": false,
               "title": "Popular Tags",
               "tags": "discount,",
-              "style": "tags-list"
+              "style": "category-list"
             }
           },
           "1563884717058": {
@@ -802,6 +795,33 @@
               "enable": true,
               "title": "Meal Kits",
               "tags": "entrées, sides",
+              "style": "category-list"
+            }
+          },
+          "6f036636-cc2e-458b-b31e-db4d7fee818a": {
+            "type": "group",
+            "settings": {
+              "enable": true,
+              "title": "Waffle Window",
+              "tags": "waffle window",
+              "style": "category-list"
+            }
+          },
+          "ec9ae144-24c1-4453-8f4b-54aa848f800a": {
+            "type": "group",
+            "settings": {
+              "enable": true,
+              "title": "grab & go",
+              "tags": "hot, cold",
+              "style": "category-list"
+            }
+          },
+          "1ba5048e-74a4-4268-b9c7-bbad2523337a": {
+            "type": "group",
+            "settings": {
+              "enable": true,
+              "title": "GF\/V",
+              "tags": "gluten-free, vegan",
               "style": "category-list"
             }
           }
@@ -813,7 +833,10 @@
           "1511706917060",
           "1511706934183",
           "1511706955678",
-          "1563884717058"
+          "1563884717058",
+          "6f036636-cc2e-458b-b31e-db4d7fee818a",
+          "ec9ae144-24c1-4453-8f4b-54aa848f800a",
+          "1ba5048e-74a4-4268-b9c7-bbad2523337a"
         ],
         "settings": {
           "categories": "category",
@@ -827,56 +850,54 @@
           "1527845510792": {
             "type": "tab_description",
             "settings": {
+              "enable": true,
+              "title": ""
+            }
+          },
+          "76fc4712-c174-4821-ae42-7e5204a88a39": {
+            "type": "tab_metafield",
+            "settings": {
               "enable": false,
-              "title": "Description"
+              "title": "custom_tab_title_3"
             }
           },
-          "1527845518340": {
-            "type": "tab_tags",
+          "84442ad3-0171-4be0-9bb0-0b4b6cc33b65": {
+            "type": "tab_metafield",
             "settings": {
-              "enable": true,
-              "title": "Assigned tags"
-            }
-          },
-          "1527845527390": {
-            "type": "tab_reviews",
-            "settings": {
-              "enable": true,
-              "title": "Reviews",
-              "reviews": false
+              "enable": false,
+              "title": "custom_tab_title_5"
             }
           }
         },
         "block_order": [
           "1527845510792",
-          "1527845518340",
-          "1527845527390"
+          "76fc4712-c174-4821-ae42-7e5204a88a39",
+          "84442ad3-0171-4be0-9bb0-0b4b6cc33b65"
         ],
         "settings": {
-          "style": "product",
-          "always_visible_previews": false,
-          "zoom": true,
+          "style": "product-style-2",
+          "always_visible_previews": true,
+          "zoom": false,
           "product_prev_next": true,
-          "vendor": true,
-          "product_sku": true,
-          "show_label_new": true,
-          "show_label_sale": true,
-          "product_rating": true,
-          "product_availability": true,
-          "product_inventory_count": true,
+          "vendor": false,
+          "product_sku": false,
+          "show_label_new": false,
+          "show_label_sale": false,
+          "product_rating": false,
+          "product_availability": false,
+          "product_inventory_count": false,
           "show_you_save": false,
           "right_column_yes": false,
-          "description": "<a href=\"#\" class=\"shop-feature\"> <div class=\"shop-feature-icon\"><i class=\"icon-box3\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">Free worlwide delivery<\/div> <div class=\"text2\">Lorem ipsum dolor sit amet conset <\/div> <\/div> <\/a> <a href=\"#\" class=\"shop-feature\"> <div class=\"shop-feature-icon\"><i class=\"icon-arrow-left-circle\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">100% money back guarantee<\/div> <div class=\"text2\">Lorem ipsum dolor sit amet conset <\/div> <\/div> <\/a> <a href=\"#\" class=\"shop-feature\"> <div class=\"shop-feature-icon\"><i class=\"icon-call\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">24\/7 customer support<\/div> <div class=\"text2\">Lorem ipsum dolor sit amet conset <\/div> <\/div> <\/a>",
+          "description": "<a href=\"#product-tabs\" class=\"shop-feature\"> <div class=\"shop-feature-icon\"><i class=\"icon-arrow-down\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">Select your Toppings<\/div> <div class=\"text2\">Lorem ipsum dolor sit amet conset <\/div> <\/div> <\/a>",
           "description_2": "<div class=\"col-sm-4\">\n<a href=\"#\" class=\"shop-feature text-center\"> <div class=\"shop-feature-icon\"><i class=\"icon-gift2\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">Free worlwide delivery<\/div> <\/div> <\/a> <\/div> <div class=\"col-sm-4\"> <a href=\"#\" class=\"shop-feature text-center\"> <div class=\"shop-feature-icon\"><i class=\"icon-circle-dollar\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">100% money back guarantee<\/div> <\/div> <\/a> <\/div> <div class=\"col-sm-4\"> <a href=\"#\" class=\"shop-feature text-center\"> <div class=\"shop-feature-icon\"><i class=\"icon-tag\"><\/i><\/div> <div class=\"shop-feature-text\"> <div class=\"text1\">24\/7 customer support<\/div> <\/div> <\/a> <\/div>",
           "size_guide": "",
-          "dynamic_buy_now": true,
-          "safe_checkout_image_yes": true,
-          "safe_checkout_image": "",
-          "social_sharing_products": true,
+          "dynamic_buy_now": false,
+          "safe_checkout_image_yes": false,
+          "social_sharing_products": false,
           "social_sharing_products_code": "<script src=\"\/\/s7.addthis.com\/js\/300\/addthis_widget.js#pubid=ra-5b10f4bd90cdf8c3\"><\/script><div class=\"addthis_inline_share_toolbox\"><\/div>",
-          "product_related_enable": false,
+          "product_related_enable": true,
           "title": "More from this collection",
-          "limit": "7",
+          "limit": "4",
           "per_row_desktop": "4"
         }
       },
@@ -894,7 +915,7 @@
             "type": "product",
             "settings": {
               "enable": true,
-              "product": "bananas"
+              "product": ""
             }
           },
           "1581022991960": {
@@ -919,7 +940,7 @@
         "settings": {
           "collections_products_per_row": "4",
           "collections_per_row_mobile": "2",
-          "collections_description": false
+          "collections_description": true
         }
       },
       "list-collections-template": {
@@ -943,8 +964,7 @@
       },
       "column": {
         "type": "column",
-        "settings": {
-        }
+        "settings": {}
       },
       "1562718973628": {
         "type": "brands",
@@ -1147,7 +1167,6 @@
           "heading": "",
           "link_button_yes": false,
           "link_button_text": "",
-          "link": "",
           "link_target": "_self"
         }
       },
@@ -1231,6 +1250,10 @@
           "posts_per_page": "5",
           "sidebar": true
         }
+      },
+      "page-landing": {
+        "type": "page-landing",
+        "settings": {}
       }
     },
     "content_for_index": [

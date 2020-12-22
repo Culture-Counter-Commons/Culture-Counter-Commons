@@ -1,0 +1,177 @@
+<div class="images-with-text">
+
+  <div class="mb-5">
+
+    <div class="container-fluid px-lg-5 px-2">
+
+      <div class="row no-gutters">
+
+        {% for block in section.blocks %}
+
+          <div class="col-lg px-lg-3 px-2">
+
+            {% if block.settings.image != blank %}
+
+              <div class="image" data-transition="entrance" style="transform : translateY( 50px )">
+
+                <div class="pb-3 mb-3">
+
+                  <a href="{{ block.settings.url }}">
+
+                    <div class="embed-responsive embed-responsive-17by20">
+
+                      <div class="embed-responsive-item">
+
+                        <img class="lazyload w-100" data-src="{{ block.settings.image | img_url : 'master' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-expand="-50">
+
+                      </div>
+
+                    </div>
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            {% endif %}
+
+            <div class="row no-gutters">
+
+              <div class="col px-4">
+
+                {% if block.settings.title != blank %}
+
+                  <div class="title" data-transition="entrance" style="transform : translateY( 50px )">
+
+                    <div class="text-center">
+
+                      <h1 class="text-uppercase mb-3">
+
+                        {{ block.settings.title }}
+
+                      </h1>
+
+                    </div>
+
+                  </div>
+
+                {% endif %}
+
+                {% if block.settings.text != blank %}
+
+                  <div class="text" data-transition="entrance" style="transform : translateY( 50px )">
+
+                    <div class="text-center">
+
+                      <p class="mb-5">
+
+                        {{ block.settings.text }}
+
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                {% endif %}
+
+              </div>
+
+            </div>
+
+          </div>
+
+        {% endfor %}
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+{% schema %}
+
+  {
+
+    "presets" : [
+
+      {
+
+        "name" : "Images with text",
+
+        "category" : "Homepage"
+
+      }
+
+    ],
+
+    "blocks" : [
+
+      {
+
+        "name" : "Image with text",
+
+        "type" : "image-with-text",
+
+        "settings" : [
+
+          {
+
+            "type" : "image_picker",
+
+            "label" : "Image",
+
+            "info" : "17×20",
+
+            "id" : "image"
+
+          },
+
+          {
+
+            "default" : "Title",
+
+            "label" : "Title",
+
+            "type" : "text",
+
+            "id" : "title"
+
+          },
+
+          {
+
+            "type" : "textarea",
+
+            "default" : "Text",
+
+            "label" : "Text",
+
+            "id" : "text"
+
+          },
+
+          {
+
+            "default" : "/",
+
+            "label" : "URL",
+
+            "type" : "url",
+
+            "id" : "url"
+
+          }
+
+        ]
+
+      }
+
+    ]
+
+  }
+
+{% endschema %}

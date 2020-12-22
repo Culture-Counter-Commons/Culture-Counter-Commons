@@ -161,6 +161,11 @@
                                             data-variant-id="{{ product.selected_or_first_available_variant.id }}" title="{{ status }}"><span
                                                 class="text-sent">{{ 'general.theme.added_to_cart' | t }}</span><i
                                                 class="icon icon-handbag"></i><span>{{ status }}</span></button>
+                                  
+                                      {% capture the_snippet_fave %}{% render 'socialshopwave-widget-fave' %}{% endcapture %}
+                                      {% unless the_snippet_fave contains 'Liquid error' %}
+                                      {{ the_snippet_fave }}
+                                      {% endunless %}    
                                     </div>
                                 </div>
                             </div>

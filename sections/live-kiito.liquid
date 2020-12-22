@@ -1,0 +1,378 @@
+<div class="live-kiito">
+
+  <div class="container-fluid p-0">
+
+    <div class="row justify-content-center no-gutters">
+
+      {% for block in section.blocks %}
+
+        {% include block.type %}
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+
+</div>
+
+{% schema %}
+
+  {
+
+    "blocks" : [
+
+      {
+
+        "name" : "Image with text",
+
+        "type" : "image-with-text",
+
+        "settings" : [
+
+          {
+
+            "type" : "image_picker",
+
+            "label" : "Image",
+
+            "info" : "1×1",
+
+            "id" : "image"
+
+          },
+
+          {
+
+            "default" : "Title",
+
+            "label" : "Title",
+
+            "type" : "text",
+
+            "id" : "title"
+
+          },
+
+          {
+
+            "type" : "textarea",
+
+            "default" : "Text",
+
+            "label" : "Text",
+
+            "id" : "text"
+
+          }
+
+        ]
+
+      },
+
+      {
+
+        "name" : "Text with image",
+
+        "type" : "text-with-image",
+
+        "settings" : [
+
+          {
+
+            "type" : "image_picker",
+
+            "label" : "Image",
+
+            "info" : "1×1",
+
+            "id" : "image"
+
+          },
+
+          {
+
+            "default" : "Title",
+
+            "label" : "Title",
+
+            "type" : "text",
+
+            "id" : "title"
+
+          },
+
+          {
+
+            "type" : "textarea",
+
+            "default" : "Text",
+
+            "label" : "Text",
+
+            "id" : "text"
+
+          }
+
+        ]
+
+      },
+
+      {
+
+        "name" : "Icon with text",
+
+        "type" : "icon-with-text",
+
+        "settings" : [
+
+          {
+
+            "label" : "Icon",
+
+            "type" : "url",
+
+            "id" : "icon"
+
+          },
+
+          {
+
+            "default" : "Title",
+
+            "label" : "Title",
+
+            "type" : "text",
+
+            "id" : "title"
+
+          },
+
+          {
+
+            "type" : "textarea",
+
+            "default" : "Text",
+
+            "label" : "Text",
+
+            "id" : "text"
+
+          }
+
+        ]
+
+      },
+
+      {
+
+        "name" : "Image with title overlay",
+
+        "type" : "image-with-title-overlay",
+
+        "settings" : [
+
+          {
+
+            "type" : "image_picker",
+
+            "label" : "Image",
+
+            "info" : "1×1",
+
+            "id" : "image"
+
+          },
+
+          {
+
+            "default" : "Title",
+
+            "label" : "Title",
+
+            "type" : "text",
+
+            "id" : "title"
+
+          }
+
+        ]
+
+      },
+
+      {
+
+        "name" : "Image with text overlay",
+
+        "type" : "image-with-text-overlay",
+
+        "settings" : [
+
+          {
+
+            "type" : "image_picker",
+
+            "label" : "Portrait",
+
+            "id" : "portrait",
+
+            "info" : "2×3"
+
+          },
+
+          {
+
+            "type" : "image_picker",
+
+            "label" : "Landscape",
+
+            "id" : "landscape",
+
+            "info" : "16×9"
+
+          },
+
+          {
+
+            "default" : "Title",
+
+            "label" : "Title",
+
+            "type" : "text",
+
+            "id" : "title"
+
+          }
+
+        ]
+
+      },
+
+      {
+
+        "name" : "Title",
+
+        "type" : "title",
+
+        "settings" : [
+
+          {
+
+            "default" : "Title",
+
+            "label" : "Title",
+
+            "type" : "text",
+
+            "id" : "title"
+
+          }
+
+        ]
+
+      },
+
+      {
+
+        "name" : "Text",
+
+        "type" : "text",
+
+        "settings" : [
+
+          {
+
+            "default" : "<p>Text</p>",
+
+            "type" : "richtext",
+
+            "label" : "Text",
+
+            "id" : "text"
+
+          }
+
+        ]
+
+      },
+
+      {
+
+        "name" : "Image",
+
+        "type" : "image",
+
+        "settings" : [
+
+          {
+
+            "type" : "image_picker",
+
+            "label" : "Image",
+
+            "info" : "17×20",
+
+            "id" : "image"
+
+          },
+          {
+
+            "default" : "Image Link",
+
+            "label" : "Image Link",
+
+            "type" : "text",
+
+            "id" : "imagelink"
+
+          }
+
+        ]
+
+      },
+
+      {
+
+        "name" : "Logo",
+
+        "type" : "logo",
+
+        "settings" : [
+
+          {
+
+            "label" : "Logo",
+
+            "info" : "SVG",
+
+            "type" : "url",
+
+            "id" : "logo"
+
+          }
+
+        ]
+
+      },
+
+      {
+
+        "name" : "Line",
+
+        "type" : "line"
+
+      },
+
+      {
+
+        "name" : "Break",
+
+        "type" : "break"
+
+      }
+
+    ]
+
+  }
+
+{% endschema %}

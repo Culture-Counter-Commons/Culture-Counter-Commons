@@ -24,7 +24,7 @@
             <div class="options_title">
               {% assign propertySize = item.properties | size %}
               {% if propertySize > 0 %}
-              {% for p in item.properties %}
+              {%- comment -%}{% for p in item.properties %}
               <h2>{% assign first_character_in_key = p.first | truncate: 1, '' %}
                 {% unless p.last == blank or first_character_in_key == '_' %}
                 {{ p.first }}:
@@ -36,7 +36,25 @@
 
                 {% endunless %}
               </h2>
-              {% endfor %}
+              {% endfor %}{%- endcomment -%}{%- for p in item.properties -%}
+            {%- unless p.last == blank -%}
+              <li class="product-details__item product-details__item--property{%if property_size == 0%} hide{% endif %}" data-cart-item-property>
+                <span class="product-details__item-label" data-cart-item-property-name>{{ p.first }}: </span>
+
+                {%- comment -%}
+                  Check if there was an uploaded file associated
+                {%- endcomment -%}
+                <span data-cart-item-property-value>
+                  {%- if p.last contains "uploads" -%}
+                    <a href="{{ p.last }}">Uploaded File</a>
+                  {%- else -%}
+                    {{ p.last }}
+                  {%- endif -%}
+                </span>
+              </li>
+            {%- endunless -%}
+          {%- endfor -%}
+            <button type="button" class="edit_cart_option btn btn--primary button" data-product_id="{{item.product_id}}" data-key="{{item.key}}" data-variant_id="{{item.variant_id}}" data-quantity="{{item.quantity}}">Edit Options</button>
               {% endif %}
             </div>
 
@@ -51,7 +69,15 @@
               </fieldset>
             </div>
           </div>
-          <div class="cart-table-prd-price"><span>{{ 'cart.label.price' | t}}:</span> <b>{{ item.price | money }}</b>
+          <div class="cart-table-prd-price"><span>{{ 'cart.label.price' | t}}:</span> <b>
+            <span class="hulkapps-cart-item-line-price" data-key="{{item.key}}"> {{ item.original_line_price | money }}</span>
+              
+              <span>
+            {%- comment -%}
+              <span class="hulkapps-cart-item-line-price" data-key="{{item.key}}"> {{ item.price | money }}</span>
+            {%- endcomment -%}
+
+          </b>
           </div>
           <div class="cart-table-prd-action">
             {% include 'wishlist-cart' %}
@@ -69,7 +95,15 @@
               <button type="submit" class="btn btn--alt" name="update"><i
                   class="icon-repeat"></i><span>{{ 'cart.general.update' | t }}</span></button>
             </div>
-            <div class="col-sm-auto"><a href="{{ shop.url }}" class="btn btn--alt"><i
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
+            {%- comment -%}
+            href="{{ shop.url }}"
+            {%- endcomment -%}
+            <div class="col-sm-auto"><a onclick="goBack()" class="btn btn--alt"><i
                   class="icon-angle-left"></i><span>{{ 'cart.general.continue' | t }}</span></a></div>
           </div>
         </div>
@@ -113,15 +147,41 @@
                 {% endif %}
                 <tr class="total">
                   <td>{{ 'cart.general.subtotal' | t }}&nbsp;</td>
-                  <td><span class="card-total-price">{{ cart.total_price | money }}</span></td>
+                  <td><span class="card-total-price">
+                    {%- comment -%}
+                      <span class='hulkapps-cart-original-total'>{{ cart.total_price | money }}</span>
+                    {%- endcomment -%}
+
+                    {%- comment -%}
+                      hulkapps code
+                    {%- endcomment -%}
+                    <span class="hulkapps-cart-original-total" data-key="{{item.key}}">
+                      <span class='hulkapps-cart-original-total'>{{ cart.total_price | money }}</span>
+                    </span>
+                    {%- comment -%}
+                    END hulkapps code
+                    {%- endcomment -%}
+                  </span></td>
                 </tr>
               </table>
             </div>
-            {%- comment -%}
-            shopify checkout button
+                      {%- comment -%}HULK Discount code{%- endcomment -%}
+                      <div class="discount_code_box">
+                      
+                        <div class='hulkapps_discount_hide'>
+                      
+                          <input placeholder="Discount code" class="hulkapps_discount_code" autocomplete="off" aria-required="true" size="30"
+                            type="text" name="checkout_discount">
+                      
+                          <button type="button" class="hulkapps_discount_button btn btn--primary button">Apply</button>
+                      
+                        </div>
+                      
+                      </div>
+                      {%- comment -%}END HULK Discount code{%- endcomment -%}
             <button class="btn btn--full btn--lg" type="submit" name="checkout">{{ 'cart.general.checkout_procees' | t }}</button>
-            {%- endcomment -%}
-              
+                       
+
 
             {%- comment -%}
             {% if additional_checkout_buttons %}
@@ -130,7 +190,6 @@
             {%- endcomment -%}
             {%- comment -%}
             pickup time
-            {%- endcomment -%}
             <div class="cart-attribute__field pickup-time mt-md-2">
               <h2>Pickup Time</h2>
               <select id="pickup-time" class="form-control" name="attributes[Pickup Time]">
@@ -165,6 +224,7 @@
                 <option value="8:00 PM" {% if cart.attributes["Pickup Time"] == "8:00 PM" %} selected{% endif %}>8:00 PM</option>
               </select>
             </div>
+            {%- endcomment -%}
             <a href="#" style="display:none;" class="save-purchase-order-w3 btn btn--full btn--lg mt-2"
               data-customer-id="{{ customer.id }}" data-customer-email="{{ customer.email | escape }}"></a>
           </div>
@@ -201,18 +261,18 @@
   // var poModal = document.querySelector(".po-modal-content p");
   // poModal.appendButton("something", "/cart/clear");
 
-  $(function () {
-    $('.clear-cart').on('click', function (e) {
-      e.preventDefault();
-      $.ajax({
-        type: "POST",
-        url: '/cart/clear.js',
-        success: function () {
-          alert('I cleared the cart!');
-        },
-        dataType: 'json'
-      });
-    })
-  });
+  // $(function () {
+  //   $('.clear-cart').on('click', function (e) {
+  //     e.preventDefault();
+  //     $.ajax({
+  //       type: "POST",
+  //       url: '/cart/clear.js',
+  //       success: function () {
+  //         alert('I cleared the cart!');
+  //       },
+  //       dataType: 'json'
+  //     });
+  //   })
+  // });
 
 </script>

@@ -21,7 +21,7 @@
                             {% when 'tab_tags' %}
                             <ul class="tags-list">
                                 {% for tag in product.tags %}
-                                    <li><a href="/collections/all/{{ tag | handle }}">{{ tag }}</a></li>
+                                    <li><a href="/collections/all/{{ tag | handle }}" {% unless forloop.first == true %}class="collapsed" aria-expanded="false"{% endunless %} >{{ tag }}</a></li>
                                 {% endfor %}
                             </ul>
                             {% when 'tab_metafield' %}
