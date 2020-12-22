@@ -24,3 +24,20 @@
 
 5. To start ThemeKit and upload theme files on save:
     - `$ theme watch`
+
+# Using Git
+
+Create a branch
+
+`$ git checkout -b feature-id master                 // creates a local branch for the new feature`
+`$ git push origin feature-id                        // makes the new feature remotely available`
+
+Periodically, changes made to master (if any) should be merged back into your feature branch.
+
+`$ git merge master                                  // merges changes from master into feature branch`
+When development on the feature is complete, the lead (or engineer in charge) should merge changes into master and then make sure the remote branch is deleted.
+
+`$ git checkout master                               // change to the master branch`  
+`$ git merge --no-ff feature-id                      // makes sure to create a commit object during merge`
+`$ git push origin master                            // push merge changes`
+`$ git push origin :feature-id                       // deletes the remote branch`
