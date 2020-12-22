@@ -29,23 +29,34 @@
 
 #### Create a branch
 
-`$ git checkout -b feature-id master                 // creates a local branch for the new feature`
+// creates a local branch for the new feature
 
-`$ git push origin feature-id                        // makes the new feature remotely available`
+`git checkout -b feature-id master`
+
+// makes the new feature remotely available
+
+`git push origin feature-id`
 
 #### Periodically, changes made to master (if any) should be merged back into your feature branch.
 
-`$ git merge master                                  // merges changes from master into feature branch`
+// merges changes from master into feature branch
 
-#### When development on the feature is complete, the lead (or engineer in charge) should merge changes into master and then make sure the remote branch is deleted.
+`git merge master`
+
+#### When development on the feature is complete, merge changes into master and then make sure the remote branch is deleted.
 
 // change to the master branch
 
 `git checkout master` 
 
 // makes sure to create a commit object during merge
-`git merge --no-ff feature-id                      `
 
-`git push origin master                            // push merge changes`
+`git merge --no-ff feature-id`
 
-`git push origin :feature-id                       // deletes the remote branch`
+// push merge changes
+
+`git push origin master`
+
+// deletes the remote branch
+
+`git push origin :feature-id`
