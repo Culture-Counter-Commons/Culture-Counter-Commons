@@ -41,10 +41,11 @@
 
 // change to the master branch
 
-`$ git checkout master` 
+`git checkout master` 
 
-`$ git merge --no-ff feature-id                      // makes sure to create a commit object during merge`
+// makes sure to create a commit object during merge
+`git merge --no-ff feature-id                      `
 
-`$ git push origin master                            // push merge changes`
+`git push origin master                            // push merge changes`
 
-`$ git push origin :feature-id                       // deletes the remote branch`
+`git push origin :feature-id                       // deletes the remote branch`
