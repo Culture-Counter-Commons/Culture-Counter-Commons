@@ -21,5 +21,6 @@
         "scss": {},
         // JSON code style (applied to the {% schema %} tag)
         "json": {}
-    }
+    },
+    "git.ignoreLimitWarning": true
 }

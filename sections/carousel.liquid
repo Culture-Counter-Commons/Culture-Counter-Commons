@@ -1,215 +1,146 @@
-<div class="carousel carousel-fade slide mb-5" data-ride="carousel" data-interval="2000" id="{{ section.id }}">
-
-  <ol class="carousel-indicators">
-
-    {% for block in section.blocks %}
-
-      {% assign index = forloop.index | minus : 1 %}
-
-      <li data-target="#{{ section.id }}" data-slide-to="{{ index }}" class="{% if forloop.first %}active{% endif %}"></li>
-
-    {% endfor %}
-
-  </ol>
-
-  <div class="carousel-inner">
-
-    {% for block in section.blocks %}
-
-      <div class="carousel-item {% if forloop.first %}active{% endif %}">
-
-        <a href="{{ block.settings.url }}">
-
-          <div class="card bg-transparent rounded-0 border-0">
-
-            <div class="card-img rounded-0">
-
-              <div class="d-lg-none">
-
-                <div class="embed-responsive embed-responsive-2by3">
-
-                  <div class="embed-responsive-item">
-
-                    <img class="w-100" src="{{ block.settings.portrait | img_url : 'master' }}">
-
-                  </div>
-
+{% unless settings.slides_mode %}
+{% include 'global_vars' %}
+{% case section.settings.per_row_desktop %}
+{% when '3' %}
+{%- assign image_size = '508x' -%}
+{% when '4' %}
+{%- assign image_size = '254x' -%}
+{% when '5' %}
+{%- assign image_size = '254x' -%}
+{% endcase %}
+{% if section.settings.limit != blank %}
+    {%- assign product_limit = section.settings.limit -%}
+{% endif %}
+{%- assign collection = collections[section.settings.collection] -%}
+{% assign per_row_desktop = section.settings.per_row_desktop %}
+{% if column %}{% assign per_row_desktop = 3 %}{% endif %}
+<div class="holder global_width {{ section.settings.outer_margin }}">
+    <div class="container">
+        <div {% if section.settings.collection != blank and section.settings.tabs and section.settings.tags != blank %}class="title-with-right"{% else %}class="title-wrap text-center"{% endif %}>
+            <h2 class="h1-style">{{ section.settings.title }}</h2>
+            {% if section.settings.collection != blank and section.settings.tabs and section.settings.tags != blank %}
+                <div class="prd-carousel-tabs js-filters-prd d-none d-md-flex" data-grid="tabCarousel-{{ section.id }}">
+                    <span class="active" data-filter="tag-all-{{ collection.handle }}">{{ 'general.theme.all' | t }}</span>
+                    {%  assign tags = section.settings.tags | split:',' %}
+                    {% for tag in tags %}
+                        <span  data-filter="tag-{{ tag | handle }}">{{ tag }}</span>
+                    {% endfor %}
                 </div>
-
-              </div>
-
-              <div class="d-none d-lg-block">
-
-                <div class="embed-responsive embed-responsive-16by9">
-
-                  <div class="embed-responsive-item">
-
-                    <img class="lazyload w-100" data-src="{{ block.settings.landscape | img_url : 'master' }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-
-                  </div>
-
+                <div class="prd-carousel-tabs js-filters-prd-sm d-md-none">
+                    <span class="filters-label active" data-filter=".tag-all-{{ collection.handle }}">{{ 'general.theme.all' | t }}</span>
+                    {%  assign tags = section.settings.tags | split:',' %}
+                    {% for tag in tags %}
+                        <span class="filters-label" data-filter=".tag-{{ tag | handle }}">{{ tag }}</span>
+                    {% endfor %}
                 </div>
-
-              </div>
-
-            </div>
-
-            <div class="card-img-overlay pb-sm-3 pb-md-5 px-3">
-
-              <div class="container-fluid h-100 p-0">
-
-                <div class="row justify-content-center no-gutters h-100">
-
-                  <div class="col-lg-auto align-self-center">
-
-                    {% if block.settings.title != blank %}
-
-                      <div class="title" data-transition="entrance" style="transform : translateY( 50px )">
-
-                        <div class="text-center">
-
-                          <h1 class="text-uppercase display-1 pb-1 mb-3">
-
-                            {{ block.settings.title }}
-
-                          </h1>
-
-                        </div>
-
-                      </div>
-
-                    {% endif %}
-
-                    {% if block.settings.button != blank %}
-
-                      <div class="button" data-transition="entrance" style="transform : translateY( 50px )">
-
-                        <div class="text-center">
-
-                          <button class="btn btn-secondary text-white h-auto px-4 py-3">
-
-                            {{ block.settings.button }}
-
-                          </button>
-
-                        </div>
-
-                      </div>
-
-                    {% endif %}
-
-                  </div>
-
+            {% endif %}
+        </div>
+        <div class="prd-grid prd-carousel {% if section.settings.collection != blank and section.settings.tabs and section.settings.tags != blank %} js-prd-carousel-tab {% else %}js-prd-carousel{% endif %} js-product-isotope-sm slick-arrows-aside-simple slick-arrows-mobile-lg data-to-show-{{ per_row_desktop }} data-to-show-md-3 data-to-show-sm-3 data-to-show-xs-2" id="tabCarousel-{{ section.id }}" data-to-show='{{ per_row_desktop }}' >
+            {% for product in collection.products limit: product_limit %}
+                {% include 'product-card', per_row: section.settings.per_row_desktop, grid_image_width: image_size %}
+            {% else %}
+                <div class="alert alert-warning" style="margin-top: 20px">
+                    To Init <b>Product's carousel</b>:<br />
+                    1.<b>Choose Collection</b><br />
+                    2.<b>Save</b>
                 </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </a>
-
-      </div>
-
-    {% endfor %}
-
-  </div>
-
+            {% endfor %}
+        </div>
+        {% if section.settings.show_view_all and section.settings.collection != blank %}<div class="more-link-wrapper text-center  mt-3"><a href="{{ collection.url }}" class="btn-decor">{{ 'general.theme.show_all' | t }}</a></div>{% endif %}
+    </div>
 </div>
-
+{% endunless %}
 {% schema %}
-
-  {
-
-    "presets" : [
-
-      {
-
-        "category" : "Homepage",
-
-        "name" : "Carousel"
-
-      }
-
-    ],
-
-    "blocks" : [
-
-      {
-
-        "name" : "Item",
-
-        "type" : "item",
-
-        "settings" : [
-
-          {
-
-            "type" : "image_picker",
-
-            "label" : "Portrait",
-
-            "id" : "portrait",
-
-            "info" : "2×3"
-
-          },
-
-          {
-
-            "type" : "image_picker",
-
-            "label" : "Landscape",
-
-            "id" : "landscape",
-
-            "info" : "16×9"
-
-          },
-
-          {
-
-            "default" : "Title",
-
-            "label" : "Title",
-
-            "type" : "text",
-
-            "id" : "title"
-
-          },
-
-          {
-
-            "default" : "Button",
-
-            "label" : "Button",
-
-            "type" : "text",
-
-            "id" : "button"
-
-          },
-
-          {
-
-            "default" : "/",
-
-            "label" : "URL",
-
-            "type" : "url",
-
-            "id" : "url"
-
-          }
-
-        ]
-
-      }
-
-    ]
-
-  }
-
+{
+"name": "Full row - Style 1(+tabs)",
+"class": "index-section",
+"settings": [
+{
+"type": "header",
+"content": "Layout"
+},
+{
+"type": "select",
+"id": "outer_margin",
+"label": "Outer top margin",
+"options":[
+{"value":"mt-0","label":"None"},
+{"value":"mt-1","label":"10px"},
+{"value":"mt-2","label":"20px"},
+{"value":"mt-3","label":"30px"},
+{"value":"mt-4","label":"40px"},
+{"value":"mt-5","label":"50px"},
+{"value":"mt-6","label":"60px"},
+{"value":"mt-65","label":"65px"},
+{"value":"mt-7","label":"70px"},
+{"value":"mt-8","label":"80px"},
+{"value":"mt-9","label":"90px"},
+{"value":"mt-10","label":"100px"}
+],
+"default": "mt-65"
+},
+{
+"type": "header",
+"content": "General"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Heading",
+"default": "Collection"
+},
+{
+"id": "collection",
+"type": "collection",
+"label": "Collection"
+},
+{
+"id": "limit",
+"type": "text",
+"label": "Products limit",
+"info":"if no limit keep empty, for better perfomance try reduce limit and enable 'View all' button",
+"default":"8"
+},
+{
+"type": "checkbox",
+"id": "show_view_all",
+"label": "Show 'Show all' button",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "tabs",
+"label": "Show Filter by Tags",
+"default": false
+},
+{
+"type": "textarea",
+"id": "tags",
+"label": "Write product's tags separated by coma",
+"default": "popular, sale, new",
+"info": "for example popular, sale, new. Tags must be assigned to products from the selected collection as well."
+},
+{
+"type": "header",
+"content": "Products per row:"
+},
+{
+"type": "select",
+"id": "per_row_desktop",
+"label": "Desktop",
+"default": "4",
+"options": [
+{ "value": "3", "label": "3" },
+{ "value": "4", "label": "4" },
+{ "value": "5", "label": "5" }
+]
+}
+],
+"presets": [
+{
+"name": "Full row - Style 1(+tabs)",
+"category": "Collection's Carousel"
+}
+]
+}
 {% endschema %}

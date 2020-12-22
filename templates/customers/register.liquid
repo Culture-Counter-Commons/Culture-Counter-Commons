@@ -1,81 +1,39 @@
-{% comment %}
+<div class="holder mt-0">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-8 col-md-6">
+        <h2 class="text-center">{{ 'customer.register.title' | t }}</h2>
+        <div class="form-wrapper">
+          <p>{{ 'general.theme.register_description' | t }}</p>
+          {% form 'create_customer', class:"account-create" %}
+          {{ form.errors | default_errors }}
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="customer[first_name]" id="FirstName" placeholder="{{ 'customer.register.first_name' | t }}" {% if form.first_name %}value="{{ form.first_name }}"{% endif %} autocapitalize="words" autofocus>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" type="text" name="customer[last_name]" id="LastName" placeholder="{{ 'customer.register.last_name' | t }}" {% if form.last_name %}value="{{ form.last_name }}"{% endif %} autocapitalize="words">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="email" name="customer[email]" id="Email" placeholder="{{ 'customer.register.email' | t }}" {% if form.errors contains "email" %} class="error"{% elsif form.email %} value="{{ form.email }}"{% endif %}  >
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="password" name="customer[password]" id="CreatePassword" placeholder="{{ 'customer.register.password' | t }}" {% if form.errors contains "password" %} class="error"{% endif %}>
+            </div>
+            <div class="clearfix">
 
-  © 2018 Atlas Group, Inc. All rights reserved.
-
-  No portion of this software code may be reproduced, distributed or modified
-  without prior express written authorization of Atlas Group, Inc.
-
-  Unauthorized reproduction or copying of this software code, via any medium,
-  is strictly prohibited and may subject you to severe legal liability.
-
-{% endcomment %}
-
-<div class="register">
-
-  <div class="py-5 my-5">
-
-    <div class="container">
-
-      <div class="row justify-content-center">
-
-        <div class="col-lg-4">
-
-          <div class="title">
-
+            </div>
             <div class="text-center">
-
-              <h1 class="mb-3">
-
-                Sign Up
-
-              </h1>
-
+              <button class="btn" type="submit">{{ 'customer.register.submit' | t }}</button>
             </div>
-
-          </div>
-
-          {% form 'create_customer' %}
-
-            {{ form.errors | default_errors }}
-
-            <div class="form-group">
-
-              <input class="form-control border-primary py-2" type="text" name="customer[first_name]" placeholder="First Name" autofocus {% if form.first_name %}value="{{ form.first_name }}"{% endif %}>
-
-            </div>
-
-            <div class="form-group">
-
-              <input class="form-control border-primary py-2" type="text" name="customer[last_name]" placeholder="Last Name" {% if form.last_name %}value="{{ form.last_name }}"{% endif %}>
-
-            </div>
-
-            <div class="form-group">
-
-              <input class="form-control border-primary py-2" type="email" name="customer[email]" placeholder="Email" spellcheck="false" autocomplete="off" autocapitalize="off" {% if form.email %}value="{{ form.email }}"{% endif %}>
-
-            </div>
-
-            <div class="form-group">
-
-              <input class="form-control border-primary py-2" type="password" name="customer[password]" placeholder="Password">
-
-            </div>
-
-            <button class="btn btn-block btn-primary py-2 user-registration" type="submit">
-
-              Sign Up
-
-            </button>
-
           {% endform %}
-
         </div>
-
       </div>
-
     </div>
-
   </div>
-
 </div>

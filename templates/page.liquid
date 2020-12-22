@@ -1,59 +1,10 @@
-{% capture captured_page %}
-{% comment %}
-
-  © 2018 Atlas Group, Inc. All rights reserved.
-
-  No portion of this software code may be reproduced, distributed or modified
-  without prior express written authorization of Atlas Group, Inc.
-
-  Unauthorized reproduction or copying of this software code, via any medium,
-  is strictly prohibited and may subject you to severe legal liability.
-
-{% endcomment %}
-
-<div class="page">
-
-  <div class="py-5 my-lg-5">
-
-    <div class="container px-2">
-
-      <div class="row justify-content-center no-gutters">
-
-        <div class="col-lg-10 px-1 mt-4">
-
-          <div class="title">
-
-            <div class="text-center">
-
-              <h1 class="mb-3">
-
-                {{ page.title }}
-
-              </h1>
-
-            </div>
-
-          </div>
-
-          <div class="content">
-
-            <div class="text-justify">
-
-              {{ page.content }}
-
-            </div>
-
-          </div>
-
+<div class="holder mt-5">
+  <div class="container">
+    <div class="page-title text-center">
+        <div class="title">
+            <h1>{{ page.title }}</h1>
         </div>
-
-      </div>
-
     </div>
-
+    {{ page.content }}
   </div>
-
 </div>
-
-{% endcapture %}
-{% include 'password-protect' %}

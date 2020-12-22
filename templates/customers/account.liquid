@@ -1,279 +1,84 @@
-{% comment %}
-
-  © 2018 Atlas Group, Inc. All rights reserved.
-
-  No portion of this software code may be reproduced, distributed or modified
-  without prior express written authorization of Atlas Group, Inc.
-
-  Unauthorized reproduction or copying of this software code, via any medium,
-  is strictly prohibited and may subject you to severe legal liability.
-
-{% endcomment %}
-
-<div class="account">
-
-  {% paginate customer.orders by 20 %}
-
-    <div class="py-5 my-5">
-
-      <div class="container px-3">
-
-        <div class="row">
-
-          <div class="col">
-
-            <div class="title">
-
-              <div class="text-left">
-
-                <h1 class="py-2 mb-5">
-
-                  My Account
-
-                </h1>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-auto">
-          
-            <div class="button">
-          
-              <div class="text-right">
-          
-                <a class="btn btn-link py-2" href="/tools/recurring/login/">Manage Subscriptions</a>
-
-              </div>
-          
-            </div>
-          
-          </div>
-
-          <div class="col-auto">
-
-            <div class="button">
-
-              <div class="text-right">
-
-                <a class="btn btn-link py-2 " href="/account/logout">
-
-                  Sign Out
-
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-9">
-
-            {% if customer.orders.size != 0 %}
-
-              <div class="header account-header pb-1">
-
-                <div class="row">
-
-                  <div class="col">
-
-                    <div class="text-left">
-
-                      Order
-
-                    </div>
-
-                  </div>
-
-                  <div class="col">
-
-                    <div class="text-center">
-
-                      Date
-
-                    </div>
-
-                  </div>
-
-                  <div class="col">
-
-                    <div class="text-center">
-
-                      Payment Status
-
-                    </div>
-
-                  </div>
-
-                  <div class="col">
-
-                    <div class="text-center">
-
-                      Fulfillment Status
-
-                    </div>
-
-                  </div>
-
-                  <div class="col">
-
-                    <div class="text-right">
-
-                      Total
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div class="orders">
-
-                {% for order in customer.orders %}
-
-                  <div class="order">
-
-                    <hr class="my-3">
-
-                    <div class="row">
-
-                      <div class="col">
-
-                        <div class="text-left">
-
-                          <u>
-
-                            {{ order.name | link_to : order.customer_url }}
-
-                          </u>
-
-                        </div>
-
-                      </div>
-
-                      <div class="col">
-
-                        <div class="text-center">
-
-                          {{ order.created_at | date : "%B %e, %Y" }}
-
-                        </div>
-
-                      </div>
-
-                      <div class="col">
-
-                        <div class="text-center">
-
-                          {{ order.financial_status_label }}
-
-                        </div>
-
-                      </div>
-
-                      <div class="col">
-
-                        <div class="text-center">
-
-                          {{ order.fulfillment_status_label }}
-
-                        </div>
-
-                      </div>
-
-                      <div class="col">
-
-                        <div class="text-right">
-
-                          {{ order.total_price | money }}
-
-                        </div>
-
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                {% endfor %}
-
-              </div>
-
-            {% else %}
-
-              <p>
-
-                You haven't placed any orders yet.
-
-              </p>
-
-            {% endif %}
-
-          </div>
-
-          <div class="col-lg-3">
-
-            <div class="address">
-
-              <div class="title">
-
-                <div class="text-left">
-
-                  <p class="mb-3">
-
-                    Primary Address
-
-                  </p>
-
-                </div>
-
-              </div>
-
-              <div class="rule">
-
-                <div class="text-left">
-
-                  <hr class="mb-3">
-
-                </div>
-
-              </div>
-
-              <div class="address">
-
-                <div class="mb-5">
-
-                  {{ customer.default_address | format_address }}
-
-                </div>
-
-              </div>
-
-              <a class="btn btn-dark btn-block py-2" href="/account/addresses">
-
-                Edit Addresses ( {{ customer.addresses_count }} )
-
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
+  <div class="block">
+    <div class="container">
+      <div class="title center">
+        <h1>{{ 'customer.account.title' | t }}</h1>
       </div>
-
     </div>
+  </div>
 
-  {% endpaginate %}
+  <div class="block">   
+    <div class="container">
+      <h4>{{ 'customer.orders.title' | t }}</h4>
+      {% comment %}
+        If we have past orders, loop through each one
+      {% endcomment %}
+      {% paginate customer.orders by 20 %}
+      {% if customer.orders.size != 0 %}
+        <div class="table-wrap">
+          <table class="table table-bordered table-responsive">
+            <thead>
+              <tr>
+                <th>{{ 'customer.orders.order_number' | t }}</th>
+                <th>{{ 'customer.orders.date' | t }}</th>
+                <th>{{ 'customer.orders.payment_status' | t }}</th>
+                <th>{{ 'customer.orders.fulfillment_status' | t }}</th>
+                <th>{{ 'customer.orders.total' | t }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for order in customer.orders %}
+                <tr>
+                  <td>{{ order.name | link_to: order.customer_url }}</td>
+                  <td>{{ order.created_at | date: "%b %d, %Y" }}</td>
+                  <td>{{ order.financial_status_label }}</td>
+                  <td>{{ order.fulfillment_status_label }}</td>
+                  <td>{{ order.total_price | money }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      {% else %}
+        <p>{{ 'customer.orders.none' | t }}</p>
+      {% endif %}
+      {% if paginate.pages > 1 %}
+        <div class="text-center">
+          {% include 'pagination-custom' %}
+        </div>
+      {% endif %}
+      {% endpaginate %}
+    <div class="mt-3"></div>
+      <h4>{{ 'customer.account.details' | t }}</h4>
+      <h5>{{ customer.name }}</h5>
+      {% if customer.default_address != nil %}
+        <p>
+        {{ customer.default_address.address1 }}<br>
 
-</div>
+        {% if customer.default_address.address2 != "" %}
+          {{ customer.default_address.address2 }}<br>
+        {% endif %}
+
+        {% if customer.default_address.city != "" %}
+          {{ customer.default_address.city }}<br>
+        {% endif %}
+
+        {% if customer.default_address.province_code != "" %}
+          {{ customer.default_address.province_code | upcase }}<br>
+        {% endif %}
+
+        {% if customer.default_address.zip != "" %}
+          {{ customer.default_address.zip | upcase }}<br>
+        {% endif %}
+
+        {% if customer.default_address.country != "" %}
+          {{ customer.default_address.country }}<br>
+        {% endif %}
+
+        {% if customer.default_address.phone != "" %}
+          {{ customer.default_address.phone }}
+        {% endif %}
+        </p>
+      {% endif %}
+      <p><a href="/account/addresses">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a></p>    
+      </div>  
+  </div>
