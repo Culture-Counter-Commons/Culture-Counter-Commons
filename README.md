@@ -29,7 +29,7 @@
 
 #### Create a branch
 
-// creates a local branch for the new feature
+// &#9660; create a local branch for the new feature
 
 `git checkout -b feature-id master`
 
