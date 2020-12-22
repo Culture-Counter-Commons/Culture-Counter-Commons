@@ -59,7 +59,7 @@
 
 `git push origin master`
 
-&#9660; deletes the remote branch
+&#9660; delete the remote branch
 
 `git push origin :feature-id`
 
