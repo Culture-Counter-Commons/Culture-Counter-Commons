@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<h1 id="culture-counter-commons">Culture-Counter-Commons</h1>
+
+<h2 id="getitrunningonthemekithttps:www.shopify.compartnersbloggit-guideworkflowcodekitandshopifyhttps:studio.bioour-local-shopify-environment-with-themekit-and-codekit-and-browser-refreshing">Get it running on <a href="https://www.shopify.com/partners/blog/git-guide#workflow">ThemeKit</a>, <a href="https://studio.bio/our-local-shopify-environment-with-themekit-and-codekit-and-browser-refreshing/">CodeKit and Shopify</a></h2>
+
+<ol>
+<li><p>On Terminal in theme folder:</p>
+
+<ul>
+<li><code>$ brew tap shopify/shopify</code></li>
+</ul></li>
+<li><p>In Shopify navigate to <code>apps/privateApp/</code> create &amp; copy the: <code>the-private-app-admin-api-password</code></p>
+
+<ul>
+<li>Fill out the information at the top and set the permissions of &#8220;Theme templates and theme assets&#8221; to have Read and write access.</li>
+</ul></li>
+<li><p>Get the theme ID#:</p>
+
+<ul>
+<li><code>$ theme get --list -p=[the-private-app-admin-api-password] -s=[you-store.myshopify.com]</code></li>
+</ul></li>
+<li><p>Create the <code>config</code> file and download the theme files:</p>
+
+<ul>
+<li><code>$ theme get -p=[your-password] -s=[you-store.myshopify.com] -t=[your-theme-id]</code></li>
+</ul></li>
+<li><p><em>if you are not using CodeKit run browsersync:</em></p>
+
+<ul>
+<li><code>$ browser-sync start --proxy &quot;https://&lt;mystore&gt;.myshopify.com/&quot; --files &quot;*/*.*&quot; --reload-delay 1000</code></li>
+</ul></li>
+<li><p>If using CodeKit, in CodeKit navigate to: <code>Settings/Browser-Refreshing</code></p>
+
+<ol>
+<li>turn on &#8220;Use An External Server&#8221;</li>
+<li>External Server Address:
+
+<ul>
+<li>add https://store-name.myshopify.com</li>
+</ul></li>
+</ol></li>
+<li><p>To start ThemeKit and upload theme files on save:</p>
+
+<ul>
+<li><code>$ theme watch</code></li>
+</ul></li>
+</ol>
+
+<h2 id="usinggit">Using Git</h2>
+
+<p><a href="https://www.shopify.com/partners/blog/git-guide">Shopify Git Instructions</a></p>
+
+<h4 id="createabranch">Create a branch</h4>
+
+<p>&#9660; create a local branch for the new feature</p>
+
+<p><code>git checkout -b feature-id master</code></p>
+
+<p>&#9660; makes the new feature remotely available</p>
+
+<p><code>git push origin feature-id</code></p>
+
+<h4 id="periodicallychangesmadetomasterifanyshouldbemergedbackintoyourfeaturebranch.">Periodically, changes made to master (if any) should be merged back into your feature branch.</h4>
+
+<p>&#9660; merges changes from master into feature branch</p>
+
+<p><code>git merge master</code></p>
+
+<h4 id="whendevelopmentonthefeatureiscompletemergechangesintomasterandthenmakesuretheremotebranchisdeleted.">When development on the feature is complete, merge changes into master and then make sure the remote branch is deleted.</h4>
+
+<p>&#9660; change to the master branch</p>
+
+<p><code>git checkout master</code></p>
+
+<p>&#9660; makes sure to create a commit object during merge</p>
+
+<p><code>git merge --no-ff feature-id</code></p>
+
+<p>&#9660; push merge changes</p>
+
+<p><code>git push origin master</code></p>
+
+<p>&#9660; delete the remote branch</p>
+
+<p><code>git push origin :feature-id</code></p>
+
+</body>
+</html>
+

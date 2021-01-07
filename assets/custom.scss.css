@@ -1263,7 +1263,7 @@ footer .footer-copyright * {
 .prd-pricing .product-size .option-label:before {
 	content: "1";
 	padding: 1rem 2rem;
-}
+} 
 .hulkapps_option.full_width .hulkapps_option_name {
     padding-bottom: 5px;
     display: flex;
@@ -1273,7 +1273,7 @@ footer .footer-copyright * {
 	content: "2";
     padding: 10px 15px;
     line-height: 1;
-}
+} 
 .hulkapps_option.full_width:nth-of-type(2) .hulkapps_option_name:before {
 	content: "3";
     padding: 10px 15px;

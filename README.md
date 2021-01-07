@@ -1,6 +1,6 @@
 # Culture-Counter-Commons
 
-## Get it running on [ThemeKit](https://www.shopify.com/partners/blog/git-guide#workflow)
+## Get it running on [ThemeKit](https://www.shopify.com/partners/blog/git-guide#workflow), [CodeKit and Shopify](https://studio.bio/our-local-shopify-environment-with-themekit-and-codekit-and-browser-refreshing/)
 
 1. On Terminal in theme folder:
     - `$ brew tap shopify/shopify`

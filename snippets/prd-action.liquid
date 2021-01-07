@@ -9,14 +9,13 @@
         {% else %}
             {% if product.options.size >= 1 or product.metafields.c_f.line_properties != blank %}
                 {% if product.options[0] contains 'Title' and product.metafields.c_f.line_properties == blank %}
-
                     {% include 'product-card-add-to-cart-button' %}
                 {% else %}
                     {% unless settings.catalog_mode %}
-    <a href="{{ product.url | within: collection }}" class="btn btn--animate js-add-to-cart" data-variant-id="{{ product.selected_or_first_available_variant.id }}"
-        data-variant-handle="{{ product.selected_or_first_available_variant.id }}" title="{{ status }}">
-        {% if collection.handle == 'ice-cream' %}Choose this flavor{% elsif collection.handle == 'waffle-bar' %}Choose this topping{% else %}{{ 'general.theme.add_to_cart' | t }}{% endif %}
-    </a>
+                    <a href="{{ product.url | within: collection }}" class="btn btn--animate {% unless product.tags contains 'waffle window' or product.tags contains 'ice cream' %}js-add-to-cart{% endunless %}" data-variant-id="{{ product.selected_or_first_available_variant.id }}"
+                        data-variant-handle="{{ product.selected_or_first_available_variant.id }}" title="{{ status }}">
+                        {% if collection.handle == 'ice-cream' %}Choose this flavor{% elsif collection.handle == 'waffle-bar' %}Choose this topping{% else %}{{ 'general.theme.add_to_cart' | t }}{% endif %}
+                    </a>
 
                     {%- comment -%}
                     <form method="post" action="/cart/add">
