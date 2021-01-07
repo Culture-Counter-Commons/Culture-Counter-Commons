@@ -13,7 +13,7 @@
     "equal_height": true,
     "product_ratio_w": "1",
     "product_ratio_h": "1.18",
-    "ajax_cart": false,
+    "ajax_cart": true,
     "favicon": "shopify:\/\/shop_images\/CC-favicon-tanonblack.png",
     "collection_left_sidebar": true,
     "products_per_page": "1000",
@@ -280,11 +280,11 @@
           "style": "1",
           "logo_yes": true,
           "logo": "shopify:\/\/shop_images\/ccc-tan-logo-mark_1.png",
-          "navigation_1": "footer",
-          "navigation_2": "",
+          "navigation_1": "main-menu",
+          "navigation_2": "freshies",
           "navigation_3": "",
           "navigation_4_yes": false,
-          "navigation_4": "",
+          "navigation_4": "menu-1",
           "navigation_5": "",
           "navigation_6": "",
           "shop_info_yes": true,
@@ -579,7 +579,7 @@
             "settings": {
               "enable": true,
               "title": "Raw Goods",
-              "image": "shopify:\/\/shop_images\/ACS_1873_300x320_bb32b4ef-dd19-48ed-b62e-a01048ffd12d.jpg",
+              "image": "shopify:\/\/shop_images\/fuji-apples.png",
               "link": "shopify:\/\/collections\/market-auto-online",
               "link_target": "_self"
             }
@@ -588,9 +588,9 @@
             "type": "banner",
             "settings": {
               "enable": true,
-              "title": "Freshies",
-              "image": "shopify:\/\/shop_images\/ACS_1247_300x320_1513051f-847e-43a9-b3c9-effdcf587197.jpg",
-              "link": "shopify:\/\/collections\/cafe",
+              "title": "Local Goods",
+              "image": "shopify:\/\/shop_images\/green-mix.jpg",
+              "link": "shopify:\/\/collections\/local-products",
               "link_target": "_self"
             }
           },
@@ -600,7 +600,7 @@
               "enable": true,
               "title": "Baked Goods",
               "image": "shopify:\/\/shop_images\/ACS_1865_300x320_0d854f36-5d37-4cd7-87de-0a8cbaa0549b.JPG",
-              "link": "shopify:\/\/collections\/meal-kits",
+              "link": "shopify:\/\/collections\/baked-goods",
               "link_target": "_self"
             }
           },
@@ -614,6 +614,25 @@
               "link_target": "_self"
             }
           },
+          "1539361916925-4": {
+            "type": "banner",
+            "settings": {
+              "enable": true,
+              "title": "Grab & Go",
+              "image": "shopify:\/\/shop_images\/peace_patties.jpg",
+              "link_target": "_self"
+            }
+          },
+          "1539361916925-5": {
+            "type": "banner",
+            "settings": {
+              "enable": true,
+              "title": "Burritos",
+              "image": "shopify:\/\/shop_images\/ACS_2878.JPG",
+              "link": "shopify:\/\/collections\/burritos",
+              "link_target": "_self"
+            }
+          },
           "1560293893626": {
             "type": "banner",
             "settings": {
@@ -623,24 +642,6 @@
               "link": "shopify:\/\/collections\/merch",
               "link_target": "_self"
             }
-          },
-          "1539361916925-4": {
-            "type": "banner",
-            "settings": {
-              "enable": true,
-              "title": "<span>Crafts<\/span><br>Coming Soon!",
-              "image": "shopify:\/\/shop_images\/CC_Rectangle1_300x320_961bb288-d778-431c-93b7-ac05e7b223dd.png",
-              "link_target": "_self"
-            }
-          },
-          "1539361916925-5": {
-            "type": "banner",
-            "settings": {
-              "enable": true,
-              "title": "<span>Books<\/span><span>Coming Soon!<\/span>",
-              "image": "shopify:\/\/shop_images\/stack_of_books_300x320_7c563e91-c3e0-49e1-b346-2189db4004d0.jpg",
-              "link_target": "_self"
-            }
           }
         },
         "block_order": [
@@ -648,9 +649,9 @@
           "1539361916925-1",
           "1539361916925-2",
           "1539361916925-3",
-          "1560293893626",
           "1539361916925-4",
-          "1539361916925-5"
+          "1539361916925-5",
+          "1560293893626"
         ],
         "settings": {
           "outer_margin": "mt-0"
@@ -664,7 +665,7 @@
           "single": false,
           "width": "global_width",
           "outer_margin": "mt-65",
-          "html": "<div class=\"holder fullboxed mt-0 py-2 py-sm-2\">\n\t<div class=\"container\">\n\t\t<div class=\"row bnr-grid data-slick slick-arrows-aside-simple slick-arrows-mobile-lg\" data-slick='{\n\t\t\t\"dots\":false,\n\t\t\t\"arrows\":true,\n\t\t\t\"slidesToShow\": 2,\n\t\t\t\"responsive\": [{\n\t\t\t\t\"breakpoint\": 768,\n\t\t\t\t\"settings\": {\"slidesToShow\": 1}\n\t\t\t}]\n        }'>\n            <div class=\"col-md\">\n                <a href=\"\/collections\/cafe\" class=\"bnr-wrap\">\n                    <div class=\"bnr bnr2 bnr--style-1 bnr--right bnr--middle bnr-hover-scale\" data-fontratio=\"5.55\">\n                        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0095\/6035\/8991\/files\/sandwich-desktop.jpg?2385\" alt=\"\">\n                        <span class=\"bnr-caption\">\n                            <div class=\"collection-bg-darkness\" style=\"opacity: 0.50;\"><\/div>\n                            <span class=\"bnr-text-wrap\">\n                                <span class=\"bnr-text1\">new arrivals<\/span>\n                                <span class=\"bnr-text2\">Café<\/span>\n                                <span class=\"btn-decor bnr-btn\">shop now<span class=\"btn-line\"><\/span><\/span>\n                            <\/span>\n                        <\/span>\n                    <\/div>\n                <\/a>\n            <\/div>\n\t\t\t<div class=\"col-md\">\n\t\t\t\t<a href=\"\/collections\/market-auto-online\" class=\"bnr-wrap\">\n\t\t\t\t\t<div class=\"bnr bnr1 bnr--style-1 bnr--left bnr--middle bnr-hover-scale\" data-fontratio=\"5.55\">\n\t\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0095\/6035\/8991\/files\/berries-desktop.jpg?2385\" alt=\"\">\n\t\t\t\t\t\t<span class=\"bnr-caption\">\n\t\t\t                    <div class=\"collection-bg-darkness\" style=\"opacity: 0.50;\"><\/div>\n\t\t\t\t<span class=\"bnr-text-wrap\">\n\t\t\t\t\t\t\t\t<span class=\"bnr-text1\">new arrivals<\/span>\n\t\t\t\t\t\t\t\t<span class=\"bnr-text2\">Market<\/span>\n\t\t\t\t\t\t\t\t<span class=\"btn-decor bnr-btn\">shop now<span class=\"btn-line\"><\/span><\/span>\n\t\t\t\t\t\t\t<\/span>\n\t\t\t\t\t\t<\/span>\n\t\t\t\t\t<\/div>\n\t\t\t\t<\/a>\n\t\t\t<\/div>\n\t\t<\/div>\n\t<\/div>\n<\/div>"
+          "html": "<div class=\"holder fullboxed mt-0 py-2 py-sm-2\">\n\t<div class=\"container\">\n\t\t<div class=\"row bnr-grid data-slick slick-arrows-aside-simple slick-arrows-mobile-lg\" data-slick='{\n\t\t\t\"dots\":false,\n\t\t\t\"arrows\":true,\n\t\t\t\"slidesToShow\": 2,\n\t\t\t\"responsive\": [{\n\t\t\t\t\"breakpoint\": 768,\n\t\t\t\t\"settings\": {\"slidesToShow\": 1}\n\t\t\t}]\n        }'>\n            <div class=\"col-md\">\n                <a href=\"\/collections\/cafe\" class=\"bnr-wrap\">\n                    <div class=\"bnr bnr2 bnr--style-1 bnr--right bnr--middle bnr-hover-scale\" data-fontratio=\"5.55\">\n                        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0095\/6035\/8991\/files\/DSC_5429.jpg?v=1609613632\" alt=\"\">\n                        <span class=\"bnr-caption\">\n                            <div class=\"collection-bg-darkness\" style=\"opacity: 0.50;\"><\/div>\n                            <span class=\"bnr-text-wrap\">\n                                <span class=\"bnr-text1\">new arrivals<\/span>\n                                <span class=\"bnr-text2\">Café<\/span>\n                                <span class=\"btn-decor bnr-btn\">shop now<span class=\"btn-line\"><\/span><\/span>\n                            <\/span>\n                        <\/span>\n                    <\/div>\n                <\/a>\n            <\/div>\n\t\t\t<div class=\"col-md\">\n\t\t\t\t<a href=\"\/collections\/market-auto-online\" class=\"bnr-wrap\">\n\t\t\t\t\t<div class=\"bnr bnr1 bnr--style-1 bnr--left bnr--middle bnr-hover-scale\" data-fontratio=\"5.55\">\n\t\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0095\/6035\/8991\/files\/oh3319p324-beets-x_493cfd94-278a-4bce-b200-ea42b13e46ef.jpg?v=1560302214\" alt=\"\">\n\t\t\t\t\t\t<span class=\"bnr-caption\">\n\t\t\t                    <div class=\"collection-bg-darkness\" style=\"opacity: 0.50;\"><\/div>\n\t\t\t\t<span class=\"bnr-text-wrap\">\n\t\t\t\t\t\t\t\t<span class=\"bnr-text1\">new arrivals<\/span>\n\t\t\t\t\t\t\t\t<span class=\"bnr-text2\">Market<\/span>\n\t\t\t\t\t\t\t\t<span class=\"btn-decor bnr-btn\">shop now<span class=\"btn-line\"><\/span><\/span>\n\t\t\t\t\t\t\t<\/span>\n\t\t\t\t\t\t<\/span>\n\t\t\t\t\t<\/div>\n\t\t\t\t<\/a>\n\t\t\t<\/div>\n\t\t<\/div>\n\t<\/div>\n<\/div>"
         }
       },
       "1539362044226": {
@@ -674,7 +675,7 @@
             "type": "product",
             "settings": {
               "enable": true,
-              "product": "elderberry-preserves"
+              "product": "jakes-vegan-italian-sausage"
             }
           },
           "1579829731685": {
@@ -820,8 +821,26 @@
             "type": "group",
             "settings": {
               "enable": true,
-              "title": "GF\/V",
-              "tags": "gluten-free, vegan",
+              "title": "Gluten-Free",
+              "tags": "gluten-free",
+              "style": "category-list"
+            }
+          },
+          "0dcae593-39ad-42ba-8f9d-727f167ccabb": {
+            "type": "group",
+            "settings": {
+              "enable": true,
+              "title": "Local Dairy \/ Vegan",
+              "tags": "dairy cream, vegan cream",
+              "style": "category-list"
+            }
+          },
+          "e23a8a5e-3336-45e0-84f1-c47b502ec4f9": {
+            "type": "group",
+            "settings": {
+              "enable": true,
+              "title": "Vegan\/Omni",
+              "tags": "Vegan, omni",
               "style": "category-list"
             }
           }
@@ -836,7 +855,9 @@
           "1563884717058",
           "6f036636-cc2e-458b-b31e-db4d7fee818a",
           "ec9ae144-24c1-4453-8f4b-54aa848f800a",
-          "1ba5048e-74a4-4268-b9c7-bbad2523337a"
+          "1ba5048e-74a4-4268-b9c7-bbad2523337a",
+          "0dcae593-39ad-42ba-8f9d-727f167ccabb",
+          "e23a8a5e-3336-45e0-84f1-c47b502ec4f9"
         ],
         "settings": {
           "categories": "category",
