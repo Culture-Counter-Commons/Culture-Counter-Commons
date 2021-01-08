@@ -933,8 +933,11 @@ footer .footer-copyright * {
 	.prd-carousel-banner img {
 		display: none;
 	}
-
 	/* END Full row - Style 8+promo */
+
+	.bnr {
+		height: 30vh;
+	}
 
 } /* END mobile only media query */
 
@@ -1000,6 +1003,9 @@ footer .footer-copyright * {
 	.prd-carousel-banner.bnr .carousel-arrows {
 		display: none;
 	}
+	.bnr {
+		height: 45vh;
+	}
 	.social-list {
 		text-align: right;
 	}
@@ -1063,6 +1069,9 @@ footer .footer-copyright * {
 	/* scroll dots */
 	.vert-dots-md .slick-dots {
 		top: 9vh;
+	}
+	.bnr {
+		height: 34vh;
 	}
 }
 /* desktop ONLY media query */
@@ -1193,11 +1202,11 @@ footer .footer-copyright * {
 	}
 	/* slick next/prev */
 	.product-slider .slick-prev {
-		left: 15vw;
+		left: 10vw;
 		width: auto;
 	}
 	.product-slider .slick-next {
-		left: 30vw;
+		left: 35vw;
 		width: auto;
 	}
 	.shop-feature.light-color {

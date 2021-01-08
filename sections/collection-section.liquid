@@ -20,10 +20,10 @@
         {% include 'collection-toolbar' products_per_page:products_per_page %}
     {% endif %}
 
-<div class="prd-grid data-to-show-{% unless collection.handle == 'burritos' or collection.handle == 'grab-go' %}{{ section.settings.collections_products_per_row }}{% endunless %}{% if  collection.handle == 'burritos' or  collection.handle == 'grab-go' %}2{% endif %} data-to-show-md-3 data-to-show-sm-{% unless collection.handle == 'burritos' or collection.handle == 'grab-go' %}{{ section.settings.collections_per_row_mobile }}{% endunless %}{% if  collection.handle == 'burritos' or  collection.handle == 'grab-go' %}1{% endif %} js-category-grid product-listing">
+<div class="prd-grid data-to-show-{% unless collection.handle == 'burritos' or collection.handle == 'grab-go' or collection.handle == 'ice-cream' %}{{ section.settings.collections_products_per_row }}{% endunless %}{% if  collection.handle == 'burritos' or  collection.handle == 'grab-go' or collection.handle == 'ice-cream' %}2{% endif %} data-to-show-md-3 data-to-show-sm-{% unless collection.handle == 'burritos' or collection.handle == 'grab-go' or collection.handle == 'ice-cream' %}{{ section.settings.collections_per_row_mobile }}{% endunless %}{% if  collection.handle == 'burritos' or  collection.handle == 'grab-go' or collection.handle == 'ice-cream' %}1{% endif %} js-category-grid product-listing">
     {% if collection.products.size > 0 %}
 
-        {% unless collection.handle == 'burritos' or collection.handle == 'grab-go' %}
+        {% unless collection.handle == 'burritos' or collection.handle == 'grab-go' or collection.handle == 'ice-cream' %}
             {% for product in collection.products %}
                 {% include 'product-card' image_size:'large' %}
             {% endfor %}
@@ -106,6 +106,27 @@
                     <h2 class="h-category btn--full mt-6">Cold</h2>
                 {% endif %}
                 {% if product.tags contains 'cold' %}
+                    {% include 'product-card-large' image_size:'large' %}
+                {% endif %} 
+            {% endfor %}
+
+        {% elsif collection.handle == 'ice-cream' %}
+                    
+            {% for product in collection.products %}
+                {% if forloop.first == true %}
+                    <h2 class="h-category btn--full">Scoops</h2>
+                {% endif %}
+                {% if product.tags contains 'scoops' %}
+                    {% include 'product-card-large' image_size:'large' %}
+                {% endif %}
+            {% endfor %}
+
+
+            {% for product in collection.products %}
+                {% if forloop.first == true %}
+                    <h2 class="h-category btn--full mt-6">Pints</h2>
+                {% endif %}
+                {% if product.tags contains 'pint' %}
                     {% include 'product-card-large' image_size:'large' %}
                 {% endif %} 
             {% endfor %}

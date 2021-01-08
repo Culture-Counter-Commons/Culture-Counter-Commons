@@ -74,11 +74,11 @@
 
         {% endif %}
 
-        {% if collection.handle == 'waffle-bar' %}
+        {% if collection.handle == 'ice-cream' %}
 
             <h2 class="h-category btn--full">Choose your waffle</h2>
             {% for product in collection.products %}
-                {% if product.tags contains 'waffle option' %}
+                {% if product.tags contains 'scoops' %}
                     {% include 'product-card-large' image_size:'large' %}
                 {% endif %}
             {% endfor %}
