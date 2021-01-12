@@ -599,7 +599,7 @@
             "settings": {
               "enable": true,
               "title": "Baked Goods",
-              "image": "shopify:\/\/shop_images\/ACS_1865_300x320_0d854f36-5d37-4cd7-87de-0a8cbaa0549b.JPG",
+              "image": "shopify:\/\/shop_images\/Zucchini-muffins.jpg",
               "link": "shopify:\/\/collections\/baked-goods",
               "link_target": "_self"
             }
@@ -620,6 +620,7 @@
               "enable": true,
               "title": "Grab & Go",
               "image": "shopify:\/\/shop_images\/peace_patties.jpg",
+              "link": "shopify:\/\/collections\/grab-go",
               "link_target": "_self"
             }
           },
@@ -678,14 +679,6 @@
               "product": "jakes-vegan-italian-sausage"
             }
           },
-          "1579829731685": {
-            "type": "product",
-            "settings": {
-              "enable": false,
-              "product": "",
-              "image": "shopify:\/\/shop_images\/organic12-largeSIZED_37a97b4f-43c3-4f37-977f-607947e2e103.png"
-            }
-          },
           "1539362044226-0": {
             "type": "product",
             "settings": {
@@ -710,7 +703,6 @@
         },
         "block_order": [
           "1579830327210",
-          "1579829731685",
           "1539362044226-0",
           "1539362044226-1",
           "1579830156504"
