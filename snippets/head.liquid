@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 {% assign favicon = settings.favicon %}
 {% if favicon != blank %}
-    {% capture favicon_url %}{{ favicon | img_url }}{% endcapture %}
+    {% capture favicon_url %}{{ favicon | image_url: width: 100, height: 100 }}{% endcapture %}
 {% else %}
     {% capture favicon_url %}{{ 'favicon.ico' | asset_url }}{% endcapture %}
 {% endif %}
@@ -36,7 +36,7 @@
 <!--icon font-->
 {{ 'icomoon.scss.css' | asset_url | stylesheet_tag }}
 <!-- Custom + rtl -->
-{% if settings.rtl or template contains 'rtl'%}{{ 'style-rtl.css' | asset_url | stylesheet_tag }}{% endif %}
+{% if settings.rtl or template contains 'rtl' %}{{ 'style-rtl.css' | asset_url | stylesheet_tag }}{% endif %}
 {% if demo %}
     {% if skin != blank %}
         {{ skin | asset_url | stylesheet_tag }}
@@ -47,11 +47,11 @@
     {% if color_mode contains 'dark' %}{{ 'style-theme-dark.scss.css' | asset_url | stylesheet_tag }}{% else %}{{ 'style-theme-light.scss.css' | asset_url | stylesheet_tag }}{% endif %}
 {% endif %}
 
-{{ 'custom.scss-min.css' | asset_url | stylesheet_tag }}
+{{ 'custom.css' | asset_url | stylesheet_tag }}
 <!--custom font-->
 {% include 'google-fonts' %}
-{{ 'jquery.min.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
-{{ 'jquery.cookie.min.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
+{{ 'jquery.min.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
+{{ 'jquery.cookie.min.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
 
 <!--Lazy Loading -->
 {{ "lazysizes.min.js" | asset_url | script_tag }}
@@ -68,7 +68,7 @@
 </style>
 
 <script>
-    var price_format = "{{ shop.money_with_currency_format | strip | remove:'"' }}";
+    var price_format = "{{ shop.money_with_currency_format | strip | remove: '"' }}";
     var moneyFormat = {{ shop.money_format | json }};
     locale = [];
     window.shopCurrency = "{{ shop.currency }}";

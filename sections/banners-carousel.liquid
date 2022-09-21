@@ -3,20 +3,35 @@
 <div class="holder fullwidth {{ section.settings.outer_margin }} full-nopad">
     <div class="container">
         <div class="collection-carousel data-slick slick-arrows-squared" data-slick='{"slidesToShow": {% if column %}3{% else %}5{% endif %}, "responsive": [{"breakpoint": 1200,"settings": {"slidesToShow": 4}},{"breakpoint": 992,"settings": {"slidesToShow": 3}},{"breakpoint": 768,"settings": {"slidesToShow": 3}},{"breakpoint": 480,"settings": {"slidesToShow": 2}}]}'>
-            {% for block in section.blocks %}
-            {% if block.settings.enable %}
-            <div class="collection-carousel-item">
-                <a href="{{ block.settings.link }}" target="{{ block.settings.link_target }}"  title="{{ block.settings.title }}">
-                    <div class="collection-bg-darkness" style="opacity: 0.50;"></div>
+            {% if section.settings.link_enable %}
+                {% for block in section.blocks %}
+                    {% if block.settings.enable %}
+                        <div class="collection-carousel-item">
+                            <a href="{{ block.settings.link }}" target="{{ block.settings.link_target }}"  title="{{ block.settings.title }}">
+                                <div class="collection-bg-darkness" style="opacity: 0.50;"></div>
 
-                    <div class="image-hover img-zoom-out">
-                        <img class="lazyload" data-src="{% if block.settings.image %}{{ block.settings.image | img_url:'master' }}{% else %}{{ 'collection-toys-01.jpg'  | asset_url }}{% endif %}" alt="">
-                    </div>
-                    <span class="collection-carousel-title justify-content-center align-items-start">{{ block.settings.title }}</span>
-                </a>
-            </div>
+                                <div class="image-hover img-zoom-out">
+                                    <img class="lazyload" data-src="{% if block.settings.image %}{{ block.settings.image | img_url:'master' }}{% else %}{{ 'collection-toys-01.jpg'  | asset_url }}{% endif %}" alt="">
+                                </div>
+                                <span class="collection-carousel-title justify-content-center align-items-start">{{ block.settings.title }}</span>
+                            </a>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                {% for block in section.blocks %}
+                    {% if block.settings.enable %}
+                        <div class="collection-carousel-item">
+                            <div class="collection-bg-darkness" style="opacity: 0.50;"></div>
+
+                            <div class="image-hover img-zoom-out">
+                                <img class="lazyload" data-src="{% if block.settings.image %}{{ block.settings.image | img_url:'master' }}{% else %}{{ 'collection-toys-01.jpg'  | asset_url }}{% endif %}" alt="">
+                            </div>
+                            <span class="collection-carousel-title justify-content-center align-items-start">{{ block.settings.title }}</span>
+                        </div>
+                    {% endif %}
+                {% endfor %}
             {% endif %}
-            {% endfor %}
         </div>
     </div>
 </div>
@@ -48,6 +63,12 @@
     {"value":"mt-10","label":"100px"}
     ],
     "default": "mt-65"
+},
+{
+"type":"checkbox",
+"id":"link_enable",
+"label":"Enable links on blocks",
+"default":true
 }
 ],
 "blocks": [
