@@ -610,7 +610,7 @@
             "settings": {
               "enable": true,
               "title": "Ice Cream",
-              "image": "shopify:\/\/shop_images\/ACS_0760_8ec57a57-2fa4-4039-90ac-b1f844d3c0ca.JPG",
+              "image": "shopify:\/\/shop_images\/ice-cream.webp",
               "link": "",
               "link_target": "_self"
             }
@@ -640,7 +640,7 @@
             "settings": {
               "enable": true,
               "title": "Soup & Salad Bar",
-              "image": "shopify:\/\/shop_images\/ACS_0001_300x320_b4e63d15-4be7-4a93-9282-2d4aafcf0158.jpg",
+              "image": "shopify:\/\/shop_images\/culture-counter-commons-tshirt.webp",
               "link": "",
               "link_target": "_self"
             }
