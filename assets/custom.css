@@ -228,6 +228,26 @@ dd {
 	color: var(--lightTan);
 }
 
+@media screen and (max-width: 767px) {
+	.page-content img {
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.page-content .holder {
+		margin-top: 25px !important;
+	}
+	.page-page-menu .holder img {
+		max-width: 100vw;
+		width: 100%;
+	}
+}
+@media screen and (min-width: 768px) {
+	.page-page-menu .holder img {
+		min-width: 50vw;
+	}
+}
+
 .page-footer ul:not([class]) li,
 .page-footer ul:not([class]) li a,
 .footer-block ul.contact-list li,
@@ -809,14 +829,11 @@ footer .footer-copyright * {
 	color: var(--lightTan);
 }
 
-.collection-carousel .slick-track {
-	display: flex;
-}
-.collection-carousel .collection-carousel-item {
+/* .collection-carousel .collection-carousel-item {
 	display: flex;
 	flex: 0 0 12.25%;
 	height: auto;
-}
+} */
 
 /* top slider content dark background */
 .bnslider-slide

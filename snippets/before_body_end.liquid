@@ -20,7 +20,7 @@
         </div>
         <span class="close pointer" onclick="closeLightbox()">×</span>
         
-        {% form 'contact', class:"suggestion-form" %}
+        {% form 'contact', class: "suggestion-form" %}
             {% if form.posted_successfully? %}
                 <p class="note form-success">
                     <b>{{ 'contact.form.post_success' | t }}</b>
@@ -102,36 +102,36 @@
         CartJS.init({{ cart | json }}, {
             "dataAPI": false,
             "requestBodyClass": "loading",
-            "moneyFormat": "{{ shop.money_format | replace:'"','\'' }}",
-            "moneyWithCurrencyFormat": "{{ shop.money_with_currency_format | replace:'"','\'' }}"
+            "moneyFormat": "{{ shop.money_format | replace: '"', '\'' }}",
+            "moneyWithCurrencyFormat": "{{ shop.money_with_currency_format | replace: '"', '\'' }}"
         });
 });
 </script>
 {% if template contains 'customers' %}
-    {{ 'shopify_common.js' | shopify_asset_url | script_tag | replace:'type="text/javascript"',''  }}
+    {{ 'shopify_common.js' | shopify_asset_url | script_tag | replace: 'type="text/javascript"', '' }}
 {% endif %}
 {% include 'currencies' %}
 <!--JS THEME Min files for better perfomance Production Mode -->
-{{ 'bootstrap.min.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
-{{ 'slick.min.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
-{{ 'jquery-scrollLock.min.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
-{{ 'instafeed.min.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
-{{ 'jquery.countdown.min.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
-{{ 'imagesloaded.pkgd.min.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
-{{ 'jquery.ez-plus.min.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
-{{ 'tocca.min.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
-{{ 'bootstrap-tabcollapse.min.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
-{{ 'jquery.isotope.min.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
-{{ 'jquery.fancybox.min.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
-{{ 'bootstrap-select.min.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
+{{ 'bootstrap.min.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
+{{ 'slick.min.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
+{{ 'jquery-scrollLock.min.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
+{{ 'instafeed.min.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
+{{ 'jquery.countdown.min.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
+{{ 'imagesloaded.pkgd.min.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
+{{ 'jquery.ez-plus.min.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
+{{ 'tocca.min.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
+{{ 'bootstrap-tabcollapse.min.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
+{{ 'jquery.isotope.min.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
+{{ 'jquery.fancybox.min.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
+{{ 'bootstrap-select.min.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
 {% if home and slides_mode %}
-    {{ 'scrolloverflow.min.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
-    {{ 'fullpage.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
-    {{ 'perfect-scrollbar.min.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
+    {{ 'scrolloverflow.min.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
+    {{ 'fullpage.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
+    {{ 'perfect-scrollbar.min.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
 {% endif %}
-{{ 'slider.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
-{{ 'app.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
+{{ 'slider.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
+{{ 'app.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
 <!--JS THEME SHOPIFY CONST INCLUDES-->
-{{ 'cart.min.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
-{{ 'option_selection.js' | shopify_asset_url | script_tag | replace:'type="text/javascript"','' }}
-{{ 'helper.js' | asset_url | script_tag | replace:'type="text/javascript"','' }}
+{{ 'cart.min.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
+{{ 'option_selection.js' | shopify_asset_url | script_tag | replace: 'type="text/javascript"', '' }}
+{{ 'helper.js' | asset_url | script_tag | replace: 'type="text/javascript"', '' }}
