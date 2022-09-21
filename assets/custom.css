@@ -876,12 +876,23 @@ footer .footer-copyright * {
 	top: 1rem;
 	left: 1rem;
 }
-
+@media screen and (max-width: 991px) {
+	.hdr-mobile-style2:not(.hdr--dark) .hdr-mobile {
+		background-color: #e8e0cd;
+	}
+}
+.mobilemenu .mobilemenu-toggle {
+	align-items: end;
+	padding: 10px;
+}
+.mobilemenu .mobilemenu-toggle span {
+	padding-left: 0;
+}
 /* mobile only media query */
 @media (max-width: 768px) {
 	.logo-holder img,
 	.logo-holder-s img {
-		width: 55px;
+		width: 150px;
 	}
 
 	.product-slider-holder .product-slider .slick-arrow {
