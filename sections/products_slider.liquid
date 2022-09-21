@@ -8,9 +8,9 @@
                     {% assign on_sale = false %}
                     <div class="product-slider-item">
                         <div class="product-slider-item__image">
-<img class="product-image js-prd-img lazyload"
-    data-src="{% if product.featured_image.size > 0 %}{{ product.featured_image.src | img_url: 'master' }}{% else %}{{ 'no-image.jpg' | asset_url }}{% endif %}"
-    alt="{{ product.featured_image.alt | escape }}">
+                      <img class="product-image js-prd-img lazyload"
+                          data-src="{% if product.featured_image.size > 0 %}{{ product.featured_image.src | img_url: 'master' }}{% else %}{{ 'no-image.jpg' | asset_url }}{% endif %}"
+                          alt="{{ product.featured_image.alt | escape }}">
                         </div>
                         <div class="product-slider-inside">
                             <div class="product-slider-info text-center justify-content-center">

@@ -3,7 +3,7 @@
     "color_scheme": "light",
     "column-left-right": "none-column",
     "slides_mode": false,
-    "catalog_mode": false,
+    "catalog_mode": true,
     "rtl": false,
     "back_to_top_desktop": true,
     "wishlist": true,
@@ -148,10 +148,10 @@
     "blog_meta_yes": false,
     "blog_meta_title": "Meta",
     "blog_meta_list": "<li><a href=\"#\">Log in<\/a><\/li><li><a href=\"#\">Entries RSS<\/a><\/li><li><a href=\"#\">Comments RSS<\/a><\/li><li><a href=\"#\">WordPress.org<\/a><\/li>",
-    "blog_archives_yes": true,
+    "blog_archives_yes": false,
     "blog_archives_title": "Archives",
     "blog_archives_list": "<li><a href=\"#\">February 2015<\/a><\/li><li><a href=\"#\">April 2016<\/a><\/li><li><a href=\"#\">May 2016<\/a><\/li><li><a href=\"#\">Juny 2016<\/a><\/li>",
-    "blog_tags_yes": true,
+    "blog_tags_yes": false,
     "blog_popular_posts_yes": false,
     "blog_popular_posts_title": "Popular Menus",
     "blog_popular_posts_handles": "menus\/february-2-20, menus\/february-9-2020,",
@@ -253,10 +253,10 @@
           "logo": "https:\/\/cdn.shopify.com\/s\/files\/1\/0095\/6035\/8991\/files\/culture-counter-sticky-header-logo.svg?v=1563888674",
           "languages": false,
           "currencies": false,
-          "header_search": true,
+          "header_search": false,
           "search_keywords_yes": false,
           "search_keywords": "produce,",
-          "login_box": true,
+          "login_box": false,
           "delivery": "",
           "phone_1": "",
           "phones": "8 800 265 89 56<br> 8 800 265 89 56",
@@ -264,10 +264,11 @@
           "html_header_5": "",
           "topline_enable": false,
           "where_to_show": "all",
-          "topline_caption": "GET 10% OFF YOUR FIRST ORDER WITH CODE <span style=\"color: #000\">GOODWIN<\/span> <span class=\"hidden-xs\"> |   FREE GROUND SHIPPING OVER $250<\/span>",
+          "bg_topline": "shopify:\/\/shop_images\/green-bk.png",
+          "topline_caption": "Welcome to our new <strong>DOOT BETA<\/strong> site! <br>Let us know if we can improve anything.",
           "topline_enable_animation": false,
-          "topline_caption_1": "GET 10% OFF YOUR FIRST ORDER WITH CODE GOODWIN",
-          "topline_caption_2": "FREE GROUND SHIPPING OVER $250",
+          "topline_caption_1": "",
+          "topline_caption_2": "",
           "topline_expires": "1",
           "default_navigation": "main-menu",
           "menu_arrows_off": false
@@ -281,7 +282,7 @@
           "logo_yes": true,
           "logo": "shopify:\/\/shop_images\/ccc-tan-logo-mark_1.png",
           "navigation_1": "main-menu",
-          "navigation_2": "freshies",
+          "navigation_2": "",
           "navigation_3": "",
           "navigation_4_yes": false,
           "navigation_4": "menu-1",
@@ -313,9 +314,9 @@
               "bg_v_alignment": "bg-middle",
               "type": "none",
               "video_id": "_9VUPq3SxOc",
-              "link": "shopify:\/\/collections\/market-auto-online",
+              "link": "",
               "link_target": "_self",
-              "link_button_yes": true,
+              "link_button_yes": false,
               "link_all_slide": false,
               "link_button_text": "Shop now",
               "btn_hor_aligment": "center",
@@ -394,7 +395,7 @@
               "video_id": "_9VUPq3SxOc",
               "link": "shopify:\/\/collections\/market-auto-online",
               "link_target": "_self",
-              "link_button_yes": true,
+              "link_button_yes": false,
               "link_all_slide": false,
               "link_button_text": "Shop now",
               "btn_hor_aligment": "center",
@@ -473,7 +474,7 @@
               "video_id": "_9VUPq3SxOc",
               "link": "shopify:\/\/collections\/cafe",
               "link_target": "_self",
-              "link_button_yes": true,
+              "link_button_yes": false,
               "link_all_slide": false,
               "link_button_text": "Shop now",
               "btn_hor_aligment": "center",
@@ -580,7 +581,7 @@
               "enable": true,
               "title": "Raw Goods",
               "image": "shopify:\/\/shop_images\/fuji-apples.png",
-              "link": "shopify:\/\/collections\/market-auto-online",
+              "link": "",
               "link_target": "_self"
             }
           },
@@ -590,7 +591,7 @@
               "enable": true,
               "title": "Local Goods",
               "image": "shopify:\/\/shop_images\/green-mix.jpg",
-              "link": "shopify:\/\/collections\/local-products",
+              "link": "",
               "link_target": "_self"
             }
           },
@@ -600,7 +601,7 @@
               "enable": true,
               "title": "Baked Goods",
               "image": "shopify:\/\/shop_images\/Zucchini-muffins.jpg",
-              "link": "shopify:\/\/collections\/baked-goods",
+              "link": "",
               "link_target": "_self"
             }
           },
@@ -610,7 +611,7 @@
               "enable": true,
               "title": "Ice Cream",
               "image": "shopify:\/\/shop_images\/ACS_0760_8ec57a57-2fa4-4039-90ac-b1f844d3c0ca.JPG",
-              "link": "shopify:\/\/collections\/ice-cream",
+              "link": "",
               "link_target": "_self"
             }
           },
@@ -620,7 +621,7 @@
               "enable": true,
               "title": "Grab & Go",
               "image": "shopify:\/\/shop_images\/peace_patties.jpg",
-              "link": "shopify:\/\/collections\/grab-go",
+              "link": "",
               "link_target": "_self"
             }
           },
@@ -628,9 +629,9 @@
             "type": "banner",
             "settings": {
               "enable": true,
-              "title": "Burritos",
+              "title": "All Day Breakfast",
               "image": "shopify:\/\/shop_images\/ACS_2878.JPG",
-              "link": "shopify:\/\/collections\/burritos",
+              "link": "",
               "link_target": "_self"
             }
           },
@@ -638,9 +639,9 @@
             "type": "banner",
             "settings": {
               "enable": true,
-              "title": "CC Merch",
+              "title": "Soup & Salad Bar",
               "image": "shopify:\/\/shop_images\/ACS_0001_300x320_b4e63d15-4be7-4a93-9282-2d4aafcf0158.jpg",
-              "link": "shopify:\/\/collections\/merch",
+              "link": "",
               "link_target": "_self"
             }
           }
@@ -661,7 +662,7 @@
       "1539361933462": {
         "type": "banner_from_online_editor",
         "settings": {
-          "enable": true,
+          "enable": false,
           "title": "Banners From Online Editor",
           "single": false,
           "width": "global_width",
@@ -751,7 +752,7 @@
             "settings": {
               "enable": true,
               "title": "Vendor",
-              "tags": "Culture Counter, Artisan Oven,\nMudhouse,\nGrove Salsa Company,\nMcKaskle Family Farm,\nSpring Branch Kombucha,\nTerrell Creek Farms,\nWillow Mountain Mushrooms,\nPrairie Pies,\nOzark Mountain Creamery,\nDown To Earth Foods,\nLiberty Fruit Co,\nMillsap Farms,\nProvidence Farms,\nTierra Farms,\nCircle B Ranch,\nFloat Trip Pickles,\nHigh Springs Farms,\nEdgewood Creamery,\nCopper Canyon Coffee,\nPeace Valley Poultry,\nKleoppel Meats LLC,\nBox Turtle Farms,\nBlack Gate Farms,\nJB Kobe Farms,\nFort Bison,\nUrban Roots Farms,\nHammons Walnuts,\nCafe Cuzco,\nJanie's Mill,\nBack 40 Bison,\nPequea Valley Farm,\nVital Farms,\nHometown Honey, \nMatt’s Cones, SBC, The Date Lady, Jake's Burgers, East Wind Nut Butters, Persimmon Hill, Gardener's Orchard",
+              "tags": "Culture Counter, Artisan Oven,\nMudhouse,\nGrove Salsa Company,\nMcKaskle Family Farm,\nSpring Branch Kombucha,\nTerrell Creek Farms,\nWillow Mountain Mushrooms,\nPrairie Pies,\nOzark Mountain Creamery,\nDown To Earth Foods,\nLiberty Fruit Co,\nMillsap Farms,\nProvidence Farms,\nTierra Farms,\nCircle B Ranch,\nFloat Trip Pickles,\nHigh Springs Farm,\nEdgewood Creamery,\nCopper Canyon Coffee,\nPeace Valley Poultry,\nKleoppel Meats LLC,\nBox Turtle Farms,\nBlack Gate Farms,\nJB Kobe Farms,\nFort Bison,\nUrban Roots Farms,\nHammons Walnuts,\nCafe Cuzco,\nJanie's Mill,\nBack 40 Bison,\nPequea Valley Farm,\nVital Farms,\nHometown Honey, \nMatt’s Cones, SBC, The Date Lady, Jake's Burgers, East Wind Nut Butters, Persimmon Hill, Gardener's Orchard, Top Shelf Fungi",
               "style": "category-list"
             }
           },
@@ -977,7 +978,8 @@
       },
       "column": {
         "type": "column",
-        "settings": {}
+        "settings": {
+        }
       },
       "1562718973628": {
         "type": "brands",
@@ -1180,6 +1182,7 @@
           "heading": "",
           "link_button_yes": false,
           "link_button_text": "",
+          "link": "",
           "link_target": "_self"
         }
       },
@@ -1213,7 +1216,7 @@
       "article-template": {
         "type": "article-template",
         "settings": {
-          "sidebar": true
+          "sidebar": false
         }
       },
       "blog-style-2": {
@@ -1266,7 +1269,8 @@
       },
       "page-landing": {
         "type": "page-landing",
-        "settings": {}
+        "settings": {
+        }
       }
     },
     "content_for_index": [

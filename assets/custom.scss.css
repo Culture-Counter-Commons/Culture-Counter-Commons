@@ -472,6 +472,10 @@ body {
 	background: var(--lightTan);
 }
 
+.product-slider .slick-arrow {
+    display: none !important;
+}
+
 /* top nav */
 .nav-holder,
 .nav-holder-s {
