@@ -656,7 +656,8 @@
           "1560293893626"
         ],
         "settings": {
-          "outer_margin": "mt-0"
+          "outer_margin": "mt-0",
+          "link_enable": false
         }
       },
       "1539361933462": {
@@ -709,7 +710,8 @@
           "1579830156504"
         ],
         "settings": {
-          "outer_margin": "mt-65"
+          "outer_margin": "mt-65",
+          "link_enable": false
         }
       },
       "1539362723073": {
