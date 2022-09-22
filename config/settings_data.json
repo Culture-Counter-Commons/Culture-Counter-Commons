@@ -343,7 +343,7 @@
               "caption_1_othercss": "",
               "caption_2_yes": true,
               "caption_2_hidemobile_yes": false,
-              "caption_2": "<p>All local or organic. No exceptions.<\/p>",
+              "caption_2": "<p>All local or organic.<br> No exceptions.<\/p>",
               "caption_2_animation": "fadeIn",
               "caption_2_delay": "2000",
               "caption_2_hor_alignment": "center",
