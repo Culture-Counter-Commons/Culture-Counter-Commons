@@ -315,7 +315,7 @@
               "type": "none",
               "video_id": "_9VUPq3SxOc",
               "link": "shopify:\/\/pages\/menu",
-              "link_target": "_blank",
+              "link_target": "_self",
               "link_button_yes": true,
               "link_all_slide": false,
               "link_button_text": "View Menus",
