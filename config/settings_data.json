@@ -69,6 +69,7 @@
     "newsletter_popup_onclick_yes": true,
     "newsletter_popup_home_only_yes": false,
     "newsletter_popup_logo": "shopify:\/\/shop_images\/ccc-sticky-header-logo.jpg",
+    "newsletter_popup_bg": "shopify:\/\/shop_images\/Ultimate-BLT-Salad.JPG",
     "newsletter_popup_title": "Lettuce let you know what's up!",
     "newsletter_popup_desc": "Enter Your email address to sign up to receive our latest news and offers",
     "newsletter_popup_expires": "0",
