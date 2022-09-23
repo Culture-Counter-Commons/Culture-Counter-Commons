@@ -479,7 +479,7 @@
               "link_button_text": "WHAT'S GOOD?!",
               "btn_hor_aligment": "center",
               "button_animation": "fadeIn",
-              "button_delay": "2000",
+              "button_delay": "3000",
               "button_text_color": "#438871",
               "button_bgcolor": "#438871",
               "button_othercss": "",
