@@ -1002,26 +1002,6 @@
       "1562718973628": {
         "type": "brands",
         "blocks": {
-          "1562718973628-0": {
-            "type": "brand",
-            "settings": {
-              "enable": true,
-              "title": "The Artisan's Oven",
-              "image": "shopify:\/\/shop_images\/artisans-oven-logoSIZED.png",
-              "link": "http:\/\/theartisansoven.com\/",
-              "link_target": "_blank"
-            }
-          },
-          "1562718973628-1": {
-            "type": "brand",
-            "settings": {
-              "enable": true,
-              "title": "Black Gate",
-              "image": "shopify:\/\/shop_images\/black-gate-logo-sized.png",
-              "link": "http:\/\/blackgatefarms.com\/?fbclid=IwAR0YpXYvtHFQSsGkpVc4pm_ZUK36gPjG2U4LPyZw3cBRsUXIaoiXX-tbHYE#",
-              "link_target": "_blank"
-            }
-          },
           "1562718973628-2": {
             "type": "brand",
             "settings": {
@@ -1042,18 +1022,9 @@
               "link_target": "_blank"
             }
           },
-          "1562718973628-4": {
-            "type": "brand",
-            "settings": {
-              "enable": true,
-              "title": "Copper Canyon Coffee Roasters",
-              "image": "shopify:\/\/shop_images\/Copper-canyon-coffee-web-logo_6211254c-ae42-4eec-8602-a69c7cfd0deb.png",
-              "link": "https:\/\/coppercanyoncoffee.com\/",
-              "link_target": "_blank"
-            }
-          },
           "1562718973628-5": {
             "type": "brand",
+            "disabled": true,
             "settings": {
               "enable": true,
               "title": "The Grove Salsa Company",
@@ -1064,6 +1035,7 @@
           },
           "1562718973628-6": {
             "type": "brand",
+            "disabled": true,
             "settings": {
               "enable": true,
               "title": "High Springs Farm",
@@ -1112,26 +1084,6 @@
               "link_target": "_blank"
             }
           },
-          "1567012585290": {
-            "type": "brand",
-            "settings": {
-              "enable": true,
-              "title": "Kleoppel Meats LLC",
-              "image": "shopify:\/\/shop_images\/kleoppel-meats-logo.png",
-              "link": "http:\/\/kleoppelmeats.com\/",
-              "link_target": "_blank"
-            }
-          },
-          "1567012635198": {
-            "type": "brand",
-            "settings": {
-              "enable": true,
-              "title": "Vital Farms",
-              "image": "shopify:\/\/shop_images\/Vital_Farms_sticker-window_cling_image.png",
-              "link": "https:\/\/vitalfarms.com\/",
-              "link_target": "_blank"
-            }
-          },
           "1567012674874": {
             "type": "brand",
             "settings": {
@@ -1141,56 +1093,18 @@
               "link": "https:\/\/libertyfruit.com\/",
               "link_target": "_blank"
             }
-          },
-          "1567012714689": {
-            "type": "brand",
-            "settings": {
-              "enable": true,
-              "title": "Matt's Cones",
-              "image": "shopify:\/\/shop_images\/matts-cones-logo.png",
-              "link": "https:\/\/mattcones.com\/",
-              "link_target": "_blank"
-            }
-          },
-          "1567012760156": {
-            "type": "brand",
-            "settings": {
-              "enable": true,
-              "title": "Janie's Farm",
-              "image": "shopify:\/\/shop_images\/the-mill-at-janies-farm.png",
-              "link": "https:\/\/www.themillatjaniesfarm.com\/",
-              "link_target": "_blank"
-            }
-          },
-          "1567013054024": {
-            "type": "brand",
-            "settings": {
-              "enable": true,
-              "title": "Providence Farm",
-              "image": "shopify:\/\/shop_images\/providence-farms-logo_5537efa7-e61e-4ea2-8cbb-a2e7b84e33db.png",
-              "link": "https:\/\/providencefarmmo.wordpress.com\/",
-              "link_target": "_blank"
-            }
           }
         },
         "block_order": [
-          "1562718973628-0",
-          "1562718973628-1",
           "1562718973628-2",
           "1562718973628-3",
-          "1562718973628-4",
           "1562718973628-5",
           "1562718973628-6",
           "1567012293242",
           "1567012465960",
           "1567012521108",
           "1567012552686",
-          "1567012585290",
-          "1567012635198",
-          "1567012674874",
-          "1567012714689",
-          "1567012760156",
-          "1567013054024"
+          "1567012674874"
         ],
         "settings": {
           "enable": true,
