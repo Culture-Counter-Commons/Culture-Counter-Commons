@@ -701,13 +701,29 @@
               "enable": true,
               "product": "avocados"
             }
+          },
+          "9aa4cd4d-bd3f-4d06-b8e8-aec843d038dd": {
+            "type": "product",
+            "settings": {
+              "enable": true,
+              "product": "chocolate-chip-chevre"
+            }
+          },
+          "d38db25c-0fd6-4cf6-8dd9-7be041a9a8c9": {
+            "type": "product",
+            "settings": {
+              "enable": true,
+              "product": "springpatch"
+            }
           }
         },
         "block_order": [
           "1579830327210",
           "1539362044226-0",
           "1539362044226-1",
-          "1579830156504"
+          "1579830156504",
+          "9aa4cd4d-bd3f-4d06-b8e8-aec843d038dd",
+          "d38db25c-0fd6-4cf6-8dd9-7be041a9a8c9"
         ],
         "settings": {
           "outer_margin": "mt-65",
