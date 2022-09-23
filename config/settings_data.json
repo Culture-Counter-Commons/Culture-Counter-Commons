@@ -290,7 +290,7 @@
           "navigation_6": "",
           "shop_info_yes": true,
           "newsletter": false,
-          "show_methods_of_payment": true,
+          "show_methods_of_payment": false,
           "show_instagram": false,
           "social_icons": false,
           "support_time_title": "CONNECT",
