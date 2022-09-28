@@ -39,7 +39,7 @@
                             <ul>
                                 {% for link in linklists[section.settings.navigation_1].links %}
                                     <li>
-                                        {{ link.title | append:label | link_to: link.url }}
+                                        {{ link.title | append: label | link_to: link.url }}
                                     </li>
                                 {% endfor %}
                             </ul>
@@ -61,7 +61,7 @@
                             <ul>
                                 {% for link in linklists[section.settings.navigation_2].links %}
                                     <li>
-                                        {{ link.title | append:label | link_to: link.url }}
+                                        {{ link.title | append: label | link_to: link.url }}
                                     </li>
                                 {% endfor %}
                             </ul>
@@ -82,7 +82,7 @@
                             <ul>
                                 {% for link in linklists[section.settings.navigation_3].links %}
                                     <li>
-                                        {{ link.title | append:label | link_to: link.url }}
+                                        {{ link.title | append: label | link_to: link.url }}
                                     </li>
                                 {% endfor %}
                             </ul>
@@ -107,7 +107,7 @@
                   <ul>
                     {% for link in linklists[section.settings.navigation_4].links %}
                     <li>
-                      {{ link.title | append:label | link_to: link.url }}
+                      {{ link.title | append: label | link_to: link.url }}
                     </li>
                     {% endfor %}
                   </ul>
@@ -131,7 +131,7 @@
                 </div>
                 {% endif %}
                 {% if section.settings.chat_yes %}
-                <h4 class="title">{{  section.settings.chat_link }}</h4>
+                <h4 class="title">{{ section.settings.chat_link }}</h4>
                 {% endif %}
             </div>
         </div>
