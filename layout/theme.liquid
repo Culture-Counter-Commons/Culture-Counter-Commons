@@ -22,7 +22,6 @@ Culture Counter Commons v1.3 | hulk 13-...
 
     <body
         class="{{ color_mode }} page-{{ template | handle }} {% if settings.equal_height %}equal-height{% endif %}{% if settings.zoom_off %}zoom-off{% endif %} {% unless settings.prd_uppercase %}prd-noupper{% endunless %} {% unless settings.headings_uppercase %}h-noupper{% endunless %} {% if settings.slides_mode %}slides-mode{% endif %} {% if home and slides_mode %}fullwidth fullpage-layout{% else %}boxed{% endif %} {% if home %}home-page{% endif %}   {% if column %}left-column{% endif %} is-dropdn-click   {% if settings.ajax_cart %}ajax_cart{% endif %} {% if settings.rtl or template contains 'rtl' %}rtl{% endif %} {% if settings.rounded %}rounded{% endif %} {% if settings.megamenu_spy_navigation %}has-spymenu{% endif %} {% if settings.checkout_popup %}checkout-popup{% endif %} {{ settings.loader }} {% if tools %}hide-until-loaded{% endif %} {% if demo %}demo{% endif %}">
-        <div class="g-recaptcha" data-sitekey="6Ld-0DciAAAAAEC07LF5xRFJDNnpM5jXTJSWkb-w"></div>
         {% capture the_snippet_content %}{% render 'socialshopwave-helper' %}{% endcapture %}
         {% unless the_snippet_content contains 'Liquid error' %}
         {{ the_snippet_content }}
