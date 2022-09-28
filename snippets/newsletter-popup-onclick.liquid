@@ -42,10 +42,12 @@
                             {{ form.errors | default_errors }}
                         </div>
                         <button type="submit" class="btn mt-15">{{ 'general.theme.subscribe' | t }}</button>
+                         {% comment %}
                         <div class="checkbox-group mt-2">
                             <input type="checkbox" name="newsletter" id="newsLetterCheckBox">
                             <label for="newsLetterCheckBox">{{ 'general.theme.donot_show' | t }}</label>
                         </div>
+                         {% endcomment %}
                         {% endif %}
                         {% endform %}
                         <div class="newslettermodal-content-socials">

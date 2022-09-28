@@ -399,9 +399,7 @@ form#contact_form {
 	margin: 3rem;
 }
 .form-control {
-	font-size: 14px;
-	height: 1;
-	line-height: 41px;
+	padding: 5px 10px 5px;
 }
 /* all form placeholders */
 input {
