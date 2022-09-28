@@ -1,6 +1,14 @@
 <!-- Basic page needs ================================================== -->
 <meta charset="utf-8">
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script async src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+  // If reCAPTCHA is still loading, grecaptcha will be undefined.
+  grecaptcha.ready(function(){
+    grecaptcha.render("container", {
+      sitekey: "6Ld-0DciAAAAAEC07LF5xRFJDNnpM5jXTJSWkb-w"
+    });
+  });
+</script>
 {% assign favicon = settings.favicon %}
 {% if favicon != blank %}
     {% capture favicon_url %}{{ favicon | image_url: width: 100, height: 100 }}{% endcapture %}
