@@ -1,5 +1,6 @@
 <!-- Basic page needs ================================================== -->
 <meta charset="utf-8">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 {% assign favicon = settings.favicon %}
 {% if favicon != blank %}
     {% capture favicon_url %}{{ favicon | image_url: width: 100, height: 100 }}{% endcapture %}
