@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-menu-content",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
