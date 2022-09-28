@@ -13,7 +13,11 @@ Culture Counter Commons v1.3 | hulk 13-...
 <!--[if (gt IE 9)|!(IE)]><!-->
 <html class="no-js" lang="zxx" itemscope itemtype="http://schema.org/WebPage">
     <!--<![endif]-->
-
+{%- if template contains 'index' -%}
+<script>
+window.location.href = '/pages/home';
+</script>
+{%- endif -%}
     <head>
         {% include 'head' %}
         {{ content_for_header }}
