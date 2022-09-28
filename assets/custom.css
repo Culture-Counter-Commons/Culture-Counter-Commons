@@ -20,148 +20,113 @@ theme get -p=d981328a4aff9275f3b7d5750145fc07 -s=culture-counter.myshopify.com -
 /* fonts */
 
 @font-face {
-	font-family: "Gotham Book";
-	font-style: normal;
-	font-weight: normal;
-	src: local("Gotham Book"), url("GothamBook.woff") format("woff");
+	font-family: "GothamBook";
+	src: url("GothamBook.eot");
+	src: url("GothamBook.eot") format("embedded-opentype"),
+		url("GothamBook.woff2") format("woff2"),
+		url("GothamBook.woff") format("woff"),
+		url("GothamBook.ttf") format("truetype"),
+		url("GothamBook.svg#GothamBook") format("svg");
 }
 
 @font-face {
-	font-family: "Gotham Book Italic";
-	font-style: normal;
-	font-weight: normal;
-	src: local("Gotham Book Italic"),
-		url("GothamBookItalic.woff") format("woff");
+	font-family: "GothamBold";
+	src: url("GothamBold.eot");
+	src: url("GothamBold.eot") format("embedded-opentype"),
+		url("GothamBold.woff2") format("woff2"),
+		url("GothamBold.woff") format("woff"),
+		url("GothamBold.ttf") format("truetype"),
+		url("GothamBold.svg#GothamBold") format("svg");
 }
 
 @font-face {
-	font-family: "Gotham Light";
-	font-style: normal;
-	font-weight: normal;
-	src: local("Gotham Light"), url("GothamLight.woff") format("woff");
+	font-family: "GothamBoldItalic";
+	src: url("GothamBoldItalic.eot");
+	src: url("GothamBoldItalic.eot") format("embedded-opentype"),
+		url("GothamBoldItalic.woff2") format("woff2"),
+		url("GothamBoldItalic.woff") format("woff"),
+		url("GothamBoldItalic.ttf") format("truetype"),
+		url("GothamBoldItalic.svg#GothamBoldItalic") format("svg");
 }
 
 @font-face {
-	font-family: "Gotham Light Italic";
-	font-style: normal;
-	font-weight: normal;
-	src: local("Gotham Light Italic"),
-		url("GothamLightItalic.woff") format("woff");
+	font-family: "GothamBlack";
+	src: url("GothamBlack.eot");
+	src: url("GothamBlack.eot") format("embedded-opentype"),
+		url("GothamBlack.woff2") format("woff2"),
+		url("GothamBlack.woff") format("woff"),
+		url("GothamBlack.ttf") format("truetype"),
+		url("GothamBlack.svg#GothamBlack") format("svg");
 }
 
 @font-face {
-	font-family: "Gotham Medium";
-	font-style: normal;
-	font-weight: normal;
-	src: local("Gotham Medium"), url("GothamMedium.woff") format("woff");
+	font-family: "GothamLight";
+	src: url("GothamLight.eot");
+	src: url("GothamLight.eot") format("embedded-opentype"),
+		url("GothamLight.woff2") format("woff2"),
+		url("GothamLight.woff") format("woff"),
+		url("GothamLight.ttf") format("truetype"),
+		url("GothamLight.svg#GothamLight") format("svg");
 }
-
 @font-face {
-	font-family: "Gotham Medium";
-	font-style: normal;
-	font-weight: 600;
-	src: local("Gotham Medium"), url("GothamMedium_1.woff") format("woff");
-}
-
-@font-face {
-	font-family: "Gotham Medium";
-	font-style: normal;
-	font-weight: 600;
-	src: local("Gotham Medium"), url("GothamMediumItalic.woff") format("woff");
-}
-
-@font-face {
-	font-family: "Gotham Bold";
-	font-style: normal;
-	font-weight: 800;
-	src: local("Gotham Bold"), url("GothamBold.woff") format("woff");
-}
-
-@font-face {
-	font-family: "Gotham Bold";
-	font-style: normal;
-	font-weight: 800;
-	src: local("Gotham Bold"), url("Gotham-Bold.woff") format("woff");
-}
-
-@font-face {
-	font-family: "Gotham Bold Italic";
-	font-style: normal;
-	font-weight: normal;
-	src: local("Gotham Bold Italic"),
-		url("GothamBoldItalic.woff") format("woff");
-}
-
-@font-face {
-	font-family: "Gotham Black Regular";
-	font-style: normal;
-	font-weight: normal;
-	src: local("Gotham Black Regular"), url("Gotham-Black.woff") format("woff");
-}
-
-@font-face {
-	font-family: "Gotham Light Regular";
-	font-style: normal;
-	font-weight: normal;
-	src: local("Gotham Light Regular"), url("Gotham-Light.woff") format("woff");
-}
-
-@font-face {
-	font-family: "Gotham Thin Regular";
-	font-style: normal;
-	font-weight: normal;
-	src: local("Gotham Thin Regular"), url("Gotham-Thin.woff") format("woff");
-}
-
-@font-face {
-	font-family: "Gotham XLight Regular";
-	font-style: normal;
-	font-weight: normal;
-	src: local("Gotham XLight Regular"),
-		url("Gotham-XLight.woff") format("woff");
-}
-
-@font-face {
-	font-family: "Gotham Book Italic";
-	font-style: normal;
-	font-weight: normal;
-	src: local("Gotham Book Italic"),
-		url("Gotham-BookItalic.woff") format("woff");
-}
-
-@font-face {
-	font-family: "Gotham Thin Italic";
-	font-style: normal;
-	font-weight: normal;
-	src: local("Gotham Thin Italic"),
-		url("Gotham-ThinItalic.woff") format("woff");
-}
-
-@font-face {
-	font-family: "Gotham Ultra Italic";
-	font-style: normal;
-	font-weight: normal;
-	src: local("Gotham Ultra Italic"),
-		url("Gotham-UltraItalic.woff") format("woff");
-}
-
-@font-face {
-	font-family: "Gotham XLight Italic";
-	font-style: normal;
-	font-weight: normal;
-	src: local("Gotham XLight Italic"),
-		url("Gotham-XLightItalic.woff") format("woff");
+	font-family: "GothamMedium";
+	src: url("GothamMedium.eot");
+	src: url("GothamMedium.eot") format("embedded-opentype"),
+		url("GothamMedium.woff2") format("woff2"),
+		url("GothamMedium.woff") format("woff"),
+		url("GothamMedium.ttf") format("truetype"),
+		url("GothamMedium.svg#GothamMedium") format("svg");
 }
 
 body,
 .modal--quickview .modal-header-title,
 .modal--checkout .modal-header-title,
-.fancybox-container {
-	font-family: "Gotham Book", sans-serif;
-	line-height: 21px;
+.fancybox-container,
+.bnslider-text-content .bnslider-text-content-flex .bnslider-text--lg,
+.bnslider-text-content .bnslider-text-content-flex .bnslider-text--sm,
+.bnslider-text-content .bnslider-text-content-flex .bnslider-text--xs,
+.bnslider-text-content .bnslider-text-content-flex .bnslider-text--xxs {
+	font-family: "GothamBook", sans-serif !important;
+}
+.bnslider-text-content .bnslider-text-content-flex .btn-wrap > .btn-decor,
+.modal--quickview .modal-header-title,
+.modal--checkout .modal-header-title,
+.fancybox-container,
+.bnslider-text-content .bnslider-text-content-flex .bnslider-text--md {
+	font-family: "GothamBold", sans-serif !important;
+}
+.btn {
+	font-family: "GothamMedium", sans-serif;
+	padding: 15px 22px 7px;
+}
+h1,
+.h1-style,
+h2,
+.h2-style,
+h3,
+.h3-style,
+h4,
+.h4-style,
+h5,
+.h5-style,
+h6,
+.h6-style,
+.prd-block_title,
+.prd-block_price--actual,
+.prd-block_price--special,
+.product-slider .prd-title,
+.product-slider .prd-price .price-new,
+.sidebar-block_title,
+.shop-features-style3 .shop-feature .shop-feature-text .text1 {
+	font-family: "GothamBold", sans-serif;
+	line-height: 24px;
+}
+.shop-features-style3 .shop-feature .shop-feature-text .text2,
+.shop-features-style3-1 .shop-feature .shop-feature-text .text2 {
+	line-height: 16px;
 }
 strong {
-	font-family: "Gotham Bold", sans-serif;
+	font-family: "GothamBold", sans-serif;
 }
 .post-full .post-img img {
 	width: 50%;
@@ -170,7 +135,7 @@ dd {
 	margin-left: 2rem;
 }
 .filter-row .fixed-col-toggle {
-	font-family: "Gotham Bold", sans-serif;
+	font-family: "GothamBold", sans-serif;
 	line-height: 19px;
 }
 
@@ -254,33 +219,9 @@ dd {
 .footer-block ul.contact-list li a {
 	line-height: 19px;
 }
-.btn {
-	font-family: "Gothic Medium", sans-serif;
-}
-h1,
-.h1-style,
-h2,
-.h2-style,
-h3,
-.h3-style,
-h4,
-.h4-style,
-h5,
-.h5-style,
-h6,
-.h6-style,
-.prd-block_title,
-.prd-block_price--actual,
-.prd-block_price--special,
-.product-slider .prd-title,
-.product-slider .prd-price .price-new,
-.sidebar-block_title,
-.shop-features-style3 .shop-feature .shop-feature-text .text1 {
-	font-family: "Gotham Bold", sans-serif;
-}
 
 .mmenu:not(.mmenu--vertical) > li > a {
-	font-family: "Gotham Bold", sans-serif;
+	font-family: "GothamBold", sans-serif;
 }
 
 /* fonts */
@@ -403,7 +344,7 @@ form#contact_form {
 }
 /* all form placeholders */
 input {
-	font-family: "Century Gothic", sans-serif !important;
+	font-family: "GothamBook", sans-serif;
 }
 input::placeholder {
 	color: #d2d2d2 !important;
@@ -422,7 +363,7 @@ input::placeholder {
 }
 
 /* icomoon icons */
-@font-face {
+Gotham-face {
 	font-family: "icomoon-expand";
 	src: url("icomoon-expand.eot?jqounf");
 	src: url("icomoon-expand.eot?jqounf#iefix") format("embedded-opentype"),
@@ -505,7 +446,7 @@ form.suggestion-form,
 ul.category-list li a,
 .selected-filters li > a,
 .clear-filters {
-	font-family: "Century Gothic", sans-serif !important;
+	font-family: "GothamBook", sans-serif;
 }
 
 .hdr {
@@ -671,6 +612,7 @@ iframe#preview-bar-iframe {
 }
 
 .collection-carousel-title {
+	font-family: "GothamBold", sans-serif;
 	z-index: 2;
 	top: 25%;
 }
@@ -1301,7 +1243,7 @@ footer .footer-copyright * {
 	align-items: flex-start;
 	padding: 6px 0 0 0;
 	color: var(--green);
-	font-family: "Gotham Bold", sans-serif;
+	font-family: "GothamBold", sans-serif;
 }
 
 .prd-pricing .product-size.option-topping.swatches {
@@ -1309,7 +1251,7 @@ footer .footer-copyright * {
 }
 .prd-pricing .product-options .option-label {
 	color: var(--green);
-	font-family: "Gotham Bold", sans-serif;
+	font-family: "GothamBold", sans-serif;
 	flex: 1 0 100%;
 	line-height: 2;
 }
