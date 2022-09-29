@@ -26,7 +26,7 @@
 <!-- Bootstrap core CSS -->
 {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
 <!-- Vendor CSS -->
-{{ 'slick.scss.css' | asset_url | stylesheet_tag }}
+{{ 'slick.css' | asset_url | stylesheet_tag }}
 {{ 'jquery.fancybox.min.css' | asset_url | stylesheet_tag }}
 {{ 'jquery.selectBox.css' | asset_url | stylesheet_tag }}
 <!-- Custom styles for this template -->
@@ -34,10 +34,15 @@
     {{ 'fullpage.css' | asset_url | stylesheet_tag }}
     {{ 'perfect-scrollbar.css' | asset_url | stylesheet_tag }}
 {% endif %}
-{{ 'style.scss.css' | asset_url | stylesheet_tag }}
+{{ 'style.css' | asset_url | stylesheet_tag }}
+{%- comment -%}
+    old style call
+    ** same with slick.scss.css
+    {{ 'style.scss.css' | asset_url | stylesheet_tag }}
+{%- endcomment -%}
 {{ 'animate.min.css' | asset_url | stylesheet_tag }}
 <!--icon font-->
-{{ 'icomoon.scss.css' | asset_url | stylesheet_tag }}
+{{ 'icomoon.css' | asset_url | stylesheet_tag }}
 <!-- Custom + rtl -->
 {% if settings.rtl or template contains 'rtl' %}{{ 'style-rtl.css' | asset_url | stylesheet_tag }}{% endif %}
 {% if demo %}
@@ -47,7 +52,7 @@
         {% if color_mode contains 'dark' %}{{ 'style-dark.css' | asset_url | stylesheet_tag }}{% else %}{{ 'style-light.css' | asset_url | stylesheet_tag }}{% endif %}
     {% endif %}
 {% else %}
-    {% if color_mode contains 'dark' %}{{ 'style-theme-dark.scss.css' | asset_url | stylesheet_tag }}{% else %}{{ 'style-theme-light.scss.css' | asset_url | stylesheet_tag }}{% endif %}
+    {% if color_mode contains 'dark' %}{{ 'style-theme-dark.scss.css' | asset_url | stylesheet_tag }}{% else %}{{ 'style-theme-light.css' | asset_url | stylesheet_tag }}{% endif %}
 {% endif %}
 
 {{ 'custom.css' | asset_url | stylesheet_tag }}

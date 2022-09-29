@@ -20,64 +20,52 @@ theme get -p=d981328a4aff9275f3b7d5750145fc07 -s=culture-counter.myshopify.com -
 /* fonts */
 
 @font-face {
-	font-family: "GothamBook";
-	src: url("GothamBook.eot");
-	src: url("GothamBook.eot") format("embedded-opentype"),
-		url("GothamBook.woff2") format("woff2"),
-		url("GothamBook.woff") format("woff"),
-		url("GothamBook.ttf") format("truetype"),
-		url("GothamBook.svg#GothamBook") format("svg");
+	font-family: "gothambookbook";
+	src: url("gothambook-webfont.woff2") format("woff2"),
+		url("gothambook-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: "GothamBold";
-	src: url("GothamBold.eot");
-	src: url("GothamBold.eot") format("embedded-opentype"),
-		url("GothamBold.woff2") format("woff2"),
-		url("GothamBold.woff") format("woff"),
-		url("GothamBold.ttf") format("truetype"),
-		url("GothamBold.svg#GothamBold") format("svg");
+	font-family: "gothamboldbold";
+	src: url("gothambold-webfont.woff2") format("woff2"),
+		url("gothambold-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: "GothamBoldItalic";
-	src: url("GothamBoldItalic.eot");
-	src: url("GothamBoldItalic.eot") format("embedded-opentype"),
-		url("GothamBoldItalic.woff2") format("woff2"),
-		url("GothamBoldItalic.woff") format("woff"),
-		url("GothamBoldItalic.ttf") format("truetype"),
-		url("GothamBoldItalic.svg#GothamBoldItalic") format("svg");
+	font-family: "gothambolditalicbold_italic";
+	src: url("gothambolditalic-webfont.woff2") format("woff2"),
+		url("gothambolditalic-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: "GothamBlack";
-	src: url("GothamBlack.eot");
-	src: url("GothamBlack.eot") format("embedded-opentype"),
-		url("GothamBlack.woff2") format("woff2"),
-		url("GothamBlack.woff") format("woff"),
-		url("GothamBlack.ttf") format("truetype"),
-		url("GothamBlack.svg#GothamBlack") format("svg");
+	font-family: "gothamblackregular";
+	src: url("gothamblack-webfont.woff2") format("woff2"),
+		url("gothamblack-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: "GothamLight";
-	src: url("GothamLight.eot");
-	src: url("GothamLight.eot") format("embedded-opentype"),
-		url("GothamLight.woff2") format("woff2"),
-		url("GothamLight.woff") format("woff"),
-		url("GothamLight.ttf") format("truetype"),
-		url("GothamLight.svg#GothamLight") format("svg");
-}
-@font-face {
-	font-family: "GothamMedium";
-	src: url("GothamMedium.eot");
-	src: url("GothamMedium.eot") format("embedded-opentype"),
-		url("GothamMedium.woff2") format("woff2"),
-		url("GothamMedium.woff") format("woff"),
-		url("GothamMedium.ttf") format("truetype"),
-		url("GothamMedium.svg#GothamMedium") format("svg");
+	font-family: "gothamlightregular";
+	src: url("gothamlight-webfont.woff2") format("woff2"),
+		url("gothamlight-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 
+@font-face {
+	font-family: "gothammediummedium";
+	src: url("gothammedium-webfont.woff2") format("woff2"),
+		url("gothammedium-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
 body,
 .modal--quickview .modal-header-title,
 .modal--checkout .modal-header-title,
@@ -86,17 +74,17 @@ body,
 .bnslider-text-content .bnslider-text-content-flex .bnslider-text--sm,
 .bnslider-text-content .bnslider-text-content-flex .bnslider-text--xs,
 .bnslider-text-content .bnslider-text-content-flex .bnslider-text--xxs {
-	font-family: "GothamBook", sans-serif !important;
+	font-family: "gothambookbook", "Montserrat", sans-serif !important;
 }
 .bnslider-text-content .bnslider-text-content-flex .btn-wrap > .btn-decor,
 .modal--quickview .modal-header-title,
 .modal--checkout .modal-header-title,
 .fancybox-container,
 .bnslider-text-content .bnslider-text-content-flex .bnslider-text--md {
-	font-family: "GothamBold", sans-serif !important;
+	font-family: "gothamboldbold", "Montserrat", sans-serif !important;
 }
 .btn {
-	font-family: "GothamMedium", sans-serif;
+	font-family: "gothammediummedium", "Montserrat", sans-serif;
 	padding: 15px 22px 7px;
 }
 h1,
@@ -118,7 +106,7 @@ h6,
 .product-slider .prd-price .price-new,
 .sidebar-block_title,
 .shop-features-style3 .shop-feature .shop-feature-text .text1 {
-	font-family: "GothamBold", sans-serif;
+	font-family: "gothamboldbold", sans-serif;
 	line-height: 24px;
 }
 
@@ -127,7 +115,7 @@ h6,
 	line-height: 16px;
 }
 strong {
-	font-family: "GothamBold", sans-serif;
+	font-family: "gothamboldbold", sans-serif;
 }
 .post-full .post-img img {
 	width: 50%;
@@ -136,7 +124,7 @@ dd {
 	margin-left: 2rem;
 }
 .filter-row .fixed-col-toggle {
-	font-family: "GothamBold", sans-serif;
+	font-family: "gothamboldbold", sans-serif;
 	line-height: 19px;
 }
 
@@ -222,7 +210,7 @@ dd {
 }
 
 .mmenu:not(.mmenu--vertical) > li > a {
-	font-family: "GothamBold", sans-serif;
+	font-family: "gothamboldbold", sans-serif;
 }
 
 /* fonts */
@@ -345,7 +333,7 @@ form#contact_form {
 }
 /* all form placeholders */
 input {
-	font-family: "GothamBook", sans-serif;
+	font-family: "gothambookbook", sans-serif;
 }
 input::placeholder {
 	color: #d2d2d2 !important;
@@ -447,7 +435,7 @@ form.suggestion-form,
 ul.category-list li a,
 .selected-filters li > a,
 .clear-filters {
-	font-family: "GothamBook", sans-serif;
+	font-family: "gothambookbook", sans-serif;
 }
 
 .hdr {
@@ -613,7 +601,7 @@ iframe#preview-bar-iframe {
 }
 
 .collection-carousel-title {
-	font-family: "GothamBold", sans-serif;
+	font-family: "gothamboldbold", sans-serif;
 	z-index: 2;
 	top: 25%;
 }
@@ -1244,7 +1232,7 @@ footer .footer-copyright * {
 	align-items: flex-start;
 	padding: 6px 0 0 0;
 	color: var(--green);
-	font-family: "GothamBold", sans-serif;
+	font-family: "gothamboldbold", sans-serif;
 }
 
 .prd-pricing .product-size.option-topping.swatches {
@@ -1252,7 +1240,7 @@ footer .footer-copyright * {
 }
 .prd-pricing .product-options .option-label {
 	color: var(--green);
-	font-family: "GothamBold", sans-serif;
+	font-family: "gothamboldbold", sans-serif;
 	flex: 1 0 100%;
 	line-height: 2;
 }
