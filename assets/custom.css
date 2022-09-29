@@ -110,7 +110,7 @@ h6,
 	line-height: 24px;
 }
 h2 {
-	line-height: 48px;
+	line-height: 48px !important;
 }
 .shop-features-style3 .shop-feature .shop-feature-text .text2,
 .shop-features-style3-1 .shop-feature .shop-feature-text .text2 {
