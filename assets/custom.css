@@ -121,6 +121,7 @@ h6,
 	font-family: "GothamBold", sans-serif;
 	line-height: 24px;
 }
+
 .shop-features-style3 .shop-feature .shop-feature-text .text2,
 .shop-features-style3-1 .shop-feature .shop-feature-text .text2 {
 	line-height: 16px;
@@ -1476,61 +1477,6 @@ footer .footer-copyright * {
 	height: auto !important;
 	margin: 40px 5px 0 0px;
 }
-
-/* vendors autoscroll */
-/* https: //github.com/kenwheeler/slick/issues/52#issuecomment-233772642 */
-/* .brand-carousel .slick-track {
-	animation: scrollin 50s linear infinite;
-}
-
-.brand-carousel .slick-track:hover {
-	animation-play-state: paused;
-}
-
-@keyframes scrollin {
-	0% {
-		left: 800px;
-	}
-
-	100% {
-		left: -800px;
-	}
-} */
-
-/* 
-funny stuff 
-.btn-decor:hover {
-    color: #000;
-    background: url(https://cdn.shopify.com/s/files/1/0095/6035/8991/files/IMG_5804.jpg?1862);
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    width: 400px;
-        background-size: contain;
-
-}
-
-li.slick-slide.slick-active:hover {
-    background: url(https://cdn.shopify.com/s/files/1/0095/6035/8991/files/Screen_Shot_2019-08-09_at_9.02.29_PM.png?1865);
-    width: 900px !important;
-    position: absolute;
-    background-size: contain;
-}
-.prd.prd-has-loader.loaded .gdw-loader {
-    opacity: 1;
-}
-.equal-height .prd:not(.prd-horizontal-simple) .prd-img-area:hover  .gdw-loader {
-    background: url(https://cdn.shopify.com/s/files/1/0095/6035/8991/files/Screen_Shot_2019-08-09_at_9.05.22_PM.png?1867) !important;
-    opacity: 1 !important;
-    background-size: 300px !important;
-    background-position: center;
-    height: 300px !important;
-    width: 300px !important;
-    left: -30px !important;
-    top: -30px !important;
-} 
-*/
 /* hulk product options */
 .hulkapps_discount_code {
 	flex: 1 0 auto;

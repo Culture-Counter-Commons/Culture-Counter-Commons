@@ -1,0 +1,87 @@
+/* menu custom metafields */
+/* @media (min-width: 992px) {
+	body.boxed .page-content .holder:not(.fullwidth):not(.fullboxed) {
+		width: 910px;
+	}
+} */
+.menu-page {
+	border: solid 4px var(--green);
+	background-color: var(--white);
+	margin-bottom: 4em;
+}
+.menu-section {
+	margin-bottom: 1em;
+	padding: 2em 4em;
+}
+.menu-section__split {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2em;
+}
+.menu-section ul {
+	padding-left: 0;
+}
+.menu-item,
+.menu-section__page-title {
+	display: flex;
+	flex-direction: column;
+}
+
+.menu-item__waffle {
+	font-size: 1.5em;
+}
+.menu-section__page-title {
+	background-color: var(--green);
+	white-space: nowrap;
+	margin-bottom: 0;
+}
+.menu-title__border {
+	width: 100%;
+	margin-bottom: 2em;
+	border: 2em solid black;
+	border-width: 0 0 42px;
+	border-image: url("../assets/menu-dotted-border.svg") 30;
+}
+.menu-section__page-title h1 {
+	margin: 25px 0 0;
+	color: var(--lightTan);
+	font-size: 3em;
+	line-height: 1em;
+}
+.menu-section-title,
+.menu-item__drink li {
+	font-size: 2.5em;
+	color: var(--green);
+}
+.menu-item__drink li {
+	font-family: "GothamBold", sans-serif;
+	font-weight: 600;
+	white-space: nowrap;
+	text-transform: uppercase;
+	line-height: 60px;
+}
+
+.menu-section__add-ons .menu-item {
+	border: 4px solid var(--black);
+	padding: 2em;
+}
+@media screen and (min-width: 600px) {
+	.menu-section {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+		column-gap: 4em;
+	}
+	.menu-section-title,
+	.menu-section__single {
+		grid-column: 1/-1;
+	}
+}
+.menu-section h3 {
+	margin-bottom: 0;
+	margin-top: 1em;
+}
+.menu-section__single {
+	display: flex;
+	flex-direction: column;
+	grid-column: 1 / -1;
+}
