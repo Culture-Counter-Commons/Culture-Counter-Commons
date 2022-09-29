@@ -11,13 +11,9 @@
 }
 .menu-section {
 	margin-bottom: 1em;
-	padding: 2em 4em;
+	padding: 2em 2em;
 }
-.menu-section__split {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 2em;
-}
+
 .menu-section ul {
 	padding-left: 0;
 }
@@ -45,12 +41,12 @@
 .menu-section__page-title h1 {
 	margin: 25px 0 0;
 	color: var(--lightTan);
-	font-size: 3em;
+	font-size: 2em;
 	line-height: 1em;
 }
 .menu-section-title,
 .menu-item__drink li {
-	font-size: 2.5em;
+	font-size: 2em;
 	color: var(--green);
 }
 .menu-item__drink li {
@@ -70,10 +66,23 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 		column-gap: 4em;
+		padding: 2em 4em;
 	}
 	.menu-section-title,
 	.menu-section__single {
 		grid-column: 1/-1;
+	}
+	.menu-section-title,
+	.menu-item__drink li {
+		font-size: 2.5em;
+	}
+	.menu-section__split {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2em;
+	}
+	.menu-section__page-title h1 {
+		font-size: 3em;
 	}
 }
 .menu-section h3 {
