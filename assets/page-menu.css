@@ -44,6 +44,9 @@
 	font-size: 2em;
 	line-height: 1em;
 }
+.menu-item ul {
+	list-style: none;
+}
 .menu-section-title,
 .menu-item__drink li {
 	font-size: 2em;
