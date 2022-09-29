@@ -33,24 +33,28 @@
 }
 .menu-title__border {
 	width: 100%;
-	margin-bottom: 2em;
 	border: 2em solid black;
 	border-width: 0 0 42px;
 	border-image: url("../assets/menu-dotted-border.svg") 30;
 }
 .menu-section__page-title h1 {
-	margin: 25px 0 0;
+	margin: 0 0 0;
 	color: var(--lightTan);
 	font-size: 2em;
 	line-height: 1em;
+	letter-spacing: 0;
 }
 .menu-item ul {
 	list-style: none;
 }
 .menu-section-title,
 .menu-item__drink li {
-	font-size: 2em;
+	font-size: 28px;
 	color: var(--green);
+}
+.menu-item__drink {
+	font-weight: 600;
+	text-transform: uppercase;
 }
 
 .menu-section__add-ons .menu-item {

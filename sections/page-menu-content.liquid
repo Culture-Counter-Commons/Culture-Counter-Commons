@@ -1,338 +1,340 @@
 {{ 'page-menu.css' | asset_url | stylesheet_tag }}
 
 <div class="holder mt-5">
-  <div class="container">
-    <div class="page-title text-center">
-      <div class="title">
-        <h1>{{ page.title }}
-        </h1>
-      </div>
-    </div>
-    {{ page.content }}
-
-
-    <div class="menu-page">
-      <div class="menu-section menu-section__page-title">
-        <h1>{{ page.metafields.menu.pg_1_title }}
-        </h1>
-      </div>
-      <div class="menu-title__border"></div>
-
-      {% comment %}
-        smoothies
-      {% endcomment %}
-      <div class="menu-section menu-section__smoothies">
-        {%- if page.metafields.menu.smoothies_section_title -%}
-          <h2 class="menu-section-title">{{ page.metafields.menu.smoothies_section_title }}
-          </h2>
-        {%- endif -%}
-        {%- if page.metafields.menu.smoothies_1_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.smoothies_1_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.smoothies_1_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-        {%- if page.metafields.menu.smoothies_2_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.smoothies_2_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.smoothies_2_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-        {%- if page.metafields.menu.smoothies_3_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.smoothies_3_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.smoothies_3_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-        {%- if page.metafields.menu.smoothies_4_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.smoothies_4_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.smoothies_4_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-      </div>
-
-      {% comment %}
-        juice
-      {% endcomment %}
-      <div class="menu-section menu-section__juice">
-        {%- if page.metafields.menu.juice_section_title -%}
-          <h2 class="menu-section-title">{{ page.metafields.menu.juice_section_title }}
-          </h2>
-        {%- endif -%}
-        {%- if page.metafields.menu.juice_1_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.juice_1_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.juice_1_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-        {%- if page.metafields.menu.juice_2_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.juice_2_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.juice_2_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-        {%- if page.metafields.menu.juice_3_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.juice_3_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.juice_3_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-        {%- if page.metafields.menu.juice_4_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.juice_4_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.juice_4_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-        {%- if page.metafields.menu.juice_5_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.juice_5_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.juice_5_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-      </div>
-      {% comment %}
-        drink list
-      {% endcomment %}
-      <div class="menu-section">
-        <div class="menu-item">
-          <ul class="menu-item menu-item__drink">
-            {% for drink in page.metafields.menu.drinks_list.value %}
-              <li><h2>{{ drink }}</h2>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-
-    </div>
-
-
-    {% comment %}
-      PAGE 2
-    {% endcomment %}
-    <div class="menu-page">
-      <div class="menu-section menu-section__page-title">
-        <h1>{{ page.metafields.menu.pg_2_title }}
-        </h1>
-      </div>
-      <div class="menu-title__border"></div>
-      <div class="menu-section__split">
-        {% comment %}
-          waffles
-        {% endcomment %}
-        <div class="menu-section">
-          <div class="menu-item">
-            {%- if page.metafields.menu.waffle_section_title -%}
-              <h2 class="menu-section-title">{{ page.metafields.menu.waffle_section_title }}
-              </h2>
-            {%- endif -%}
-            <ul class="menu-item menu-item__waffle">
-              {% for waffle in page.metafields.menu.waffles.value %}
-                <li>{{ waffle }}
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
-        {% comment %}
-          add-ons
-        {% endcomment %}
-        <div class="menu-section menu-section__add-ons">
-          <div class="menu-item">
-            <div class="menu-section-title">
-              <h2>Add-ons</h2>
+    <div class="container">
+        <div class="page-title text-center">
+            <div class="title">
+                <h1>{{ page.title }}
+                </h1>
             </div>
-            <div class="menu-add-ons">
-              <ul>
-                {% for add_on in page.metafields.menu.add_ons.value %}
-                  <li>{{ add_on }}
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
-
-      {% comment %}
-        waffle toppings
-      {% endcomment %}
-      <div class="menu-section menu-section__waffle-toppings">
-        {%- if page.metafields.menu.waffle_top_section_title -%}
-          <h2 class="menu-section-title">{{ page.metafields.menu.waffle_top_section_title }}
-          </h2>
-        {%- endif -%}
-        {%- if page.metafields.menu.waffle_top_1_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.waffle_top_1_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.waffle_top_1_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-        {%- if page.metafields.menu.waffle_top_2_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.waffle_top_2_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.waffle_top_2_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-        {%- if page.metafields.menu.waffle_top_3_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.waffle_top_3_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.waffle_top_3_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-        {%- if page.metafields.menu.waffle_top_4_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.waffle_top_4_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.waffle_top_4_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-        {%- if page.metafields.menu.waffle_top_5_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.waffle_top_5_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.waffle_top_5_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-      </div>
-
-      {% comment %}
-        omelette
-      {% endcomment %}
-      <div class="menu-section menu-section__omelette">
-        {%- if page.metafields.menu.omelette_section_title -%}
-          <h2 class="menu-section-title">{{ page.metafields.menu.omelette_section_title }}
-          </h2>
-        {%- endif -%}
-        {%- if page.metafields.menu.omelette_1_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.omelette_1_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.omelette_1_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-        {%- if page.metafields.menu.omelette_2_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.omelette_2_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.omelette_2_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-        {%- if page.metafields.menu.omelette_3_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.omelette_3_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.omelette_3_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-      </div>
-
-      {% comment %}
-        burrito
-      {% endcomment %}
-      <div class="menu-section menu-section__burrito">
-        {%- if page.metafields.menu.burrito_section_title -%}
-          <h2 class="menu-section-title">{{ page.metafields.menu.burrito_section_title }}
-          </h2>
-        {%- endif -%}
-        {%- if page.metafields.menu.burrito_1_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.burrito_1_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.burrito_1_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-        {%- if page.metafields.menu.burrito_2_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.burrito_2_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.burrito_2_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-        {%- if page.metafields.menu.burrito_3_title -%}
-          <div class="menu-item">
-            <h3>
-              {{ page.metafields.menu.burrito_3_title }}
-            </h3>
-            <p>
-              {{ page.metafields.menu.burrito_3_ing }}
-            </p>
-          </div>
-        {%- endif -%}
-
-      </div>
+        {{ page.content }}
 
 
+        <div class="menu-page">
+            <div class="menu-section menu-section__page-title">
+                <h1>{{ page.metafields.menu.pg_1_title }}
+                </h1>
+            </div>
+            <div class="menu-title__border"></div>
+
+            {% comment %}
+                smoothies
+            {% endcomment %}
+            <div class="menu-section menu-section__smoothies">
+                {%- if page.metafields.menu.smoothies_section_title -%}
+                    <h2 class="menu-section-title">{{ page.metafields.menu.smoothies_section_title }}
+                    </h2>
+                {%- endif -%}
+                {%- if page.metafields.menu.smoothies_1_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.smoothies_1_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.smoothies_1_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+                {%- if page.metafields.menu.smoothies_2_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.smoothies_2_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.smoothies_2_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+                {%- if page.metafields.menu.smoothies_3_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.smoothies_3_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.smoothies_3_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+                {%- if page.metafields.menu.smoothies_4_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.smoothies_4_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.smoothies_4_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+            </div>
+
+            {% comment %}
+                juice
+            {% endcomment %}
+            <div class="menu-section menu-section__juice">
+                {%- if page.metafields.menu.juice_section_title -%}
+                    <h2 class="menu-section-title">{{ page.metafields.menu.juice_section_title }}
+                    </h2>
+                {%- endif -%}
+                {%- if page.metafields.menu.juice_1_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.juice_1_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.juice_1_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+                {%- if page.metafields.menu.juice_2_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.juice_2_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.juice_2_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+                {%- if page.metafields.menu.juice_3_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.juice_3_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.juice_3_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+                {%- if page.metafields.menu.juice_4_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.juice_4_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.juice_4_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+                {%- if page.metafields.menu.juice_5_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.juice_5_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.juice_5_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+            </div>
+            {% comment %}
+                drink list
+            {% endcomment %}
+            <div class="menu-section">
+                <div class="menu-item">
+                    <ul class="menu-item menu-item__drink">
+                        {% for drink in page.metafields.menu.drinks_list.value %}
+                            <li>
+                                <h2>{{ drink }}
+                                </h2>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+        {% comment %}
+            PAGE 2
+        {% endcomment %}
+        <div class="menu-page">
+            <div class="menu-section menu-section__page-title">
+                <h1>{{ page.metafields.menu.pg_2_title }}
+                </h1>
+            </div>
+            <div class="menu-title__border"></div>
+            <div class="menu-section__split">
+                {% comment %}
+                    waffles
+                {% endcomment %}
+                <div class="menu-section">
+                    <div class="menu-item">
+                        {%- if page.metafields.menu.waffle_section_title -%}
+                            <h2 class="menu-section-title">{{ page.metafields.menu.waffle_section_title }}
+                            </h2>
+                        {%- endif -%}
+                        <ul class="menu-item menu-item__waffle">
+                            {% for waffle in page.metafields.menu.waffles.value %}
+                                <li>{{ waffle }}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% comment %}
+                    add-ons
+                {% endcomment %}
+                <div class="menu-section menu-section__add-ons">
+                    <div class="menu-item">
+                        <div class="menu-section-title">
+                            <h2>Add-ons</h2>
+                        </div>
+                        <div class="menu-add-ons">
+                            <ul>
+                                {% for add_on in page.metafields.menu.add_ons.value %}
+                                    <li>{{ add_on }}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% comment %}
+                waffle toppings
+            {% endcomment %}
+            <div class="menu-section menu-section__waffle-toppings">
+                {%- if page.metafields.menu.waffle_top_section_title -%}
+                    <h2 class="menu-section-title">{{ page.metafields.menu.waffle_top_section_title }}
+                    </h2>
+                {%- endif -%}
+                {%- if page.metafields.menu.waffle_top_1_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.waffle_top_1_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.waffle_top_1_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+                {%- if page.metafields.menu.waffle_top_2_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.waffle_top_2_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.waffle_top_2_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+                {%- if page.metafields.menu.waffle_top_3_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.waffle_top_3_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.waffle_top_3_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+                {%- if page.metafields.menu.waffle_top_4_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.waffle_top_4_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.waffle_top_4_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+                {%- if page.metafields.menu.waffle_top_5_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.waffle_top_5_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.waffle_top_5_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+            </div>
+
+            {% comment %}
+                omelette
+            {% endcomment %}
+            <div class="menu-section menu-section__omelette">
+                {%- if page.metafields.menu.omelette_section_title -%}
+                    <h2 class="menu-section-title">{{ page.metafields.menu.omelette_section_title }}
+                    </h2>
+                {%- endif -%}
+                {%- if page.metafields.menu.omelette_1_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.omelette_1_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.omelette_1_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+                {%- if page.metafields.menu.omelette_2_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.omelette_2_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.omelette_2_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+                {%- if page.metafields.menu.omelette_3_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.omelette_3_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.omelette_3_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+            </div>
+
+            {% comment %}
+                burrito
+            {% endcomment %}
+            <div class="menu-section menu-section__burrito">
+                {%- if page.metafields.menu.burrito_section_title -%}
+                    <h2 class="menu-section-title">{{ page.metafields.menu.burrito_section_title }}
+                    </h2>
+                {%- endif -%}
+                {%- if page.metafields.menu.burrito_1_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.burrito_1_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.burrito_1_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+                {%- if page.metafields.menu.burrito_2_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.burrito_2_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.burrito_2_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+                {%- if page.metafields.menu.burrito_3_title -%}
+                    <div class="menu-item">
+                        <h3>
+                            {{ page.metafields.menu.burrito_3_title }}
+                        </h3>
+                        <p>
+                            {{ page.metafields.menu.burrito_3_ing }}
+                        </p>
+                    </div>
+                {%- endif -%}
+
+            </div>
+
+
+        </div>
     </div>
-  </div>
 </div>
