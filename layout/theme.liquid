@@ -26,10 +26,7 @@
     <head>
         {% include 'head' %}
         {{ content_for_header }}
-        {% include 'hulkcode_common' %}
-        {% if template contains 'product' or template contains 'cart' %}
-            <script src='https://productoption.hulkapps.com/api/v2/frontend/hulkcode.js' defer='defer'></script>
-        {% endif %}
+        
         {% include 'sca.storepickup' %}
     </head>
 
