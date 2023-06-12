@@ -1212,6 +1212,14 @@
       "1539362044226",
       "1539362723073",
       "1562718973628"
-    ]
+    ],
+    "blocks": {
+      "10042746950867549768": {
+        "type": "shopify:\/\/apps\/hulk-product-options\/blocks\/app-embed\/380168ef-9475-4244-a291-f66b189208b5",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   }
 }
